@@ -1,13 +1,73 @@
 {
-  "_readme": "One entry per issue. Put the cover file in assets/img/covers/ and name it here. Newest first. The homepage shows the first six; the magazine page shows all.",
+  "_readme": "One entry per issue. Put the cover file in assets/img/covers/ and name it here. Newest first. The homepage shows the first six. Add the remaining five below to complete the run of eleven.",
   "magzter": "https://www.magzter.com/REPLACE-WITH-YOUR-STOREFRONT",
   "pressreader": "https://www.pressreader.com/REPLACE-WITH-YOUR-STOREFRONT",
   "issues": [
-    { "issue": 18, "title": "", "date": "2026-07", "file": "issue-18.jpg" },
-    { "issue": 17, "title": "", "date": "2026-05", "file": "issue-17.jpg" },
-    { "issue": 16, "title": "", "date": "2026-03", "file": "issue-16.jpg" },
-    { "issue": 15, "title": "", "date": "2026-01", "file": "issue-15.jpg" },
-    { "issue": 14, "title": "", "date": "2025-11", "file": "issue-14.jpg" },
-    { "issue": 13, "title": "", "date": "2025-09", "file": "issue-13.jpg" }
+    {
+      "issue": 11,
+      "title": "",
+      "date": "",
+      "file": "issue-11.jpg"
+    },
+    {
+      "issue": 10,
+      "title": "",
+      "date": "",
+      "file": "issue-10.jpg"
+    },
+    {
+      "issue": 9,
+      "title": "",
+      "date": "",
+      "file": "issue-9.jpg"
+    },
+    {
+      "issue": 8,
+      "title": "",
+      "date": "",
+      "file": "issue-8.jpg"
+    },
+    {
+      "issue": 7,
+      "title": "",
+      "date": "",
+      "file": "issue-7.jpg"
+    },
+    {
+      "issue": 6,
+      "title": "",
+      "date": "",
+      "file": "issue-6.jpg"
+    },
+    {
+      "issue": 5,
+      "title": "",
+      "date": "",
+      "file": "issue-5.jpg"
+    },
+    {
+      "issue": 4,
+      "title": "",
+      "date": "",
+      "file": "issue-4.jpg"
+    },
+    {
+      "issue": 3,
+      "title": "",
+      "date": "",
+      "file": "issue-3.jpg"
+    },
+    {
+      "issue": 2,
+      "title": "",
+      "date": "",
+      "file": "issue-2.jpg"
+    },
+    {
+      "issue": 1,
+      "title": "",
+      "date": "",
+      "file": "issue-1.jpg"
+    }
   ]
 }
