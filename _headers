@@ -4,8 +4,18 @@
   X-Frame-Options: SAMEORIGIN
   Permissions-Policy: geolocation=(), microphone=(), camera=()
 
-/assets/*
-  Cache-Control: public, max-age=31536000, immutable
+# Filenames are not versioned, so the browser must revalidate.
+# Cloudflare still serves from its edge cache; this only stops browsers
+# holding a stale copy after you push a change.
+/assets/css/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/js/*
+  Cache-Control: public, max-age=0, must-revalidate
 
 /assets/data/*
-  Cache-Control: public, max-age=300
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Images never change once added, so these can cache hard.
+/assets/img/*
+  Cache-Control: public, max-age=604800
