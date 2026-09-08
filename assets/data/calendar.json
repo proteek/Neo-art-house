@@ -14,6 +14,35 @@
       "flag": "No corridor cost",
       "flagUrgent": false
     },
+        {
+      "date": "2026-09-XX",
+      "dateLabel": "XX September",
+      "sale": "Imperial Treasures",
+      "house": "AstaGuru",
+      "city": "Mumbai",
+      "url": "https://www.astaguru.com/auctions/2026/imperial-treasures-222",
+      "note": "Decorative arts, silver, textiles and rare books. A large share is over a hundred years old, which makes it non-exportable from India whoever buys it.",
+      "flag": "Export restrictions likely",
+      "flagUrgent": true,
+      "lots": [
+        {
+          "artist": "Nicholas Roerich",
+          "title": "Himalaya, numbered edition",
+          "year": "Lot 5",
+          "estimate": "Opening ₹9,00,000",
+          "url": "https://www.astaguru.com/auctions/2026/imperial-treasures-222",
+          "note": "Roerich is one of the nine artists declared an art treasure in 1979. Whether a numbered print edition falls inside that scope is not obvious, and the answer decides whether you can take it home."
+        },
+        {
+          "artist": "Early Indian topographical works",
+          "title": "Four first editions and view books",
+          "year": "Lots 16, 22, 25, 29",
+          "estimate": "Opening ₹5,50,000 to ₹28,00,000",
+          "url": "https://www.astaguru.com/auctions/2026/imperial-treasures-222",
+          "note": "Books and records of historical interest reach the antiquity threshold at seventy-five years rather than a hundred. All four are well past it."
+        }
+      ]
+    },
     {
       "date": "2026-09-22",
       "dateLabel": "22 September",
