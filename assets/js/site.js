@@ -35,7 +35,7 @@ function emblem(name, size) {
     `<path d="M0 40 L0 14 L20 4 L40 14 L40 40 Z" fill="${a}"/><rect x="16" y="24" width="9" height="16" fill="${b}"/>`
   ];
   return `<svg class="emb" width="${size}" height="${size}" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
-    <rect width="40" height="40" fill="#242320"/>
+    <rect width="40" height="40" fill="var(--emb-ground)"/>
     <g transform="rotate(${rot} 20 20)">${shapes[layout]}</g>
   </svg>`;
 }
@@ -180,3 +180,16 @@ initCalendar();
 initDirectory();
 initCommission();
 initCovers();
+
+/* ---------- light and dark ---------- */
+function initTheme() {
+  const btn = document.querySelector('[data-theme-toggle]');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+    document.documentElement.dataset.theme = next;
+    btn.setAttribute('aria-label', next === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
+    try { localStorage.setItem('nah-theme', next); } catch (e) {}
+  });
+}
+initTheme();

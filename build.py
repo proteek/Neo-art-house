@@ -18,7 +18,7 @@ LOGO = '''<svg viewBox="0 0 1000 1000" role="img" aria-hidden="true" focusable="
 FOOT_MARK = '''<svg viewBox="0 0 1000 700" aria-hidden="true" focusable="false">
         <path d="M236 688 L236 282 L474 149 L792 410 L792 688 Z" fill="#E8481F"/>
         <path d="M474 149 L684 324 L684 688 L474 688 Z" fill="#D2D0C8"/>
-        <rect x="508" y="492" width="102" height="196" fill="#121211"/>
+        <rect x="508" y="492" width="102" height="196" fill="var(--ink)"/>
       </svg>'''
 
 SHELL = '''<!doctype html>
@@ -32,6 +32,7 @@ SHELL = '''<!doctype html>
 <meta property="og:description" content="{desc}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script>try{{var t=localStorage.getItem('nah-theme');if(t)document.documentElement.dataset.theme=t;}}catch(e){{}}</script>
 <link rel="stylesheet" href="{b}assets/css/site.css">
 </head>
 <body data-base="{b}">
@@ -45,6 +46,10 @@ SHELL = '''<!doctype html>
       <a href="{b}calendar.html"{c_cal}>Calendar</a>
       <a href="{b}houses.html"{c_hou}>Houses</a>
       <a href="{b}index.html#magazine">Magazine</a>
+      <button class="themebtn" data-theme-toggle type="button" aria-label="Switch to light theme">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2 12h2M20 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 14.5A8.2 8.2 0 0 1 9.5 4a8.3 8.3 0 1 0 10.5 10.5Z"/></svg>
+      </button>
     </nav>
     <p class="masthead__note">Cross-border auction advice</p>
   </div>
@@ -55,6 +60,11 @@ SHELL = '''<!doctype html>
 </main>
 
 <footer class="wrap">
+    <a class="parent" href="https://tnamag.xyz" rel="noopener">
+      <img class="on-dark" src="{b}assets/img/tnamag-wordmark-white.png" alt="The Neo Art Magazine" width="520" height="121" loading="lazy" decoding="async">
+      <img class="on-light" src="{b}assets/img/tnamag-wordmark-black.png" alt="" width="520" height="121" loading="lazy" decoding="async">
+      <span>A product of The Neo Art Magazine</span>
+    </a>
   <div class="foot">
     <div class="foot__id">
       {footmark}
@@ -346,7 +356,7 @@ page('commission.html',
      '''
 <section class="wrap">
   <h1 style="font-size:clamp(1.9rem,5vw,3rem);max-width:18ch">We haven't published <span data-corridor-name>this corridor</span> yet</h1>
-  <p class="lede" style="margin:1rem 0 0">Three corridors are live so far. This one isn't among them, and we would rather say so than give you a generic answer about a route we have not researched.</p>
+  <p class="lede" style="margin:1rem 0 0">We publish corridors as we research them, and we have not reached this one. We would rather say so than give you a generic answer about a route we have not checked.</p>
 </section>
 
 <section class="wrap rule-top" style="padding-top:2.5rem">
@@ -459,7 +469,7 @@ page('briefs/index.html',
 
 <section class="wrap rule-top">
   <h2>Not your corridor?</h2>
-  <p class="measure dim" style="margin-top:1rem">Three routes are researched so far, and the list grows as briefs are published. If you are bidding on a route we have not covered, we will research your specific pair of countries and write it up.</p>
+  <p class="measure dim" style="margin-top:1rem">We cover any pair of countries. Published corridors are free to read; the rest we research on commission, and publish afterwards.</p>
   <p style="margin-top:1.5rem"><a class="btn" href="../commission.html">See what a commissioned brief involves</a></p>
 </section>
 ''', depth=1, current='advisory')
