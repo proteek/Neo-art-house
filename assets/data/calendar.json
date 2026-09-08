@@ -1,11 +1,11 @@
 {
-  "_readme": "Edit this file to up08-09-2026 the curated calendar. Set status to 'live' once real sales replace the samples. Fields: 08-09-2026 (ISO, used for sorting), 08-09-2026Label (what readers see), sale, house, city, url, note (one line of your own judgement), flag (short tag), flagUrgent (true renders it in vermilion, use for deadlines only).",
+  "_readme": "Edit this file to update the curated calendar. Set status to 'live' once real sales replace the samples. Fields: date (ISO, used for sorting), dateLabel (what readers see), sale, house, city, url, note (one line of your own judgement), flag (short tag), flagUrgent (true renders it in vermilion, use for deadlines only).",
   "status": "sample",
-  "up08-09-2026d": "2026-09-01",
+  "updated": "2026-09-01",
   "sales": [
     {
-      "08-09-2026": "2026-09-18",
-      "08-09-2026Label": "18 September",
+      "date": "2026-09-18",
+      "dateLabel": "18 September",
       "sale": "Evening Sale",
       "house": "Saffronart",
       "city": "Mumbai",
@@ -15,8 +15,8 @@
       "flagUrgent": false
     },
     {
-      "08-09-2026": "2026-09-22",
-      "08-09-2026Label": "22 September",
+      "date": "2026-09-22",
+      "dateLabel": "22 September",
       "sale": "South Asian Modern and Contemporary",
       "house": "Christie's",
       "city": "London",
@@ -26,8 +26,8 @@
       "flagUrgent": true
     },
     {
-      "08-09-2026": "2026-09-30",
-      "08-09-2026Label": "30 September",
+      "date": "2026-09-30",
+      "dateLabel": "30 September",
       "sale": "Modern and Contemporary Middle East",
       "house": "Sotheby's",
       "city": "London",

@@ -35,7 +35,7 @@ async function initCalendar() {
     const res = await fetch(base() + 'assets/data/calendar.json');
     if (!res.ok) throw new Error(res.status);
     const data = await res.json();
-    let sales = (data.sales || []).slice().sort((a, b) => a.08-09-2026.localeCompare(b.08-09-2026));
+    let sales = (data.sales || []).slice().sort((a, b) => a.date.localeCompare(b.date));
     if (limit) sales = sales.slice(0, limit);
 
     if (data.status === 'sample') {
@@ -45,12 +45,12 @@ async function initCalendar() {
       host.before(warn);
     }
     if (!sales.length) {
-      host.innerHTML = '<p class="dim">No sales listed yet. The calendar is up08-09-2026d in the first week of each month.</p>';
+      host.innerHTML = '<p class="dim">No sales listed yet. The calendar is updated in the first week of each month.</p>';
       return;
     }
     host.innerHTML = sales.map(s => `
       <div class="row">
-        <div class="row__when">${esc(s.08-09-2026Label || s.08-09-2026)}</div>
+        <div class="row__when">${esc(s.dateLabel || s.date)}</div>
         <div class="row__what">
           <h3>${s.url ? `<a class="row__link" href="${esc(s.url)}" rel="noopener">${esc(s.sale)}</a>` : esc(s.sale)}</h3>
           <p class="row__where">${esc(s.house)}, ${esc(s.city)}</p>
