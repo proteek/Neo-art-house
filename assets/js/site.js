@@ -59,7 +59,13 @@ async function initCalendar() {
           ${esc(s.note || '')}
           ${s.flag ? `<span class="flag ${s.flagUrgent ? 'flag--urgent' : 'flag--calm'}">${esc(s.flag)}</span>` : ''}
         </div>
-      </div>`).join('');
+      </div>
+      ${(s.lots && s.lots.length) ? `<div class="lots">${s.lots.map(l => `
+        <div class="lot">
+          <div class="lot__work">${l.url ? `<a href="${esc(l.url)}" rel="noopener nofollow">${esc(l.artist)}, ${esc(l.title)}</a>` : `${esc(l.artist)}, ${esc(l.title)}`}${l.year ? `, ${esc(l.year)}` : ''}</div>
+          <div class="lot__est">${esc(l.estimate || '')}</div>
+          <div class="lot__note">${esc(l.note || '')}</div>
+        </div>`).join('')}</div>` : ''}`).join('');
   } catch (err) {
     host.innerHTML = '<p class="dim">The calendar could not be loaded. Try again shortly.</p>';
   }
@@ -107,6 +113,28 @@ async function initDirectory() {
   }
 }
 
+/* ---------- magazine covers ---------- */
+async function initCovers() {
+  const host = document.querySelector('[data-covers]');
+  if (!host) return;
+  const limit = parseInt(host.dataset.covers, 10) || 0;
+  try {
+    const res = await fetch(base() + 'assets/data/covers.json');
+    const data = await res.json();
+    let issues = data.issues || [];
+    if (limit) issues = issues.slice(0, limit);
+    host.innerHTML = issues.map((c, i) => `
+      <a class="cover" href="${esc(data.magzter || '#')}" rel="noopener">
+        <img src="${base()}assets/img/covers/${esc(c.file)}" alt="The Neo Art Magazine, issue ${esc(c.issue)}"
+             loading="${i === 0 ? 'eager' : 'lazy'}" decoding="async">
+      </a>`).join('');
+    document.querySelectorAll('[data-magzter]').forEach(a => { if (data.magzter) a.href = data.magzter; });
+    document.querySelectorAll('[data-pressreader]').forEach(a => { if (data.pressreader) a.href = data.pressreader; });
+  } catch (err) {
+    host.innerHTML = '<p class="dim small">Covers are being added.</p>';
+  }
+}
+
 /* ---------- commission page: reflect the chosen corridor ---------- */
 function initCommission() {
   const slot = document.querySelector('[data-corridor-name]');
@@ -121,3 +149,4 @@ initPicker();
 initCalendar();
 initDirectory();
 initCommission();
+initCovers();

@@ -231,3 +231,19 @@ p{margin:0 0 1rem}
 .service h3 a{text-decoration:none;color:inherit}
 .service h3 a:hover{color:var(--vermilion-text)}
 .service:hover{border-top-color:var(--vermilion)}
+
+/* watched lots nested under a sale */
+.lots{padding:0 0 1.1rem;display:flex;flex-direction:column;gap:.6rem}
+@media(min-width:44rem){.lots{padding-left:9.5rem}}
+.lot{display:grid;gap:.15rem 1.5rem;padding-left:.9rem;border-left:2px solid var(--vermilion)}
+@media(min-width:44rem){.lot{grid-template-columns:1fr 10rem;align-items:baseline}}
+.lot__work{font-size:var(--t-sm);font-weight:500}
+.lot__work a{color:var(--bone);text-underline-offset:3px;text-decoration-color:var(--line-strong)}
+.lot__work a:hover{text-decoration-color:var(--vermilion)}
+.lot__est{font-size:var(--t-sm);color:var(--stone)}
+.lot__note{font-size:var(--t-sm);color:var(--bone-dim);grid-column:1/-1}
+
+/* covers become real images once files are added */
+.cover{padding:0;border:1px solid var(--line);overflow:hidden;display:block}
+.cover img{width:100%;height:100%;object-fit:cover;display:block}
+.cover:hover{border-color:var(--vermilion)}

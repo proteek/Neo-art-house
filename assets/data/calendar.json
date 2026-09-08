@@ -1,5 +1,5 @@
 {
-  "_readme": "Edit this file to update the curated calendar. Set status to 'live' once real sales replace the samples. Fields: date (ISO, used for sorting), dateLabel (what readers see), sale, house, city, url, note (one line of your own judgement), flag (short tag), flagUrgent (true renders it in vermilion, use for deadlines only).",
+  "_readme": "Edit this file to update the curated calendar. Set status to 'live' once real sales replace the samples. Sale fields: date (ISO, sorts the list), dateLabel (what readers see), sale, house, city, url, note, flag, flagUrgent. Optional 'lots' array per sale, for individual works worth watching. Lot fields: artist, title, year, estimate, url, note. NEVER copy catalogue images or catalogue text — name the lot, write your own line, and link out.",
   "status": "sample",
   "updated": "2026-09-01",
   "sales": [
@@ -23,7 +23,17 @@
       "url": "https://www.christies.com",
       "note": "Check export status on any Navratna lot before you register.",
       "flag": "Register early",
-      "flagUrgent": true
+      "flagUrgent": true,
+      "lots": [
+        {
+          "artist": "Example artist",
+          "title": "Title of the work",
+          "year": "1962",
+          "estimate": "£40,000 to £60,000",
+          "url": "https://www.christies.com",
+          "note": "Your own one-line reason for watching it. Never the catalogue description."
+        }
+      ]
     },
     {
       "date": "2026-09-30",

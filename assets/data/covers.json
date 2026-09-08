@@ -1,0 +1,13 @@
+{
+  "_readme": "One entry per issue. Put the cover file in assets/img/covers/ and name it here. Newest first. The homepage shows the first six; the magazine page shows all.",
+  "magzter": "https://www.magzter.com/REPLACE-WITH-YOUR-STOREFRONT",
+  "pressreader": "https://www.pressreader.com/REPLACE-WITH-YOUR-STOREFRONT",
+  "issues": [
+    { "issue": 18, "title": "", "date": "2026-07", "file": "issue-18.jpg" },
+    { "issue": 17, "title": "", "date": "2026-05", "file": "issue-17.jpg" },
+    { "issue": 16, "title": "", "date": "2026-03", "file": "issue-16.jpg" },
+    { "issue": 15, "title": "", "date": "2026-01", "file": "issue-15.jpg" },
+    { "issue": 14, "title": "", "date": "2025-11", "file": "issue-14.jpg" },
+    { "issue": 13, "title": "", "date": "2025-09", "file": "issue-13.jpg" }
+  ]
+}
