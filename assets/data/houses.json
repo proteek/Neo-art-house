@@ -1,0 +1,331 @@
+[
+ {
+  "name": "Sotheby's Australia",
+  "city": "East Melbourne",
+  "country": "Australia",
+  "website": "https://www.sothebysaustralia.com.au",
+  "email": "enquiries@sothebysaustralia.com.au"
+ },
+ {
+  "name": "Sotheby's Australia",
+  "city": "Sydney",
+  "country": "Australia",
+  "website": "https://www.sothebysaustralia.com.au",
+  "email": "enquiries@sothebysaustralia.com.au"
+ },
+ {
+  "name": "Bonhams Hong Kong",
+  "city": "Hong Kong",
+  "country": "China",
+  "website": "https://www.bonhams.com/locations/HK/",
+  "email": "hongkong@bonhams.com"
+ },
+ {
+  "name": "Christie's Hong Kong",
+  "city": "Hong Kong",
+  "country": "China",
+  "website": "https://www.christies.com",
+  "email": ""
+ },
+ {
+  "name": "Phillips Hong Kong",
+  "city": "Hong Kong",
+  "country": "China",
+  "website": "",
+  "email": "bidshongkong@phillips.com"
+ },
+ {
+  "name": "Sotheby's Hong Kong",
+  "city": "Hong Kong",
+  "country": "China",
+  "website": "https://www.sothebys.com",
+  "email": "Nanxi.Fan@sothebys.com"
+ },
+ {
+  "name": "Christie's Auction (Shanghai) Co., Ltd",
+  "city": "Shanghai",
+  "country": "China",
+  "website": "https://www.christies.com/shanghai",
+  "email": "enquirysh@christies.com"
+ },
+ {
+  "name": "Christie's Paris",
+  "city": "Paris",
+  "country": "France",
+  "website": "https://www.christies.com",
+  "email": "info@christies.com"
+ },
+ {
+  "name": "Sotheby's Paris",
+  "city": "Paris",
+  "country": "France",
+  "website": "https://www.sothebys.com",
+  "email": "Nanxi.Fan@sothebys.com"
+ },
+ {
+  "name": "Sotheby's Cologne",
+  "city": "Cologne",
+  "country": "Germany",
+  "website": "https://www.sothebys.com",
+  "email": "Nanxi.Fan@sothebys.com"
+ },
+ {
+  "name": "Artwide",
+  "city": "Central",
+  "country": "Hong Kong",
+  "website": "https://artwide.com",
+  "email": "km@artwide.com"
+ },
+ {
+  "name": "Ravenel",
+  "city": "Central",
+  "country": "Hong Kong",
+  "website": "",
+  "email": ""
+ },
+ {
+  "name": "AstaGuru",
+  "city": "Mumbai",
+  "country": "India",
+  "website": "https://www.astaguru.com/",
+  "email": "anubhav@astaguru.com"
+ },
+ {
+  "name": "Prinseps",
+  "city": "Mumbai",
+  "country": "India",
+  "website": "https://prinseps.com/auctions/",
+  "email": "indraijit@prinseps.com"
+ },
+ {
+  "name": "Pundole's",
+  "city": "Mumbai",
+  "country": "India",
+  "website": "https://www.pundoles.com",
+  "email": "mallika@pundoles.com"
+ },
+ {
+  "name": "Saffronart (Mumbai)",
+  "city": "Mumbai",
+  "country": "India",
+  "website": "https://www.saffronart.com",
+  "email": ""
+ },
+ {
+  "name": "Alturaash",
+  "city": "New Delhi",
+  "country": "India",
+  "website": "",
+  "email": "auction@alturaashart.com"
+ },
+ {
+  "name": "DAG",
+  "city": "New Delhi",
+  "country": "India",
+  "website": "https://www.dagworld.com",
+  "email": ""
+ },
+ {
+  "name": "Masterpiece Art Exports",
+  "city": "Prayagraj",
+  "country": "India",
+  "website": "https://mpartauctions.com/",
+  "email": "enqmessage@gmail.com"
+ },
+ {
+  "name": "Sotheby's Milan",
+  "city": "Milan",
+  "country": "Italy",
+  "website": "https://www.sothebys.com",
+  "email": "milan.office@sothebys.com"
+ },
+ {
+  "name": "AlBahie",
+  "city": "Doha",
+  "country": "Qatar",
+  "website": "http://www.albahie.com/",
+  "email": "info@AlBahie.com"
+ },
+ {
+  "name": "Sotheby's Riyadh",
+  "city": "Riyadh",
+  "country": "Saudi Arabia",
+  "website": "https://www.sothebys.com",
+  "email": "Nanxi.Fan@sothebys.com"
+ },
+ {
+  "name": "33 Auction",
+  "city": "Singapore",
+  "country": "Singapore",
+  "website": "https://www.33auction.com",
+  "email": "Info@33auction.com"
+ },
+ {
+  "name": "Borobudur Fine Art Auction Pte. Ltd.",
+  "city": "Singapore",
+  "country": "Singapore",
+  "website": "https://www.borobudurauction.com",
+  "email": "borobudur@singnet.com.sg"
+ },
+ {
+  "name": "Global Auction",
+  "city": "Singapore",
+  "country": "Singapore",
+  "website": "https://global.auction/",
+  "email": "info@global.auction"
+ },
+ {
+  "name": "Larasati Auctioneers",
+  "city": "Singapore",
+  "country": "Singapore",
+  "website": "https://www.larasati.com",
+  "email": "larasati@singnet.com.sg"
+ },
+ {
+  "name": "Sotheby's Singapore",
+  "city": "Singapore",
+  "country": "Singapore",
+  "website": "https://www.sothebys.com",
+  "email": "esther.seet@sothebys.com"
+ },
+ {
+  "name": "Christie's Geneva",
+  "city": "Geneva",
+  "country": "Switzerland",
+  "website": "",
+  "email": ""
+ },
+ {
+  "name": "Sotheby's Geneva",
+  "city": "Geneva",
+  "country": "Switzerland",
+  "website": "https://www.sothebys.com/",
+  "email": "Nanxi.Fan@sothebys.com"
+ },
+ {
+  "name": "Sotheby's Zürich",
+  "city": "Zurich",
+  "country": "Switzerland",
+  "website": "https://www.sothebys.com",
+  "email": "zurich@sothebys.com"
+ },
+ {
+  "name": "Bonhams New York",
+  "city": "New York",
+  "country": "USA",
+  "website": "https://www.bonhams.com/locations/NYS/",
+  "email": "info.us@bonhams.com"
+ },
+ {
+  "name": "Christie's 3.0",
+  "city": "New York",
+  "country": "USA",
+  "website": "https://nft.christies.com/auctions",
+  "email": ""
+ },
+ {
+  "name": "Christie's New York",
+  "city": "New York",
+  "country": "USA",
+  "website": "https://www.christies.com",
+  "email": "info@christies.com"
+ },
+ {
+  "name": "Christie's Online",
+  "city": "New York",
+  "country": "USA",
+  "website": "http://www.christies.com/onlineonly",
+  "email": ""
+ },
+ {
+  "name": "Phillips New York",
+  "city": "New York",
+  "country": "USA",
+  "website": "https://www.phillips.com",
+  "email": "bidsnewyork@phillips.com"
+ },
+ {
+  "name": "Saffronart",
+  "city": "New York",
+  "country": "USA",
+  "website": "https://www.saffronart.com",
+  "email": "newyork@saffronart.com"
+ },
+ {
+  "name": "Sotheby's New York",
+  "city": "New York",
+  "country": "USA",
+  "website": "https://www.sothebys.com",
+  "email": "Nanxi.Fan@sothebys.com"
+ },
+ {
+  "name": "Sotheby's Online",
+  "city": "New York",
+  "country": "USA",
+  "website": "https://www.sothebys.com/",
+  "email": "enquiries@sothebys.com"
+ },
+ {
+  "name": "ARTIANA",
+  "city": "Dubai",
+  "country": "United Arab Emirates",
+  "website": "http://www.artiana.com/",
+  "email": "admin@artiana.com"
+ },
+ {
+  "name": "Alturaash",
+  "city": "Dubai",
+  "country": "United Arab Emirates",
+  "website": "",
+  "email": "auction@alturaashart.com"
+ },
+ {
+  "name": "The Young Collectors Auction",
+  "city": "Dubai",
+  "country": "United Arab Emirates",
+  "website": "https://www.ayyamgallery.com",
+  "email": "dubai@ayyamgallery.com"
+ },
+ {
+  "name": "Bonhams London",
+  "city": "London",
+  "country": "United Kingdom",
+  "website": "https://www.bonhams.com",
+  "email": "artnetqa@gmail.com"
+ },
+ {
+  "name": "Cambi Casa d'Aste in association with Phillips London",
+  "city": "London",
+  "country": "United Kingdom",
+  "website": "https://www.phillips.com",
+  "email": "bidslondon@phillips.com"
+ },
+ {
+  "name": "Christie's London",
+  "city": "London",
+  "country": "United Kingdom",
+  "website": "https://www.christies.com",
+  "email": "info@christies.com"
+ },
+ {
+  "name": "Phillips London",
+  "city": "London",
+  "country": "United Kingdom",
+  "website": "https://www.phillips.com",
+  "email": "bidslondon@phillips.com"
+ },
+ {
+  "name": "Phillips London in Association with Maak",
+  "city": "London",
+  "country": "United Kingdom",
+  "website": "",
+  "email": "bidslondon@phillips.com"
+ },
+ {
+  "name": "Sotheby's London",
+  "city": "London",
+  "country": "United Kingdom",
+  "website": "https://www.sothebys.com",
+  "email": "Nanxi.Fan@sothebys.com"
+ }
+]
