@@ -46,6 +46,7 @@ SHELL = '''<!doctype html>
       <a href="{b}calendar.html"{c_cal}>Calendar</a>
       <a href="{b}houses.html"{c_hou}>Houses</a>
       <a href="{b}index.html#magazine">Magazine</a>
+      <a href="{b}about.html"{c_abt}>About</a>
       <button class="themebtn" data-theme-toggle type="button" aria-label="Switch to light theme">
         <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2 12h2M20 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>
         <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 14.5A8.2 8.2 0 0 1 9.5 4a8.3 8.3 0 1 0 10.5 10.5Z"/></svg>
@@ -73,7 +74,7 @@ SHELL = '''<!doctype html>
     <nav aria-label="Footer">
       <a href="{b}independence.html">Independence policy</a>
       <a href="{b}houses.html">Houses</a>
-      <a href="mailto:hello@example.com">Contact</a>
+      <a href="{b}about.html">About and contact</a>
     </nav>
   </div>
   <p class="legal">The Neo Art House publishes research and guidance. We are not a valuation, authentication, customs, tax or legal service. Rules and rates change. Confirm anything material with a qualified professional in the relevant jurisdiction before you bid or pay.</p>
@@ -91,7 +92,8 @@ def page(path, title, desc, body, depth=0, current=None):
         title=title, desc=desc, body=body, b=b, logo=LOGO, footmark=FOOT_MARK,
         c_adv=' aria-current="page"' if current == 'advisory' else '',
         c_cal=' aria-current="page"' if current == 'calendar' else '',
-        c_hou=' aria-current="page"' if current == 'houses' else '')
+        c_hou=' aria-current="page"' if current == 'houses' else '',
+        c_abt=' aria-current="page"' if current == 'about' else '')
     p = ROOT / path
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(out, encoding='utf-8')
@@ -380,7 +382,7 @@ page('commission.html',
 <section class="wrap rule-top" style="padding-top:2.5rem">
   <h2>We'll research this corridor for you</h2>
   <p class="measure dim" style="margin-top:1rem">A written brief on your route specifically: how money leaves your country, export licensing where the sale is, duty and tax on arrival, and the deadlines that apply to your sale. Ten working days, or five if you are bidding sooner.</p>
-  <p style="margin-top:1.5rem"><a class="btn" href="mailto:hello@example.com?subject=Corridor%20research">Commission a corridor brief, from $450</a></p>
+  <p style="margin-top:1.5rem"><a class="btn" href="mailto:connect@theneoarthouse.com?subject=Corridor%20research">Commission a corridor brief, from $450</a></p>
   <p class="small dim" style="margin-top:1rem">Prefer to wait? Tell us the corridor and we will let you know when it is published.</p>
 </section>
 ''', depth=0, current='advisory')
@@ -473,5 +475,51 @@ page('briefs/index.html',
   <p style="margin-top:1.5rem"><a class="btn" href="../commission.html">See what a commissioned brief involves</a></p>
 </section>
 ''', depth=1, current='advisory')
+
+# ----------------------------------------------------------------- about
+page('about.html',
+     'About and contact — The Neo Art House',
+     'Who we are, what the three parts of The Neo Art House do, and how to reach us.',
+     '''
+<section class="wrap">
+  <div class="article">
+    <h1 style="font-size:clamp(1.9rem,5vw,3rem)">About</h1>
+    <p class="lede" style="margin:1rem 0 1.5rem">Three years of publishing on the art of South Asia and the Gulf, and an advisory built on what we learned doing it.</p>
+
+    <p>The Neo Art House began as a magazine. It still is one. Everything else grew out of the same work: reading catalogues, talking to galleries, and watching people make expensive mistakes for want of information nobody had bothered to write down.</p>
+
+    <h2>Three things, one house</h2>
+
+    <h3>The Neo Art Magazine</h3>
+    <p>Published bi-monthly since 2023, now eleven issues. It covers the primary market: artists, galleries, exhibitions and the ideas moving through them. Distributed on Magzter and PressReader. This is where the House started and where its editorial judgement is on public record.</p>
+
+    <h3>The Proscenium</h3>
+    <p>A free directory of galleries, museums, foundations and artists across South Asia and the Gulf, at <a href="https://theproscenium.art" rel="noopener">theproscenium.art</a>. Every listing is free and always will be. Nobody pays to appear, which is the whole point.</p>
+
+    <h3>The advisory</h3>
+    <p>Cross-border auction research. What it costs to move money and art between two countries, what could stop it, and whether a specific lot is worth what you were about to bid. Corridor briefs are free. Lot reviews and commissioned research are paid.</p>
+
+    <h2>What we sell, and what we refuse</h2>
+    <p>We sell written documents at fixed fees. We do not bid for clients, hold client funds, or take any commission. We accept no money from galleries, dealers or auction houses in any part of the group, and the magazine declines advertising from anyone who could appear on the sell side of a purchase we might be advising on.</p>
+    <p>That is set out in full, with the excluded categories named, in our <a href="independence.html">independence policy</a>.</p>
+
+    <h2>Why cross-border</h2>
+    <p>Buying at auction in another country is harder than buying at home, everywhere. Remittance limits, export licensing, import duty and registration deadlines decide whether a purchase is possible at all, and none of it appears in a price database or a catalogue.</p>
+    <p>We started with India and the Gulf because that is where our knowledge is deepest. We research any corridor on request, and publish it afterwards.</p>
+
+    <h2>Contact</h2>
+    <p>Write to <a href="mailto:connect@theneoarthouse.com">connect@theneoarthouse.com</a>. One person reads that inbox and replies, usually within two working days.</p>
+
+    <div class="callout">
+      <p><strong>Asking about a specific lot?</strong> Include the auction house, the sale date, the lot number and a link. Tell us where you are tax resident. That is enough for us to say whether a review would be useful before either of us spends money.</p>
+      <p style="margin-bottom:0"><strong>Asking about a corridor we have not published?</strong> Name both countries and roughly when you are bidding.</p>
+    </div>
+
+    <p>For corrections, for anything you think we have got wrong, or if you believe we have breached the independence policy, use the same address. We respond within five working days and correct publicly where we were wrong.</p>
+
+    <p style="margin-top:2.5rem"><a class="btn" href="mailto:connect@theneoarthouse.com">Write to us</a></p>
+  </div>
+</section>
+''', depth=0, current='about')
 
 print('done')
