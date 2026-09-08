@@ -226,3 +226,8 @@ p{margin:0 0 1rem}
 .credit cite{font-style:normal}
 .credit a{color:var(--bone-dim);text-underline-offset:3px}
 .credit a:hover{color:var(--vermilion-text)}
+
+/* service cards are links */
+.service h3 a{text-decoration:none;color:inherit}
+.service h3 a:hover{color:var(--vermilion-text)}
+.service:hover{border-top-color:var(--vermilion)}

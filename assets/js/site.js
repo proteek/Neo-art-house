@@ -41,7 +41,7 @@ async function initCalendar() {
     if (data.status === 'sample') {
       const warn = document.createElement('p');
       warn.className = 'small dim';
-      warn.textContent = 'Sample entries. Replace assets/data/calendar.json before publishing.';
+      warn.textContent = 'These are placeholder entries, not real sales. Replace them before sharing the site.';
       host.before(warn);
     }
     if (!sales.length) {

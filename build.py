@@ -41,7 +41,7 @@ SHELL = '''<!doctype html>
   <a class="mark" href="{b}index.html" aria-label="The Neo Art House, home">{logo}</a>
   <div class="masthead__bar">
     <nav class="nav" aria-label="Main">
-      <a href="{b}index.html"{c_adv}>Advisory</a>
+      <a href="{b}briefs/index.html"{c_adv}>Briefs</a>
       <a href="{b}calendar.html"{c_cal}>Calendar</a>
       <a href="{b}houses.html"{c_hou}>Houses</a>
       <a href="{b}index.html#magazine">Magazine</a>
@@ -63,7 +63,7 @@ SHELL = '''<!doctype html>
     <nav aria-label="Footer">
       <a href="{b}independence.html">Independence policy</a>
       <a href="{b}houses.html">Houses</a>
-      <a href="mailto:connect@theneoarthouse.com">Contact</a>
+      <a href="mailto:hello@example.com">Contact</a>
     </nav>
   </div>
   <p class="legal">The Neo Art House publishes research and guidance. We are not a valuation, authentication, customs, tax or legal service. Rules and rates change. Confirm anything material with a qualified professional in the relevant jurisdiction before you bid or pay.</p>
@@ -310,7 +310,7 @@ page('calendar.html',
 
 <section class="wrap rule-top" style="padding-top:2rem">
   <div class="rows" data-calendar="0"></div>
-  <p class="small dim" style="margin-top:1.5rem">Up08-09-2026d in the first week of each month. Registration deadlines are the field to watch: most first-time cross-border bids fail here rather than on price.</p>
+  <p class="small dim" style="margin-top:1.5rem">Updated in the first week of each month. Registration deadlines are the field to watch: most first-time cross-border bids fail here rather than on price.</p>
 </section>
 ''', depth=0, current='calendar')
 
@@ -370,7 +370,7 @@ page('commission.html',
 <section class="wrap rule-top" style="padding-top:2.5rem">
   <h2>We'll research this corridor for you</h2>
   <p class="measure dim" style="margin-top:1rem">A written brief on your route specifically: how money leaves your country, export licensing where the sale is, duty and tax on arrival, and the deadlines that apply to your sale. Ten working days, or five if you are bidding sooner.</p>
-  <p style="margin-top:1.5rem"><a class="btn" href="mailto:connect@theneoarthouse.com?subject=Corridor%20research">Commission a corridor brief, from $450</a></p>
+  <p style="margin-top:1.5rem"><a class="btn" href="mailto:hello@example.com?subject=Corridor%20research">Commission a corridor brief, from $450</a></p>
   <p class="small dim" style="margin-top:1rem">Prefer to wait? Tell us the corridor and we will let you know when it is published.</p>
 </section>
 ''', depth=0, current='advisory')
@@ -383,7 +383,7 @@ page('independence.html',
 <section class="wrap">
   <div class="article">
     <h1 style="font-size:clamp(1.9rem,5vw,3rem)">How we're paid, and what we won't take</h1>
-    <p class="stamp">In effect from [08-09-2026]. Adopted before we had any advertisers or sponsors.</p>
+    <p class="stamp">In effect from [DATE]. Adopted before we had any advertisers or sponsors.</p>
     <p>Most people in the art world are paid by someone other than the person they are advising. You should be able to see exactly where our money comes from, so this page sets it out. It is deliberately specific, because the phrase "independent advisory" on its own means nothing.</p>
 
     <h2>What we sell</h2>
@@ -413,9 +413,55 @@ page('independence.html',
     <p>If you think we have breached this policy, write to us. Tell us what you saw. We will respond within five working days and, where we got it wrong, say so publicly.</p>
 
     <h2>Changes</h2>
-    <p>If we change this policy we will 08-09-2026 the change and keep the previous version accessible on this page. We will not quietly edit it.</p>
+    <p>If we change this policy we will date the change and keep the previous version accessible on this page. We will not quietly edit it.</p>
   </div>
 </section>
 ''', depth=0, current=None)
+
+# ----------------------------------------------------------------- briefs index
+page('briefs/index.html',
+     'Corridor briefs — The Neo Art House',
+     'Free research on what it costs to move money and art between two countries, and what could stop it.',
+     '''
+<section class="wrap">
+  <h1 style="font-size:clamp(1.9rem,5vw,3rem);max-width:16ch">Corridor briefs</h1>
+  <p class="lede" style="margin:1rem 0 0">What it costs to move the money, what it takes to move the work, and what could stop it. Free to read, and free to stay free.</p>
+</section>
+
+<section class="wrap rule-top" style="padding-top:2rem">
+  <div class="rows">
+    <div class="row">
+      <div class="row__when">Published</div>
+      <div class="row__what">
+        <h3><a class="row__link" href="uae-to-india.html">United Arab Emirates to India</a></h3>
+        <p class="row__where">You can win the lot and still not be allowed to take it home.</p>
+      </div>
+      <div class="row__note">Export restrictions, the nine Navratna artists, custody if you buy one anyway.</div>
+    </div>
+    <div class="row">
+      <div class="row__when">Published</div>
+      <div class="row__what">
+        <h3><a class="row__link" href="india-domestic.html">Buying inside India</a></h3>
+        <p class="row__where">The route with no corridor cost at all.</p>
+      </div>
+      <div class="row__note">No remittance, no customs, no export licence. What you actually pay instead.</div>
+    </div>
+    <div class="row">
+      <div class="row__when">Published</div>
+      <div class="row__what">
+        <h3><a class="row__link" href="cites.html">Materials that cannot cross any border</a></h3>
+        <p class="row__where">The works that get seized at customs are rarely the expensive ones.</p>
+      </div>
+      <div class="row__note">Ivory, tortoiseshell and rosewood. Applies in every corridor, both directions.</div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap rule-top">
+  <h2>Not your corridor?</h2>
+  <p class="measure dim" style="margin-top:1rem">Three routes are researched so far, and the list grows as briefs are published. If you are bidding on a route we have not covered, we will research your specific pair of countries and write it up.</p>
+  <p style="margin-top:1.5rem"><a class="btn" href="../commission.html">See what a commissioned brief involves</a></p>
+</section>
+''', depth=1, current='advisory')
 
 print('done')
