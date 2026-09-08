@@ -48,10 +48,12 @@ function initPicker() {
     e.preventDefault();
     const from = form.elements.from.value;
     const to = form.elements.to.value;
+    const fromName = form.elements.from.selectedOptions[0].textContent;
+    const toName = form.elements.to.selectedOptions[0].textContent;
     const hit = PUBLISHED[`${from}>${to}`];
     location.href = hit
       ? base() + hit
-      : `${base()}commission.html?from=${encodeURIComponent(from)}&to=${encodeURIComponent(to)}`;
+      : `${base()}commission.html?from=${encodeURIComponent(fromName)}&to=${encodeURIComponent(toName)}`;
   });
 }
 
@@ -169,8 +171,7 @@ function initCommission() {
   const slot = document.querySelector('[data-corridor-name]');
   if (!slot) return;
   const p = new URLSearchParams(location.search);
-  const names = { IN: 'India', AE: 'United Arab Emirates', GB: 'United Kingdom', US: 'United States', SG: 'Singapore', HK: 'Hong Kong', FR: 'France', QA: 'Qatar', SA: 'Saudi Arabia' };
-  const from = names[p.get('from')], to = names[p.get('to')];
+  const from = p.get('from'), to = p.get('to');
   if (from && to) slot.textContent = `${from} to ${to}`;
 }
 
