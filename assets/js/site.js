@@ -11,6 +11,35 @@ const esc = s => String(s ?? '').replace(/[&<>"']/g, c =>
 
 const base = () => (document.body.dataset.base || '');
 
+
+/* ---------- generated house emblems ----------
+   Derived from the house name. Pure vector, no trademarks, no image files.
+   Same principle as the emblems on The Proscenium.                        */
+function emblem(name, size) {
+  let h = 0;
+  for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) >>> 0;
+  const layout = h % 6;
+  const rot = ((h >> 5) % 4) * 90;
+  const pairs = [
+    ['#E8481F', '#D2D0C8'], ['#D2D0C8', '#E8481F'],
+    ['#E8481F', '#8A8378'], ['#8A8378', '#E8481F'],
+    ['#D2D0C8', '#8A8378'], ['#B8391A', '#D2D0C8']
+  ];
+  const [a, b] = pairs[(h >> 3) % 6];
+  const shapes = [
+    `<rect x="0" y="0" width="20" height="40" fill="${a}"/><circle cx="30" cy="20" r="9" fill="${b}"/>`,
+    `<path d="M0 40 L20 6 L40 40 Z" fill="${a}"/><rect x="0" y="32" width="40" height="8" fill="${b}"/>`,
+    `<path d="M0 0 L40 0 L0 40 Z" fill="${a}"/><circle cx="28" cy="28" r="8" fill="${b}"/>`,
+    `<rect x="4" y="6" width="12" height="28" fill="${a}"/><rect x="22" y="14" width="14" height="20" fill="${b}"/>`,
+    `<circle cx="20" cy="20" r="15" fill="${a}"/><rect x="20" y="5" width="15" height="15" fill="${b}"/>`,
+    `<path d="M0 40 L0 14 L20 4 L40 14 L40 40 Z" fill="${a}"/><rect x="16" y="24" width="9" height="16" fill="${b}"/>`
+  ];
+  return `<svg class="emb" width="${size}" height="${size}" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+    <rect width="40" height="40" fill="#242320"/>
+    <g transform="rotate(${rot} 20 20)">${shapes[layout]}</g>
+  </svg>`;
+}
+
 /* ---------- corridor picker ---------- */
 function initPicker() {
   const form = document.querySelector('[data-picker]');
@@ -53,7 +82,7 @@ async function initCalendar() {
         <div class="row__when">${esc(s.dateLabel || s.date)}</div>
         <div class="row__what">
           <h3>${s.url ? `<a class="row__link" href="${esc(s.url)}" rel="noopener">${esc(s.sale)}</a>` : esc(s.sale)}</h3>
-          <p class="row__where">${esc(s.house)}, ${esc(s.city)}</p>
+          <p class="row__where">${emblem(s.house, 22)}<span>${esc(s.house)}, ${esc(s.city)}</span></p>
         </div>
         <div class="row__note">
           ${esc(s.note || '')}
@@ -89,7 +118,7 @@ async function initDirectory() {
     if (count) count.textContent = `${list.length} of ${houses.length} houses`;
     host.innerHTML = list.length ? list.map(h => `
       <div class="dir__row">
-        <div><strong>${esc(h.name)}</strong></div>
+        <div class="dir__name">${emblem(h.name, 30)}<strong>${esc(h.name)}</strong></div>
         <div class="dim small">${esc(h.city)}, ${esc(h.country)}</div>
         <div class="small">${h.website ? `<a href="${esc(h.website)}" rel="noopener nofollow">Visit site</a>` : '<span class="dim">No site listed</span>'}</div>
       </div>`).join('')
