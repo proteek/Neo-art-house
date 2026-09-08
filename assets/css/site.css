@@ -161,7 +161,8 @@ p{margin:0 0 1rem}
 .service b{color:var(--vermilion-text);font-size:var(--t-sm);font-weight:600}
 
 /* ---------- magazine ---------- */
-.covers{display:grid;grid-template-columns:repeat(auto-fill,minmax(6.5rem,1fr));gap:.6rem}
+.covers{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}
+@media(min-width:34rem){.covers{grid-template-columns:repeat(6,1fr);gap:1rem}}
 .cover{aspect-ratio:4/5;background:var(--ink-raised);border:1px solid var(--line);
   display:flex;align-items:flex-end;padding:.5rem;font-size:var(--t-xs);color:var(--bone-dim)}
 .cover img{width:100%;height:100%;object-fit:cover}
