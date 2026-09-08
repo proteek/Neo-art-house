@@ -19,13 +19,13 @@ function emblem(name, size) {
   let h = 0;
   for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) >>> 0;
   const layout = h % 6;
-  const rot = ((h >> 5) % 4) * 90;
+  const rot = ((h >>> 5) % 4) * 90;
   const pairs = [
     ['#E8481F', '#D2D0C8'], ['#D2D0C8', '#E8481F'],
     ['#E8481F', '#8A8378'], ['#8A8378', '#E8481F'],
     ['#D2D0C8', '#8A8378'], ['#B8391A', '#D2D0C8']
   ];
-  const [a, b] = pairs[(h >> 3) % 6];
+  const [a, b] = pairs[(h >>> 3) % 6];
   const shapes = [
     `<rect x="0" y="0" width="20" height="40" fill="${a}"/><circle cx="30" cy="20" r="9" fill="${b}"/>`,
     `<path d="M0 40 L20 6 L40 40 Z" fill="${a}"/><rect x="0" y="32" width="40" height="8" fill="${b}"/>`,
