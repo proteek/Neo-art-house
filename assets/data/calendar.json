@@ -14,6 +14,390 @@
       "flag": "No corridor cost",
       "flagUrgent": false
     },
+    {
+  "auction": {
+    "title": "The Fine Art Sale (M0067)",
+    "auction_date": "2026-09-24",
+    "auction_time": "18:30 IST",
+    "total_lots": 36,
+    "source": "Pundole's"
+  },
+  "lots": [
+    {
+      "lot": 1,
+      "title": "Untitled (Ganesha)",
+      "artist": "Amarnath Sehgal",
+      "medium": "Bronze",
+      "year": 1980,
+      "dimensions": "Height 16 3/4 in. (42.7 cm.) without pedestal",
+      "estimate_inr": {
+        "low": 1200000,
+        "high": 1800000
+      }
+    },
+    {
+      "lot": 2,
+      "title": "Balkrishna",
+      "artist": "P.V. Janakiram",
+      "provenance": "Property of a Bengaluru Collector",
+      "medium": "Copper",
+      "estimate_inr": {
+        "low": 1000000,
+        "high": 1500000
+      }
+    },
+    {
+      "lot": 3,
+      "title": "Head",
+      "artist": "Piraji Sagara",
+      "provenance": "Property from the Artist's Family",
+      "medium": "Wood",
+      "estimate_inr": {
+        "low": 1000000,
+        "high": 1500000
+      }
+    },
+    {
+      "lot": 4,
+      "title": "Drummers",
+      "artist": "Maqbool Fida Husain",
+      "medium": "Painted wood",
+      "estimate_inr": {
+        "low": 500000,
+        "high": 700000
+      }
+    },
+    {
+      "lot": 5,
+      "title": "Untitled",
+      "artist": "Himmat Shah",
+      "medium": "Terracotta",
+      "dimensions": "Height 10 3/4 in. (27.3 cm.) and smaller (3)",
+      "estimate_inr": {
+        "low": 600000,
+        "high": 800000
+      }
+    },
+    {
+      "lot": 6,
+      "title": "Untitled",
+      "artist": "Himmat Shah",
+      "provenance": "Property from the Glenbarra Art Museum, Japan",
+      "medium": "Bronze",
+      "estimate_inr": {
+        "low": 1000000,
+        "high": 1500000
+      }
+    },
+    {
+      "lot": 7,
+      "title": "Water Buffalo",
+      "artist": "Somnath Hore",
+      "medium": "Bronze",
+      "estimate_inr": {
+        "low": 15000000,
+        "high": 25000000
+      }
+    },
+    {
+      "lot": 8,
+      "title": "The Indian White Owl",
+      "artist": "Jagdish Swaminathan",
+      "provenance": "Property from the Artist's Family",
+      "medium": "Marble",
+      "estimate_inr": {
+        "low": 20000000,
+        "high": 30000000
+      }
+    },
+    {
+      "lot": 9,
+      "title": "Bird, Tree and Mountain Series",
+      "artist": "Jagdish Swaminathan",
+      "medium": "Oil on canvas",
+      "estimate_inr": {
+        "low": 20000000,
+        "high": 30000000
+      }
+    },
+    {
+      "lot": 10,
+      "title": "Untitled",
+      "artist": "Jangarh Singh Shyam",
+      "medium": "Acrylic on canvas",
+      "estimate_inr": {
+        "low": 40000000,
+        "high": 60000000
+      }
+    },
+    {
+      "lot": 11,
+      "title": "Bel ke Pet me Aadmi",
+      "artist": "Jangarh Singh Shyam",
+      "medium": "Opaque pigment on paper",
+      "estimate_inr": {
+        "low": 4000000,
+        "high": 6000000
+      }
+    },
+    {
+      "lot": 12,
+      "title": "Untitled",
+      "artist": "Jangarh Singh Shyam",
+      "medium": "Acrylic on paper",
+      "estimate_inr": {
+        "low": 600000,
+        "high": 800000
+      }
+    },
+    {
+      "lot": 13,
+      "title": "Untitled",
+      "artist": "Jangarh Singh Shyam",
+      "medium": "Acrylic on paper",
+      "estimate_inr": {
+        "low": 600000,
+        "high": 800000
+      }
+    },
+    {
+      "lot": 14,
+      "title": "Untitled",
+      "artist": "Jagdish Swaminathan",
+      "medium": "Oil on canvas",
+      "estimate_inr": {
+        "low": 8000000,
+        "high": 12000000
+      }
+    },
+    {
+      "lot": 15,
+      "title": "Untitled (Mountainscape)",
+      "artist": "Gaganendranath Tagore",
+      "medium": "Watercolour and wash on paper heightened with gold",
+      "estimate_inr": {
+        "low": 600000,
+        "high": 800000
+      }
+    },
+    {
+      "lot": 16,
+      "title": "Untitled",
+      "artist": "Amrita Sher-Gil",
+      "year": 1923,
+      "medium": "Pencil and watercolour on paper",
+      "estimate_inr": {
+        "low": 2500000,
+        "high": 3500000
+      }
+    },
+    {
+      "lot": 17,
+      "title": "Kashida",
+      "artist": "N.R. Sardesai",
+      "year": 1934,
+      "medium": "Ink and watercolour on paper",
+      "estimate_inr": {
+        "low": 200000,
+        "high": 300000
+      }
+    },
+    {
+      "lot": 18,
+      "title": "View of the Golden Temple",
+      "artist": "S.G. Thakar Singh",
+      "year": 1952,
+      "medium": "Oil on canvas",
+      "estimate_inr": {
+        "low": 200000,
+        "high": 300000
+      }
+    },
+    {
+      "lot": 19,
+      "title": "Woman at her Bath",
+      "artist": "Francis Newton Souza",
+      "medium": "Ink on paper",
+      "estimate_inr": {
+        "low": 500000,
+        "high": 700000
+      }
+    },
+    {
+      "lot": 20,
+      "title": "Torso",
+      "artist": "Jogen Chowdhury",
+      "medium": "Pastel on paper laid on card",
+      "estimate_inr": {
+        "low": 2000000,
+        "high": 3000000
+      }
+    },
+    {
+      "lot": 21,
+      "title": "The Red Girl",
+      "artist": "Maqbool Fida Husain",
+      "medium": "Oil on canvas",
+      "estimate_inr": {
+        "low": 30000000,
+        "high": 50000000
+      }
+    },
+    {
+      "lot": 22,
+      "title": "Untitled",
+      "artist": "Maqbool Fida Husain",
+      "medium": "Oil on board",
+      "estimate_inr": {
+        "low": 1500000,
+        "high": 2000000
+      }
+    },
+    {
+      "lot": 23,
+      "title": "Still Life",
+      "artist": "Krishnaji Howlaji Ara",
+      "medium": "Mixed media on paper",
+      "estimate_inr": {
+        "low": 600000,
+        "high": 800000
+      }
+    },
+    {
+      "lot": 24,
+      "title": "Family",
+      "artist": "Krishnaji Howlaji Ara",
+      "medium": "Mixed media on paper laid on card",
+      "estimate_inr": {
+        "low": 400000,
+        "high": 600000
+      }
+    },
+    {
+      "lot": 25,
+      "title": "Untitled (Lady and the Lamp)",
+      "artist": "Maqbool Fida Husain",
+      "medium": "Acrylic and enamel on canvas",
+      "estimate_inr": {
+        "low": 12000000,
+        "high": 18000000
+      }
+    },
+    {
+      "lot": 26,
+      "title": "Untitled",
+      "artist": "Sayed Haider Raza",
+      "medium": "Gouache on paper",
+      "estimate_inr": {
+        "low": 10000000,
+        "high": 20000000
+      }
+    },
+    {
+      "lot": 27,
+      "title": "Bronzed Nude",
+      "artist": "Maqbool Fida Husain",
+      "medium": "Oil on canvas",
+      "estimate_inr": {
+        "low": 8000000,
+        "high": 12000000
+      }
+    },
+    {
+      "lot": 28,
+      "title": "Untitled (Still Life)",
+      "artist": "Francis Newton Souza",
+      "medium": "Oil on cloth",
+      "estimate_inr": {
+        "low": 8000000,
+        "high": 12000000
+      }
+    },
+    {
+      "lot": 29,
+      "title": "Madonna and Child",
+      "artist": "Maqbool Fida Husain",
+      "medium": "Acrylic on canvas",
+      "estimate_inr": {
+        "low": 3000000,
+        "high": 5000000
+      }
+    },
+    {
+      "lot": 30,
+      "title": "Ganesha",
+      "artist": "Maqbool Fida Husain",
+      "medium": "Oil on canvas",
+      "estimate_inr": {
+        "low": 15000000,
+        "high": 25000000
+      }
+    },
+    {
+      "lot": 31,
+      "title": "Word Flower I",
+      "artist": "Francis Newton Souza",
+      "medium": "Oil on canvas",
+      "estimate_inr": {
+        "low": 4000000,
+        "high": 6000000
+      }
+    },
+    {
+      "lot": 32,
+      "title": "Untitled",
+      "artist": "Maqbool Fida Husain",
+      "medium": "Oil on board",
+      "estimate_inr": {
+        "low": 3000000,
+        "high": 5000000
+      }
+    },
+    {
+      "lot": 33,
+      "title": "Untitled",
+      "artist": "Francis Newton Souza",
+      "medium": "Oil on board",
+      "estimate_inr": {
+        "low": 600000,
+        "high": 800000
+      }
+    },
+    {
+      "lot": 34,
+      "title": "Sankirtana",
+      "artist": "Lancelot Ribeiro",
+      "year": 1978,
+      "medium": "Oil on canvas",
+      "estimate_inr": {
+        "low": 15000000,
+        "high": 25000000
+      }
+    },
+    {
+      "lot": 35,
+      "title": "Untitled (Beej)",
+      "artist": "K.K. Hebbar",
+      "year": 1972,
+      "medium": "Oil on canvas",
+      "estimate_inr": {
+        "low": 4000000,
+        "high": 6000000
+      }
+    },
+    {
+      "lot": 36,
+      "title": "Untitled",
+      "artist": "Prabhakar Barwe",
+      "year": 1967,
+      "medium": "Ink and watercolour on paper",
+      "estimate_inr": {
+        "low": 800000,
+        "high": 1200000
+      }
+    }
+  ]
+}
         {
       "date": "2026-09-XX",
       "dateLabel": "XX September",
