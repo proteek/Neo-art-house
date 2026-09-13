@@ -172,7 +172,7 @@ page('briefs/uae-to-india.html',
       <li>Confirm your insurance attaches at the hammer.</li>
     </ul>
 
-    <p style="margin-top:2.5rem"><a class="btn" href="../commission.html">Ask about a lot review</a></p>
+    <p style="margin-top:2.5rem"><a class="btn" href="../lot-review.html">Ask about a lot review</a></p>
   </div>
 </section>
 ''', depth=1, current='advisory')
@@ -239,7 +239,7 @@ page('briefs/india-domestic.html',
       <li>Set your walk-away number before the sale opens, and hold it.</li>
     </ul>
 
-    <p style="margin-top:2.5rem"><a class="btn" href="../commission.html">Ask about a lot review</a></p>
+    <p style="margin-top:2.5rem"><a class="btn" href="../lot-review.html">Ask about a lot review</a></p>
   </div>
 </section>
 ''', depth=1, current='advisory')
@@ -305,7 +305,7 @@ page('briefs/cites.html',
       <p class="small dim" style="margin-bottom:0">Sources last checked: not yet.</p>
     </div>
 
-    <p style="margin-top:2.5rem"><a class="btn" href="../commission.html">Ask about a lot review</a></p>
+    <p style="margin-top:2.5rem"><a class="btn" href="../lot-review.html">Ask about a lot review</a></p>
   </div>
 </section>
 ''', depth=1, current='advisory')
@@ -521,5 +521,67 @@ page('about.html',
   </div>
 </section>
 ''', depth=0, current='about')
+
+# ----------------------------------------------------------------- lot review
+page('lot-review.html',
+     'Lot review — The Neo Art House',
+     'A written opinion on one work before you bid, ending in a walk-away number.',
+     '''
+<section class="wrap">
+  <div class="article">
+    <h1 style="font-size:clamp(1.9rem,5vw,3rem)">Lot review</h1>
+    <p class="lede" style="margin:1rem 0 1.5rem">One work, read properly, before you bid.</p>
+
+    <p>You have found a lot you want. The catalogue tells you what it is and what the house thinks it will fetch. It does not tell you whether you can take it home, what it will actually cost you, or what you should stop bidding at.</p>
+    <p>A lot review answers those three questions in writing, before the sale.</p>
+
+    <h2>What you get</h2>
+    <ul>
+      <li><strong>Comparables.</strong> What similar works by the artist have sold for, and how often works by that artist fail to sell at all.</li>
+      <li><strong>Condition flags.</strong> What the condition report says, and what it does not say.</li>
+      <li><strong>Provenance.</strong> Where the chain is solid and where the gaps are.</li>
+      <li><strong>Export status.</strong> Whether the work can leave the country it is in, and what documentation that needs.</li>
+      <li><strong>All-in landed cost.</strong> Hammer, premium, tax, remittance, freight, insurance and duty, in your own currency.</li>
+      <li><strong>A walk-away number.</strong> The figure above which we would stop, and why.</li>
+    </ul>
+
+    <h2>What it is not</h2>
+    <p>Not a valuation. Not an authentication. We do not bid for you, and we take no commission on what you spend, so the number we give you is the same whether you buy or walk.</p>
+
+    <h2>Price and timing</h2>
+    <p><strong>From $200.</strong> The fee depends on how much digging the lot needs. A modern painting with published provenance sits at the bottom of the range; an antiquity with an unclear chain and an export question sits at the top, around $350. We quote before starting, and the quote is fixed.</p>
+    <p>Turnaround is three working days, or 24 hours if the sale is closer than that. Tell us the sale date and we will tell you honestly whether there is time to do it properly.</p>
+
+
+    <h2>See how we work</h2>
+    <p>Below is a study of a single historic result: Van Gogh's <em>Portrait du Dr. Gachet</em>, which sold at Christie's New York in 1990 and still holds the artist's auction record. It reads the artist's whole market to establish what that number is worth today, and it is candid about where the data runs out.</p>
+    <div class="callout">
+      <p><strong>It is not a lot review.</strong> The work is not for sale and has no condition report, provenance question or export problem to assess. A commissioned review covers all of those for a specific lot you are about to bid on, and ends in a number.</p>
+      <p style="margin-bottom:0">What it does show is how we read a market, what we will not claim, and the standard of document you would receive.</p>
+    </div>
+    <p style="margin-top:1.5rem">
+      <a class="btn btn--ghost" href="assets/docs/neo-art-house-sample-market-study.pdf" download>
+        Download the sample study, PDF, 7 pages
+      </a>
+    </p>
+
+    <h2>What to send</h2>
+    <div class="callout">
+      <p>Email <a href="mailto:connect@theneoarthouse.com?subject=Lot%20review">connect@theneoarthouse.com</a> with:</p>
+      <ul>
+        <li>The auction house, sale name and sale date</li>
+        <li>The lot number and a link to the lot</li>
+        <li>Where you are tax resident</li>
+        <li>Roughly what you are willing to spend, if you know</li>
+      </ul>
+      <p style="margin-bottom:0">That last one is not us anchoring you. It tells us whether the work is worth reviewing at all before either of us spends money.</p>
+    </div>
+
+    <p style="margin-top:2.5rem"><a class="btn" href="mailto:connect@theneoarthouse.com?subject=Lot%20review">Request a lot review</a></p>
+
+    <p class="small dim" style="margin-top:2rem">Bidding on a route we have not published? A <a href="commission.html">commissioned corridor brief</a> covers the whole country pair rather than one lot.</p>
+  </div>
+</section>
+''', depth=0, current='advisory')
 
 print('done')
