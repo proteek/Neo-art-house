@@ -45,6 +45,7 @@ SHELL = '''<!doctype html>
       <a href="{b}briefs/index.html"{c_adv}>Briefs</a>
       <a href="{b}calendar.html"{c_cal}>Calendar</a>
       <a href="{b}houses.html"{c_hou}>Houses</a>
+      <a href="{b}glossary.html"{c_glo}>Glossary</a>
       <a href="{b}index.html#magazine">Magazine</a>
       <a href="{b}about.html"{c_abt}>About</a>
       <button class="themebtn" data-theme-toggle type="button" aria-label="Switch to light theme">
@@ -93,7 +94,8 @@ def page(path, title, desc, body, depth=0, current=None):
         c_adv=' aria-current="page"' if current == 'advisory' else '',
         c_cal=' aria-current="page"' if current == 'calendar' else '',
         c_hou=' aria-current="page"' if current == 'houses' else '',
-        c_abt=' aria-current="page"' if current == 'about' else '')
+        c_abt=' aria-current="page"' if current == 'about' else '',
+        c_glo=' aria-current="page"' if current == 'glossary' else '')
     p = ROOT / path
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(out, encoding='utf-8')
@@ -552,6 +554,19 @@ page('lot-review.html',
     <p><strong>From $200.</strong> The fee depends on how much digging the lot needs. A modern painting with published provenance sits at the bottom of the range; an antiquity with an unclear chain and an export question sits at the top, around $350. We quote before starting, and the quote is fixed.</p>
     <p>Turnaround is three working days, or 24 hours if the sale is closer than that. Tell us the sale date and we will tell you honestly whether there is time to do it properly.</p>
 
+
+    <h2>See how we work</h2>
+    <p>Below is a study of a single historic result: Van Gogh's <em>Portrait du Dr. Gachet</em>, which sold at Christie's New York in 1990 and still holds the artist's auction record. It reads the artist's whole market to establish what that number is worth today, and it is candid about where the data runs out.</p>
+    <div class="callout">
+      <p><strong>It is not a lot review.</strong> The work is not for sale and has no condition report, provenance question or export problem to assess. A commissioned review covers all of those for a specific lot you are about to bid on, and ends in a number.</p>
+      <p style="margin-bottom:0">What it does show is how we read a market, what we will not claim, and the standard of document you would receive.</p>
+    </div>
+    <p style="margin-top:1.5rem">
+      <a class="btn btn--ghost" href="assets/docs/neo-art-house-sample-market-study.pdf" download>
+        Download the sample study, PDF, 7 pages
+      </a>
+    </p>
+
     <h2>What to send</h2>
     <div class="callout">
       <p>Email <a href="mailto:connect@theneoarthouse.com?subject=Lot%20review">connect@theneoarthouse.com</a> with:</p>
@@ -570,5 +585,34 @@ page('lot-review.html',
   </div>
 </section>
 ''', depth=0, current='advisory')
+
+# ----------------------------------------------------------------- glossary
+page('glossary.html',
+     'Auction glossary — The Neo Art House',
+     'Plain definitions for 145 terms used in the secondary art market, from absentee bids to chandelier bidding.',
+     '''
+<section class="wrap">
+  <h1 style="font-size:clamp(1.9rem,5vw,3rem);max-width:16ch">Auction glossary</h1>
+  <p class="lede" style="margin:1rem 0 0">The secondary market runs on language most buyers meet for the first time mid-sale. Here is what the words mean, in plain English.</p>
+</section>
+
+<section class="wrap rule-top" style="padding-top:1.75rem">
+  <div class="filters">
+    <label class="small dim" style="display:flex;flex-direction:column;gap:.35rem;flex:1;min-width:16rem">Search
+      <input type="search" data-gloss-search placeholder="Try premium, reserve, provenance">
+    </label>
+  </div>
+  <nav class="azbar" data-gloss-az aria-label="Jump to letter"></nav>
+  <p class="count" data-gloss-count></p>
+  <div class="gloss" data-glossary></div>
+</section>
+
+<section class="wrap rule-top">
+  <h2>Take it with you</h2>
+  <p class="measure dim" style="margin-top:1rem">The same glossary as a PDF, for reading at a preview or on a plane.</p>
+  <p style="margin-top:1.25rem"><a class="btn btn--ghost" href="assets/docs/auction-glossary.pdf" download>Download the glossary, PDF</a></p>
+  <p class="small dim" style="margin-top:1.5rem">Spotted something wrong, or a term we have missed? Write to <a href="mailto:connect@theneoarthouse.com?subject=Glossary">connect@theneoarthouse.com</a>.</p>
+</section>
+''', depth=0, current='glossary')
 
 print('done')

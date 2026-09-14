@@ -181,6 +181,53 @@ initDirectory();
 initCommission();
 initCovers();
 
+/* ---------- glossary ---------- */
+async function initGlossary() {
+  const host = document.querySelector('[data-glossary]');
+  if (!host) return;
+  const search = document.querySelector('[data-gloss-search]');
+  const azbar = document.querySelector('[data-gloss-az]');
+  const count = document.querySelector('[data-gloss-count]');
+  const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  let terms = [];
+
+  const draw = () => {
+    const q = (search?.value || '').trim().toLowerCase();
+    const list = terms.filter(t => !q ||
+      t.term.toLowerCase().includes(q) || t.def.toLowerCase().includes(q));
+    const present = new Set(list.map(t => t.letter));
+
+    if (azbar) azbar.innerHTML = LETTERS.map(L =>
+      present.has(L) ? `<a href="#letter-${L}">${L}</a>`
+                     : `<a aria-disabled="true">${L}</a>`).join('');
+
+    if (count) count.textContent = q
+      ? `${list.length} of ${terms.length} terms`
+      : `${terms.length} terms`;
+
+    if (!list.length) {
+      host.innerHTML = '<p class="dim">Nothing matches that. Try a shorter word.</p>';
+      return;
+    }
+    host.innerHTML = LETTERS.filter(L => present.has(L)).map(L => `
+      <h2 id="letter-${L}">${L}</h2>
+      <dl>${list.filter(t => t.letter === L).map(t => `
+        <dt>${esc(t.term)}</dt>
+        <dd>${esc(t.def)}${t.href ? `<span class="seealso">See <a href="${base()}${esc(t.href)}">${esc(t.label)}</a></span>` : ''}</dd>`).join('')}
+      </dl>`).join('');
+  };
+
+  try {
+    const res = await fetch(base() + 'assets/data/glossary.json');
+    terms = (await res.json()).terms || [];
+    search?.addEventListener('input', draw);
+    draw();
+  } catch (err) {
+    host.innerHTML = '<p class="dim">The glossary could not be loaded. The PDF below still works.</p>';
+  }
+}
+initGlossary();
+
 /* ---------- light and dark ---------- */
 function initTheme() {
   const btn = document.querySelector('[data-theme-toggle]');

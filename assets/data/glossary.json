@@ -1,0 +1,753 @@
+{
+ "_readme": "Auction glossary. One entry per term: term, letter, def. Optional href and label link a term to a page on this site.",
+ "updated": "2026-09-13",
+ "terms": [
+  {
+   "term": "Absentee Bid (Order / Left / Commission Bid)",
+   "letter": "A",
+   "def": "A written maximum bid submitted by a collector prior to an auction, authorizing the auction house to bid incrementally on their behalf against competing bidders up to that designated ceiling."
+  },
+  {
+   "term": "Absolute Auction (Auction Without Reserve)",
+   "letter": "A",
+   "def": "A sale in which lots are hammered down to the highest bidder regardless of price, with no confidential floor or minimum reserve required."
+  },
+  {
+   "term": "Acquisition Cost",
+   "letter": "A",
+   "def": "The total capital outlay required to take physical ownership of an artwork, encompassing hammer price, buyer’s premium, overhead premiums, packing, handling, crating, conservation, transit insurance, import duties, and local sales taxes.",
+   "href": "lot-review.html",
+   "label": "Lot review"
+  },
+  {
+   "term": "Addendum (Saleroom Notice)",
+   "letter": "A",
+   "def": "An official printed notice or verbal declaration updating, correcting, or amending catalogue specifications prior to bidding (e.g., changes in attribution, medium, dimensions, or withdrawal)."
+  },
+  {
+   "term": "Advance on Consignment (Advance on Sale)",
+   "letter": "A",
+   "def": "Non-recourse or recourse financing fronted by an auction house or art lender to a consignor before the auction, secured against the anticipated hammer proceeds of the consigned property."
+  },
+  {
+   "term": "After [Artist]",
+   "letter": "A",
+   "def": "A catalogue attribution indicating an intentional copy or graphic reproduction of a known master's original work, executed by another artist."
+  },
+  {
+   "term": "Aftersale (Post-Auction Sale)",
+   "letter": "A",
+   "def": "A private transaction negotiated by an auction house between a consignor and an interested buyer immediately following a live sale for a lot that failed to meet its reserve."
+  },
+  {
+   "term": "Appraisal",
+   "letter": "A",
+   "def": "A formal, certified valuation assessing the fair market or insurance replacement value of an artwork based on historical comps, market conditions, provenance, and physical inspection."
+  },
+  {
+   "term": "Artist’s Proof (A.P. / E.A.)",
+   "letter": "A",
+   "def": "Impressions from a print or sculpture edition pulled outside the regular numbered edition for the artist's personal archive or distribution, traditionally limited to no more than 10–15% of the edition run."
+  },
+  {
+   "term": "Artist’s Resale Right (ARR / Droit de Suite)",
+   "letter": "A",
+   "def": "A statutory right (enacted in the EU, UK, and select other territories) granting living visual artists and their estates (typically for 70 years posthumously) a sliding-scale royalty on commercial secondary sales."
+  },
+  {
+   "term": "Art Loss Register (ALR)",
+   "letter": "A",
+   "def": "The world’s largest commercial database of stolen, missing, looted, and disputed art, against which major auction houses vet catalogued lots during due-diligence checks."
+  },
+  {
+   "term": "As-Is, Where-Is",
+   "letter": "A",
+   "def": "A standard contractual clause in auction conditions of sale stating that property is sold in its existing condition without implied warranties as to physical perfection, fitness for purpose, or freedom from wear."
+  },
+  {
+   "term": "Attributed to [Artist]",
+   "letter": "A",
+   "def": "A qualified catalogue attribution indicating that, in the auction house specialist's opinion, the work is likely authentic, but cannot be definitively confirmed due to incomplete documentation or scholarly disagreement."
+  },
+  {
+   "term": "Auctioneer",
+   "letter": "A",
+   "def": "The licensed expert presiding from the rostrum who presents lots, initiates increments, evaluates competing channels (room, phones, online, book), and knocks down property with the gavel."
+  },
+  {
+   "term": "Bears Signature",
+   "letter": "B",
+   "def": "A catalogue attribution indicating that a signature, monogram, or inscription appears on the work, but specialist examination concludes it was added by a later hand and is not autograph."
+  },
+  {
+   "term": "Bid Increment",
+   "letter": "B",
+   "def": "The standardized financial interval by which bidding advances during a live sale, typically tracking at roughly 10% step increases, adjusted at the auctioneer's discretion."
+  },
+  {
+   "term": "Bid Limit (Credit Ceiling)",
+   "letter": "B",
+   "def": "The maximum total expenditure ceiling assigned to a prospective bidder during pre-sale registration, based on bank references, financial disclosures, or pre-deposited collateral."
+  },
+  {
+   "term": "Bidding Ring (Art Ring)",
+   "letter": "B",
+   "def": "An illegal collusive agreement among a group of dealers or collectors who deliberately refrain from bidding against each other in order to depress the hammer price, subsequently re-auctioning the lot privately in a secondary \"knock-out\" session."
+  },
+  {
+   "term": "Bidding Slip (Chit)",
+   "letter": "B",
+   "def": "The transaction voucher immediately signed by an in-room winning bidder, confirming their paddle number, address, and agreed hammer price."
+  },
+  {
+   "term": "Bill of Sale",
+   "letter": "B",
+   "def": "The post-sale document of title confirming that full payment has settled, officially transferring legal ownership of the artwork to the purchaser."
+  },
+  {
+   "term": "Block Bidding",
+   "letter": "B",
+   "def": "Placing consecutive or pre-emptive bids in substantial increments above the standard increment step to deter competitors and project capital dominance."
+  },
+  {
+   "term": "Bonded Warehouse (Freeport)",
+   "letter": "B",
+   "def": "A high-security, climate-controlled storage facility (such as Geneva, Luxembourg, or Delaware Freeports) where high-value artworks can be stored and transacted in international transit without incurring local import tariffs or VAT."
+  },
+  {
+   "term": "Bought-In (Buy-In / BI / Passed / Burned)",
+   "letter": "B",
+   "def": "The outcome when bidding on a lot fails to clear the confidential reserve agreed with the consignor, leaving the item unsold and returned to the seller."
+  },
+  {
+   "term": "Buyer’s Premium (BP)",
+   "letter": "B",
+   "def": "The tiered percentage commission paid by the winning bidder to the auction house on top of the hammer price, representing the auction house's core operational revenue."
+  },
+  {
+   "term": "Catalogue Raisonné",
+   "letter": "C",
+   "def": "A definitive, scholarly multivolume publication cataloguing and annotating every verified artwork produced by a specific artist, considered an essential authority on authenticity and attribution."
+  },
+  {
+   "term": "Certificate of Authenticity (COA)",
+   "letter": "C",
+   "def": "A signed document from the artist, the artist’s dedicated authentication committee, or an established estate verifying the authenticity of an original artwork."
+  },
+  {
+   "term": "Chandelier Bidding (Off-the-Wall / Bouncing)",
+   "letter": "C",
+   "def": "The practice wherein the auctioneer calls fictitious bids against the saleroom wall or chandeliers to build early bidding momentum toward the confidential reserve; legal strictly up to, but never at or above, the reserve price."
+  },
+  {
+   "term": "Circle of [Artist]",
+   "letter": "C",
+   "def": "A catalogue qualification denoting an artwork executed by an unidentified contemporary working within the artist's immediate stylistic orbit or period."
+  },
+  {
+   "term": "Clerk",
+   "letter": "C",
+   "def": "The auction house staff member seated on the rostrum alongside the auctioneer, tasked with logging bids, updating bidding registers, and tracking paddle numbers in the saleroom ledger."
+  },
+  {
+   "term": "Coin Consignment",
+   "letter": "C",
+   "def": "A slang industry term for an exceptional single masterpiece consigned without accompanying works, strong enough to anchor an entire evening sale."
+  },
+  {
+   "term": "Condition Report",
+   "letter": "C",
+   "def": "A specialist document noting the physical integrity of a lot, detailing structural restorations, relining, inpainting, craquelure, foxing, oxidation, or frame wear.",
+   "href": "lot-review.html",
+   "label": "Lot review"
+  },
+  {
+   "term": "Conditions of Sale (Terms of Business)",
+   "letter": "C",
+   "def": "The binding legal contract printed in auction catalogues and digital interfaces detailing dispute resolution, warranties, title transfer, storage fees, and non-payment remedies."
+  },
+  {
+   "term": "Consignment Agreement",
+   "letter": "C",
+   "def": "The formal contract executed between a property owner (consignor) and an auction house defining reserves, settlement timelines, commission splits, insurance liabilities, and catalogue reproduction rights."
+  },
+  {
+   "term": "Consignor (Vendor)",
+   "letter": "C",
+   "def": "The private collector, dealer, corporate collection, or institutional estate that contracts with an auction house to sell fine art property on their behalf."
+  },
+  {
+   "term": "Craquelure",
+   "letter": "C",
+   "def": "A fine network of micro-fractures and cracks forming across aged paint film or varnish surfaces due to atmospheric fluctuations, canvas movement, or drying tension."
+  },
+  {
+   "term": "Cross-Bidding",
+   "letter": "C",
+   "def": "A competitive dynamic where an auction house specialist manages simultaneous conflicting bids across multiple physical and digital platforms (phone bank, internet desk, floor)."
+  },
+  {
+   "term": "Cut Bid",
+   "letter": "C",
+   "def": "A bidder's request to advance the bidding by an increment lower than the step called by the auctioneer (typically half-increment), accepted or rejected at the auctioneer's sole discretion."
+  },
+  {
+   "term": "Day Sale",
+   "letter": "D",
+   "def": "The secondary daytime session of an auction series, featuring moderately valued works, editioned multiples, and secondary lots by established artists, running with faster pacing than the flagship evening session."
+  },
+  {
+   "term": "Deaccessioning",
+   "letter": "D",
+   "def": "The formal procedure by which a museum or public cultural institution removes a work from its permanent inventory, regularly liquidating it through public auction to fund future acquisitions or direct collection conservation."
+  },
+  {
+   "term": "Default",
+   "letter": "D",
+   "def": "The failure of a winning bidder to remit full payment for a hammered lot within the contractual settlement window, prompting resale, legal action, or forfeiture of collateral."
+  },
+  {
+   "term": "Digital Paddle",
+   "letter": "D",
+   "def": "A secure mobile or web-app interface assigning a verified digital identification number for real-time app-based bidding."
+  },
+  {
+   "term": "Dispute Period",
+   "letter": "D",
+   "def": "The limited window (often 5 years under major house warranties) during which a purchaser can challenge a lot's authenticity if supported by a consensus of recognized scholarly opinion."
+  },
+  {
+   "term": "Distressed Sale",
+   "letter": "D",
+   "def": "The forced liquidation of an art collection under fiscal duress, bankruptcy, debt default, divorce proceedings, or inheritance tax deadlines."
+  },
+  {
+   "term": "Drop of the Gavel (Fall of the Hammer)",
+   "letter": "D",
+   "def": "The physical strike of the auctioneer’s mallet, which closes bidding and converts the highest valid bid into a binding contract of sale."
+  },
+  {
+   "term": "Edition",
+   "letter": "E",
+   "def": "The total authorized run of identical or serialized impressions produced from a single matrix (etchings, lithographs, bronzes, digital photographs), numbered sequentially (e.g., 5/25)."
+  },
+  {
+   "term": "Enhanced Hammer",
+   "letter": "E",
+   "def": "A specialized consignment arrangement where an auction house waives seller fees and rebates a negotiated fraction of its buyer’s premium to the consignor if the lot hammers over an agreed threshold."
+  },
+  {
+   "term": "Estimate (Low / High Estimate)",
+   "letter": "E",
+   "def": "The price window published in catalogues reflecting specialists' appraisal of the lot's hammer potential based on market comps, excluding buyer’s premium and taxes."
+  },
+  {
+   "term": "Evening Sale",
+   "letter": "E",
+   "def": "The prestigious, marquee session of an auction series featuring blue-chip masterpieces and premium-estimate lots, attended by principal collectors and advisors."
+  },
+  {
+   "term": "Exhibition History",
+   "letter": "E",
+   "def": "The comprehensive record of public, institutional, and gallery exhibitions in which an artwork was historically presented, documented to reinforce cultural provenance."
+  },
+  {
+   "term": "Fair Market Value (FMV)",
+   "letter": "F",
+   "def": "The price at which property would change hands between a willing buyer and a willing seller, neither being under compulsion and both having reasonable knowledge of relevant facts."
+  },
+  {
+   "term": "Fair Warning",
+   "letter": "F",
+   "def": "The verbal prompt delivered by the auctioneer immediately prior to knocking down a lot, offering a final opportunity for bids before striking the gavel."
+  },
+  {
+   "term": "Financing Fee (Guarantor's Fee)",
+   "letter": "F",
+   "def": "The compensation paid by an auction house to a third-party guarantor for providing an irrevocable minimum bid, typically structured as a fixed fee or an upside percentage."
+  },
+  {
+   "term": "First Sale Doctrine",
+   "letter": "F",
+   "def": "A legal doctrine under US copyright law stating that an individual who purchases an authorized copy or original artwork holds the legal right to sell, display, or dispose of that object without paying royalties to the copyright holder."
+  },
+  {
+   "term": "Floor Bid",
+   "letter": "F",
+   "def": "A bid placed in real time by an individual physically present in the auction saleroom, signaled using a registered paddle."
+  },
+  {
+   "term": "Follower of [Artist]",
+   "letter": "F",
+   "def": "A catalogue attribution designating an artwork executed in the distinct style of an established master, by an artist working in their stylistic wake, often decades after the master’s death."
+  },
+  {
+   "term": "Foxing",
+   "letter": "F",
+   "def": "Age-related chemical deterioration causing reddish-brown or rusty spotting on paper works, prints, and watercolors, caused by fungal growth or trace iron oxidation."
+  },
+  {
+   "term": "Free and Clear Title",
+   "letter": "F",
+   "def": "An unencumbered legal title affirming that the consignor owns the artwork outright, with no liens, restitution claims, tax seizures, or fractional ownership disputes."
+  },
+  {
+   "term": "Gavel",
+   "letter": "G",
+   "def": "The wooden mallet struck against the rostrum by the auctioneer to close bidding on a lot."
+  },
+  {
+   "term": "Giclée",
+   "letter": "G",
+   "def": "A high-resolution digital inkjet reproduction produced on fine art paper or canvas, distinct from traditional mechanical or hand-pulled printmaking mediums."
+  },
+  {
+   "term": "Gross Proceeds",
+   "letter": "G",
+   "def": "The aggregate monetary sum realized by a sale before deducting commissions, taxes, guarantees, or logistics expenses."
+  },
+  {
+   "term": "Guarantee (House / Direct Guarantee)",
+   "letter": "G",
+   "def": "A contract whereby an auction house guarantees a minimum price to the consignor; if bidding stalls below that level, the house takes ownership of the piece and assumes the financial shortfall."
+  },
+  {
+   "term": "Guarantor",
+   "letter": "G",
+   "def": "An investor, institution, or collector who contracts to underwrite a lot by pledging an irrevocable minimum bid prior to the sale."
+  },
+  {
+   "term": "Hallmark",
+   "letter": "H",
+   "def": "An official impressed mark stamped on precious metal objects (gold, silver, platinum) confirming purity, assay office location, date letter, and silversmith identity."
+  },
+  {
+   "term": "Hammer Price",
+   "letter": "H",
+   "def": "The final winning bid accepted by the auctioneer upon the fall of the gavel, excluding buyer’s premium, VAT, local taxes, and freight fees."
+  },
+  {
+   "term": "High Estimate",
+   "letter": "H",
+   "def": "The upper boundary of the valuation range published in the sale catalogue."
+  },
+  {
+   "term": "Historical Comps (Comparables)",
+   "letter": "H",
+   "def": "Public pricing records of analogous works by the same artist (evaluated by period, scale, medium, condition, and subject) used to calibrate market estimates.",
+   "href": "lot-review.html",
+   "label": "Lot review"
+  },
+  {
+   "term": "Holding Bid",
+   "letter": "H",
+   "def": "A bid currently held in hand by the auctioneer, recognized as the ruling highest bid until topped."
+  },
+  {
+   "term": "Import VAT / Customs Duty",
+   "letter": "I",
+   "def": "Taxes assessed on artworks imported across customs borders, occasionally deferred if property enters under bonded temporary admission frameworks.",
+   "href": "briefs/india-domestic.html",
+   "label": "Buying inside India"
+  },
+  {
+   "term": "In-Room Bidder",
+   "letter": "I",
+   "def": "A registered collector, dealer, or advisor who attends an auction in person and bids from the floor."
+  },
+  {
+   "term": "Inpainting",
+   "letter": "I",
+   "def": "Conservation pigment applied strictly over areas of surface pigment loss without covering original paint, visible under ultraviolet examination."
+  },
+  {
+   "term": "Insurance Value (Replacement Value)",
+   "letter": "I",
+   "def": "The capital figure required to replace an artwork with an equivalent work in the open market within a compressed timeframe, typically assessed higher than auction low estimates."
+  },
+  {
+   "term": "Irrevocable Bid (IB)",
+   "letter": "I",
+   "def": "A legally binding minimum bid submitted by an outside third-party prior to the auction, guaranteeing the piece will sell; if an outside bidder tops this bid, the IB holder typically receives a split of the upside margin."
+  },
+  {
+   "term": "Joint Consignment",
+   "letter": "J",
+   "def": "A consignment involving two or more distinct beneficial owners, family trusts, or institutions offering a united collection or suite of works."
+  },
+  {
+   "term": "Judicial Auctioneer (Commissaire de Justice)",
+   "letter": "J",
+   "def": "An officially appointed auctioneer (notably under French civil legal frameworks) mandated by court order to oversee the forced judicial liquidation of estate assets, bankruptcies, or seizures."
+  },
+  {
+   "term": "Kicker",
+   "letter": "K",
+   "def": "A contractual clause in an irrevocable bid structure granting the guarantor an additional cash bonus or fee percentage if the artwork sells well in excess of their baseline bid."
+  },
+  {
+   "term": "Knocked Down",
+   "letter": "K",
+   "def": "A saleroom phrase meaning a lot has been struck down and declared sold by the auctioneer’s gavel."
+  },
+  {
+   "term": "Lemon Law (Art Protection)",
+   "letter": "L",
+   "def": "Specialized legal mechanisms in select art market jurisdictions protecting buyers against willful misattributions or undisclosed heavy restorations."
+  },
+  {
+   "term": "Limited Warranty",
+   "letter": "L",
+   "def": "An auction house's contractual guarantee (typically covering a 5-year window) promising a full refund if an artwork is proven to be a deliberate forgery contrary to the printed catalogue attribution.",
+   "href": "lot-review.html",
+   "label": "Lot review"
+  },
+  {
+   "term": "Linocut / Woodcut",
+   "letter": "L",
+   "def": "Relief printmaking techniques where non-image areas of a linoleum or wood matrix are carved away, leaving raised surfaces to carry ink."
+  },
+  {
+   "term": "Litigation Hold",
+   "letter": "L",
+   "def": "A legal stay halting the sale or movement of an artwork due to pending ownership lawsuits, restitution claims, or bankruptcy litigation."
+  },
+  {
+   "term": "Live-Stream Auction",
+   "letter": "L",
+   "def": "A hybrid auction format broadcast globally from a dedicated studio, with the auctioneer fielding simultaneous bids from telephone banks, app consoles, and physical saleroom desks."
+  },
+  {
+   "term": "Locked In",
+   "letter": "L",
+   "def": "A condition where a lot is guaranteed via an irrevocable bid or house guarantee, guaranteeing that the piece will sell regardless of saleroom bidding activity."
+  },
+  {
+   "term": "Lot",
+   "letter": "L",
+   "def": "A single artwork or group of catalogued items offered for sale as one indivisible unit bearing a unique serial number in the auction catalogue."
+  },
+  {
+   "term": "Lotting",
+   "letter": "L",
+   "def": "The strategic scheduling and sequencing of lots in an auction catalogue to manage pacing and maintain bidder engagement across an auction session."
+  },
+  {
+   "term": "Low Estimate",
+   "letter": "L",
+   "def": "The bottom price in the published estimate range; under standard industry practice, the confidential reserve price cannot exceed this number."
+  },
+  {
+   "term": "Manner of [Artist]",
+   "letter": "M",
+   "def": "A catalogue attribution qualifier indicating that a piece is executed in the distinct style of an artist, but originates from a period considerably later than their lifetime."
+  },
+  {
+   "term": "Marriage",
+   "letter": "M",
+   "def": "A composite decorative object, antique, or sculpture assembled by joining parts from two or more distinct historical works that did not originally belong together."
+  },
+  {
+   "term": "Maximum (Proxy) Bid",
+   "letter": "M",
+   "def": "The highest monetary ceiling entered by an online or absentee bidder, with the bidding platform automatically placing the minimum necessary bid to retain the lead."
+  },
+  {
+   "term": "Minimum Increment",
+   "letter": "M",
+   "def": "The mandatory minimum monetary spread required to top the prevailing bid during active auction calling."
+  },
+  {
+   "term": "Multiples",
+   "letter": "M",
+   "def": "Artworks produced in limited runs from an original matrix, including etchings, woodblocks, lithographs, digital C-prints, and bronze casts."
+  },
+  {
+   "term": "National Treasure Status",
+   "letter": "N",
+   "def": "A legal designation by national governments (such as Italy, India, or France) preventing cultural heritage objects from being permanently exported from their country of origin.",
+   "href": "briefs/uae-to-india.html",
+   "label": "The lot you cannot take home"
+  },
+  {
+   "term": "Net Hammer Proceeds",
+   "letter": "N",
+   "def": "The net capital payout transferred to the consignor, calculated as the hammer price minus the seller's commission, insurance, shipping, restoration, framing, and marketing deductions."
+  },
+  {
+   "term": "Non-Exportable Artwork",
+   "letter": "N",
+   "def": "Works officially registered with national antiquities departments that may be auctioned domestically, but are legally barred from leaving the country (e.g., registered Indian antiquities under the Antiquities and Art Treasures Act, 1972).",
+   "href": "briefs/uae-to-india.html",
+   "label": "The lot you cannot take home"
+  },
+  {
+   "term": "Notice of Withdrawal",
+   "letter": "N",
+   "def": "An official saleroom announcement confirming that a catalogued lot has been withdrawn from the auction before bidding opened."
+  },
+  {
+   "term": "Online-Only Auction (Timed Auction)",
+   "letter": "O",
+   "def": "An automated auction hosted on a digital platform over a defined duration without a live auctioneer on the rostrum, terminating at a set clock time."
+  },
+  {
+   "term": "Opening Bid",
+   "letter": "O",
+   "def": "The monetary figure announced by the auctioneer to initiate bidding on a lot, typically set below the low estimate and below the reserve."
+  },
+  {
+   "term": "Overhead Premium",
+   "letter": "O",
+   "def": "A supplemental administrative fee (traditionally 1–2%) levied by some auction houses on the hammer price to cover logistics, digital processing, and facility overhead."
+  },
+  {
+   "term": "Paddle",
+   "letter": "P",
+   "def": "The numbered device or card assigned to registered bidders to identify their account during saleroom bidding."
+  },
+  {
+   "term": "Pass (Passed Lot)",
+   "letter": "P",
+   "def": "A lot that fails to reach its reserve price and is formally passed over by the auctioneer without being sold."
+  },
+  {
+   "term": "Patina",
+   "letter": "P",
+   "def": "The surface coloration, luster, or oxidation layer that bronze, stone, and wood acquire through age, handling, and environmental exposure."
+  },
+  {
+   "term": "Phone Bidding",
+   "letter": "P",
+   "def": "Bidding executed by a designated auction house representative relaying instructions live via telephone on behalf of an off-site client."
+  },
+  {
+   "term": "Post-Sale Guarantee",
+   "letter": "P",
+   "def": "A transaction negotiated immediately after an auction closes, securing an unsold lot for an agreed price between the consignor and a buyer."
+  },
+  {
+   "term": "Pre-Emptive Bid",
+   "letter": "P",
+   "def": "A substantial bid jump placed unexpectedly early in the auction sequence to deter competitors by demonstrating capital commitment."
+  },
+  {
+   "term": "Preview Exhibition (Exhibition / Vernissage)",
+   "letter": "P",
+   "def": "A public viewing period held at the auction house galleries prior to the sale, allowing prospective bidders, advisors, and conservators to inspect the catalogued property in person."
+  },
+  {
+   "term": "Prices Realized",
+   "letter": "P",
+   "def": "The official published record documenting the final prices of an auction, incorporating the hammer price plus the buyer's premium."
+  },
+  {
+   "term": "Provenance",
+   "letter": "P",
+   "def": "The documented, verifiable chronology of ownership, custody, and exhibition history of an artwork, essential for establishing authentic title and historical lineage.",
+   "href": "lot-review.html",
+   "label": "Lot review"
+  },
+  {
+   "term": "Qualified Attribution",
+   "letter": "Q",
+   "def": "Standardized catalogue terminology establishing varying levels of certainty regarding authorship, derived from specialist consensus and scientific verification."
+  },
+  {
+   "term": "Quotation",
+   "letter": "Q",
+   "def": "An informal or preliminary estimate provided by an auction specialist prior to executing a formal consignment appraisal."
+  },
+  {
+   "term": "Rake (Croupier's Arm / Auctioneer Stick)",
+   "letter": "R",
+   "def": "A historical pointer or wand utilized by saleroom staff to point out bids on crowded saleroom floors."
+  },
+  {
+   "term": "Re-Lining",
+   "letter": "R",
+   "def": "A conservation technique whereby an aged or deteriorating canvas is bonded onto a new structural canvas support to stabilize paint layers."
+  },
+  {
+   "term": "Removal Period",
+   "letter": "R",
+   "def": "The contracted timeframe post-auction during which a buyer must settle their invoice and collect property from the auction house before storage fees apply."
+  },
+  {
+   "term": "Repatriation",
+   "letter": "R",
+   "def": "The formal return of looted, illicitly trafficked, or colonial-era cultural artifacts to their legitimate country of origin or indigenous descendants.",
+   "href": "briefs/cites.html",
+   "label": "Materials that cannot cross any border"
+  },
+  {
+   "term": "Reserve (Reserve Price)",
+   "letter": "R",
+   "def": "The confidential minimum hammer price agreed between the consignor and the auction house, below which the property will not be sold."
+  },
+  {
+   "term": "Restitution",
+   "letter": "R",
+   "def": "The legal restoration of artworks looted during wartime, totalitarian regimes, or the Holocaust to their original owners or surviving heirs.",
+   "href": "briefs/cites.html",
+   "label": "Materials that cannot cross any border"
+  },
+  {
+   "term": "Right of First Refusal (ROFR)",
+   "letter": "R",
+   "def": "A contractual covenant between a primary market gallery and a collector giving the gallery the first option to buy back the work before it can be consigned to an auction."
+  },
+  {
+   "term": "Rostrum",
+   "letter": "R",
+   "def": "The raised platform in the saleroom where the auctioneer, clerk, and technicians stand to preside over the auction."
+  },
+  {
+   "term": "Saleroom",
+   "letter": "S",
+   "def": "The physical auditorium or gallery space where a live auction is held."
+  },
+  {
+   "term": "School of [Artist]",
+   "letter": "S",
+   "def": "A catalogue attribution indicating an artwork executed by an unrecorded pupil or follower working in the direct style and period of a master."
+  },
+  {
+   "term": "Seller’s Commission (Vendor’s Commission)",
+   "letter": "S",
+   "def": "The percentage fee deducted by the auction house from the hammer price as payment for its services, negotiated individually with the consignor."
+  },
+  {
+   "term": "Sell-Through Rate",
+   "letter": "S",
+   "def": "The percentage of catalogued lots that are successfully hammered down as sold, calculated either by lot count or by aggregate dollar value."
+  },
+  {
+   "term": "Settlement Period",
+   "letter": "S",
+   "def": "The contractual timeframe (regularly 30 to 45 days post-sale) within which the auction house collects funds from buyers and disburses net proceeds to consignors."
+  },
+  {
+   "term": "Silent Auction",
+   "letter": "S",
+   "def": "An auction conducted without a live auctioneer, where bids are submitted silently on bid sheets or through mobile apps over a defined period."
+  },
+  {
+   "term": "Single-Owner Sale",
+   "letter": "S",
+   "def": "A dedicated auction comprised entirely of property consigned from a single collector, family, or estate, often highlighted with specialized cataloguing."
+  },
+  {
+   "term": "Specialist",
+   "letter": "S",
+   "def": "An art historian, appraiser, or departmental expert at an auction house who authenticates, estimates, catalogues, and markets artworks."
+  },
+  {
+   "term": "Starting Price",
+   "letter": "S",
+   "def": "The opening bid figure at which the auctioneer initiates the lot."
+  },
+  {
+   "term": "Studio of [Artist] (Workshop of)",
+   "letter": "S",
+   "def": "A catalogue attribution designating an artwork produced within the active workshop of a master, under their direction and supervision during their lifetime."
+  },
+  {
+   "term": "Temporary Admission (TA)",
+   "letter": "T",
+   "def": "A customs procedure allowing artworks from non-EU or foreign territories to be imported temporarily into an auction jurisdiction for sale without payment of import VAT or customs duty.",
+   "href": "briefs/india-domestic.html",
+   "label": "Buying inside India"
+  },
+  {
+   "term": "Third-Party Guarantee",
+   "letter": "T",
+   "def": "A financial structure where an outside party pledges to purchase the lot at a pre-agreed minimum price, absorbing the risk in return for an agreed financing fee or upside split."
+  },
+  {
+   "term": "Tiered Buyer's Premium",
+   "letter": "T",
+   "def": "The standard commission model where the buyer's premium rate steps down across progressively higher hammer price thresholds (e.g., 28% on the first tranche, 22% on the second, 15% on the remainder)."
+  },
+  {
+   "term": "Title",
+   "letter": "T",
+   "def": "The legal right to property ownership, verified during auction due-diligence checks."
+  },
+  {
+   "term": "Trophy Art",
+   "letter": "T",
+   "def": "High-profile, historically significant masterworks by blue-chip artists that attract major international bidding and set auction benchmarks."
+  },
+  {
+   "term": "Ultraviolet (UV) Examination (Wood's Lamp)",
+   "letter": "U",
+   "def": "A non-destructive scientific analysis tool used during condition reporting; recent inpainting and restoration fluoresce dark purple under UV light against the natural green-yellow fluorescence of aged varnish."
+  },
+  {
+   "term": "Underbidder",
+   "letter": "U",
+   "def": "The participant who submits the second-highest bid immediately preceding the final winning hammer price."
+  },
+  {
+   "term": "Undisclosed Reserve",
+   "letter": "U",
+   "def": "The standard industry rule requiring that the exact dollar amount of the consignor’s reserve price remain confidential between the consignor and the auction house."
+  },
+  {
+   "term": "Upside",
+   "letter": "U",
+   "def": "The monetary spread realized above a guaranteed price when outside bidding on a guaranteed lot clears the guarantor's baseline commitment."
+  },
+  {
+   "term": "Valuation",
+   "letter": "V",
+   "def": "A formal written opinion of the value of an artwork for insurance, probate, collateralized lending, or sale purposes, prepared by qualified specialists."
+  },
+  {
+   "term": "Vetting Committee",
+   "letter": "V",
+   "def": "A body of independent conservators, scholars, and specialists who examine artworks before an auction or art fair to verify physical condition, attribution, and authenticity."
+  },
+  {
+   "term": "Warranty of Title",
+   "letter": "W",
+   "def": "An explicit legal guarantee provided by the consignor and auction house affirming that the consignor owns the lot free of liens, claims, encumbrances, or tax seizures."
+  },
+  {
+   "term": "White Glove Sale",
+   "letter": "W",
+   "def": "An auction in which 100% of the catalogued lots are sold, achieving a 100% sell-through rate."
+  },
+  {
+   "term": "Withdrawn Lot",
+   "letter": "W",
+   "def": "A lot removed from the sale catalogue prior to bidding due to title disputes, provenance doubts, condition problems, or mutual agreement between the consignor and auction house."
+  },
+  {
+   "term": "X-Ray Radiography",
+   "letter": "X",
+   "def": "A non-destructive imaging technique that penetrates surface paint layers to reveal underlying preparatory sketches, pentimenti, alterations, hidden underpaintings, and canvas structural support."
+  },
+  {
+   "term": "X-Ray Fluorescence (XRF) Spectrometry",
+   "letter": "X",
+   "def": "An analytical, non-destructive technique that identifies the elemental composition of pigments, metal alloys, and binders, helping establish date consistency and identify anachronistic modern chemicals in older works."
+  },
+  {
+   "term": "Yield (Sell-Through by Value)",
+   "letter": "Y",
+   "def": "The percentage metric comparing the aggregate hammer total of sold lots against the aggregate pre-sale median estimate of all lots offered in the sale."
+  },
+  {
+   "term": "Zero-Commission Deal",
+   "letter": "Z",
+   "def": "An incentive structure in which an auction house waives the seller's commission to secure a high-value blue-chip consignment."
+  },
+  {
+   "term": "Zombie Bidding",
+   "letter": "Z",
+   "def": "A colloquial saleroom term referring to rapid, automated programmatic bidding algorithms in timed online auctions competing automatically at the final seconds of a lot closing."
+  }
+ ]
+}

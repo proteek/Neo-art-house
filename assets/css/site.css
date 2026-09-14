@@ -291,3 +291,18 @@ p{margin:0 0 1rem}
 .parent .on-light{display:none}
 [data-theme="light"] .parent .on-dark{display:none}
 [data-theme="light"] .parent .on-light{display:block}
+
+/* glossary */
+.azbar{display:flex;flex-wrap:wrap;gap:.15rem;margin:0 0 1.25rem}
+.azbar a{display:inline-block;min-width:1.7rem;text-align:center;padding:.3rem .1rem;
+  font-size:var(--t-sm);font-weight:500;text-decoration:none;color:var(--bone-dim);border:1px solid transparent}
+.azbar a:hover{color:var(--vermilion-text);border-color:var(--line)}
+.azbar a[aria-disabled="true"]{opacity:.3;pointer-events:none}
+.gloss{border-bottom:1px solid var(--line)}
+.gloss h2{font-size:var(--t-lg);margin:2.25rem 0 .5rem;scroll-margin-top:1rem}
+.gloss h2:first-child{margin-top:0}
+.gloss dl{margin:0}
+.gloss dt{font-weight:600;font-size:var(--t-base);border-top:1px solid var(--line);padding-top:.9rem;margin-top:.9rem}
+.gloss dd{margin:.3rem 0 0;font-size:var(--t-sm);color:var(--bone-dim);line-height:1.7;max-width:72ch}
+.gloss .seealso{display:block;margin-top:.4rem;font-size:var(--t-sm)}
+.gloss .seealso a{color:var(--vermilion-text);text-underline-offset:3px}
