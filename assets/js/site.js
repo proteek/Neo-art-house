@@ -456,3 +456,31 @@ async function initRuleLibrary(){
   }catch(e){host.innerHTML='<div class="empty-state"><h3>Rule library unavailable.</h3></div>'}
 }
 initRuleLibrary();
+
+async function initJurisdictionRegulatoryIndex(){
+  const host=document.querySelector('[data-jurisdiction-reg-index]');if(!host)return;
+  const search=document.querySelector('[data-jurisdiction-search]');
+  const region=document.querySelector('[data-jurisdiction-region]');
+  const status=document.querySelector('[data-jurisdiction-status]');
+  const count=document.querySelector('[data-jurisdiction-count]');
+  try{
+    const d=await fetch(base()+'assets/data/jurisdiction-regulatory-index.json').then(r=>r.json());
+    const list=d.jurisdictions||[];
+    [...new Set(list.map(x=>x.region))].sort().forEach(x=>region?.insertAdjacentHTML('beforeend','<option value="'+esc(x)+'">'+esc(x)+'</option>'));
+    const draw=()=>{
+      const q=(search?.value||'').trim().toLowerCase(),r=region?.value||'',s=status?.value||'';
+      const rows=list.filter(x=>(!r||x.region===r)&&(!s||x.status===s)&&(!q||String([x.country,x.region,x.framework,x.status].join(' ')).toLowerCase().includes(q)));
+      if(count)count.textContent=rows.length+' jurisdiction'+(rows.length===1?'':'s');
+      host.innerHTML=rows.map(x=>{
+        const layerHtml=Object.entries(x.layers||{}).map(([k,v])=>{
+          const cls=v==='Verified'?'verified':v.includes('verified')?'partial':'queued';
+          return '<div class="jurisdiction-layer"><span>'+esc(k)+'</span><strong class="'+cls+'">'+esc(v)+'</strong></div>';
+        }).join('');
+        const src=(x.sources||[]).map(s=>'<a class="text-link" href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.label)+' ↗</a>').join('');
+        return '<article class="jurisdiction-card"><div class="jurisdiction-card__top"><div><div class="eyebrow">'+esc(x.region)+' · '+esc(x.framework)+'</div><h3>'+esc(x.country)+'</h3></div><span class="data-badge">'+esc(x.status)+'</span></div><div class="jurisdiction-layers">'+layerHtml+'</div><div class="jurisdiction-sources">'+src+'</div><div class="jurisdiction-verified">Last checked '+esc(x.verified||'—')+'</div></article>';
+      }).join('');
+    };
+    [search,region,status].forEach(el=>el?.addEventListener(el===search?'input':'change',draw));draw();
+  }catch(e){host.innerHTML='<div class="empty-state"><h3>Jurisdiction index unavailable.</h3></div>'}
+}
+initJurisdictionRegulatoryIndex();
