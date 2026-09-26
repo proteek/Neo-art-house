@@ -119,7 +119,7 @@ function initMobile(){
 
 initPicker();initDirectory();initCalendar();initGlossary();initCostCalculator();initCommission();initMobile();
 
-function initPlatformRibbon(){const m=document.querySelector('.masthead');if(!m||document.querySelector('.platform-ribbon'))return;const b=document.createElement('div');b.className='platform-ribbon';b.innerHTML='<div class="platform-ribbon__inner"><a href="travel-checker.html">Travel Checker</a><a href="risk-engine.html">Risk Engine</a><a href="transaction-map.html">Transaction Map</a><a href="alerts.html">Regulatory Alerts</a><a href="methodology.html">Methodology</a><a href="professional.html">Professional</a></div>';m.after(b)}
+function initPlatformRibbon(){const m=document.querySelector('.masthead');if(!m||document.querySelector('.platform-ribbon'))return;const b=document.createElement('div');b.className='platform-ribbon';b.innerHTML='<div class="platform-ribbon__inner"><a href="travel-checker.html">Travel Checker</a><a href="risk-engine.html">Risk Engine</a><a href="transaction-map.html">Transaction Map</a><a href="alerts.html">Regulatory Alerts</a><a href="methodology.html">Methodology</a><a href="professional.html">Professional</a><a href="pricing.html">Pricing</a><a href="https://apps.apple.com/us/app/auctra-learn/id6800005721" target="_blank" rel="noopener">AUCTRA Learn ↗</a></div>';m.after(b)}
 function initTravelChecker(){const f=document.querySelector('[data-travel-checker]'),o=document.querySelector('[data-travel-result]');if(!f||!o)return;const v=n=>f.elements[n]?.value||'unknown';const d=()=>{let sev='green',find=[];const rank={green:0,amber:1,red:2},b=s=>{if(rank[s]>rank[sev])sev=s},a=(l,x,s)=>{find.push([l,x]);b(s)};v('restrictedArtist')==='yes'?a('Artist / category','Known or suspected restriction — specialist confirmation required.','red'):v('restrictedArtist')==='unknown'?a('Artist / category','Restriction status unknown.','amber'):a('Artist / category','No restriction identified by the user.','green');v('antiquity')==='yes'?a('Age / cultural property','Older object — export and cultural-property rules require verification.','amber'):v('antiquity')==='unknown'?a('Age / cultural property','Age threshold is not known.','amber'):a('Age / cultural property','No age-based flag entered.','green');v('restrictedMaterial')==='yes'?a('Restricted material','Potentially regulated material identified. Check relevant movement rules before shipping.','red'):v('restrictedMaterial')==='unknown'?a('Restricted material','Material composition not confirmed.','amber'):a('Restricted material','No restricted material entered.','green');v('exportDocs')==='yes'?a('Documentation','Required documentation reported as available.','green'):a('Documentation','Movement documentation is not yet confirmed.','amber');const from=f.elements.origin.selectedOptions[0].textContent,to=f.elements.destination.selectedOptions[0].textContent;const title=sev==='red'?'Material issue before movement: do not rely on this screening alone.':sev==='amber'?'Requires clarification before bidding or shipping.':'No immediate screening flag from the answers provided.';o.innerHTML='<div class="result-head"><div><div class="eyebrow">Screening result</div><h2 style="font-family:var(--serif);font-weight:500;margin:7px 0 0">'+esc(from)+' → '+esc(to)+'</h2></div><span class="result-status result-status--'+sev+'">'+(sev==='red'?'Material flag':sev==='amber'?'Clarify':'No immediate flag')+'</span></div><p class="lede" style="font-size:24px">'+esc(title)+'</p>'+find.map(x=>'<div class="finding"><div class="finding__label">'+esc(x[0])+'</div><div class="finding__value">'+esc(x[1])+'</div></div>').join('')+'<p class="disclaimer">Research screening only; not legal clearance, customs advice, authentication or an export licence. Verify transaction-specific rules from current primary sources.</p>'};f.addEventListener('input',d);d()}
 function initRiskEngine(){const f=document.querySelector('[data-risk-engine]'),o=document.querySelector('[data-risk-result]');if(!f||!o)return;const labels={clear:'No material issue identified',clarify:'Requires clarification',material:'Material issue before bidding',unknown:'Insufficient information'},cls={clear:'green',clarify:'amber',material:'red',unknown:'grey'},fields=[['market','Market'],['provenance','Provenance'],['condition','Condition'],['movement','Movement'],['transaction','Transaction']];const d=()=>o.innerHTML='<div class="eyebrow">Transaction risk view</div><div class="risk-matrix">'+fields.map(x=>{const v=f.elements[x[0]].value;return '<div class="risk-row"><strong>'+x[1]+'</strong><span>'+labels[v]+'</span><span class="result-status result-status--'+cls[v]+'">'+(v==='clear'?'Clear':v==='clarify'?'Clarify':v==='material'?'Material':'Unknown')+'</span></div>'}).join('')+'</div><p class="disclaimer">This framework organises unresolved questions. It is not an investment rating.</p>';f.addEventListener('input',d);d()}
 function initRouteExplorer(){const f=document.querySelector('[data-route-explorer]'),o=document.querySelector('[data-route-result]');if(!f||!o)return;const p={'AE>IN':'briefs/uae-to-india.html','IN>IN':'briefs/india-domestic.html'};const d=()=>{const from=f.elements.origin.value,to=f.elements.destination.value,fn=f.elements.origin.selectedOptions[0].textContent,tn=f.elements.destination.selectedOptions[0].textContent,hit=p[from+'>'+to];o.innerHTML='<div class="route-board__content"><div class="eyebrow">Art Transaction Map</div><div class="route-title">'+esc(fn)+' ↔ '+esc(tn)+'</div><div class="route-meta"><span class="route-chip">'+(hit?'Published corridor':'Research on request')+'</span><span class="route-chip">Buyer-side intelligence</span></div><div class="layer-grid">'+['Money|Remittance & currency','Tax|Transaction specific','Movement|Export / import','Cultural property|Object specific','Documentation|Verify before bid','Deadlines|Sale specific'].map(s=>{const q=s.split('|');return '<div class="layer"><div class="layer__name">'+q[0]+'</div><div class="layer__value">'+q[1]+'</div></div>'}).join('')+'</div><p style="margin-top:22px">'+(hit?'A published corridor brief is available.':'This route is not yet in the published library. Commissioned research can convert it into a verified corridor brief.')+'</p><a class="btn btn--gold" href="'+(hit?hit:'commission.html?from='+encodeURIComponent(fn)+'&to='+encodeURIComponent(tn))+'">'+(hit?'Open published brief →':'Commission corridor →')+'</a></div>'};f.addEventListener('input',d);d()}
@@ -267,3 +267,59 @@ async function renderRegulatoryAlertsV2(){
   }catch(e){}
 }
 renderRegulatoryAlertsV2();
+
+/* ---------- automated auction alert cards ---------- */
+function alertHouseMark(a){
+  if(a.logo) return '<span class="house-logo-slot"><img src="'+esc(a.logo)+'" alt="'+esc(a.house)+' logo"></span>';
+  return '<span class="house-logo-slot" aria-label="'+esc(a.house)+'">'+esc(a.houseCode||a.house.slice(0,3).toUpperCase())+'</span>';
+}
+function downloadAuctionICS(a){
+  const date=(a.saleDate||'').replaceAll('-','');
+  if(!date)return;
+  const body=[
+    'BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//The Neo Art House//Deadline Radar//EN',
+    'BEGIN:VEVENT',
+    'UID:'+a.id+'@theneoarthouse.com',
+    'DTSTART;VALUE=DATE:'+date,
+    'DTEND;VALUE=DATE:'+date,
+    'SUMMARY:'+String(a.house+' — '+a.sale).replace(/[;,]/g,'\\$&'),
+    'DESCRIPTION:'+String((a.buyerAlert?a.buyerAlert+' | ':'')+(a.note||'')).replace(/\n/g,'\\n').replace(/[;,]/g,'\\$&'),
+    a.url?'URL:'+a.url:'',
+    'END:VEVENT','END:VCALENDAR'
+  ].filter(Boolean).join('\r\n');
+  const blob=new Blob([body],{type:'text/calendar;charset=utf-8'});
+  const u=URL.createObjectURL(blob),link=document.createElement('a');
+  link.href=u;link.download=(a.house+'-'+a.sale+'.ics').replace(/[^a-z0-9._-]+/gi,'-').toLowerCase();
+  document.body.append(link);link.click();link.remove();URL.revokeObjectURL(u);
+}
+async function initAuctionAlertCards(){
+  const host=document.querySelector('[data-auction-alerts]');if(!host)return;
+  const search=document.querySelector('[data-alert-search]'),houseSel=document.querySelector('[data-alert-house]'),windowSel=document.querySelector('[data-alert-window]');
+  try{
+    const data=await fetch(base()+'assets/data/auction-alerts.json').then(r=>r.json());
+    const alerts=(data.alerts||[]).filter(a=>a.urgency!=='past');
+    [...new Set(alerts.map(a=>a.house).filter(Boolean))].sort().forEach(h=>houseSel?.insertAdjacentHTML('beforeend','<option value="'+esc(h)+'">'+esc(h)+'</option>'));
+    const draw=()=>{
+      const q=(search?.value||'').trim().toLowerCase(),hs=houseSel?.value||'',win=windowSel?.value||'all';
+      const list=alerts.filter(a=>{
+        if(hs&&a.house!==hs)return false;
+        if(q&&!String(a.house+' '+a.sale+' '+a.city+' '+a.note).toLowerCase().includes(q))return false;
+        if(win!=='all'&&a.daysToSale!=null&&(a.daysToSale<0||a.daysToSale>Number(win)))return false;
+        return true;
+      });
+      host.innerHTML=list.map((a,i)=>'<article class="auction-alert-card">'+
+        '<div class="auction-alert-top"><div class="house-lockup">'+alertHouseMark(a)+'<div><strong>'+esc(a.house)+'</strong><div class="muted" style="font-size:10px">'+(a.logo?'Official mark':'House identifier')+'</div></div></div><div class="auction-date"><span class="urgency-'+esc(a.urgency)+'">'+esc(a.dateLabel||a.saleDate)+'</span></div></div>'+
+        '<div class="auction-location">'+esc(a.city||'')+'</div><h3>'+esc(a.sale)+'</h3>'+
+        '<p class="auction-alert-note">'+esc(a.note||'')+'</p>'+
+        (a.buyerAlert?'<div class="auction-buyer-flag"><span class="status-dot"></span><strong>'+esc(a.buyerAlert)+'</strong></div>':'')+
+        '<div class="auction-actions">'+
+          (a.url?'<a class="btn btn--dark" href="'+esc(a.url)+'" target="_blank" rel="noopener">View sale ↗</a>':'')+
+          '<button class="btn" type="button" data-ics="'+esc(a.id)+'">Add to calendar</button>'+
+          '<a class="btn" href="lot-review.html">Transaction view →</a>'+
+        '</div></article>').join('')||'<div class="empty-state"><h3>No upcoming sales match these filters.</h3></div>';
+      host.querySelectorAll('[data-ics]').forEach(b=>b.addEventListener('click',()=>{const a=list.find(x=>x.id===b.dataset.ics);if(a)downloadAuctionICS(a)}));
+    };
+    search?.addEventListener('input',draw);houseSel?.addEventListener('change',draw);windowSel?.addEventListener('change',draw);draw();
+  }catch(e){host.innerHTML='<div class="empty-state"><h3>Auction alerts could not be loaded.</h3></div>'}
+}
+initAuctionAlertCards();
