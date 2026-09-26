@@ -412,3 +412,12 @@ function initAccountHooks(){
   document.querySelectorAll('[data-corridor-library],[data-auction-index],[data-auction-alerts]').forEach(x=>mo.observe(x,{childList:true,subtree:true}));
 }
 initAccountHooks();
+
+function initApprovedBrandLogo(){
+  document.querySelectorAll('.brand').forEach(a=>{
+    if(a.querySelector('.brand__approved-logo'))return;
+    a.innerHTML='<img class="brand__approved-logo" src="assets/img/neo-art-house-logo.svg" alt="The Neo Art House — Independent Art Transaction Intelligence">';
+    a.setAttribute('aria-label','The Neo Art House');
+  });
+}
+initApprovedBrandLogo();
