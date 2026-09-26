@@ -1,0 +1,1007 @@
+{
+  "updated": "2026-09-27",
+  "scope": "Jurisdiction-by-jurisdiction regulatory research index aligned to the 32-country Auction House Intelligence Index.",
+  "methodology": "Verified means supported by a current primary authority or official legal/tax/customs source. Framework verified means an EU/international framework is confirmed but national implementation details still require local verification. Research queued means no claim is published yet.",
+  "jurisdictions": [
+    {
+      "code": "AT",
+      "country": "Austria",
+      "region": "Europe",
+      "framework": "EU",
+      "verified": "2026-09-27",
+      "status": "Baseline verified",
+      "layers": {
+        "Import / customs": "Framework verified",
+        "Tax / VAT / GST": "Research queued",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "Austrian Monument Protection Act — export controls",
+          "url": "https://www.ris.bka.gv.at/geltendefassung.wxe?abfrage=bundesnormen&gesetzesnummer=10009184"
+        },
+        {
+          "label": "EU Regulation 2019/880 — import of cultural goods",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=LEGISSUM:4398776"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "BE",
+      "country": "Belgium",
+      "region": "Europe",
+      "framework": "EU",
+      "verified": "2026-09-27",
+      "status": "Baseline verified",
+      "layers": {
+        "Import / customs": "Framework verified",
+        "Tax / VAT / GST": "Research queued",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "Flanders — export licence for cultural goods",
+          "url": "https://www.vlaanderen.be/cjm/en/node/462"
+        },
+        {
+          "label": "EU Regulation 2019/880 — import of cultural goods",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=LEGISSUM:4398776"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "DK",
+      "country": "Denmark",
+      "region": "Europe",
+      "framework": "EU",
+      "verified": "2026-09-27",
+      "status": "Baseline verified",
+      "layers": {
+        "Import / customs": "Framework verified",
+        "Tax / VAT / GST": "Verified",
+        "Export / cultural property": "Framework verified",
+        "Documentation / permits": "Framework verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "Danish Tax Agency — import VAT basis for art, collectibles and antiques",
+          "url": "https://info.skat.dk/data.aspx?oid=1978196"
+        },
+        {
+          "label": "EU Regulation 2019/880 — import of cultural goods",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=LEGISSUM:4398776"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "FI",
+      "country": "Finland",
+      "region": "Europe",
+      "framework": "EU",
+      "verified": "2026-09-27",
+      "status": "Core verified",
+      "layers": {
+        "Import / customs": "Verified",
+        "Tax / VAT / GST": "Verified",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "Finnish Heritage Agency — export licences",
+          "url": "https://www.museovirasto.fi/en/services-and-guidelines/export-licences"
+        },
+        {
+          "label": "Finnish Tax Administration — VAT on imports",
+          "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/international-commerce/value-added-taxation-of-imported-goods/"
+        },
+        {
+          "label": "EU Regulation 2019/880 — import of cultural goods",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=LEGISSUM:4398776"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "FR",
+      "country": "France",
+      "region": "Europe",
+      "framework": "EU",
+      "verified": "2026-09-27",
+      "status": "Core verified",
+      "layers": {
+        "Import / customs": "Verified",
+        "Tax / VAT / GST": "Verified",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "French Ministry of Culture — export authorisation",
+          "url": "https://www.culture.gouv.fr/thematiques/circulation-des-biens-culturels/pour-les-professionnels/comment-soumettre-une-demande-d-autorisation-d-exportation"
+        },
+        {
+          "label": "BOFiP — VAT on art, collectors’ items and antiques",
+          "url": "https://bofip.impots.gouv.fr/bofip/1285-PGP.html/identifiant=BOI-TVA-SECT-90-40-20250514"
+        },
+        {
+          "label": "EU Regulation 2019/880 — import of cultural goods",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=LEGISSUM:4398776"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "country": "Germany",
+      "region": "Europe",
+      "framework": "EU",
+      "verified": "2026-09-27",
+      "status": "Baseline verified",
+      "layers": {
+        "Import / customs": "Framework verified",
+        "Tax / VAT / GST": "Research queued",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "German Cultural Property Protection — export licensing",
+          "url": "https://www.kulturgutschutz-deutschland.de/DE/AllesZumKulturgutschutz/Kulturgutschutzgesetz/Kernpunkte/Ausfuhrbestimmungen/Ausfuhrbestimmungen.html"
+        },
+        {
+          "label": "EU Regulation 2019/880 — import of cultural goods",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=LEGISSUM:4398776"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "IE",
+      "country": "Ireland",
+      "region": "Europe",
+      "framework": "EU",
+      "verified": "2026-09-27",
+      "status": "Core verified",
+      "layers": {
+        "Import / customs": "Verified",
+        "Tax / VAT / GST": "Partial",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "Government of Ireland — export of cultural goods",
+          "url": "https://www.gov.ie/en/department-of-culture-communications-and-sport/publications/export-of-cultural-goods/"
+        },
+        {
+          "label": "Revenue — importation of collectors’ pieces and works of art",
+          "url": "https://www.revenue.ie/en/customs/businesses/relief-duty-vat/collectors-art/index.aspx"
+        },
+        {
+          "label": "EU Regulation 2019/880 — import of cultural goods",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=LEGISSUM:4398776"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "IT",
+      "country": "Italy",
+      "region": "Europe",
+      "framework": "EU",
+      "verified": "2026-09-27",
+      "status": "Baseline verified",
+      "layers": {
+        "Import / customs": "Framework verified",
+        "Tax / VAT / GST": "Research queued",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "Italian Ministry of Culture — SUE export system",
+          "url": "https://sue.cultura.gov.it/"
+        },
+        {
+          "label": "EU Regulation 2019/880 — import of cultural goods",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=LEGISSUM:4398776"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "NL",
+      "country": "Netherlands",
+      "region": "Europe",
+      "framework": "EU",
+      "verified": "2026-09-27",
+      "status": "Core verified",
+      "layers": {
+        "Import / customs": "Verified",
+        "Tax / VAT / GST": "Verified",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "Government.nl — export licence for cultural goods",
+          "url": "https://www.government.nl/themes/government-and-democracy/art-and-culture/applying-for-an-export-licence-for-cultural-goods"
+        },
+        {
+          "label": "Government.nl — importing cultural objects",
+          "url": "https://www.government.nl/themes/government-and-democracy/art-and-culture/importing-cultural-objects"
+        },
+        {
+          "label": "Belastingdienst — VAT on art and imports",
+          "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/bijzondere_regelingen/margeregeling/margegoederen/specifieke_margegoederen/kunst_van_een_kunstenaar_en_invoer_uit_niet_eu_landen/"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "PT",
+      "country": "Portugal",
+      "region": "Europe",
+      "framework": "EU",
+      "verified": "2026-09-27",
+      "status": "Baseline verified",
+      "layers": {
+        "Import / customs": "Framework verified",
+        "Tax / VAT / GST": "Research queued",
+        "Export / cultural property": "Verified framework",
+        "Documentation / permits": "Partial",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "Património Cultural, I.P. — cultural heritage legislation",
+          "url": "https://www.patrimoniocultural.gov.pt/patrimonio-cultural/legislacao/"
+        },
+        {
+          "label": "EU Regulation 2019/880 — import of cultural goods",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=LEGISSUM:4398776"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "ES",
+      "country": "Spain",
+      "region": "Europe",
+      "framework": "EU",
+      "verified": "2026-09-27",
+      "status": "Baseline verified",
+      "layers": {
+        "Import / customs": "Framework verified",
+        "Tax / VAT / GST": "Research queued",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "Spanish Ministry of Culture — cultural goods export procedure",
+          "url": "https://www.cultura.gob.es/cultura/patrimonio/exportacionimportacion/exportacion/procedimiento.html"
+        },
+        {
+          "label": "Spanish Ministry of Culture — export outside Spain",
+          "url": "https://www.cultura.gob.es/cultura/patrimonio/exportacionimportacion/exportacion/exportacion-a-otros-paises.html"
+        },
+        {
+          "label": "EU Regulation 2019/880 — import of cultural goods",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=LEGISSUM:4398776"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "SE",
+      "country": "Sweden",
+      "region": "Europe",
+      "framework": "EU",
+      "verified": "2026-09-27",
+      "status": "Core verified",
+      "layers": {
+        "Import / customs": "Framework verified",
+        "Tax / VAT / GST": "Verified",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "Swedish National Heritage Board — exporting cultural goods",
+          "url": "https://www.raa.se/lagar-och-stod/kulturmiljolagen-kml/utforsel-och-export-av-kulturforemal-5-8-kap/"
+        },
+        {
+          "label": "Swedish Tax Agency — art, collectibles and antiques",
+          "url": "https://www4.skatteverket.se/rattsligvagledning/edition/2026.13/410555.html"
+        },
+        {
+          "label": "EU Regulation 2019/880 — import of cultural goods",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=LEGISSUM:4398776"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "NO",
+      "country": "Norway",
+      "region": "Europe",
+      "framework": "National",
+      "verified": "2026-09-27",
+      "status": "Baseline verified",
+      "layers": {
+        "Import / customs": "Verified",
+        "Tax / VAT / GST": "Verified",
+        "Export / cultural property": "Research queued",
+        "Documentation / permits": "Partial",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "Norwegian Customs — works of art and VAT",
+          "url": "https://www.toll.no/en/goods/cultural-monuments-and-antiques/works-of-art-and-value-added-tax"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "CH",
+      "country": "Switzerland",
+      "region": "Europe",
+      "framework": "National",
+      "verified": "2026-09-27",
+      "status": "Core verified",
+      "layers": {
+        "Import / customs": "Verified",
+        "Tax / VAT / GST": "Partial",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "Federal Office of Culture — import, transit and export of cultural property",
+          "url": "https://www.bak.admin.ch/en/import-transit-and-export-of-cultural-property"
+        },
+        {
+          "label": "Federal Customs — art and exhibition objects",
+          "url": "https://www.bazg.admin.ch/de/kunst-und-ausstellungsgegenstaende"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "IN",
+      "country": "India",
+      "region": "South Asia",
+      "framework": "National",
+      "verified": "2026-09-27",
+      "status": "Core verified",
+      "layers": {
+        "Import / customs": "Partial",
+        "Tax / VAT / GST": "Partial",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Verified",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "RBI — Liberalised Remittance Scheme",
+          "url": "https://www.rbi.org.in/scripts/notificationuser.aspx?id=10192"
+        },
+        {
+          "label": "ASI — Antiquities and Art Treasures Act/Rules",
+          "url": "https://asi.nic.in/pdf/antiquityActRules.pdf"
+        },
+        {
+          "label": "CBIC — GST rate schedule",
+          "url": "https://cbic-gst.gov.in/hindi/gst-goods-services-rates.html"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "AE",
+      "country": "United Arab Emirates",
+      "region": "Middle East",
+      "framework": "GCC",
+      "verified": "2026-09-27",
+      "status": "Baseline verified",
+      "layers": {
+        "Import / customs": "Partial",
+        "Tax / VAT / GST": "Verified",
+        "Export / cultural property": "Research queued",
+        "Documentation / permits": "Research queued",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "UAE Federal Tax Authority — taxable supplies and imports",
+          "url": "https://tax.gov.ae/en/search/genericcontent/what.is.a.taxable.supply.aspx"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "QA",
+      "country": "Qatar",
+      "region": "Middle East",
+      "framework": "GCC",
+      "verified": "2026-09-27",
+      "status": "Baseline verified",
+      "layers": {
+        "Import / customs": "Verified framework",
+        "Tax / VAT / GST": "Research queued",
+        "Export / cultural property": "Research queued",
+        "Documentation / permits": "Partial",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "Qatar Customs — personal imports and restricted goods",
+          "url": "https://www.customs.gov.qa/Arabic/PassengersIndividualsPortal/Pages/IndividualsImporting.aspx"
+        },
+        {
+          "label": "Qatar Customs — HS 2025 Chapter 97",
+          "url": "https://www.customs.gov.qa/English/Tariff/Documents/HS_CODE_2025_1.pdf"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "SG",
+      "country": "Singapore",
+      "region": "Southeast Asia",
+      "framework": "National",
+      "verified": "2026-09-27",
+      "status": "Core verified",
+      "layers": {
+        "Import / customs": "Verified",
+        "Tax / VAT / GST": "Verified",
+        "Export / cultural property": "Research queued",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "Singapore Customs — GST on imports",
+          "url": "https://www.customs.gov.sg/doing-business/valuation-duties-and-fees/goods-and-services-tax-gst/"
+        },
+        {
+          "label": "Singapore Customs — import procedures",
+          "url": "https://www.customs.gov.sg/doing-business/import-operations/import-procedures/import-procedures-overview/"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "MY",
+      "country": "Malaysia",
+      "region": "Southeast Asia",
+      "framework": "National",
+      "verified": "2026-09-27",
+      "status": "Baseline verified",
+      "layers": {
+        "Import / customs": "Research queued",
+        "Tax / VAT / GST": "Research queued",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "National Heritage Act 2005 — export licence for heritage items",
+          "url": "https://www.heritage.gov.my/en/jwn-info/policy-and-legislation.html?download=46%3Anational-heritage-act-2005"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "ID",
+      "country": "Indonesia",
+      "region": "Southeast Asia",
+      "framework": "National",
+      "verified": "2026-09-27",
+      "status": "Baseline verified",
+      "layers": {
+        "Import / customs": "Research queued",
+        "Tax / VAT / GST": "Research queued",
+        "Export / cultural property": "Verified framework",
+        "Documentation / permits": "Partial",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "Directorate of Cultural Protection — overseas cultural heritage permit function",
+          "url": "https://kebudayaan.kemdikbud.go.id/dpk/tentang-kami/"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "CN",
+      "country": "China",
+      "region": "East Asia",
+      "framework": "National",
+      "verified": "2026-09-27",
+      "status": "Baseline verified",
+      "layers": {
+        "Import / customs": "Partial",
+        "Tax / VAT / GST": "Research queued",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "PRC Law on Protection of Cultural Relics — export controls",
+          "url": "https://www.npc.gov.cn/zgrdw/englishnpc/Law/2009-02/25/content_1472452.htm"
+        },
+        {
+          "label": "China customs guidance — cultural relic exit controls",
+          "url": "https://enghunan.gov.cn/hneng/Services/EntryExit/LuggageInstructions/202607/t20260714_34026190.html"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "JP",
+      "country": "Japan",
+      "region": "East Asia",
+      "framework": "National",
+      "verified": "2026-09-27",
+      "status": "Core verified",
+      "layers": {
+        "Import / customs": "Verified",
+        "Tax / VAT / GST": "Partial",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "Agency for Cultural Affairs — preventing outflow / antique export certificates",
+          "url": "https://www.bunka.go.jp/english/policy/cultural_properties/international/"
+        },
+        {
+          "label": "Japan Customs — Chapter 97 tariff",
+          "url": "https://www.customs.go.jp/english/tariff/2026_01_01/data/e_97.htm"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "KR",
+      "country": "South Korea",
+      "region": "East Asia",
+      "framework": "National",
+      "verified": "2026-09-27",
+      "status": "Baseline verified",
+      "layers": {
+        "Import / customs": "Verified framework",
+        "Tax / VAT / GST": "Research queued",
+        "Export / cultural property": "Verified framework",
+        "Documentation / permits": "Partial",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "Korea Heritage Service — overseas export approval responsibilities",
+          "url": "https://khs.go.kr/html/HtmlPage.do?mn=NS_03_03_02&pg=%2Fseek%2Fcommit2.jsp"
+        },
+        {
+          "label": "Korea Customs Service — tariff database",
+          "url": "https://www.customs.go.kr/english/ad/ct/CustomsTariffList.do?mi=8037"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "TW",
+      "country": "Taiwan",
+      "region": "East Asia",
+      "framework": "National",
+      "verified": "2026-09-27",
+      "status": "Baseline verified",
+      "layers": {
+        "Import / customs": "Research queued",
+        "Tax / VAT / GST": "Research queued",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "Bureau of Cultural Heritage — national treasures / important antiquities movement rules",
+          "url": "https://data.boch.gov.tw/upload/file/2021-05-13/ffe8f56e-46e4-4613-a85e-1485c69264d8/%E5%9C%8B%E5%AF%B6%E5%8F%8A%E9%87%8D%E8%A6%81%E5%8F%A4%E7%89%A9%E9%81%8B%E5%87%BA%E5%85%A5%E8%99%95%E7%90%86%E8%BE%A6%E6%B3%951060712%E6%A2%9D%E6%96%87%E5%B0%8D%E7%85%A7%E8%A1%A8%28%E5%90%AB%E8%AA%AA%E6%98%8E%29.pdf"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "AU",
+      "country": "Australia",
+      "region": "Oceania",
+      "framework": "National",
+      "verified": "2026-09-27",
+      "status": "Core verified",
+      "layers": {
+        "Import / customs": "Verified",
+        "Tax / VAT / GST": "Partial",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "Office for the Arts — exporting cultural property from Australia",
+          "url": "https://www.arts.gov.au/what-we-do/cultural-heritage/movable-cultural-heritage/exporting-cultural-property-australia"
+        },
+        {
+          "label": "Australian Border Force — importing antiques",
+          "url": "https://www.abf.gov.au/imports/Pages/How-to-import/importing-antiques.aspx"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "CA",
+      "country": "Canada",
+      "region": "North America",
+      "framework": "National",
+      "verified": "2026-09-27",
+      "status": "Core verified",
+      "layers": {
+        "Import / customs": "Verified",
+        "Tax / VAT / GST": "Research queued",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "Canadian Heritage — cultural property export permits",
+          "url": "https://www.canada.ca/en/canadian-heritage/services/export-permits-cultural-property.html"
+        },
+        {
+          "label": "Canadian Heritage — import of cultural property",
+          "url": "https://www.canada.ca/en/canadian-heritage/services/import-cultural-property.html"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "US",
+      "country": "United States",
+      "region": "North America",
+      "framework": "National",
+      "verified": "2026-09-27",
+      "status": "Baseline verified",
+      "layers": {
+        "Import / customs": "Verified",
+        "Tax / VAT / GST": "Partial",
+        "Export / cultural property": "Research queued",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "USITC — Harmonized Tariff Schedule Chapter 97",
+          "url": "https://hts.usitc.gov/?release=1"
+        },
+        {
+          "label": "CBP — cultural property restrictions",
+          "url": "https://www.cbp.gov/trade/programs-administration/cultural-property-protection"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "MX",
+      "country": "Mexico",
+      "region": "Latin America",
+      "framework": "National",
+      "verified": "2026-09-27",
+      "status": "Baseline verified",
+      "layers": {
+        "Import / customs": "Partial",
+        "Tax / VAT / GST": "Partial",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "INAH — export permit for historic movable property",
+          "url": "https://tramites.inah.gob.mx/INAH-01-002.html"
+        },
+        {
+          "label": "SAT — VAT law Article 25 art-import exemptions",
+          "url": "https://wwwmat.sat.gob.mx/articulo/03021/articulo-25"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "BR",
+      "country": "Brazil",
+      "region": "Latin America",
+      "framework": "National",
+      "verified": "2026-09-27",
+      "status": "Baseline verified",
+      "layers": {
+        "Import / customs": "Research queued",
+        "Tax / VAT / GST": "Research queued",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "IPHAN — exit of cultural goods from Brazil",
+          "url": "https://www.gov.br/iphan/pt-br/servicos/saida-de-bens-culturais-do-brasil"
+        },
+        {
+          "label": "Receita Federal — control of cultural goods leaving Brazil",
+          "url": "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/manuais/despacho-de-exportacao/topicos/entrega-e-recepcao-dos-documentos/documentos-de-instrucao-do-despacho-por-de/controle-da-saida-de-bens-culturais-do-pais"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "ZA",
+      "country": "South Africa",
+      "region": "Africa",
+      "framework": "National",
+      "verified": "2026-09-27",
+      "status": "Core verified",
+      "layers": {
+        "Import / customs": "Verified framework",
+        "Tax / VAT / GST": "Verified",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "SAHRA — heritage objects and export permits",
+          "url": "https://www.sahra.org.za/heritage-objects/"
+        },
+        {
+          "label": "SARS — duties and taxes for importers",
+          "url": "https://www.sars.gov.za/customs-and-excise/duties-and-taxes/duties-and-taxes-for-importers/"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "NZ",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "framework": "National",
+      "verified": "2026-09-27",
+      "status": "Baseline verified",
+      "layers": {
+        "Import / customs": "Verified framework",
+        "Tax / VAT / GST": "Research queued",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "Manatū Taonga — exporting protected objects",
+          "url": "https://www.mch.govt.nz/our-work/protected-objects/exporting-protected-objects"
+        },
+        {
+          "label": "Protected Objects Act 1975",
+          "url": "https://www.legislation.govt.nz/act/public/1975/41/en/latest/"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    },
+    {
+      "code": "GB",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "framework": "National",
+      "verified": "2026-09-27",
+      "status": "Core verified",
+      "layers": {
+        "Import / customs": "Verified",
+        "Tax / VAT / GST": "Verified",
+        "Export / cultural property": "Verified",
+        "Documentation / permits": "Verified",
+        "Restricted materials / CITES": "Framework verified",
+        "Payments / remittance": "Research queued",
+        "Temporary movement / re-export": "Research queued"
+      },
+      "sources": [
+        {
+          "label": "GOV.UK — exporting or importing objects of cultural interest",
+          "url": "https://www.gov.uk/guidance/exporting-or-importing-objects-of-cultural-interest"
+        },
+        {
+          "label": "GOV.UK — import VAT valuation",
+          "url": "https://www.gov.uk/guidance/how-to-value-goods-for-import-vat"
+        },
+        {
+          "label": "CITES — international trade controls",
+          "url": "https://cites.org/eng/node/12644"
+        }
+      ]
+    }
+  ]
+}
