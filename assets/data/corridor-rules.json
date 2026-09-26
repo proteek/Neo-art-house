@@ -100,6 +100,84 @@
       "detail": "CITES states that commercial international trade in African elephant ivory is prohibited under current CITES listings/annotations, subject to tightly limited exceptions. Domestic laws can be stricter still.",
       "verified": "2026-09-27",
       "source": "https://cites.org/fra/node/43577"
+    },
+    {
+      "id": "SG-import-gst",
+      "jurisdiction": "Singapore",
+      "appliesWhen": {
+        "destination": "SG"
+      },
+      "layer": "Tax",
+      "status": "Source",
+      "title": "Imported goods entering Singapore are subject to GST at the prevailing rate; the current rate is 9%.",
+      "detail": "Singapore Customs states that all imported goods are subject to GST unless exempt. The current 9% rate has applied since 1 January 2024. GST for non-dutiable goods is calculated on customs value or, in certain multiple-sale cases, the last selling price.",
+      "verified": "2026-09-27",
+      "source": "https://www.customs.gov.sg/doing-business/valuation-duties-and-fees/goods-and-services-tax-gst/"
+    },
+    {
+      "id": "SG-art-nondutiable",
+      "jurisdiction": "Singapore",
+      "appliesWhen": {
+        "destination": "SG"
+      },
+      "layer": "Import",
+      "status": "Source",
+      "title": "Ordinary works of art are not within Singapore’s four categories of dutiable goods.",
+      "detail": "Singapore Customs lists only intoxicating liquors, tobacco products, motor vehicles, and petroleum products/biodiesel blends as dutiable categories. Other goods are non-dutiable, although GST and any control requirements can still apply.",
+      "verified": "2026-09-27",
+      "source": "https://www.customs.gov.sg/doing-business/valuation-duties-and-fees/duties-and-dutiable-goods/duties-and-dutiable-goods-overview/"
+    },
+    {
+      "id": "SG-import-permit",
+      "jurisdiction": "Singapore",
+      "appliesWhen": {
+        "destination": "SG"
+      },
+      "layer": "Documentation",
+      "status": "Source",
+      "title": "Singapore imports require customs declaration/permit treatment.",
+      "detail": "Singapore Customs’ import procedures state that imported goods are regulated under the Customs Act, GST Act and Regulation of Imports and Exports Act, and a customs permit is required to account for import and tax payment.",
+      "verified": "2026-09-27",
+      "source": "https://www.customs.gov.sg/doing-business/import-operations/import-procedures/import-procedures-overview/"
+    },
+    {
+      "id": "US-ch97-base-duty",
+      "jurisdiction": "United States",
+      "appliesWhen": {
+        "destination": "US"
+      },
+      "layer": "Import",
+      "status": "Source",
+      "title": "Several core U.S. Chapter 97 art and antique classifications carry a Free general duty rate.",
+      "detail": "The current U.S. Harmonized Tariff Schedule shows Free general rates for original engravings/prints/lithographs under 9702, original sculptures under 9703, specified collectors’ pieces under 9705 and antiques over 100 years under 9706. Exact classification matters, and separate Chapter 99 measures or other import restrictions can still apply.",
+      "verified": "2026-09-27",
+      "source": "https://hts.usitc.gov/search?query=9705.39.00.10"
+    },
+    {
+      "id": "US-antique-proof",
+      "jurisdiction": "United States",
+      "appliesWhen": {
+        "destination": "US"
+      },
+      "layer": "Documentation",
+      "status": "Source",
+      "title": "U.S. duty-free antique treatment requires proof that the item is over 100 years old.",
+      "detail": "CBP states that an antique must be over 100 years old at importation for Chapter 9706 duty-free treatment and that the importer should have proof of age. Original artwork and certain collectors’ items may instead fall under other Chapter 97 headings.",
+      "verified": "2026-09-27",
+      "source": "https://www.help.cbp.gov/s/article/Article1143?language=en_US"
+    },
+    {
+      "id": "US-cultural-property-restrictions",
+      "jurisdiction": "United States",
+      "appliesWhen": {
+        "destination": "US"
+      },
+      "layer": "Cultural property",
+      "status": "Source",
+      "title": "Certain archaeological and ethnological material can be subject to U.S. country-specific import restrictions.",
+      "detail": "Under the Convention on Cultural Property Implementation Act, the United States can impose import restrictions on designated archaeological or ethnological material through bilateral agreements or emergency measures. Applicable designated lists are country- and object-specific.",
+      "verified": "2026-09-27",
+      "source": "https://www.cbp.gov/sites/default/files/2025-05/vol_59_no_22_complete.pdf"
     }
   ]
 }

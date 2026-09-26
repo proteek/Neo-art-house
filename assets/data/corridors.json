@@ -1,0 +1,107 @@
+{
+  "updated": "2026-09-27",
+  "note": "Structured route records combine verified rule layers. They are research summaries, not legal opinions.",
+  "corridors": [
+    {
+      "id": "IN-GB-IN",
+      "buyerResidence": "IN",
+      "saleLocation": "GB",
+      "destination": "IN",
+      "title": "India buyer → UK auction → India",
+      "status": "Structured / verified layers",
+      "summary": "An India-resident buyer bidding in the UK and importing the work into India. Key layers are outward remittance, UK export controls where applicable, and Indian import/GST classification.",
+      "ruleIds": [
+        "IN-remittance-LRS",
+        "GB-cultural-export",
+        "IN-gst-ch97"
+      ],
+      "unresolved": [
+        "Exact auction-house premium and sale taxes",
+        "Indian customs classification and import-duty computation for the specific object",
+        "Shipping/insurance quote",
+        "Object-specific export licence threshold"
+      ]
+    },
+    {
+      "id": "AE-GB-AE",
+      "buyerResidence": "AE",
+      "saleLocation": "GB",
+      "destination": "AE",
+      "title": "UAE buyer → UK auction → UAE",
+      "status": "Structured / verified layers",
+      "summary": "A UAE-based buyer acquiring at a UK auction and returning the work to the UAE. Key layers are UK export controls where applicable and UAE VAT/import treatment.",
+      "ruleIds": [
+        "GB-cultural-export",
+        "AE-vat-general-import"
+      ],
+      "unresolved": [
+        "UAE customs classification/duty for the exact object and emirate entry point",
+        "Auction-house premium and sale taxes",
+        "Shipping/insurance quote",
+        "Object-specific UK export licence requirement"
+      ]
+    },
+    {
+      "id": "IN-SG-IN",
+      "buyerResidence": "IN",
+      "saleLocation": "SG",
+      "destination": "IN",
+      "title": "India buyer → Singapore auction → India",
+      "status": "Structured / verified layers",
+      "summary": "An India-resident buyer acquiring in Singapore and importing into India. Key layers are LRS/remittance and Indian import classification; Singapore sale-specific auction terms still need to be checked.",
+      "ruleIds": [
+        "IN-remittance-LRS",
+        "IN-gst-ch97"
+      ],
+      "unresolved": [
+        "Singapore auction-house buyer terms",
+        "Indian customs classification and import-duty computation",
+        "Shipping/insurance",
+        "Any object-specific export control"
+      ]
+    },
+    {
+      "id": "IN-GB-SG",
+      "buyerResidence": "IN",
+      "saleLocation": "GB",
+      "destination": "SG",
+      "title": "India buyer → UK auction → Singapore",
+      "status": "Structured / verified layers",
+      "summary": "An India-resident buyer bidding in the UK and sending the work to Singapore. This route combines Indian remittance controls, possible UK cultural-goods export licensing and Singapore GST/import-permit treatment.",
+      "ruleIds": [
+        "IN-remittance-LRS",
+        "GB-cultural-export",
+        "SG-import-gst",
+        "SG-art-nondutiable",
+        "SG-import-permit"
+      ],
+      "unresolved": [
+        "Auction-house premium and UK sale taxes",
+        "Object-specific UK export licence requirement",
+        "Singapore controlled-goods check for the specific object",
+        "Shipping/insurance"
+      ]
+    },
+    {
+      "id": "US-GB-US",
+      "buyerResidence": "US",
+      "saleLocation": "GB",
+      "destination": "US",
+      "title": "U.S. buyer → UK auction → United States",
+      "status": "Structured / classification-sensitive",
+      "summary": "A U.S.-resident buyer acquiring in the UK and importing into the United States. Many qualifying Chapter 97 categories have a Free base general duty rate, but classification and separate cultural-property or Chapter 99 measures must be checked.",
+      "ruleIds": [
+        "GB-cultural-export",
+        "US-ch97-base-duty",
+        "US-cultural-property-restrictions"
+      ],
+      "unresolved": [
+        "Exact HTS classification",
+        "Any Chapter 99 measure affecting the item/origin",
+        "State use/sales-tax consequences",
+        "Auction-house premium and sale taxes",
+        "Shipping/insurance"
+      ]
+    }
+  ]
+}

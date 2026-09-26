@@ -203,3 +203,27 @@ function initThreeAxisRouteExplorer(){
   f.addEventListener('input',draw);draw();
 }
 initThreeAxisRouteExplorer();
+
+/* ---------- structured corridor record layer ---------- */
+async function loadCorridorRecords(){
+  try{return await fetch(base()+'assets/data/corridors.json').then(r=>r.json())}catch(e){return {corridors:[]}}
+}
+async function initStructuredCorridorBadge(){
+  const f=document.querySelector('[data-route-explorer]'),o=document.querySelector('[data-route-result]');
+  if(!f||!o||!f.elements.buyerResidence)return;
+  const records=await loadCorridorRecords();
+  const draw=()=>{
+    setTimeout(()=>{
+      const id=[f.elements.buyerResidence.value,f.elements.saleLocation.value,f.elements.destination.value].join('-');
+      const rec=(records.corridors||[]).find(c=>c.id===id);
+      if(!rec)return;
+      const host=o.querySelector('.route-board__content'); if(!host)return;
+      const box=document.createElement('section');
+      box.style.marginTop='26px';
+      box.innerHTML='<div class="eyebrow">Structured corridor record</div><h3 style="font-family:var(--serif);font-size:28px;font-weight:500;margin:8px 0">'+esc(rec.title)+'</h3><p>'+esc(rec.summary)+'</p><span class="data-badge">'+esc(rec.status)+'</span><div style="margin-top:18px"><div class="eyebrow">Still unresolved</div><ul class="checklist">'+rec.unresolved.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></div>';
+      host.append(box);
+    },20);
+  };
+  f.addEventListener('input',draw);draw();
+}
+initStructuredCorridorBadge();
