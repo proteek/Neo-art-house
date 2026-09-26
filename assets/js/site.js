@@ -110,11 +110,16 @@ function initMobile(){
   const btn=document.querySelector('[data-mobile-menu]');
   const nav=document.querySelector('[data-nav]');
   if(!btn||!nav)return;
+  btn.setAttribute('aria-expanded','false');
+  btn.setAttribute('aria-label','Open menu');
+  const close=()=>{nav.classList.remove('nav--open');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-label','Open menu')};
   btn.addEventListener('click',()=>{
-    const open=nav.style.display==='flex';
-    nav.style.display=open?'none':'flex';
-    if(!open){nav.style.position='absolute';nav.style.left='0';nav.style.right='0';nav.style.top='72px';nav.style.background='var(--paper)';nav.style.padding='22px';nav.style.flexDirection='column';nav.style.borderBottom='1px solid var(--line)'}
+    const open=nav.classList.toggle('nav--open');
+    btn.setAttribute('aria-expanded',String(open));
+    btn.setAttribute('aria-label',open?'Close menu':'Open menu');
   });
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
+  window.addEventListener('resize',()=>{if(window.innerWidth>900)close()});
 }
 
 initPicker();initDirectory();initCalendar();initGlossary();initCostCalculator();initCommission();initMobile();
