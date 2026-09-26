@@ -1,7 +1,7 @@
 {
   "_readme": "Curated September 2026 calendar. Sale fields: date (YYYY-MM-DD, sorts the list), dateLabel, sale, house, city, url, note, flag, flagUrgent. Optional 'lots' array: artist, title, year, estimate, url, note. Facts taken from published catalogues; every note is our own. Never copy catalogue descriptions.",
   "status": "live",
-  "updated": "2026-09-08",
+  "updated": "2026-09-27",
   "sales": [
     {
       "date": "2026-09-10",
@@ -220,6 +220,72 @@
           "note": "A Tagore in London is exportable; the same artist in a Mumbai saleroom is not. The 1972 Act does not reach works already abroad before the notification."
         }
       ]
+    },
+    {
+      "date": "2026-09-29",
+      "dateLabel": "29 September",
+      "sale": "20th/21st Century Evening Sale",
+      "house": "Christie's",
+      "city": "Hong Kong",
+      "url": "https://www.christies.com/en/calendar/2026/10",
+      "note": "Major Hong Kong evening sale. Cross-border buyers should confirm premium, settlement currency, shipping route and destination tax before bidding.",
+      "flag": "Sale this week",
+      "flagUrgent": true
+    },
+    {
+      "date": "2026-10-14",
+      "dateLabel": "14 October",
+      "sale": "20th/21st Century: London Evening Sale",
+      "house": "Christie's",
+      "city": "London",
+      "url": "https://www.christies.com/en/calendar/2026/10",
+      "note": "London evening sale. Buyers moving works abroad should check UK export-licence exposure and destination import treatment.",
+      "flag": "Cross-border movement check",
+      "flagUrgent": false
+    },
+    {
+      "date": "2026-10-15",
+      "dateLabel": "15 October",
+      "sale": "Modern & Contemporary Art Evening Sale",
+      "house": "Phillips",
+      "city": "London",
+      "url": "https://www.phillips.com/auction/UK011026",
+      "note": "London evening sale. Phillips publishes a Priority Bidding deadline before the sale; buyers should also verify export and destination costs.",
+      "flag": "Priority bidding: 13 Oct, 5pm BST",
+      "flagUrgent": true
+    },
+    {
+      "date": "2026-10-21",
+      "dateLabel": "21 October",
+      "sale": "Art Moderne & Contemporain et Design",
+      "house": "Phillips",
+      "city": "Paris",
+      "url": "https://www.phillips.com/auction/FR010126",
+      "note": "Paris auction. French cultural-goods export rules can depend on age and value; destination treatment should be checked separately.",
+      "flag": "Priority bidding: 19 Oct, 4pm CEST",
+      "flagUrgent": true
+    },
+    {
+      "date": "2026-10-22",
+      "dateLabel": "22 October",
+      "sale": "20th/21st Century: Paris Evening Sale including Thinking Italian",
+      "house": "Christie's",
+      "city": "Paris",
+      "url": "https://www.christies.com/en/calendar/2026/10",
+      "note": "Paris evening sale. Buyers exporting outside France should check cultural-goods authorisation thresholds before arranging shipment.",
+      "flag": "French export check",
+      "flagUrgent": false
+    },
+    {
+      "date": "2026-10-30",
+      "dateLabel": "30 October",
+      "sale": "Indian, Himalayan and Southeast Asian Art",
+      "house": "Christie's",
+      "city": "Hong Kong",
+      "url": "https://www.christies.com/en/calendar/2026/10",
+      "note": "Cross-category Asian art sale where age, origin, cultural-property status and restricted materials can materially affect movement.",
+      "flag": "Provenance / movement review",
+      "flagUrgent": false
     }
   ]
 }
