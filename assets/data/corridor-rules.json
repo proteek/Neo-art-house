@@ -39,6 +39,67 @@
       "detail": "UK government guidance says the cultural-goods export licensing system is administered by Arts Council England. Licence requirements depend on the object and circumstances; certain cultural goods, antiques and works of art are subject to special export rules.",
       "verified": "2026-09-27",
       "source": "https://www.gov.uk/guidance/exporting-or-importing-objects-of-cultural-interest"
+    },
+    {
+      "id": "GB-import-vat-art",
+      "jurisdiction": "United Kingdom",
+      "appliesWhen": {
+        "destination": "GB"
+      },
+      "layer": "Tax",
+      "status": "Source",
+      "title": "Eligible imported works of art, antiques and collectors’ items can have an effective 5% UK import VAT rate.",
+      "detail": "HMRC guidance says eligible works of art, antiques and collectors’ items use a reduced import valuation: the VAT value is reduced to 25% and the 20% VAT rate is applied, producing an effective 5% import VAT rate. Eligibility depends on the statutory definitions and classification.",
+      "verified": "2026-09-27",
+      "source": "https://www.gov.uk/guidance/how-to-value-goods-for-import-vat"
+    },
+    {
+      "id": "IN-gst-ch97",
+      "jurisdiction": "India",
+      "appliesWhen": {
+        "destination": "IN"
+      },
+      "layer": "Tax",
+      "status": "Source",
+      "title": "India’s GST schedule lists key Chapter 97 art categories at 12%.",
+      "detail": "CBIC’s published GST goods-rate schedule lists headings 9701, 9702, 9703, 9705 and 9706 at 12% (6% CGST + 6% SGST for domestic supply). For an import, actual customs/IGST treatment must be checked against the exact tariff classification and current ICEGATE duty calculation.",
+      "verified": "2026-09-27",
+      "source": "https://cbic-gst.gov.in/hindi/gst-goods-services-rates.html"
+    },
+    {
+      "id": "AE-vat-general-import",
+      "jurisdiction": "United Arab Emirates",
+      "appliesWhen": {
+        "destination": "AE"
+      },
+      "layer": "Tax",
+      "status": "Source",
+      "title": "UAE VAT generally applies at 5% unless a supply is zero-rated or exempt.",
+      "detail": "The UAE Federal Tax Authority states that taxable supplies are generally subject to 5% or 0% VAT and that imports are taken into account where the equivalent domestic supply would be taxable. This is a general VAT rule, not an art-specific customs-duty conclusion.",
+      "verified": "2026-09-27",
+      "source": "https://tax.gov.ae/en/search/genericcontent/what.is.a.taxable.supply.aspx"
+    },
+    {
+      "id": "CITES-listed-materials",
+      "jurisdiction": "International",
+      "appliesWhen": {},
+      "layer": "Movement",
+      "status": "Source",
+      "title": "CITES-listed animal and plant materials may require permits or certificates for international movement.",
+      "detail": "CITES controls international trade in specimens of species listed in Appendices I, II and III. Appendix-I trade is subject to particularly strict controls; Appendix-II exports generally require an export permit or re-export certificate, and importing countries may impose stricter domestic requirements.",
+      "verified": "2026-09-27",
+      "source": "https://cites.org/eng/node/12644"
+    },
+    {
+      "id": "CITES-elephant-ivory",
+      "jurisdiction": "International",
+      "appliesWhen": {},
+      "layer": "Restricted material",
+      "status": "Source",
+      "title": "Elephant ivory is a high-risk restricted material for international trade.",
+      "detail": "CITES states that commercial international trade in African elephant ivory is prohibited under current CITES listings/annotations, subject to tightly limited exceptions. Domestic laws can be stricter still.",
+      "verified": "2026-09-27",
+      "source": "https://cites.org/fra/node/43577"
     }
   ]
 }

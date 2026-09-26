@@ -161,3 +161,18 @@ async function appendVerifiedRouteRules(){
   f.addEventListener('input',add);add();
 }
 appendVerifiedRouteRules();
+
+/* CITES source prompt for restricted-material screening */
+document.addEventListener('change',e=>{
+  const f=e.target.closest?.('[data-travel-checker]');
+  if(!f || e.target.name!=='restrictedMaterial') return;
+  const o=document.querySelector('[data-travel-result]');
+  if(!o) return;
+  setTimeout(()=>{
+    if(f.elements.restrictedMaterial.value==='yes' && !o.querySelector('[data-cites-note]')){
+      const n=document.createElement('div'); n.dataset.citesNote='1'; n.className='alert';
+      n.innerHTML='CITES CHECK REQUIRED · <a href="https://cites.org/eng/node/12644" target="_blank" rel="noopener">Open CITES framework ↗</a>';
+      o.append(n);
+    }
+  },0);
+});

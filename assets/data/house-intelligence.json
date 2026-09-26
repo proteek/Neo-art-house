@@ -136,14 +136,19 @@
     },
     {
       "name": "Bonhams",
-      "scope": "Location- and sale-specific",
-      "buyersPremium": "Research queued — current rates vary by location/sale and should be taken from the live sale information.",
-      "paymentDeadline": "Research queued — verify the specific sale’s Buyer’s Agreement.",
-      "registration": "Research queued.",
-      "kyc": "Research queued.",
-      "movement": "Sale information can include VAT/import/CITES and storage requirements.",
-      "status": "Research queued",
-      "sources": []
+      "scope": "Sale/location specific; UK buyer agreement used as verified reference",
+      "buyersPremium": "Sale-specific. Bonhams buyer agreements set the applicable premium in the sale particulars; always verify the live catalogue/Buyer’s Agreement.",
+      "paymentDeadline": "UK buyer agreement: payment due by 4:30 pm on the second working day after the sale, so cleared funds are received by the eighth working day.",
+      "registration": "Registration and bidder verification are sale-specific; telephone/online requirements should be checked in the relevant sale information.",
+      "kyc": "Buyer verification requirements are applied under the relevant sale terms and applicable AML/KYC rules.",
+      "movement": "VAT symbols and import/export treatment vary by lot. Bonhams sale terms can identify VAT on hammer/premium and imported-item treatment.",
+      "status": "Partially verified 27 Sep 2026",
+      "sources": [
+        {
+          "label": "Bonhams Buyer’s Agreement / sale terms",
+          "url": "https://images1.bonhams.com/original?src=Images%2Flive%2F2025-08%2F11%2FS-31605-0-1.pdf"
+        }
+      ]
     }
   ]
 }
