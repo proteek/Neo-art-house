@@ -293,3 +293,18 @@ button{cursor:pointer}
 .ecosystem-logo--tna img{width:100%;height:100%;object-fit:contain;object-position:left center;transform:none}
 .ecosystem-card{min-height:270px}
 @media(max-width:1100px){.auctra-feature{grid-template-columns:1fr;gap:38px}.auctra-visual{justify-content:start}}
+
+/* final ecosystem visual corrections */
+.phone-frame{background:#151411;overflow:hidden}
+.phone-frame img{display:block;width:100%;height:auto;opacity:1!important;visibility:visible!important}
+.ecosystem-logo--tna{display:none!important}
+.ecosystem-logo--tna-text{height:92px;margin:22px 0 12px;display:flex;align-items:center}
+.tna-lockup{display:inline-flex;flex-direction:column;align-items:flex-start;font-family:Arial,Helvetica,sans-serif;font-weight:900;line-height:.88}
+.tna-main,.tna-sub{display:inline-block;background:#ddb04f;color:#050505;padding:4px 8px 5px}
+.tna-main{font-size:34px;letter-spacing:-1.8px}
+.tna-sub{font-size:22px;margin-top:5px;letter-spacing:-.8px}
+.ecosystem-card{overflow:visible}
+@media(max-width:760px){
+  .tna-main{font-size:30px}
+  .tna-sub{font-size:20px}
+}
