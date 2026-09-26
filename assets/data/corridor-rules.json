@@ -178,6 +178,45 @@
       "detail": "Under the Convention on Cultural Property Implementation Act, the United States can impose import restrictions on designated archaeological or ethnological material through bilateral agreements or emergency measures. Applicable designated lists are country- and object-specific.",
       "verified": "2026-09-27",
       "source": "https://www.cbp.gov/sites/default/files/2025-05/vol_59_no_22_complete.pdf"
+    },
+    {
+      "id": "FR-cultural-export",
+      "jurisdiction": "France",
+      "appliesWhen": {
+        "saleLocation": "FR"
+      },
+      "layer": "Movement",
+      "status": "Source",
+      "title": "Export of French cultural goods is controlled by age/value and destination.",
+      "detail": "The French Ministry of Culture states that temporary or permanent export of a cultural good with historical, artistic or archaeological interest is subject to authorisation according to value and age. National treasures may only leave France temporarily. Export outside the EU uses the European export-authorisation procedure where applicable.",
+      "verified": "2026-09-27",
+      "source": "https://www.culture.gouv.fr/thematiques/circulation-des-biens-culturels/pour-les-professionnels/comment-soumettre-une-demande-d-autorisation-d-exportation"
+    },
+    {
+      "id": "FR-art-vat-5.5",
+      "jurisdiction": "France",
+      "appliesWhen": {
+        "destination": "FR"
+      },
+      "layer": "Tax",
+      "status": "Source",
+      "title": "France applies a 5.5% VAT rate to qualifying works of art, collectors’ items and antiques, including imports.",
+      "detail": "French tax guidance states that the reduced 5.5% VAT rate applies to qualifying works of art, collectors’ items and antiques; it also applies to imports and qualifying intra-EU acquisitions. Margin-scheme transactions follow separate rules.",
+      "verified": "2026-09-27",
+      "source": "https://bofip.impots.gouv.fr/bofip/1285-PGP.html/identifiant=BOI-TVA-SECT-90-40-20250514"
+    },
+    {
+      "id": "EU-cultural-goods-import-system",
+      "jurisdiction": "European Union",
+      "appliesWhen": {
+        "destination": "FR"
+      },
+      "layer": "Cultural property",
+      "status": "Source",
+      "title": "EU cultural-goods import licence / importer-statement requirements have been operational since 28 June 2025.",
+      "detail": "Regulation (EU) 2019/880 requires an import licence or importer statement for specified cultural goods, depending on category and thresholds. The documentary obligation became applicable on 28 June 2025 with the centralised ICG electronic system.",
+      "verified": "2026-09-27",
+      "source": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=LEGISSUM:4398776"
     }
   ]
 }
