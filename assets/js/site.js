@@ -239,7 +239,7 @@ async function initCorridorLibrary(){
     const names={IN:'India',AE:'United Arab Emirates',GB:'United Kingdom',US:'United States',FR:'France',CH:'Switzerland',SG:'Singapore',HK:'Hong Kong'};
     host.innerHTML=(records.corridors||[]).map(c=>{
       const matched=(rules.rules||[]).filter(r=>(c.ruleIds||[]).includes(r.id));
-      return '<article class="corridor-card"><div class="eyebrow">Structured corridor</div><h3>'+esc(c.title)+'</h3><p>'+esc(c.summary)+'</p><div class="corridor-card__meta"><span class="data-badge">'+esc(c.status)+'</span><span class="data-badge">'+matched.length+' verified rule layers</span><span class="data-badge">Verified '+esc(records.updated)+'</span></div><div class="corridor-card__actions"><a class="text-link" href="transaction-map.html?buyer='+encodeURIComponent(c.buyerResidence)+'&sale='+encodeURIComponent(c.saleLocation)+'&dest='+encodeURIComponent(c.destination)+'">Open exact route →</a><a class="text-link" href="commission.html?from='+encodeURIComponent(names[c.buyerResidence]||c.buyerResidence)+'&to='+encodeURIComponent(names[c.destination]||c.destination)+'">Commission full brief →</a></div></article>';
+      return '<article class="corridor-card"><div class="eyebrow">Structured corridor</div><h3>'+esc(c.title)+'</h3><p>'+esc(c.summary)+'</p><div class="corridor-card__meta"><span class="data-badge">'+esc(c.status)+'</span><span class="data-badge">'+matched.length+' verified rule layers</span><span class="data-badge">Verified '+esc(records.updated)+'</span></div><div class="corridor-card__actions"><a class="text-link" href="transaction-map.html?buyer='+encodeURIComponent(c.buyerResidence)+'&sale='+encodeURIComponent(c.saleLocation)+'&dest='+encodeURIComponent(c.destination)+'">Open exact route →</a><button class="text-link save-action save-inline" type="button" data-account-action="corridors" data-account-id="'+esc(c.id)+'">Save corridor</button><a class="text-link" href="commission.html?from='+encodeURIComponent(names[c.buyerResidence]||c.buyerResidence)+'&to='+encodeURIComponent(names[c.destination]||c.destination)+'">Commission full brief →</a></div></article>';
     }).join('');
     const cov=document.querySelector('[data-coverage]');
     if(cov)cov.innerHTML='<div class="coverage-cell"><strong>'+(records.corridors||[]).length+'</strong><span>Structured routes</span></div><div class="coverage-cell"><strong>'+(rules.rules||[]).length+'</strong><span>Verified rule layers</span></div><div class="coverage-cell"><strong>'+new Set((rules.rules||[]).map(r=>r.jurisdiction)).size+'</strong><span>Jurisdictions / frameworks</span></div>';
@@ -314,7 +314,7 @@ async function initAuctionAlertCards(){
         (a.buyerAlert?'<div class="auction-buyer-flag"><span class="status-dot"></span><strong>'+esc(a.buyerAlert)+'</strong></div>':'')+
         '<div class="auction-actions">'+
           (a.url?'<a class="btn btn--dark" href="'+esc(a.url)+'" target="_blank" rel="noopener">View sale ↗</a>':'')+
-          '<button class="btn" type="button" data-ics="'+esc(a.id)+'">Add to calendar</button>'+
+          '<button class="btn" type="button" data-ics="'+esc(a.id)+'">Add to calendar</button>'+'<button class="btn save-action" type="button" data-account-action="alerts" data-account-id="'+esc(a.id)+'">Set alert</button>'+
           '<a class="btn" href="lot-review.html">Transaction view →</a>'+
         '</div></article>').join('')||'<div class="empty-state"><h3>No upcoming sales match these filters.</h3></div>';
       host.querySelectorAll('[data-ics]').forEach(b=>b.addEventListener('click',()=>{const a=list.find(x=>x.id===b.dataset.ics);if(a)downloadAuctionICS(a)}));
@@ -351,10 +351,64 @@ async function initAuctionHouseIndex(){
       if(count)count.textContent=list.length+' house'+(list.length===1?'':'s');
       host.innerHTML=list.map(h=>{
         const cls=h.termsStatus.startsWith('Verified')?'verified':h.termsStatus.startsWith('Partial')?'partial':'queued';
-        return '<article class="auction-index-card"><div class="auction-index-top"><div><div class="eyebrow">'+esc(h.region)+'</div><h3>'+esc(h.name)+'</h3><div class="auction-index-location">'+esc(h.city)+' · '+esc(h.country)+'</div></div><span class="data-badge">'+esc(h.tier)+'</span></div><div class="auction-index-meta"><span class="data-badge">Alerts: '+esc(h.coverage.alerts)+'</span><span class="data-badge">Terms: '+esc(h.coverage.buyerTerms)+'</span><span class="data-badge">Cross-border: '+esc(h.coverage.crossBorderNotes)+'</span></div><div class="auction-index-status"><strong class="'+cls+'">'+esc(h.termsStatus)+'</strong><a class="text-link" href="'+esc(h.website)+'" target="_blank" rel="noopener">Official site ↗</a></div></article>';
+        return '<article class="auction-index-card"><div class="auction-index-top"><div><div class="eyebrow">'+esc(h.region)+'</div><h3>'+esc(h.name)+'</h3><div class="auction-index-location">'+esc(h.city)+' · '+esc(h.country)+'</div></div><span class="data-badge">'+esc(h.tier)+'</span></div><div class="auction-index-meta"><span class="data-badge">Alerts: '+esc(h.coverage.alerts)+'</span><span class="data-badge">Terms: '+esc(h.coverage.buyerTerms)+'</span><span class="data-badge">Cross-border: '+esc(h.coverage.crossBorderNotes)+'</span></div><div class="auction-index-status"><strong class="'+cls+'">'+esc(h.termsStatus)+'</strong><div><button class="text-link save-action" type="button" data-account-action="houses" data-account-id="'+esc(h.id)+'">Follow</button> · <a class="text-link" href="'+esc(h.website)+'" target="_blank" rel="noopener">Official site ↗</a></div></div></article>';
       }).join('')||'<div class="empty-state"><h3>No houses match these filters.</h3></div>';
     };
     [search,region,country,status].forEach(el=>{el?.addEventListener(el===search?'input':'change',draw)});draw();
   }catch(e){host.innerHTML='<div class="empty-state"><h3>The auction house index could not be loaded.</h3></div>'}
 }
 initAuctionHouseIndex();
+
+/* ---------- optional account hooks ---------- */
+const NAH_PUBLIC_KEYS={corridors:'nah_saved_corridors',houses:'nah_followed_houses',alerts:'nah_saved_alerts'};
+function nahRead(key,fallback=[]){try{const v=localStorage.getItem(key);return v?JSON.parse(v):fallback}catch{return fallback}}
+function nahWrite(key,value){try{localStorage.setItem(key,JSON.stringify(value))}catch{}}
+function nahAccountActive(){return nahRead('nah_guest_mode',false)||nahRead('nah_account_active',false)}
+function nahSaved(kind,id){const key=NAH_PUBLIC_KEYS[kind];return key?nahRead(key,[]).includes(id):false}
+function nahActionLabel(kind,saved){
+  if(kind==='corridors')return saved?'Saved ✓':'Save corridor';
+  if(kind==='houses')return saved?'Following ✓':'Follow';
+  if(kind==='alerts')return saved?'Alert saved ✓':'Set alert';
+  return saved?'Saved ✓':'Save';
+}
+function refreshAccountActionButtons(){
+  document.querySelectorAll('[data-account-action]').forEach(b=>{
+    const saved=nahSaved(b.dataset.accountAction,b.dataset.accountId);
+    b.textContent=nahActionLabel(b.dataset.accountAction,saved);
+    b.classList.toggle('is-saved',saved);
+  });
+}
+function toggleAccountAction(kind,id){
+  const key=NAH_PUBLIC_KEYS[kind];if(!key)return false;
+  const arr=nahRead(key,[]),has=arr.includes(id);
+  nahWrite(key,has?arr.filter(x=>x!==id):[...arr,id]);
+  refreshAccountActionButtons();
+  return !has;
+}
+function initHeaderAccount(){
+  const inner=document.querySelector('.masthead__inner');if(!inner||inner.querySelector('[data-header-account]'))return;
+  const cta=inner.querySelector(':scope > .btn');
+  const a=document.createElement('a');a.dataset.headerAccount='1';a.className='header-account';
+  const active=nahAccountActive();
+  a.href=active?'account.html':'sign-in.html';
+  a.innerHTML=active?'<span class="header-account__avatar">MY</span><span>My account</span>':'<span>Sign in</span>';
+  if(cta)inner.insertBefore(a,cta);else inner.append(a);
+}
+function initAccountHooks(){
+  initHeaderAccount();
+  refreshAccountActionButtons();
+  document.addEventListener('click',e=>{
+    const b=e.target.closest('[data-account-action]');if(!b)return;
+    e.preventDefault();
+    const kind=b.dataset.accountAction,id=b.dataset.accountId;if(!kind||!id)return;
+    if(!nahAccountActive()){
+      nahWrite('nah_pending_action',{kind,id,returnTo:location.pathname+location.search});
+      location.href='sign-in.html';
+      return;
+    }
+    toggleAccountAction(kind,id);
+  });
+  const mo=new MutationObserver(()=>refreshAccountActionButtons());
+  document.querySelectorAll('[data-corridor-library],[data-auction-index],[data-auction-alerts]').forEach(x=>mo.observe(x,{childList:true,subtree:true}));
+}
+initAccountHooks();
