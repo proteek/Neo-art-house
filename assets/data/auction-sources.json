@@ -1,0 +1,69 @@
+{
+  "updated": "2026-09-27",
+  "policy": "Only enable automated external ingestion where the auction house provides a permitted public feed/API or grants permission. Manual/editorial sources remain supported.",
+  "houses": [
+    {
+      "house": "Christie's",
+      "code": "CHR",
+      "domain": "christies.com",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "mode": "manual",
+      "enabled": false
+    },
+    {
+      "house": "Sotheby's",
+      "code": "SOT",
+      "domain": "sothebys.com",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "mode": "manual",
+      "enabled": false
+    },
+    {
+      "house": "Phillips",
+      "code": "PHI",
+      "domain": "phillips.com",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "mode": "manual",
+      "enabled": false
+    },
+    {
+      "house": "Bonhams",
+      "code": "BON",
+      "domain": "bonhams.com",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "mode": "manual",
+      "enabled": false
+    },
+    {
+      "house": "AstaGuru",
+      "code": "AST",
+      "domain": "astaguru.com",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "mode": "manual",
+      "enabled": false
+    },
+    {
+      "house": "Saffronart",
+      "code": "SAF",
+      "domain": "saffronart.com",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "mode": "manual",
+      "enabled": false
+    },
+    {
+      "house": "Pundole's",
+      "code": "PUN",
+      "domain": "pundoles.com",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "mode": "manual",
+      "enabled": false
+    }
+  ]
+}
