@@ -246,3 +246,24 @@ async function initCorridorLibrary(){
   }catch(e){host.innerHTML='<p class="muted">Corridor library unavailable.</p>'}
 }
 initCorridorLibrary();
+
+/* exact route deep-links */
+(function(){
+  const f=document.querySelector('[data-route-explorer]');
+  if(!f||!f.elements.buyerResidence)return;
+  const q=new URLSearchParams(location.search);
+  const set=(name,key)=>{if(q.get(key)&&f.elements[name])f.elements[name].value=q.get(key)};
+  set('buyerResidence','buyer');set('saleLocation','sale');set('destination','dest');
+  f.dispatchEvent(new Event('input',{bubbles:true}));
+})();
+
+/* enhance regulatory alerts with source/effective date */
+async function renderRegulatoryAlertsV2(){
+  const h=document.querySelector('[data-reg-alerts]');if(!h)return;
+  try{
+    const d=await fetch(base()+'assets/data/alerts.json').then(r=>r.json());
+    if(!(d.alerts||[]).length)return;
+    h.innerHTML='<div class="alert-list">'+d.alerts.map(a=>'<article class="reg-alert"><div><span class="data-badge">'+esc(a.jurisdiction)+'</span><div class="muted" style="font-size:11px;margin-top:8px">Effective '+esc(a.effective||'—')+'<br>Verified '+esc(a.verified||'—')+'</div></div><div><h3>'+esc(a.title)+'</h3><p>'+esc(a.summary)+'</p><a class="text-link" href="'+esc(a.source)+'" target="_blank" rel="noopener">Primary source ↗</a></div><div><span class="result-status result-status--amber">'+esc(a.type)+'</span></div></article>').join('')+'</div>';
+  }catch(e){}
+}
+renderRegulatoryAlertsV2();
