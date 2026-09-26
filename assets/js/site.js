@@ -227,3 +227,22 @@ async function initStructuredCorridorBadge(){
   f.addEventListener('input',draw);draw();
 }
 initStructuredCorridorBadge();
+
+async function initCorridorLibrary(){
+  const host=document.querySelector('[data-corridor-library]');
+  if(!host)return;
+  try{
+    const [records,rules]=await Promise.all([
+      fetch(base()+'assets/data/corridors.json').then(r=>r.json()),
+      fetch(base()+'assets/data/corridor-rules.json').then(r=>r.json())
+    ]);
+    const names={IN:'India',AE:'United Arab Emirates',GB:'United Kingdom',US:'United States',FR:'France',CH:'Switzerland',SG:'Singapore',HK:'Hong Kong'};
+    host.innerHTML=(records.corridors||[]).map(c=>{
+      const matched=(rules.rules||[]).filter(r=>(c.ruleIds||[]).includes(r.id));
+      return '<article class="corridor-card"><div class="eyebrow">Structured corridor</div><h3>'+esc(c.title)+'</h3><p>'+esc(c.summary)+'</p><div class="corridor-card__meta"><span class="data-badge">'+esc(c.status)+'</span><span class="data-badge">'+matched.length+' verified rule layers</span><span class="data-badge">Verified '+esc(records.updated)+'</span></div><div class="corridor-card__actions"><a class="text-link" href="transaction-map.html">Open in map →</a><a class="text-link" href="commission.html?from='+encodeURIComponent(names[c.buyerResidence]||c.buyerResidence)+'&to='+encodeURIComponent(names[c.destination]||c.destination)+'">Commission full brief →</a></div></article>';
+    }).join('');
+    const cov=document.querySelector('[data-coverage]');
+    if(cov)cov.innerHTML='<div class="coverage-cell"><strong>'+(records.corridors||[]).length+'</strong><span>Structured routes</span></div><div class="coverage-cell"><strong>'+(rules.rules||[]).length+'</strong><span>Verified rule layers</span></div><div class="coverage-cell"><strong>'+new Set((rules.rules||[]).map(r=>r.jurisdiction)).size+'</strong><span>Jurisdictions / frameworks</span></div>';
+  }catch(e){host.innerHTML='<p class="muted">Corridor library unavailable.</p>'}
+}
+initCorridorLibrary();
