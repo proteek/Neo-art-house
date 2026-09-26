@@ -176,3 +176,30 @@ document.addEventListener('change',e=>{
     }
   },0);
 });
+
+/* ---------- three-axis transaction map ---------- */
+function initThreeAxisRouteExplorer(){
+  const f=document.querySelector('[data-route-explorer]'),o=document.querySelector('[data-route-result]');
+  if(!f||!o||!f.elements.buyerResidence||!f.elements.saleLocation)return;
+  const published={
+    'AE|AE|IN':'briefs/uae-to-india.html',
+    'IN|IN|IN':'briefs/india-domestic.html'
+  };
+  const draw=async()=>{
+    const buyer=f.elements.buyerResidence.value,sale=f.elements.saleLocation.value,dest=f.elements.destination.value;
+    const bn=f.elements.buyerResidence.selectedOptions[0].textContent,sn=f.elements.saleLocation.selectedOptions[0].textContent,dn=f.elements.destination.selectedOptions[0].textContent;
+    const hit=published[buyer+'|'+sale+'|'+dest];
+    const db=await loadCorridorRules();
+    const matches=(db.rules||[]).filter(r=>{
+      const a=r.appliesWhen||{};
+      return (!a.buyerResidence||a.buyerResidence===buyer)&&(!a.saleLocation||a.saleLocation===sale)&&(!a.origin||a.origin===sale)&&(!a.destination||a.destination===dest);
+    });
+    o.innerHTML='<div class="route-board__content"><div class="eyebrow">Art Transaction Map</div><div class="route-title">'+esc(bn)+' <span style="color:var(--gold)">→</span> '+esc(sn)+' <span style="color:var(--gold)">→</span> '+esc(dn)+'</div><div class="route-meta"><span class="route-chip">'+(hit?'Published corridor':'Structured research view')+'</span><span class="route-chip">3-axis transaction</span></div><div class="layer-grid">'+
+      ['Money|Buyer residence','Auction terms|Sale location','Export|Sale / object location','Import|Final destination','Tax|Multiple touchpoints','Documentation|Transaction-specific'].map(s=>{const q=s.split('|');return '<div class="layer"><div class="layer__name">'+q[0]+'</div><div class="layer__value">'+q[1]+'</div></div>'}).join('')+
+      '</div><div style="margin-top:24px"><div class="eyebrow">Verified rules currently matching this route</div>'+
+      (matches.length?matches.map(r=>'<div class="finding"><div class="finding__label">'+esc(r.layer)+'</div><div class="finding__value"><strong>'+esc(r.title)+'</strong><br><span style="font-size:14px">'+esc(r.detail)+'</span><br><a class="text-link" href="'+esc(r.source)+'" target="_blank" rel="noopener">Primary source ↗</a></div></div>').join(''):'<p class="muted">No route-specific rule has been published for this exact combination yet.</p>')+
+      '</div><div style="margin-top:24px">'+(hit?'<a class="btn btn--gold" href="'+hit+'">Open published brief →</a>':'<a class="btn btn--gold" href="commission.html?from='+encodeURIComponent(bn)+'&to='+encodeURIComponent(dn)+'">Commission full corridor →</a>')+'</div></div>';
+  };
+  f.addEventListener('input',draw);draw();
+}
+initThreeAxisRouteExplorer();
