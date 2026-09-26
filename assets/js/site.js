@@ -336,3 +336,25 @@ function initSiteContact(){
   });
 }
 initSiteContact();
+
+async function initAuctionHouseIndex(){
+  const host=document.querySelector('[data-auction-index]');if(!host)return;
+  const search=document.querySelector('[data-index-search]'),region=document.querySelector('[data-index-region]'),country=document.querySelector('[data-index-country]'),status=document.querySelector('[data-index-status]'),count=document.querySelector('[data-index-count]');
+  try{
+    const data=await fetch(base()+'assets/data/auction-house-index.json').then(r=>r.json());
+    const houses=data.houses||[];
+    [...new Set(houses.map(h=>h.region))].sort().forEach(x=>region?.insertAdjacentHTML('beforeend','<option value="'+esc(x)+'">'+esc(x)+'</option>'));
+    [...new Set(houses.map(h=>h.country))].sort().forEach(x=>country?.insertAdjacentHTML('beforeend','<option value="'+esc(x)+'">'+esc(x)+'</option>'));
+    const draw=()=>{
+      const q=(search?.value||'').trim().toLowerCase(),r=region?.value||'',c=country?.value||'',st=status?.value||'';
+      const list=houses.filter(h=>(!r||h.region===r)&&(!c||h.country===c)&&(!st||h.termsStatus===st)&&(!q||String(h.name+' '+h.city+' '+h.country+' '+h.region).toLowerCase().includes(q)));
+      if(count)count.textContent=list.length+' house'+(list.length===1?'':'s');
+      host.innerHTML=list.map(h=>{
+        const cls=h.termsStatus.startsWith('Verified')?'verified':h.termsStatus.startsWith('Partial')?'partial':'queued';
+        return '<article class="auction-index-card"><div class="auction-index-top"><div><div class="eyebrow">'+esc(h.region)+'</div><h3>'+esc(h.name)+'</h3><div class="auction-index-location">'+esc(h.city)+' · '+esc(h.country)+'</div></div><span class="data-badge">'+esc(h.tier)+'</span></div><div class="auction-index-meta"><span class="data-badge">Alerts: '+esc(h.coverage.alerts)+'</span><span class="data-badge">Terms: '+esc(h.coverage.buyerTerms)+'</span><span class="data-badge">Cross-border: '+esc(h.coverage.crossBorderNotes)+'</span></div><div class="auction-index-status"><strong class="'+cls+'">'+esc(h.termsStatus)+'</strong><a class="text-link" href="'+esc(h.website)+'" target="_blank" rel="noopener">Official site ↗</a></div></article>';
+      }).join('')||'<div class="empty-state"><h3>No houses match these filters.</h3></div>';
+    };
+    [search,region,country,status].forEach(el=>{el?.addEventListener(el===search?'input':'change',draw)});draw();
+  }catch(e){host.innerHTML='<div class="empty-state"><h3>The auction house index could not be loaded.</h3></div>'}
+}
+initAuctionHouseIndex();
