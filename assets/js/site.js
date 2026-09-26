@@ -323,3 +323,16 @@ async function initAuctionAlertCards(){
   }catch(e){host.innerHTML='<div class="empty-state"><h3>Auction alerts could not be loaded.</h3></div>'}
 }
 initAuctionAlertCards();
+
+function initSiteContact(){
+  document.querySelectorAll('.footer__fine').forEach(f=>{
+    if(f.querySelector('[data-site-contact]'))return;
+    const a=document.createElement('a');
+    a.href='mailto:connect@theneoarthouse.com';
+    a.textContent='connect@theneoarthouse.com';
+    a.className='contact-link';
+    a.dataset.siteContact='1';
+    f.append(a);
+  });
+}
+initSiteContact();
