@@ -38,9 +38,9 @@ async function initSupabase(){
 async function getNahUser(){
   if(nahSupabase){
     const {data}=await nahSupabase.auth.getUser();
-    if(data?.user)return {type:'cloud',user:data.user};
+    if(data?.user){localStorage.setItem('nah_account_active','true');return {type:'cloud',user:data.user};}
   }
-  if(nahStore.get(NAH_KEYS.guest,false))return {type:'guest',user:{email:'Preview account',id:'guest'}};
+  if(nahStore.get(NAH_KEYS.guest,false)){localStorage.setItem('nah_account_active','true');return {type:'guest',user:{email:'Preview account',id:'guest'}};}
   return null;
 }
 
@@ -95,6 +95,7 @@ async function initSigninPage(){
   }
   guest?.addEventListener('click',()=>{
     nahStore.set(NAH_KEYS.guest,true);
+    localStorage.setItem('nah_account_active','true');
     location.href='account.html';
   });
 }
@@ -132,6 +133,19 @@ async function initAccountPage(){
     renderProfileSummary();
   });
 
+  function applyPendingAction(){
+    const pending=nahStore.get(NAH_KEYS.pending,null);
+    if(!pending||!pending.kind||!pending.id)return;
+    const map={corridors:NAH_KEYS.corridors,houses:NAH_KEYS.houses,alerts:NAH_KEYS.alerts};
+    const key=map[pending.kind];
+    if(key){
+      const arr=nahStore.get(key,[]);
+      if(!arr.includes(pending.id))nahStore.set(key,[...arr,pending.id]);
+    }
+    localStorage.removeItem(NAH_KEYS.pending);
+  }
+  applyPendingAction();
+
   function draw(){
     root.querySelector('[data-saved-corridors]').innerHTML=buildSavedList(nahStore.get(NAH_KEYS.corridors,[]),'corridors');
     root.querySelector('[data-saved-houses]').innerHTML=buildSavedList(nahStore.get(NAH_KEYS.houses,[]),'houses');
@@ -156,6 +170,7 @@ async function initAccountPage(){
   root.querySelector('[data-signout]')?.addEventListener('click',async()=>{
     if(client)await client.auth.signOut();
     localStorage.removeItem(NAH_KEYS.guest);
+    localStorage.removeItem('nah_account_active');
     location.href='sign-in.html';
   });
 }
