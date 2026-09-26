@@ -1,0 +1,54 @@
+{
+  "updated": "2026-09-26",
+  "houses": [
+    {
+      "name": "Christie's",
+      "buyersPremium": null,
+      "paymentDeadline": null,
+      "registration": null,
+      "status": "Research queued"
+    },
+    {
+      "name": "Sotheby's",
+      "buyersPremium": null,
+      "paymentDeadline": null,
+      "registration": null,
+      "status": "Research queued"
+    },
+    {
+      "name": "Bonhams",
+      "buyersPremium": null,
+      "paymentDeadline": null,
+      "registration": null,
+      "status": "Research queued"
+    },
+    {
+      "name": "Phillips",
+      "buyersPremium": null,
+      "paymentDeadline": null,
+      "registration": null,
+      "status": "Research queued"
+    },
+    {
+      "name": "AstaGuru",
+      "buyersPremium": null,
+      "paymentDeadline": null,
+      "registration": null,
+      "status": "Research queued"
+    },
+    {
+      "name": "Saffronart",
+      "buyersPremium": null,
+      "paymentDeadline": null,
+      "registration": null,
+      "status": "Research queued"
+    },
+    {
+      "name": "Pundole's",
+      "buyersPremium": null,
+      "paymentDeadline": null,
+      "registration": null,
+      "status": "Research queued"
+    }
+  ]
+}
