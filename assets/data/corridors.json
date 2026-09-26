@@ -102,6 +102,84 @@
         "Auction-house premium and sale taxes",
         "Shipping/insurance"
       ]
+    },
+    {
+      "id": "IN-FR-IN",
+      "buyerResidence": "IN",
+      "saleLocation": "FR",
+      "destination": "IN",
+      "title": "India buyer → France auction → India",
+      "status": "Structured / verified layers",
+      "summary": "An India-resident buyer acquiring at a French auction and importing the work into India. Core layers are Indian remittance, French export-control thresholds and Indian tax/import classification.",
+      "ruleIds": [
+        "IN-remittance-LRS",
+        "FR-cultural-export",
+        "IN-gst-ch97"
+      ],
+      "unresolved": [
+        "French auction-house premium and sale-specific VAT treatment",
+        "Whether the object crosses French age/value export thresholds",
+        "Exact Indian customs classification and import duty",
+        "Shipping and insurance"
+      ]
+    },
+    {
+      "id": "AE-FR-AE",
+      "buyerResidence": "AE",
+      "saleLocation": "FR",
+      "destination": "AE",
+      "title": "UAE buyer → France auction → UAE",
+      "status": "Structured / verified layers",
+      "summary": "A UAE-based buyer acquiring in France and returning the work to the UAE. Core layers are French cultural-goods export control and UAE VAT/import treatment.",
+      "ruleIds": [
+        "FR-cultural-export",
+        "AE-vat-general-import"
+      ],
+      "unresolved": [
+        "French auction-house premium and sale VAT",
+        "Object-specific French export-authorisation requirement",
+        "UAE customs classification/duty",
+        "Shipping and insurance"
+      ]
+    },
+    {
+      "id": "GB-FR-GB",
+      "buyerResidence": "GB",
+      "saleLocation": "FR",
+      "destination": "GB",
+      "title": "UK buyer → France auction → United Kingdom",
+      "status": "Structured / verified layers",
+      "summary": "A UK-resident buyer purchasing at a French auction and importing the work into Great Britain. Core layers are French export controls and UK import VAT treatment for eligible art.",
+      "ruleIds": [
+        "FR-cultural-export",
+        "GB-import-vat-art"
+      ],
+      "unresolved": [
+        "French auction-house premium and sale VAT",
+        "Whether a French/EU export authorisation is required",
+        "UK tariff classification",
+        "Shipping and insurance"
+      ]
+    },
+    {
+      "id": "GB-GB-FR",
+      "buyerResidence": "GB",
+      "saleLocation": "GB",
+      "destination": "FR",
+      "title": "UK buyer → UK auction → France",
+      "status": "Structured / verified layers",
+      "summary": "A UK-based buyer sending a UK-auction purchase into France. Core layers are UK cultural-goods export licensing, French 5.5% import VAT for qualifying art and EU cultural-goods documentary rules.",
+      "ruleIds": [
+        "GB-cultural-export",
+        "FR-art-vat-5.5",
+        "EU-cultural-goods-import-system"
+      ],
+      "unresolved": [
+        "Exact UK export licence threshold for the object",
+        "French customs classification",
+        "Whether EU cultural-goods licence/statement thresholds apply to the object",
+        "Shipping and insurance"
+      ]
     }
   ]
 }
