@@ -1,7 +1,7 @@
 {
   "_readme": "Generated from calendar.json by scripts/build_auction_alerts.py. Do not edit manually.",
   "updated": "2026-09-27T00:00:00Z",
-  "count": 10,
+  "count": 16,
   "alerts": [
     {
       "id": "001-20260910",
@@ -18,6 +18,7 @@
       "buyerAlert": "Export limits likely",
       "urgent": true,
       "urgency": "past",
+      "daysToSale": -17,
       "lots": [
         {
           "artist": "Nicholas Roerich",
@@ -37,8 +38,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T00:00:00Z",
-      "daysToSale": -17
+      "lastBuilt": "2026-09-27T00:00:00Z"
     },
     {
       "id": "002-20260915",
@@ -55,10 +55,10 @@
       "buyerAlert": "Closing",
       "urgent": true,
       "urgency": "past",
+      "daysToSale": -12,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T00:00:00Z",
-      "daysToSale": -12
+      "lastBuilt": "2026-09-27T00:00:00Z"
     },
     {
       "id": "003-20260915",
@@ -75,10 +75,10 @@
       "buyerAlert": "Registration closes early",
       "urgent": true,
       "urgency": "past",
+      "daysToSale": -12,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T00:00:00Z",
-      "daysToSale": -12
+      "lastBuilt": "2026-09-27T00:00:00Z"
     },
     {
       "id": "004-20260916",
@@ -95,6 +95,7 @@
       "buyerAlert": "Registration closes early",
       "urgent": true,
       "urgency": "past",
+      "daysToSale": -11,
       "lots": [
         {
           "artist": "Francis Newton Souza",
@@ -114,8 +115,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T00:00:00Z",
-      "daysToSale": -11
+      "lastBuilt": "2026-09-27T00:00:00Z"
     },
     {
       "id": "005-20260916",
@@ -132,10 +132,10 @@
       "buyerAlert": "Uses remittance allowance",
       "urgent": false,
       "urgency": "past",
+      "daysToSale": -11,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T00:00:00Z",
-      "daysToSale": -11
+      "lastBuilt": "2026-09-27T00:00:00Z"
     },
     {
       "id": "006-20260917",
@@ -152,10 +152,10 @@
       "buyerAlert": "Provenance checks needed",
       "urgent": true,
       "urgency": "past",
+      "daysToSale": -10,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T00:00:00Z",
-      "daysToSale": -10
+      "lastBuilt": "2026-09-27T00:00:00Z"
     },
     {
       "id": "007-20260919",
@@ -172,6 +172,7 @@
       "buyerAlert": "No corridor cost if resident",
       "urgent": false,
       "urgency": "past",
+      "daysToSale": -8,
       "lots": [
         {
           "artist": "Francis Newton Souza",
@@ -191,8 +192,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T00:00:00Z",
-      "daysToSale": -8
+      "lastBuilt": "2026-09-27T00:00:00Z"
     },
     {
       "id": "008-20260921",
@@ -209,6 +209,7 @@
       "buyerAlert": "Non-exportable lots flagged",
       "urgent": true,
       "urgency": "past",
+      "daysToSale": -6,
       "lots": [
         {
           "artist": "Karkota Dynasty, Kashmir",
@@ -228,8 +229,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T00:00:00Z",
-      "daysToSale": -6
+      "lastBuilt": "2026-09-27T00:00:00Z"
     },
     {
       "id": "009-20260924",
@@ -246,6 +246,7 @@
       "buyerAlert": "Two Navratna lots",
       "urgent": true,
       "urgency": "past",
+      "daysToSale": -3,
       "lots": [
         {
           "artist": "Amrita Sher-Gil",
@@ -265,8 +266,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T00:00:00Z",
-      "daysToSale": -3
+      "lastBuilt": "2026-09-27T00:00:00Z"
     },
     {
       "id": "010-20260929",
@@ -283,6 +283,7 @@
       "buyerAlert": "Uses remittance allowance",
       "urgent": false,
       "urgency": "critical",
+      "daysToSale": 2,
       "lots": [
         {
           "artist": "Maqbool Fida Husain",
@@ -302,8 +303,127 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T00:00:00Z",
-      "daysToSale": 2
+      "lastBuilt": "2026-09-27T00:00:00Z"
+    },
+    {
+      "id": "011-20260929",
+      "house": "Christie's",
+      "houseCode": "CHR",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "20th/21st Century Evening Sale",
+      "city": "Hong Kong",
+      "saleDate": "2026-09-29",
+      "dateLabel": "29 September",
+      "url": "https://www.christies.com/en/calendar/2026/10",
+      "note": "Major Hong Kong evening sale. Cross-border buyers should confirm premium, settlement currency, shipping route and destination tax before bidding.",
+      "buyerAlert": "Sale this week",
+      "urgent": true,
+      "urgency": "critical",
+      "daysToSale": 2,
+      "lots": [],
+      "sourceMode": "editorial",
+      "lastBuilt": "2026-09-27T00:00:00Z"
+    },
+    {
+      "id": "012-20261014",
+      "house": "Christie's",
+      "houseCode": "CHR",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "20th/21st Century: London Evening Sale",
+      "city": "London",
+      "saleDate": "2026-10-14",
+      "dateLabel": "14 October",
+      "url": "https://www.christies.com/en/calendar/2026/10",
+      "note": "London evening sale. Buyers moving works abroad should check UK export-licence exposure and destination import treatment.",
+      "buyerAlert": "Cross-border movement check",
+      "urgent": false,
+      "urgency": "upcoming",
+      "daysToSale": 17,
+      "lots": [],
+      "sourceMode": "editorial",
+      "lastBuilt": "2026-09-27T00:00:00Z"
+    },
+    {
+      "id": "013-20261015",
+      "house": "Phillips",
+      "houseCode": "PHI",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Modern & Contemporary Art Evening Sale",
+      "city": "London",
+      "saleDate": "2026-10-15",
+      "dateLabel": "15 October",
+      "url": "https://www.phillips.com/auction/UK011026",
+      "note": "London evening sale. Phillips publishes a Priority Bidding deadline before the sale; buyers should also verify export and destination costs.",
+      "buyerAlert": "Priority bidding: 13 Oct, 5pm BST",
+      "urgent": true,
+      "urgency": "upcoming",
+      "daysToSale": 18,
+      "lots": [],
+      "sourceMode": "editorial",
+      "lastBuilt": "2026-09-27T00:00:00Z"
+    },
+    {
+      "id": "014-20261021",
+      "house": "Phillips",
+      "houseCode": "PHI",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Art Moderne & Contemporain et Design",
+      "city": "Paris",
+      "saleDate": "2026-10-21",
+      "dateLabel": "21 October",
+      "url": "https://www.phillips.com/auction/FR010126",
+      "note": "Paris auction. French cultural-goods export rules can depend on age and value; destination treatment should be checked separately.",
+      "buyerAlert": "Priority bidding: 19 Oct, 4pm CEST",
+      "urgent": true,
+      "urgency": "upcoming",
+      "daysToSale": 24,
+      "lots": [],
+      "sourceMode": "editorial",
+      "lastBuilt": "2026-09-27T00:00:00Z"
+    },
+    {
+      "id": "015-20261022",
+      "house": "Christie's",
+      "houseCode": "CHR",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "20th/21st Century: Paris Evening Sale including Thinking Italian",
+      "city": "Paris",
+      "saleDate": "2026-10-22",
+      "dateLabel": "22 October",
+      "url": "https://www.christies.com/en/calendar/2026/10",
+      "note": "Paris evening sale. Buyers exporting outside France should check cultural-goods authorisation thresholds before arranging shipment.",
+      "buyerAlert": "French export check",
+      "urgent": false,
+      "urgency": "upcoming",
+      "daysToSale": 25,
+      "lots": [],
+      "sourceMode": "editorial",
+      "lastBuilt": "2026-09-27T00:00:00Z"
+    },
+    {
+      "id": "016-20261030",
+      "house": "Christie's",
+      "houseCode": "CHR",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Indian, Himalayan and Southeast Asian Art",
+      "city": "Hong Kong",
+      "saleDate": "2026-10-30",
+      "dateLabel": "30 October",
+      "url": "https://www.christies.com/en/calendar/2026/10",
+      "note": "Cross-category Asian art sale where age, origin, cultural-property status and restricted materials can materially affect movement.",
+      "buyerAlert": "Provenance / movement review",
+      "urgent": false,
+      "urgency": "upcoming",
+      "daysToSale": 33,
+      "lots": [],
+      "sourceMode": "editorial",
+      "lastBuilt": "2026-09-27T00:00:00Z"
     }
   ]
 }
