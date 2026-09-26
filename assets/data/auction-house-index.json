@@ -1,0 +1,2153 @@
+{
+  "updated": "2026-09-27",
+  "methodology": "Priority houses are curated for cross-border collector relevance. Inclusion does not imply endorsement. Buyer-term depth varies and is explicitly labelled.",
+  "targets": {
+    "priority": "100+",
+    "monitored": "250+",
+    "onDemand": "Open universe"
+  },
+  "houses": [
+    {
+      "id": "AH001",
+      "name": "Christie's",
+      "city": "London",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "website": "https://www.christies.com",
+      "tier": "Priority",
+      "termsStatus": "Verified buyer terms",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Published/partial",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH002",
+      "name": "Sotheby's",
+      "city": "London",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "website": "https://www.sothebys.com",
+      "tier": "Priority",
+      "termsStatus": "Verified buyer terms",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Published/partial",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH003",
+      "name": "Bonhams",
+      "city": "London",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "website": "https://www.bonhams.com",
+      "tier": "Priority",
+      "termsStatus": "Partial buyer terms",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Published/partial",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH004",
+      "name": "Phillips",
+      "city": "London",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "website": "https://www.phillips.com",
+      "tier": "Priority",
+      "termsStatus": "Verified buyer terms",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Published/partial",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH005",
+      "name": "Lyon & Turnbull",
+      "city": "Edinburgh",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "website": "https://www.lyonandturnbull.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH006",
+      "name": "Dreweatts",
+      "city": "Newbury",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "website": "https://www.dreweatts.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH007",
+      "name": "Roseberys London",
+      "city": "London",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "website": "https://www.roseberys.co.uk",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH008",
+      "name": "Chiswick Auctions",
+      "city": "London",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "website": "https://www.chiswickauctions.co.uk",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH009",
+      "name": "Woolley & Wallis",
+      "city": "Salisbury",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "website": "https://www.woolleyandwallis.co.uk",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH010",
+      "name": "Sworders",
+      "city": "Stansted Mountfitchet",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "website": "https://www.sworder.co.uk",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH011",
+      "name": "Forum Auctions",
+      "city": "London",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "website": "https://www.forumauctions.co.uk",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH012",
+      "name": "Tennants Auctioneers",
+      "city": "Leyburn",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "website": "https://www.tennants.co.uk",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH013",
+      "name": "Mallams",
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "website": "https://www.mallams.co.uk",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH014",
+      "name": "Bellmans",
+      "city": "Wisborough Green",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "website": "https://www.bellmans.co.uk",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH015",
+      "name": "Fellows",
+      "city": "Birmingham",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "website": "https://www.fellows.co.uk",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH016",
+      "name": "Ewbank's",
+      "city": "Guildford",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "website": "https://www.ewbankauctions.co.uk",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH017",
+      "name": "Olympia Auctions",
+      "city": "London",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "website": "https://www.olympiaauctions.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH018",
+      "name": "Noonans",
+      "city": "London",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "website": "https://www.noonans.co.uk",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH019",
+      "name": "Artcurial",
+      "city": "Paris",
+      "country": "France",
+      "region": "Europe",
+      "website": "https://www.artcurial.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH020",
+      "name": "Tajan",
+      "city": "Paris",
+      "country": "France",
+      "region": "Europe",
+      "website": "https://www.tajan.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH021",
+      "name": "Piasa",
+      "city": "Paris",
+      "country": "France",
+      "region": "Europe",
+      "website": "https://www.piasa.fr",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH022",
+      "name": "Aguttes",
+      "city": "Neuilly-sur-Seine",
+      "country": "France",
+      "region": "Europe",
+      "website": "https://www.aguttes.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH023",
+      "name": "Millon",
+      "city": "Paris",
+      "country": "France",
+      "region": "Europe",
+      "website": "https://www.millon.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH024",
+      "name": "Ader",
+      "city": "Paris",
+      "country": "France",
+      "region": "Europe",
+      "website": "https://www.ader-paris.fr",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH025",
+      "name": "Osenat",
+      "city": "Fontainebleau",
+      "country": "France",
+      "region": "Europe",
+      "website": "https://www.osenat.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH026",
+      "name": "Beaussant Lefèvre & Associés",
+      "city": "Paris",
+      "country": "France",
+      "region": "Europe",
+      "website": "https://www.beaussant-lefevre.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH027",
+      "name": "Gros & Delettrez",
+      "city": "Paris",
+      "country": "France",
+      "region": "Europe",
+      "website": "https://www.gros-delettrez.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH028",
+      "name": "Ketterer Kunst",
+      "city": "Munich",
+      "country": "Germany",
+      "region": "Europe",
+      "website": "https://www.kettererkunst.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH029",
+      "name": "Lempertz",
+      "city": "Cologne",
+      "country": "Germany",
+      "region": "Europe",
+      "website": "https://www.lempertz.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH030",
+      "name": "Grisebach",
+      "city": "Berlin",
+      "country": "Germany",
+      "region": "Europe",
+      "website": "https://www.grisebach.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH031",
+      "name": "Van Ham",
+      "city": "Cologne",
+      "country": "Germany",
+      "region": "Europe",
+      "website": "https://www.van-ham.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH032",
+      "name": "Karl & Faber",
+      "city": "Munich",
+      "country": "Germany",
+      "region": "Europe",
+      "website": "https://www.karlundfaber.de",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH033",
+      "name": "Neumeister",
+      "city": "Munich",
+      "country": "Germany",
+      "region": "Europe",
+      "website": "https://www.neumeister.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH034",
+      "name": "Hampel Fine Art Auctions",
+      "city": "Munich",
+      "country": "Germany",
+      "region": "Europe",
+      "website": "https://www.hampel-auctions.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH035",
+      "name": "Nagel Auktionen",
+      "city": "Stuttgart",
+      "country": "Germany",
+      "region": "Europe",
+      "website": "https://www.auction.de",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH036",
+      "name": "Galerie Bassenge",
+      "city": "Berlin",
+      "country": "Germany",
+      "region": "Europe",
+      "website": "https://www.bassenge.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH037",
+      "name": "Quittenbaum",
+      "city": "Munich",
+      "country": "Germany",
+      "region": "Europe",
+      "website": "https://www.quittenbaum.de",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH038",
+      "name": "Dorotheum",
+      "city": "Vienna",
+      "country": "Austria",
+      "region": "Europe",
+      "website": "https://www.dorotheum.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH039",
+      "name": "im Kinsky",
+      "city": "Vienna",
+      "country": "Austria",
+      "region": "Europe",
+      "website": "https://www.imkinsky.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH040",
+      "name": "Cambi Casa d'Aste",
+      "city": "Genoa",
+      "country": "Italy",
+      "region": "Europe",
+      "website": "https://www.cambiaste.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH041",
+      "name": "Il Ponte Casa d'Aste",
+      "city": "Milan",
+      "country": "Italy",
+      "region": "Europe",
+      "website": "https://www.ponteonline.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH042",
+      "name": "Finarte",
+      "city": "Milan",
+      "country": "Italy",
+      "region": "Europe",
+      "website": "https://www.finarte.it",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH043",
+      "name": "Pandolfini",
+      "city": "Florence",
+      "country": "Italy",
+      "region": "Europe",
+      "website": "https://www.pandolfini.it",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH044",
+      "name": "Wannenes",
+      "city": "Genoa",
+      "country": "Italy",
+      "region": "Europe",
+      "website": "https://www.wannenesgroup.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH045",
+      "name": "Aste Bolaffi",
+      "city": "Turin",
+      "country": "Italy",
+      "region": "Europe",
+      "website": "https://www.astebolaffi.it",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH046",
+      "name": "Koller Auctions",
+      "city": "Zurich",
+      "country": "Switzerland",
+      "region": "Europe",
+      "website": "https://www.kollerauktionen.ch",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH047",
+      "name": "Piguet Hôtel des Ventes",
+      "city": "Geneva",
+      "country": "Switzerland",
+      "region": "Europe",
+      "website": "https://www.piguet.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH048",
+      "name": "Galerie Kornfeld Auktionen",
+      "city": "Bern",
+      "country": "Switzerland",
+      "region": "Europe",
+      "website": "https://www.kornfeld.ch",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH049",
+      "name": "Schuler Auktionen",
+      "city": "Zurich",
+      "country": "Switzerland",
+      "region": "Europe",
+      "website": "https://www.schulerauktionen.ch",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH050",
+      "name": "Venduehuis der Notarissen",
+      "city": "The Hague",
+      "country": "Netherlands",
+      "region": "Europe",
+      "website": "https://www.venduehuis.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH051",
+      "name": "Adams Amsterdam Auctions",
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "region": "Europe",
+      "website": "https://www.adamsamsterdam.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH052",
+      "name": "Hessink's",
+      "city": "Zwolle",
+      "country": "Netherlands",
+      "region": "Europe",
+      "website": "https://www.hessinks.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH053",
+      "name": "Bernaerts Auctioneers",
+      "city": "Antwerp",
+      "country": "Belgium",
+      "region": "Europe",
+      "website": "https://www.bernaerts.be",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH054",
+      "name": "De Vuyst",
+      "city": "Lokeren",
+      "country": "Belgium",
+      "region": "Europe",
+      "website": "https://www.devuyst.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH055",
+      "name": "Horta Auction House",
+      "city": "Brussels",
+      "country": "Belgium",
+      "region": "Europe",
+      "website": "https://www.horta.be",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH056",
+      "name": "Carlo Bonte Auctions",
+      "city": "Bruges",
+      "country": "Belgium",
+      "region": "Europe",
+      "website": "https://www.carlobonte.be",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH057",
+      "name": "Ansorena",
+      "city": "Madrid",
+      "country": "Spain",
+      "region": "Europe",
+      "website": "https://www.ansorena.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH058",
+      "name": "Setdart",
+      "city": "Barcelona",
+      "country": "Spain",
+      "region": "Europe",
+      "website": "https://www.setdart.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH059",
+      "name": "Balclis",
+      "city": "Barcelona",
+      "country": "Spain",
+      "region": "Europe",
+      "website": "https://www.balclis.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH060",
+      "name": "Subastas Segre",
+      "city": "Madrid",
+      "country": "Spain",
+      "region": "Europe",
+      "website": "https://www.subastassegre.es",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH061",
+      "name": "Durán Arte y Subastas",
+      "city": "Madrid",
+      "country": "Spain",
+      "region": "Europe",
+      "website": "https://www.duran-subastas.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH062",
+      "name": "Cabral Moncada Leilões",
+      "city": "Lisbon",
+      "country": "Portugal",
+      "region": "Europe",
+      "website": "https://www.cml.pt",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH063",
+      "name": "Veritas Art Auctioneers",
+      "city": "Lisbon",
+      "country": "Portugal",
+      "region": "Europe",
+      "website": "https://www.veritas.art",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH064",
+      "name": "Bukowskis",
+      "city": "Stockholm",
+      "country": "Sweden",
+      "region": "Europe",
+      "website": "https://www.bukowskis.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH065",
+      "name": "Stockholms Auktionsverk",
+      "city": "Stockholm",
+      "country": "Sweden",
+      "region": "Europe",
+      "website": "https://www.auktionsverket.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH066",
+      "name": "Bruun Rasmussen",
+      "city": "Copenhagen",
+      "country": "Denmark",
+      "region": "Europe",
+      "website": "https://bruun-rasmussen.dk",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH067",
+      "name": "Blomqvist",
+      "city": "Oslo",
+      "country": "Norway",
+      "region": "Europe",
+      "website": "https://www.blomqvist.no",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH068",
+      "name": "Grev Wedels Plass Auksjoner",
+      "city": "Oslo",
+      "country": "Norway",
+      "region": "Europe",
+      "website": "https://gwpa.no",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH069",
+      "name": "Hagelstam",
+      "city": "Helsinki",
+      "country": "Finland",
+      "region": "Europe",
+      "website": "https://www.hagelstam.fi",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH070",
+      "name": "Adam's",
+      "city": "Dublin",
+      "country": "Ireland",
+      "region": "Europe",
+      "website": "https://www.adams.ie",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH071",
+      "name": "Whyte's",
+      "city": "Dublin",
+      "country": "Ireland",
+      "region": "Europe",
+      "website": "https://www.whytes.ie",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH072",
+      "name": "de Veres Art Auctions",
+      "city": "Dublin",
+      "country": "Ireland",
+      "region": "Europe",
+      "website": "https://www.deveres.ie",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH073",
+      "name": "AstaGuru",
+      "city": "Mumbai",
+      "country": "India",
+      "region": "South Asia",
+      "website": "https://www.astaguru.com",
+      "tier": "Priority",
+      "termsStatus": "Partial buyer terms",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Published/partial",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH074",
+      "name": "Pundole's",
+      "city": "Mumbai",
+      "country": "India",
+      "region": "South Asia",
+      "website": "https://www.pundoles.com",
+      "tier": "Priority",
+      "termsStatus": "Verified buyer terms",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Published/partial",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH075",
+      "name": "Saffronart",
+      "city": "Mumbai",
+      "country": "India",
+      "region": "South Asia",
+      "website": "https://www.saffronart.com",
+      "tier": "Priority",
+      "termsStatus": "Partial buyer terms",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Published/partial",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH076",
+      "name": "Prinseps",
+      "city": "Mumbai",
+      "country": "India",
+      "region": "South Asia",
+      "website": "https://prinseps.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH077",
+      "name": "StoryLTD",
+      "city": "Mumbai",
+      "country": "India",
+      "region": "South Asia",
+      "website": "https://www.storyltd.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH078",
+      "name": "Bid & Hammer",
+      "city": "Bengaluru",
+      "country": "India",
+      "region": "South Asia",
+      "website": "https://www.bidandhammer.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH079",
+      "name": "ARTIANA",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "region": "Middle East",
+      "website": "https://www.artiana.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH080",
+      "name": "AlBahie",
+      "city": "Doha",
+      "country": "Qatar",
+      "region": "Middle East",
+      "website": "https://www.albahie.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH081",
+      "name": "China Guardian",
+      "city": "Beijing",
+      "country": "China",
+      "region": "East Asia",
+      "website": "https://www.cguardian.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH082",
+      "name": "Poly Auction",
+      "city": "Beijing",
+      "country": "China",
+      "region": "East Asia",
+      "website": "https://www.polypm.com.cn",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH083",
+      "name": "Ravenel",
+      "city": "Taipei",
+      "country": "Taiwan",
+      "region": "East Asia",
+      "website": "https://www.ravenel.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH084",
+      "name": "Seoul Auction",
+      "city": "Seoul",
+      "country": "South Korea",
+      "region": "East Asia",
+      "website": "https://www.seoulauction.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH085",
+      "name": "K Auction",
+      "city": "Seoul",
+      "country": "South Korea",
+      "region": "East Asia",
+      "website": "https://www.k-auction.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH086",
+      "name": "SBI Art Auction",
+      "city": "Tokyo",
+      "country": "Japan",
+      "region": "East Asia",
+      "website": "https://www.sbiartauction.co.jp",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH087",
+      "name": "Mainichi Auction",
+      "city": "Tokyo",
+      "country": "Japan",
+      "region": "East Asia",
+      "website": "https://www.my-auction.co.jp",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH088",
+      "name": "Tokyo Chuo Auction",
+      "city": "Tokyo",
+      "country": "Japan",
+      "region": "East Asia",
+      "website": "https://www.chuo-auction.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH089",
+      "name": "33 Auction",
+      "city": "Singapore",
+      "country": "Singapore",
+      "region": "Southeast Asia",
+      "website": "https://www.33auction.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH090",
+      "name": "Larasati Auctioneers",
+      "city": "Singapore",
+      "country": "Singapore",
+      "region": "Southeast Asia",
+      "website": "https://www.larasati.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH091",
+      "name": "Borobudur Auction",
+      "city": "Singapore",
+      "country": "Singapore",
+      "region": "Southeast Asia",
+      "website": "https://www.borobudurauction.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH092",
+      "name": "Masterpiece Auction House",
+      "city": "Jakarta",
+      "country": "Indonesia",
+      "region": "Southeast Asia",
+      "website": "https://www.masterpiece-auction.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH093",
+      "name": "Henry Butcher Art Auctioneers",
+      "city": "Kuala Lumpur",
+      "country": "Malaysia",
+      "region": "Southeast Asia",
+      "website": "https://www.hbart.com.my",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH094",
+      "name": "Heritage Auctions",
+      "city": "Dallas",
+      "country": "United States",
+      "region": "North America",
+      "website": "https://www.ha.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH095",
+      "name": "Doyle",
+      "city": "New York",
+      "country": "United States",
+      "region": "North America",
+      "website": "https://www.doyle.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH096",
+      "name": "Freeman's | Hindman",
+      "city": "Chicago",
+      "country": "United States",
+      "region": "North America",
+      "website": "https://www.hindmanauctions.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH097",
+      "name": "Swann Auction Galleries",
+      "city": "New York",
+      "country": "United States",
+      "region": "North America",
+      "website": "https://www.swanngalleries.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH098",
+      "name": "Rago / Wright",
+      "city": "Lambertville",
+      "country": "United States",
+      "region": "North America",
+      "website": "https://www.ragoarts.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH099",
+      "name": "Clars Auctions",
+      "city": "Oakland",
+      "country": "United States",
+      "region": "North America",
+      "website": "https://www.clars.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH100",
+      "name": "Shannon's Fine Art Auctioneers",
+      "city": "Milford",
+      "country": "United States",
+      "region": "North America",
+      "website": "https://www.shannons.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH101",
+      "name": "Stair Galleries",
+      "city": "Hudson",
+      "country": "United States",
+      "region": "North America",
+      "website": "https://www.stairgalleries.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH102",
+      "name": "New Orleans Auction Galleries",
+      "city": "New Orleans",
+      "country": "United States",
+      "region": "North America",
+      "website": "https://www.neworleansauction.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH103",
+      "name": "Neal Auction Company",
+      "city": "New Orleans",
+      "country": "United States",
+      "region": "North America",
+      "website": "https://www.nealauction.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH104",
+      "name": "The Potomack Company",
+      "city": "Alexandria",
+      "country": "United States",
+      "region": "North America",
+      "website": "https://www.potomackcompany.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH105",
+      "name": "Brunk Auctions",
+      "city": "Asheville",
+      "country": "United States",
+      "region": "North America",
+      "website": "https://www.brunkauctions.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH106",
+      "name": "Shapiro Auctions",
+      "city": "Bedford Hills",
+      "country": "United States",
+      "region": "North America",
+      "website": "https://www.shapiroauctions.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH107",
+      "name": "Heffel Fine Art Auction House",
+      "city": "Vancouver",
+      "country": "Canada",
+      "region": "North America",
+      "website": "https://www.heffel.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH108",
+      "name": "Cowley Abbott",
+      "city": "Toronto",
+      "country": "Canada",
+      "region": "North America",
+      "website": "https://cowleyabbott.ca",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH109",
+      "name": "Waddington's",
+      "city": "Toronto",
+      "country": "Canada",
+      "region": "North America",
+      "website": "https://www.waddingtons.ca",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH110",
+      "name": "Maynards",
+      "city": "Vancouver",
+      "country": "Canada",
+      "region": "North America",
+      "website": "https://www.maynardsfineart.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH111",
+      "name": "Deutscher and Hackett",
+      "city": "Melbourne",
+      "country": "Australia",
+      "region": "Oceania",
+      "website": "https://www.deutscherandhackett.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH112",
+      "name": "Smith & Singer",
+      "city": "Sydney",
+      "country": "Australia",
+      "region": "Oceania",
+      "website": "https://www.smithandsinger.com.au",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH113",
+      "name": "Menzies Art Brands",
+      "city": "Sydney",
+      "country": "Australia",
+      "region": "Oceania",
+      "website": "https://www.menziesartbrands.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH114",
+      "name": "Leonard Joel",
+      "city": "Melbourne",
+      "country": "Australia",
+      "region": "Oceania",
+      "website": "https://www.leonardjoel.com.au",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH115",
+      "name": "Shapiro Auctioneers",
+      "city": "Sydney",
+      "country": "Australia",
+      "region": "Oceania",
+      "website": "https://www.shapiro.com.au",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH116",
+      "name": "Theodore Bruce",
+      "city": "Sydney",
+      "country": "Australia",
+      "region": "Oceania",
+      "website": "https://www.theodorebruceauctions.com.au",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH117",
+      "name": "Lawsons",
+      "city": "Sydney",
+      "country": "Australia",
+      "region": "Oceania",
+      "website": "https://www.lawsons.com.au",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH118",
+      "name": "Webb's",
+      "city": "Auckland",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "website": "https://www.webbs.co.nz",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH119",
+      "name": "International Art Centre",
+      "city": "Auckland",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "website": "https://www.fineartauction.co.nz",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH120",
+      "name": "Dunbar Sloane",
+      "city": "Wellington",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "website": "https://www.dunbarsloane.co.nz",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH121",
+      "name": "Strauss & Co",
+      "city": "Cape Town",
+      "country": "South Africa",
+      "region": "Africa",
+      "website": "https://www.straussart.co.za",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH122",
+      "name": "Aspire Art Auctions",
+      "city": "Johannesburg",
+      "country": "South Africa",
+      "region": "Africa",
+      "website": "https://www.aspireart.net",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH123",
+      "name": "Stephan Welz & Co",
+      "city": "Johannesburg",
+      "country": "South Africa",
+      "region": "Africa",
+      "website": "https://www.stephanwelzandco.co.za",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH124",
+      "name": "Morton Subastas",
+      "city": "Mexico City",
+      "country": "Mexico",
+      "region": "Latin America",
+      "website": "https://www.mortonsubastas.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH125",
+      "name": "Bolsa de Arte",
+      "city": "Rio de Janeiro",
+      "country": "Brazil",
+      "region": "Latin America",
+      "website": "https://www.bolsadearte.com",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    },
+    {
+      "id": "AH126",
+      "name": "James Lisboa",
+      "city": "São Paulo",
+      "country": "Brazil",
+      "region": "Latin America",
+      "website": "https://www.jameslisboa.com.br",
+      "tier": "Priority",
+      "termsStatus": "Research queued",
+      "lastVerified": "2026-09-27",
+      "coverage": {
+        "saleCalendar": "Monitored",
+        "buyerTerms": "Research queued",
+        "alerts": "Eligible",
+        "crossBorderNotes": "On demand"
+      }
+    }
+  ]
+}
