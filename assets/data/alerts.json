@@ -1,0 +1,23 @@
+{
+  "updated": "2026-09-27",
+  "alerts": [
+    {
+      "jurisdiction": "European Union",
+      "type": "Regulatory implementation",
+      "effective": "2025-06-28",
+      "verified": "2026-09-27",
+      "title": "EU cultural-goods import documentary requirements are operational",
+      "summary": "The import-licence / importer-statement requirements under Regulation (EU) 2019/880 became applicable on 28 June 2025 when the ICG electronic system became operational. Applicability depends on cultural-good category and thresholds.",
+      "source": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=LEGISSUM:4398776"
+    },
+    {
+      "jurisdiction": "France",
+      "type": "Tax regime",
+      "effective": "2025-01-01",
+      "verified": "2026-09-27",
+      "title": "France’s 5.5% VAT regime applies broadly to qualifying art",
+      "summary": "French tax guidance confirms the reduced 5.5% VAT rate for qualifying works of art, collectors’ items and antiques, including imports and qualifying intra-EU acquisitions, with separate treatment where the margin scheme applies.",
+      "source": "https://bofip.impots.gouv.fr/bofip/1285-PGP.html/identifiant=BOI-TVA-SECT-90-40-20250514"
+    }
+  ]
+}

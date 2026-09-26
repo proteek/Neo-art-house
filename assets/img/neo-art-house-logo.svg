@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 190" role="img" aria-labelledby="title desc">
+<title id="title">The Neo Art House</title>
+<desc id="desc">Champagne gold square monogram with diagonal rising bar, The Neo Art House wordmark and Independent Art Transaction Intelligence descriptor.</desc>
+<defs>
+  <linearGradient id="gold" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#8f6627"/>
+    <stop offset=".28" stop-color="#c9a35d"/>
+    <stop offset=".55" stop-color="#ead09a"/>
+    <stop offset=".78" stop-color="#b8893d"/>
+    <stop offset="1" stop-color="#e8c982"/>
+  </linearGradient>
+</defs>
+<g transform="translate(8 12)">
+  <path d="M12 12h150v150H60l20-20h62V32H32v92l-20 20z" fill="url(#gold)"/>
+  <path d="M3 164 150 17h24L27 164z" fill="url(#gold)"/>
+  <path d="M38 38h92L38 130z" fill="#fbf8f1"/>
+  <path d="M142 50v92H50l20-20h52V70z" fill="#fbf8f1"/>
+</g>
+<g fill="#1d1813">
+  <text x="220" y="94" font-family="Bodoni 72, Didot, 'Bodoni MT', 'Times New Roman', serif" font-size="61" font-weight="400" letter-spacing="1">THE NEO ART HOUSE</text>
+  <text x="223" y="134" font-family="Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" letter-spacing="8.4">INDEPENDENT ART TRANSACTION INTELLIGENCE</text>
+</g>
+</svg>

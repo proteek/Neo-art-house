@@ -1,0 +1,13 @@
+{
+  "provider": "supabase",
+  "enabled": false,
+  "projectUrl": "",
+  "anonKey": "",
+  "redirectPath": "account.html",
+  "providers": {
+    "google": true,
+    "apple": true,
+    "emailMagicLink": true
+  },
+  "note": "Public client configuration only. Never place Supabase service-role keys, Apple private keys, or OAuth client secrets in this file."
+}

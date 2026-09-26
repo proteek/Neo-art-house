@@ -1,0 +1,31 @@
+name: Build auction alerts
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build normalized auction alerts
+        run: python scripts/build_auction_alerts.py
+      - name: Commit changed alerts
+        run: |
+          if git diff --quiet -- assets/data/auction-alerts.json; then
+            echo "No alert changes."
+            exit 0
+          fi
+          git config user.name "neo-art-house-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add assets/data/auction-alerts.json
+          git commit -m "update normalized auction alerts"
+          git push

@@ -1,0 +1,222 @@
+{
+  "updated": "2026-09-27",
+  "rules": [
+    {
+      "id": "IN-remittance-LRS",
+      "jurisdiction": "India",
+      "appliesWhen": {
+        "buyerResidence": "IN"
+      },
+      "layer": "Money",
+      "status": "Source",
+      "title": "Resident-individual outward remittance sits within the LRS framework.",
+      "detail": "RBI’s Master Direction states that resident individuals may remit up to USD 250,000 per financial year under the Liberalised Remittance Scheme for permitted current or capital account transactions. The applicable bank/purpose treatment for an art purchase should be confirmed with the authorised dealer bank.",
+      "verified": "2026-09-27",
+      "source": "https://www.rbi.org.in/scripts/notificationuser.aspx?id=10192"
+    },
+    {
+      "id": "IN-antiquities-export",
+      "jurisdiction": "India",
+      "appliesWhen": {
+        "origin": "IN"
+      },
+      "layer": "Movement",
+      "status": "Source",
+      "title": "Antiquities and art treasures can face strict export restrictions from India.",
+      "detail": "ASI material on the Antiquities and Art Treasures Act states that it is not lawful for a private person to export an antiquity or art treasure; the Rules identify the Director-General, ASI as the authority competent to issue permits under section 3.",
+      "verified": "2026-09-27",
+      "source": "https://asi.nic.in/pdf/antiquityActRules.pdf"
+    },
+    {
+      "id": "GB-cultural-export",
+      "jurisdiction": "United Kingdom",
+      "appliesWhen": {
+        "origin": "GB"
+      },
+      "layer": "Movement",
+      "status": "Source",
+      "title": "Cultural-goods exports from Great Britain may require an export licence.",
+      "detail": "UK government guidance says the cultural-goods export licensing system is administered by Arts Council England. Licence requirements depend on the object and circumstances; certain cultural goods, antiques and works of art are subject to special export rules.",
+      "verified": "2026-09-27",
+      "source": "https://www.gov.uk/guidance/exporting-or-importing-objects-of-cultural-interest"
+    },
+    {
+      "id": "GB-import-vat-art",
+      "jurisdiction": "United Kingdom",
+      "appliesWhen": {
+        "destination": "GB"
+      },
+      "layer": "Tax",
+      "status": "Source",
+      "title": "Eligible imported works of art, antiques and collectors’ items can have an effective 5% UK import VAT rate.",
+      "detail": "HMRC guidance says eligible works of art, antiques and collectors’ items use a reduced import valuation: the VAT value is reduced to 25% and the 20% VAT rate is applied, producing an effective 5% import VAT rate. Eligibility depends on the statutory definitions and classification.",
+      "verified": "2026-09-27",
+      "source": "https://www.gov.uk/guidance/how-to-value-goods-for-import-vat"
+    },
+    {
+      "id": "IN-gst-ch97",
+      "jurisdiction": "India",
+      "appliesWhen": {
+        "destination": "IN"
+      },
+      "layer": "Tax",
+      "status": "Source",
+      "title": "India’s GST schedule lists key Chapter 97 art categories at 12%.",
+      "detail": "CBIC’s published GST goods-rate schedule lists headings 9701, 9702, 9703, 9705 and 9706 at 12% (6% CGST + 6% SGST for domestic supply). For an import, actual customs/IGST treatment must be checked against the exact tariff classification and current ICEGATE duty calculation.",
+      "verified": "2026-09-27",
+      "source": "https://cbic-gst.gov.in/hindi/gst-goods-services-rates.html"
+    },
+    {
+      "id": "AE-vat-general-import",
+      "jurisdiction": "United Arab Emirates",
+      "appliesWhen": {
+        "destination": "AE"
+      },
+      "layer": "Tax",
+      "status": "Source",
+      "title": "UAE VAT generally applies at 5% unless a supply is zero-rated or exempt.",
+      "detail": "The UAE Federal Tax Authority states that taxable supplies are generally subject to 5% or 0% VAT and that imports are taken into account where the equivalent domestic supply would be taxable. This is a general VAT rule, not an art-specific customs-duty conclusion.",
+      "verified": "2026-09-27",
+      "source": "https://tax.gov.ae/en/search/genericcontent/what.is.a.taxable.supply.aspx"
+    },
+    {
+      "id": "CITES-listed-materials",
+      "jurisdiction": "International",
+      "appliesWhen": {},
+      "layer": "Movement",
+      "status": "Source",
+      "title": "CITES-listed animal and plant materials may require permits or certificates for international movement.",
+      "detail": "CITES controls international trade in specimens of species listed in Appendices I, II and III. Appendix-I trade is subject to particularly strict controls; Appendix-II exports generally require an export permit or re-export certificate, and importing countries may impose stricter domestic requirements.",
+      "verified": "2026-09-27",
+      "source": "https://cites.org/eng/node/12644"
+    },
+    {
+      "id": "CITES-elephant-ivory",
+      "jurisdiction": "International",
+      "appliesWhen": {},
+      "layer": "Restricted material",
+      "status": "Source",
+      "title": "Elephant ivory is a high-risk restricted material for international trade.",
+      "detail": "CITES states that commercial international trade in African elephant ivory is prohibited under current CITES listings/annotations, subject to tightly limited exceptions. Domestic laws can be stricter still.",
+      "verified": "2026-09-27",
+      "source": "https://cites.org/fra/node/43577"
+    },
+    {
+      "id": "SG-import-gst",
+      "jurisdiction": "Singapore",
+      "appliesWhen": {
+        "destination": "SG"
+      },
+      "layer": "Tax",
+      "status": "Source",
+      "title": "Imported goods entering Singapore are subject to GST at the prevailing rate; the current rate is 9%.",
+      "detail": "Singapore Customs states that all imported goods are subject to GST unless exempt. The current 9% rate has applied since 1 January 2024. GST for non-dutiable goods is calculated on customs value or, in certain multiple-sale cases, the last selling price.",
+      "verified": "2026-09-27",
+      "source": "https://www.customs.gov.sg/doing-business/valuation-duties-and-fees/goods-and-services-tax-gst/"
+    },
+    {
+      "id": "SG-art-nondutiable",
+      "jurisdiction": "Singapore",
+      "appliesWhen": {
+        "destination": "SG"
+      },
+      "layer": "Import",
+      "status": "Source",
+      "title": "Ordinary works of art are not within Singapore’s four categories of dutiable goods.",
+      "detail": "Singapore Customs lists only intoxicating liquors, tobacco products, motor vehicles, and petroleum products/biodiesel blends as dutiable categories. Other goods are non-dutiable, although GST and any control requirements can still apply.",
+      "verified": "2026-09-27",
+      "source": "https://www.customs.gov.sg/doing-business/valuation-duties-and-fees/duties-and-dutiable-goods/duties-and-dutiable-goods-overview/"
+    },
+    {
+      "id": "SG-import-permit",
+      "jurisdiction": "Singapore",
+      "appliesWhen": {
+        "destination": "SG"
+      },
+      "layer": "Documentation",
+      "status": "Source",
+      "title": "Singapore imports require customs declaration/permit treatment.",
+      "detail": "Singapore Customs’ import procedures state that imported goods are regulated under the Customs Act, GST Act and Regulation of Imports and Exports Act, and a customs permit is required to account for import and tax payment.",
+      "verified": "2026-09-27",
+      "source": "https://www.customs.gov.sg/doing-business/import-operations/import-procedures/import-procedures-overview/"
+    },
+    {
+      "id": "US-ch97-base-duty",
+      "jurisdiction": "United States",
+      "appliesWhen": {
+        "destination": "US"
+      },
+      "layer": "Import",
+      "status": "Source",
+      "title": "Several core U.S. Chapter 97 art and antique classifications carry a Free general duty rate.",
+      "detail": "The current U.S. Harmonized Tariff Schedule shows Free general rates for original engravings/prints/lithographs under 9702, original sculptures under 9703, specified collectors’ pieces under 9705 and antiques over 100 years under 9706. Exact classification matters, and separate Chapter 99 measures or other import restrictions can still apply.",
+      "verified": "2026-09-27",
+      "source": "https://hts.usitc.gov/search?query=9705.39.00.10"
+    },
+    {
+      "id": "US-antique-proof",
+      "jurisdiction": "United States",
+      "appliesWhen": {
+        "destination": "US"
+      },
+      "layer": "Documentation",
+      "status": "Source",
+      "title": "U.S. duty-free antique treatment requires proof that the item is over 100 years old.",
+      "detail": "CBP states that an antique must be over 100 years old at importation for Chapter 9706 duty-free treatment and that the importer should have proof of age. Original artwork and certain collectors’ items may instead fall under other Chapter 97 headings.",
+      "verified": "2026-09-27",
+      "source": "https://www.help.cbp.gov/s/article/Article1143?language=en_US"
+    },
+    {
+      "id": "US-cultural-property-restrictions",
+      "jurisdiction": "United States",
+      "appliesWhen": {
+        "destination": "US"
+      },
+      "layer": "Cultural property",
+      "status": "Source",
+      "title": "Certain archaeological and ethnological material can be subject to U.S. country-specific import restrictions.",
+      "detail": "Under the Convention on Cultural Property Implementation Act, the United States can impose import restrictions on designated archaeological or ethnological material through bilateral agreements or emergency measures. Applicable designated lists are country- and object-specific.",
+      "verified": "2026-09-27",
+      "source": "https://www.cbp.gov/sites/default/files/2025-05/vol_59_no_22_complete.pdf"
+    },
+    {
+      "id": "FR-cultural-export",
+      "jurisdiction": "France",
+      "appliesWhen": {
+        "saleLocation": "FR"
+      },
+      "layer": "Movement",
+      "status": "Source",
+      "title": "Export of French cultural goods is controlled by age/value and destination.",
+      "detail": "The French Ministry of Culture states that temporary or permanent export of a cultural good with historical, artistic or archaeological interest is subject to authorisation according to value and age. National treasures may only leave France temporarily. Export outside the EU uses the European export-authorisation procedure where applicable.",
+      "verified": "2026-09-27",
+      "source": "https://www.culture.gouv.fr/thematiques/circulation-des-biens-culturels/pour-les-professionnels/comment-soumettre-une-demande-d-autorisation-d-exportation"
+    },
+    {
+      "id": "FR-art-vat-5.5",
+      "jurisdiction": "France",
+      "appliesWhen": {
+        "destination": "FR"
+      },
+      "layer": "Tax",
+      "status": "Source",
+      "title": "France applies a 5.5% VAT rate to qualifying works of art, collectors’ items and antiques, including imports.",
+      "detail": "French tax guidance states that the reduced 5.5% VAT rate applies to qualifying works of art, collectors’ items and antiques; it also applies to imports and qualifying intra-EU acquisitions. Margin-scheme transactions follow separate rules.",
+      "verified": "2026-09-27",
+      "source": "https://bofip.impots.gouv.fr/bofip/1285-PGP.html/identifiant=BOI-TVA-SECT-90-40-20250514"
+    },
+    {
+      "id": "EU-cultural-goods-import-system",
+      "jurisdiction": "European Union",
+      "appliesWhen": {
+        "destination": "FR"
+      },
+      "layer": "Cultural property",
+      "status": "Source",
+      "title": "EU cultural-goods import licence / importer-statement requirements have been operational since 28 June 2025.",
+      "detail": "Regulation (EU) 2019/880 requires an import licence or importer statement for specified cultural goods, depending on category and thresholds. The documentary obligation became applicable on 28 June 2025 with the centralised ICG electronic system.",
+      "verified": "2026-09-27",
+      "source": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=LEGISSUM:4398776"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" role="img" aria-labelledby="t">
+<title id="t">The Proscenium</title>
+<rect width="1200" height="260" fill="#fff"/>
+<g fill="#111">
+  <path d="M40 220V95C40 38 77 20 122 20s82 18 82 75v125h-55V98c0-23-10-35-27-35s-27 12-27 35v122z"/>
+  <circle cx="190" cy="45" r="35"/>
+  <text x="270" y="98" font-family="Arial Black, Arial, sans-serif" font-size="72" font-weight="900">THE</text>
+  <text x="270" y="190" font-family="Arial Black, Arial, sans-serif" font-size="105" font-weight="900">PROSCENIUM</text>
+</g>
+</svg>
