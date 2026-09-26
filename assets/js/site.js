@@ -1,242 +1,120 @@
-/* The Neo Art House — progressive enhancement only.
-   Every page works without this file; it adds routing, the calendar and the directory. */
+/* The Neo Art House — shared interaction layer */
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const base=()=>document.body.dataset.base||'';
 
-const PUBLISHED = {
-  'AE>IN': 'briefs/uae-to-india.html',
-  'IN>IN': 'briefs/india-domestic.html'
+const PUBLISHED={
+  'AE>IN':'briefs/uae-to-india.html',
+  'IN>IN':'briefs/india-domestic.html'
 };
 
-const esc = s => String(s ?? '').replace(/[&<>"']/g, c =>
-  ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-
-const base = () => (document.body.dataset.base || '');
-
-
-/* ---------- generated house emblems ----------
-   Derived from the house name. Pure vector, no trademarks, no image files.
-   Same principle as the emblems on The Proscenium.                        */
-function emblem(name, size) {
-  let h = 0;
-  for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) >>> 0;
-  const layout = h % 6;
-  const rot = ((h >>> 5) % 4) * 90;
-  const pairs = [
-    ['#E8481F', '#D2D0C8'], ['#D2D0C8', '#E8481F'],
-    ['#E8481F', '#8A8378'], ['#8A8378', '#E8481F'],
-    ['#D2D0C8', '#8A8378'], ['#B8391A', '#D2D0C8']
-  ];
-  const [a, b] = pairs[(h >>> 3) % 6];
-  const shapes = [
-    `<rect x="0" y="0" width="20" height="40" fill="${a}"/><circle cx="30" cy="20" r="9" fill="${b}"/>`,
-    `<path d="M0 40 L20 6 L40 40 Z" fill="${a}"/><rect x="0" y="32" width="40" height="8" fill="${b}"/>`,
-    `<path d="M0 0 L40 0 L0 40 Z" fill="${a}"/><circle cx="28" cy="28" r="8" fill="${b}"/>`,
-    `<rect x="4" y="6" width="12" height="28" fill="${a}"/><rect x="22" y="14" width="14" height="20" fill="${b}"/>`,
-    `<circle cx="20" cy="20" r="15" fill="${a}"/><rect x="20" y="5" width="15" height="15" fill="${b}"/>`,
-    `<path d="M0 40 L0 14 L20 4 L40 14 L40 40 Z" fill="${a}"/><rect x="16" y="24" width="9" height="16" fill="${b}"/>`
-  ];
-  return `<svg class="emb" width="${size}" height="${size}" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
-    <rect width="40" height="40" fill="var(--emb-ground)"/>
-    <g transform="rotate(${rot} 20 20)">${shapes[layout]}</g>
-  </svg>`;
-}
-
-/* ---------- corridor picker ---------- */
-function initPicker() {
-  const form = document.querySelector('[data-picker]');
-  if (!form) return;
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const from = form.elements.from.value;
-    const to = form.elements.to.value;
-    const fromName = form.elements.from.selectedOptions[0].textContent;
-    const toName = form.elements.to.selectedOptions[0].textContent;
-    const hit = PUBLISHED[`${from}>${to}`];
-    location.href = hit
-      ? base() + hit
-      : `${base()}commission.html?from=${encodeURIComponent(fromName)}&to=${encodeURIComponent(toName)}`;
+function initPicker(){
+  document.querySelectorAll('[data-picker]').forEach(form=>{
+    form.addEventListener('submit',e=>{
+      e.preventDefault();
+      const from=form.elements.from?.value||'IN';
+      const to=form.elements.to?.value||'GB';
+      const fromName=form.elements.from?.selectedOptions?.[0]?.textContent||from;
+      const toName=form.elements.to?.selectedOptions?.[0]?.textContent||to;
+      const hit=PUBLISHED[`${from}>${to}`];
+      location.href=hit?base()+hit:`${base()}commission.html?from=${encodeURIComponent(fromName)}&to=${encodeURIComponent(toName)}`;
+    });
   });
 }
 
-/* ---------- curated calendar ---------- */
-async function initCalendar() {
-  const host = document.querySelector('[data-calendar]');
-  if (!host) return;
-  const limit = parseInt(host.dataset.calendar, 10) || 0;
-  try {
-    const res = await fetch(base() + 'assets/data/calendar.json');
-    if (!res.ok) throw new Error(res.status);
-    const data = await res.json();
-    let sales = (data.sales || []).slice().sort((a, b) => a.date.localeCompare(b.date));
-    if (limit) sales = sales.slice(0, limit);
-
-    if (data.status === 'sample') {
-      const warn = document.createElement('p');
-      warn.className = 'small dim';
-      warn.textContent = 'These are placeholder entries, not real sales. Replace them before sharing the site.';
-      host.before(warn);
-    }
-    if (!sales.length) {
-      host.innerHTML = '<p class="dim">No sales listed yet. The calendar is updated in the first week of each month.</p>';
-      return;
-    }
-    host.innerHTML = sales.map(s => `
-      <div class="row">
-        <div class="row__when">${esc(s.dateLabel || s.date)}</div>
-        <div class="row__what">
-          <h3>${s.url ? `<a class="row__link" href="${esc(s.url)}" rel="noopener">${esc(s.sale)}</a>` : esc(s.sale)}</h3>
-          <p class="row__where">${emblem(s.house, 22)}<span>${esc(s.house)}, ${esc(s.city)}</span></p>
-        </div>
-        <div class="row__note">
-          ${esc(s.note || '')}
-          ${s.flag ? `<span class="flag ${s.flagUrgent ? 'flag--urgent' : 'flag--calm'}">${esc(s.flag)}</span>` : ''}
-        </div>
-      </div>
-      ${(s.lots && s.lots.length) ? `<div class="lots">${s.lots.map(l => `
-        <div class="lot">
-          <div class="lot__work">${l.url ? `<a href="${esc(l.url)}" rel="noopener nofollow">${esc(l.artist)}, ${esc(l.title)}</a>` : `${esc(l.artist)}, ${esc(l.title)}`}${l.year ? `, ${esc(l.year)}` : ''}</div>
-          <div class="lot__est">${esc(l.estimate || '')}</div>
-          <div class="lot__note">${esc(l.note || '')}</div>
-        </div>`).join('')}</div>` : ''}`).join('');
-  } catch (err) {
-    host.innerHTML = '<p class="dim">The calendar could not be loaded. Try again shortly.</p>';
-  }
+async function initDirectory(){
+  const host=document.querySelector('[data-directory]');
+  if(!host)return;
+  const search=document.querySelector('[data-dir-search]');
+  const filter=document.querySelector('[data-dir-country]');
+  const count=document.querySelector('[data-dir-count]');
+  try{
+    const houses=await fetch(base()+'assets/data/houses.json').then(r=>r.json());
+    const countries=[...new Set(houses.map(h=>h.country))].sort();
+    countries.forEach(c=>filter?.insertAdjacentHTML('beforeend',`<option value="${esc(c)}">${esc(c)}</option>`));
+    const draw=()=>{
+      const q=(search?.value||'').toLowerCase().trim(), c=filter?.value||'';
+      const list=houses.filter(h=>(!c||h.country===c)&&(!q||`${h.name} ${h.city} ${h.country}`.toLowerCase().includes(q)));
+      if(count)count.textContent=`${list.length} of ${houses.length} houses`;
+      host.innerHTML=list.map((h,i)=>`<div class="dir__row">
+        <div class="dir__name"><span class="muted" style="font-family:var(--sans);font-size:10px;margin-right:14px">${String(i+1).padStart(2,'0')}</span>${esc(h.name)}</div>
+        <div class="dir__meta">${esc(h.country)} · ${esc(h.city)}</div>
+        <div><a class="text-link" href="${esc(h.website||'#')}" ${h.website?'target="_blank" rel="noopener nofollow"':''}>${h.website?'Visit site →':'Not listed'}</a></div>
+      </div>`).join('')||'<p class="muted">No matching auction houses.</p>';
+    };
+    search?.addEventListener('input',draw);filter?.addEventListener('change',draw);draw();
+  }catch(e){host.innerHTML='<p class="muted">The directory could not be loaded.</p>'}
 }
 
-/* ---------- auction house directory ---------- */
-async function initDirectory() {
-  const host = document.querySelector('[data-directory]');
-  if (!host) return;
-  const search = document.querySelector('[data-dir-search]');
-  const filter = document.querySelector('[data-dir-country]');
-  const count = document.querySelector('[data-dir-count]');
-  let houses = [];
+async function initCalendar(){
+  const host=document.querySelector('[data-calendar]');
+  if(!host)return;
+  const limit=parseInt(host.dataset.calendar||'0',10);
+  try{
+    const data=await fetch(base()+'assets/data/calendar.json').then(r=>r.json());
+    let sales=[...(data.sales||[])].sort((a,b)=>a.date.localeCompare(b.date));
+    if(limit)sales=sales.slice(0,limit);
+    host.innerHTML=sales.map(s=>`<article class="row">
+      <div class="row__when">${esc(s.dateLabel||s.date)}</div>
+      <div class="row__what"><h3>${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.sale)}</a>`:esc(s.sale)}</h3><p class="row__where">${esc(s.house)} · ${esc(s.city)}</p></div>
+      <div class="row__note">${esc(s.note||'')}${s.flag?`<br><span class="flag ${s.flagUrgent?'flag--urgent':''}">${esc(s.flag)}</span>`:''}</div>
+    </article>${s.lots?.length?`<div class="lots">${s.lots.map(l=>`<div class="lot"><div class="lot__work">${esc(l.artist)} — ${esc(l.title)}${l.year?', '+esc(l.year):''}</div><div class="lot__est">${esc(l.estimate||'')}</div><div class="lot__note">${esc(l.note||'')}</div></div>`).join('')}</div>`:''}`).join('');
+  }catch(e){host.innerHTML='<p class="muted">The deadline radar could not be loaded.</p>'}
+}
 
-  const draw = () => {
-    const q = (search?.value || '').trim().toLowerCase();
-    const c = filter?.value || '';
-    const list = houses.filter(h =>
-      (!c || h.country === c) &&
-      (!q || `${h.name} ${h.city} ${h.country}`.toLowerCase().includes(q)));
-    if (count) count.textContent = `${list.length} of ${houses.length} houses`;
-    host.innerHTML = list.length ? list.map(h => `
-      <div class="dir__row">
-        <div class="dir__name">${emblem(h.name, 30)}<strong>${esc(h.name)}</strong></div>
-        <div class="dim small">${esc(h.city)}, ${esc(h.country)}</div>
-        <div class="small">${h.website ? `<a href="${esc(h.website)}" rel="noopener nofollow">Visit site</a>` : '<span class="dim">No site listed</span>'}</div>
-      </div>`).join('')
-      : '<p class="dim">Nothing matches that. Try a different city or clear the search.</p>';
+async function initGlossary(){
+  const host=document.querySelector('[data-glossary]');
+  if(!host)return;
+  const search=document.querySelector('[data-gloss-search]');
+  const az=document.querySelector('[data-gloss-az]');
+  const count=document.querySelector('[data-gloss-count]');
+  try{
+    const terms=(await fetch(base()+'assets/data/glossary.json').then(r=>r.json())).terms||[];
+    const letters='ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+    const draw=()=>{
+      const q=(search?.value||'').toLowerCase().trim();
+      const list=terms.filter(t=>!q||t.term.toLowerCase().includes(q)||t.def.toLowerCase().includes(q));
+      const present=new Set(list.map(t=>t.letter));
+      if(count)count.textContent=`${list.length} term${list.length===1?'':'s'}`;
+      if(az)az.innerHTML=letters.map(L=>present.has(L)?`<a href="#letter-${L}">${L}</a>`:`<a aria-disabled="true">${L}</a>`).join('');
+      host.innerHTML=letters.filter(L=>present.has(L)).map(L=>`<h2 id="letter-${L}">${L}</h2><dl>${list.filter(t=>t.letter===L).map(t=>`<dt>${esc(t.term)}</dt><dd>${esc(t.def)}${t.href?`<span class="seealso">See <a href="${base()+esc(t.href)}">${esc(t.label||'related page')}</a></span>`:''}</dd>`).join('')}</dl>`).join('');
+    };
+    search?.addEventListener('input',draw);draw();
+  }catch(e){host.innerHTML='<p class="muted">The glossary could not be loaded.</p>'}
+}
+
+function initCostCalculator(){
+  const form=document.querySelector('[data-cost-form]');
+  if(!form)return;
+  const n=v=>Math.max(0,Number(v)||0);
+  const money=(v,c)=>new Intl.NumberFormat('en-GB',{style:'currency',currency:c||'GBP',maximumFractionDigits:0}).format(v);
+  const draw=()=>{
+    const hammer=n(form.hammer.value), currency=form.currency.value;
+    const premiumRate=n(form.premium.value)/100, taxRate=n(form.tax.value)/100, importRate=n(form.importDuty.value)/100;
+    const shipping=n(form.shipping.value), fx=n(form.fx.value);
+    const premium=hammer*premiumRate, tax=(hammer+premium)*taxRate, duty=(hammer+premium)*importRate;
+    const total=hammer+premium+tax+duty+shipping+fx;
+    const ids={hammerOut:hammer,premiumOut:premium,taxOut:tax,fxOut:fx,shippingOut:shipping,dutyOut:duty,totalOut:total};
+    Object.entries(ids).forEach(([id,val])=>{const el=document.getElementById(id);if(el)el.textContent=money(val,currency)});
   };
-
-  try {
-    const res = await fetch(base() + 'assets/data/houses.json');
-    houses = await res.json();
-    if (filter) {
-      [...new Set(houses.map(h => h.country))].sort().forEach(c => {
-        const o = document.createElement('option');
-        o.value = c; o.textContent = c; filter.append(o);
-      });
-    }
-    search?.addEventListener('input', draw);
-    filter?.addEventListener('change', draw);
-    draw();
-  } catch (err) {
-    host.innerHTML = '<p class="dim">The directory could not be loaded. Try again shortly.</p>';
-  }
+  form.addEventListener('input',draw);draw();
 }
 
-/* ---------- magazine covers ---------- */
-async function initCovers() {
-  const host = document.querySelector('[data-covers]');
-  if (!host) return;
-  const limit = parseInt(host.dataset.covers, 10) || 0;
-  try {
-    const res = await fetch(base() + 'assets/data/covers.json');
-    const data = await res.json();
-    let issues = data.issues || [];
-    if (limit) issues = issues.slice(0, limit);
-    host.innerHTML = issues.map((c, i) => `
-      <a class="cover" href="${esc(data.magzter || '#')}" rel="noopener">
-        <img src="${base()}assets/img/covers/${esc(c.file)}" alt="The Neo Art Magazine, issue ${esc(c.issue)}"
-             loading="${i === 0 ? 'eager' : 'lazy'}" decoding="async">
-      </a>`).join('');
-    document.querySelectorAll('[data-magzter]').forEach(a => { if (data.magzter) a.href = data.magzter; });
-    document.querySelectorAll('[data-pressreader]').forEach(a => { if (data.pressreader) a.href = data.pressreader; });
-  } catch (err) {
-    host.innerHTML = '<p class="dim small">Covers are being added.</p>';
-  }
+function initCommission(){
+  const slot=document.querySelector('[data-corridor-name]');
+  if(!slot)return;
+  const p=new URLSearchParams(location.search),from=p.get('from'),to=p.get('to');
+  if(from&&to)slot.textContent=`${from} ↔ ${to}`;
 }
 
-/* ---------- commission page: reflect the chosen corridor ---------- */
-function initCommission() {
-  const slot = document.querySelector('[data-corridor-name]');
-  if (!slot) return;
-  const p = new URLSearchParams(location.search);
-  const from = p.get('from'), to = p.get('to');
-  if (from && to) slot.textContent = `${from} to ${to}`;
-}
-
-initPicker();
-initCalendar();
-initDirectory();
-initCommission();
-initCovers();
-
-/* ---------- glossary ---------- */
-async function initGlossary() {
-  const host = document.querySelector('[data-glossary]');
-  if (!host) return;
-  const search = document.querySelector('[data-gloss-search]');
-  const azbar = document.querySelector('[data-gloss-az]');
-  const count = document.querySelector('[data-gloss-count]');
-  const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-  let terms = [];
-
-  const draw = () => {
-    const q = (search?.value || '').trim().toLowerCase();
-    const list = terms.filter(t => !q ||
-      t.term.toLowerCase().includes(q) || t.def.toLowerCase().includes(q));
-    const present = new Set(list.map(t => t.letter));
-
-    if (azbar) azbar.innerHTML = LETTERS.map(L =>
-      present.has(L) ? `<a href="#letter-${L}">${L}</a>`
-                     : `<a aria-disabled="true">${L}</a>`).join('');
-
-    if (count) count.textContent = q
-      ? `${list.length} of ${terms.length} terms`
-      : `${terms.length} terms`;
-
-    if (!list.length) {
-      host.innerHTML = '<p class="dim">Nothing matches that. Try a shorter word.</p>';
-      return;
-    }
-    host.innerHTML = LETTERS.filter(L => present.has(L)).map(L => `
-      <h2 id="letter-${L}">${L}</h2>
-      <dl>${list.filter(t => t.letter === L).map(t => `
-        <dt>${esc(t.term)}</dt>
-        <dd>${esc(t.def)}${t.href ? `<span class="seealso">See <a href="${base()}${esc(t.href)}">${esc(t.label)}</a></span>` : ''}</dd>`).join('')}
-      </dl>`).join('');
-  };
-
-  try {
-    const res = await fetch(base() + 'assets/data/glossary.json');
-    terms = (await res.json()).terms || [];
-    search?.addEventListener('input', draw);
-    draw();
-  } catch (err) {
-    host.innerHTML = '<p class="dim">The glossary could not be loaded. The PDF below still works.</p>';
-  }
-}
-initGlossary();
-
-/* ---------- light and dark ---------- */
-function initTheme() {
-  const btn = document.querySelector('[data-theme-toggle]');
-  if (!btn) return;
-  btn.addEventListener('click', () => {
-    const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
-    document.documentElement.dataset.theme = next;
-    btn.setAttribute('aria-label', next === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
-    try { localStorage.setItem('nah-theme', next); } catch (e) {}
+function initMobile(){
+  const btn=document.querySelector('[data-mobile-menu]');
+  const nav=document.querySelector('[data-nav]');
+  if(!btn||!nav)return;
+  btn.addEventListener('click',()=>{
+    const open=nav.style.display==='flex';
+    nav.style.display=open?'none':'flex';
+    if(!open){nav.style.position='absolute';nav.style.left='0';nav.style.right='0';nav.style.top='72px';nav.style.background='var(--paper)';nav.style.padding='22px';nav.style.flexDirection='column';nav.style.borderBottom='1px solid var(--line)'}
   });
 }
-initTheme();
+
+initPicker();initDirectory();initCalendar();initGlossary();initCostCalculator();initCommission();initMobile();
