@@ -129,3 +129,35 @@ initPlatformRibbon();initTravelChecker();initRiskEngine();initRouteExplorer();in
 
 function initPassportBuilder(){const f=document.querySelector('[data-passport-builder]'),p=document.querySelector('[data-passport-preview]');if(!f||!p)return;const g=n=>f.elements[n]?.value?.trim()||'—';const draw=()=>{const sections=[['MARKET',g('market')],['OBJECT',g('object')],['TRANSACTION',g('transaction')],['MOVEMENT',g('movement')],['DECISION SUPPORT',g('decision')]];p.innerHTML='<div class="eyebrow">THE NEO ART HOUSE · PRE-BID PASSPORT™</div><h1>'+esc(g('artist'))+'<br><span style="color:var(--ink-soft)">'+esc(g('work'))+'</span></h1><div class="passport-meta"><div><span class="verify-key">Auction house</span><span class="verify-value">'+esc(g('house'))+'</span></div><div><span class="verify-key">Lot</span><span class="verify-value">'+esc(g('lot'))+'</span></div><div><span class="verify-key">Estimate</span><span class="verify-value">'+esc(g('estimate'))+'</span></div><div><span class="verify-key">Route</span><span class="verify-value">'+esc(g('route'))+'</span></div></div>'+sections.map(s=>'<section class="passport-section"><div class="eyebrow">'+s[0]+'</div><div class="passport-lines">'+esc(s[1])+'</div></section>').join('')+'<section class="passport-section"><span class="data-badge">Working research document</span><p class="disclaimer">This generated document organises transaction research. It is not authentication, legal, tax, customs or investment advice.</p></section>'};f.addEventListener('input',draw);draw();const b=document.querySelector('[data-print-passport]');b?.addEventListener('click',()=>window.print())}
 initPassportBuilder();
+
+/* ---------- verified house intelligence v2 ---------- */
+async function renderVerifiedHouseIntelligence(){
+  const h=document.querySelector('[data-house-intelligence]');
+  if(!h)return;
+  try{
+    const d=await fetch(base()+'assets/data/house-intelligence.json').then(r=>r.json());
+    h.innerHTML=d.houses.map(x=>'<article class="card" style="margin-bottom:18px"><div class="result-head"><div><div class="eyebrow">'+esc(x.scope||'Auction house')+'</div><h3 style="margin-top:7px">'+esc(x.name)+'</h3></div><span class="data-badge">'+esc(x.status)+'</span></div><div class="finding"><div class="finding__label">Buyer premium</div><div class="finding__value">'+esc(x.buyersPremium)+'</div></div><div class="finding"><div class="finding__label">Payment</div><div class="finding__value">'+esc(x.paymentDeadline)+'</div></div><div class="finding"><div class="finding__label">Registration</div><div class="finding__value">'+esc(x.registration)+'</div></div><div class="finding"><div class="finding__label">KYC / identity</div><div class="finding__value">'+esc(x.kyc)+'</div></div><div class="finding"><div class="finding__label">Movement</div><div class="finding__value">'+esc(x.movement)+'</div></div>'+(x.sources?.length?'<div style="padding-top:15px">'+x.sources.map(s=>'<a class="text-link" style="display:inline-block;margin:0 16px 8px 0" href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.label)+' ↗</a>').join('')+'</div>':'')+'</article>').join('');
+  }catch(e){}
+}
+renderVerifiedHouseIntelligence();
+
+/* ---------- route-specific verified rules ---------- */
+async function loadCorridorRules(){
+  try{return await fetch(base()+'assets/data/corridor-rules.json').then(r=>r.json())}catch(e){return {rules:[]}}
+}
+async function appendVerifiedRouteRules(){
+  const f=document.querySelector('[data-route-explorer]'),o=document.querySelector('[data-route-result]');
+  if(!f||!o)return;
+  const db=await loadCorridorRules();
+  const add=()=>{
+    setTimeout(()=>{
+      const origin=f.elements.origin.value,dest=f.elements.destination.value;
+      const matches=(db.rules||[]).filter(r=>(!r.appliesWhen?.origin||r.appliesWhen.origin===origin)&&(!r.appliesWhen?.buyerResidence||r.appliesWhen.buyerResidence===origin)&&(!r.appliesWhen?.destination||r.appliesWhen.destination===dest));
+      if(!matches.length)return;
+      const box=document.createElement('div');box.style.marginTop='22px';box.innerHTML='<div class="eyebrow">Verified rule layers</div>'+matches.map(r=>'<div class="finding"><div class="finding__label">'+esc(r.layer)+'</div><div class="finding__value"><strong>'+esc(r.title)+'</strong><br><span style="font-size:14px">'+esc(r.detail)+'</span><br><a class="text-link" href="'+esc(r.source)+'" target="_blank" rel="noopener">Primary source ↗</a></div></div>').join('');
+      o.querySelector('.route-board__content')?.append(box);
+    },0);
+  };
+  f.addEventListener('input',add);add();
+}
+appendVerifiedRouteRules();

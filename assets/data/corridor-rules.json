@@ -1,0 +1,44 @@
+{
+  "updated": "2026-09-27",
+  "rules": [
+    {
+      "id": "IN-remittance-LRS",
+      "jurisdiction": "India",
+      "appliesWhen": {
+        "buyerResidence": "IN"
+      },
+      "layer": "Money",
+      "status": "Source",
+      "title": "Resident-individual outward remittance sits within the LRS framework.",
+      "detail": "RBI’s Master Direction states that resident individuals may remit up to USD 250,000 per financial year under the Liberalised Remittance Scheme for permitted current or capital account transactions. The applicable bank/purpose treatment for an art purchase should be confirmed with the authorised dealer bank.",
+      "verified": "2026-09-27",
+      "source": "https://www.rbi.org.in/scripts/notificationuser.aspx?id=10192"
+    },
+    {
+      "id": "IN-antiquities-export",
+      "jurisdiction": "India",
+      "appliesWhen": {
+        "origin": "IN"
+      },
+      "layer": "Movement",
+      "status": "Source",
+      "title": "Antiquities and art treasures can face strict export restrictions from India.",
+      "detail": "ASI material on the Antiquities and Art Treasures Act states that it is not lawful for a private person to export an antiquity or art treasure; the Rules identify the Director-General, ASI as the authority competent to issue permits under section 3.",
+      "verified": "2026-09-27",
+      "source": "https://asi.nic.in/pdf/antiquityActRules.pdf"
+    },
+    {
+      "id": "GB-cultural-export",
+      "jurisdiction": "United Kingdom",
+      "appliesWhen": {
+        "origin": "GB"
+      },
+      "layer": "Movement",
+      "status": "Source",
+      "title": "Cultural-goods exports from Great Britain may require an export licence.",
+      "detail": "UK government guidance says the cultural-goods export licensing system is administered by Arts Council England. Licence requirements depend on the object and circumstances; certain cultural goods, antiques and works of art are subject to special export rules.",
+      "verified": "2026-09-27",
+      "source": "https://www.gov.uk/guidance/exporting-or-importing-objects-of-cultural-interest"
+    }
+  ]
+}

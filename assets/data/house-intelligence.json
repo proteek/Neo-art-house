@@ -1,54 +1,149 @@
 {
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
+  "methodology": "Only official auction-house sources are used for published buyer-term fields. Sale- or location-specific terms are labelled as such.",
   "houses": [
     {
       "name": "Christie's",
-      "buyersPremium": null,
-      "paymentDeadline": null,
-      "registration": null,
-      "status": "Research queued"
+      "scope": "Global standard auctions; thresholds vary by sale site",
+      "buyersPremium": "28% / 22% / 15% cumulative tiers; effective 1 Sep 2026. Thresholds vary by sale site.",
+      "paymentDeadline": "Live auctions: within 7 days. Online auctions: immediately.",
+      "registration": "Identity verification required; Christie’s recommends live-auction registration at least 24 hours before start. Financial reference/deposit may be requested.",
+      "kyc": "Government photo ID + proof of residential address; organisations require incorporation/ownership/authorisation documents.",
+      "movement": "Invoice may note export and/or CITES permit requirements; international duties/taxes are destination-specific.",
+      "status": "Verified 27 Sep 2026",
+      "sources": [
+        {
+          "label": "Buyer’s premium",
+          "url": "https://www.christies.com/help/buying-guide-important-information/financial-information"
+        },
+        {
+          "label": "Payment & shipping",
+          "url": "https://www.christies.com/en/help/buying-guide/payment-and-shipping"
+        },
+        {
+          "label": "Registration",
+          "url": "https://www.christies.com/en/help/buying-guide/register-and-bid"
+        },
+        {
+          "label": "Identity verification",
+          "url": "https://www.christies.com/en/help/buying-guide/create-an-account"
+        }
+      ]
     },
     {
       "name": "Sotheby's",
-      "buyersPremium": null,
-      "paymentDeadline": null,
-      "registration": null,
-      "status": "Research queued"
-    },
-    {
-      "name": "Bonhams",
-      "buyersPremium": null,
-      "paymentDeadline": null,
-      "registration": null,
-      "status": "Research queued"
+      "scope": "Global auctions; thresholds vary by sale location",
+      "buyersPremium": "28% / 22% / 15% cumulative tiers for major art-auction locations; thresholds vary by currency/location. Wines differ.",
+      "paymentDeadline": "Standard buyer guide states payment is required immediately after the auction; some eligible invoices use scheduled payment thresholds.",
+      "registration": "Complete account profile 24 hours before auction; some premium lots require additional financial verification.",
+      "kyc": "Government-issued photo ID + proof of address; KYC can also be refreshed before registration or release.",
+      "movement": "Taxes depend on sale location and receipt method; catalogue symbols flag restricted materials, heritage lots and other special cases.",
+      "status": "Verified 27 Sep 2026",
+      "sources": [
+        {
+          "label": "Buyer’s premium",
+          "url": "https://help.sothebys.com/en/support/solutions/articles/44002686902-what-is-a-buyer-s-premium-"
+        },
+        {
+          "label": "Buyer guide",
+          "url": "https://help.sothebys.com/en/support/solutions/articles/44002518078-guide-for-buyers-global"
+        },
+        {
+          "label": "Registration",
+          "url": "https://help.sothebys.com/en/support/solutions/articles/44002297462-how-can-i-bid-in-an-auction-"
+        },
+        {
+          "label": "Account / ID",
+          "url": "https://help.sothebys.com/en/support/solutions/articles/44002429420-how-do-i-set-up-a-personal-account-"
+        }
+      ]
     },
     {
       "name": "Phillips",
-      "buyersPremium": null,
-      "paymentDeadline": null,
-      "registration": null,
-      "status": "Research queued"
+      "scope": "Major live/online auctions; thresholds and tax treatment vary by location",
+      "buyersPremium": "27% / 21% / 14.5% cumulative tiers shown in 2026 sale terms; thresholds vary by sale currency/location.",
+      "paymentDeadline": "Phillips Hong Kong payment guidance states payment is due immediately following the sale.",
+      "registration": "Register for each sale; Phillips guidance recommends registration at least 24 hours before live auctions.",
+      "kyc": "Photo ID and proof of address used for KYC / identity verification.",
+      "movement": "Sale pages may flag tariffs/import issues; collection/shipping and tax treatment are sale/location specific.",
+      "status": "Verified 27 Sep 2026",
+      "sources": [
+        {
+          "label": "2026 buyer premium example",
+          "url": "https://www.phillips.com/auction/NY080126/overview"
+        },
+        {
+          "label": "Payment information",
+          "url": "https://www.phillips.com/buysell/hongkongenpayment"
+        },
+        {
+          "label": "Registration guide",
+          "url": "https://www.phillips.com/article/58561057/auction-bidding-anywhere"
+        },
+        {
+          "label": "ID verification guide",
+          "url": "https://www.dist.phillips.com/content/web/docs/Online%20Bidding%20Guide/OnlineBidding_SP20_v4.pdf"
+        }
+      ]
     },
     {
       "name": "AstaGuru",
-      "buyersPremium": null,
-      "paymentDeadline": null,
-      "registration": null,
-      "status": "Research queued"
+      "scope": "India-based auctions; sale particulars can change by category",
+      "buyersPremium": "Sale-specific — verify the relevant catalogue / conditions before bidding.",
+      "paymentDeadline": "Current public terms reviewed; exact payment timing should be verified against the relevant sale conditions.",
+      "registration": "New bidders should register and complete verification at least 4 business days before the auction date.",
+      "kyc": "May require government ID, proof of residence, PAN/Aadhaar/tax-residency information, source-of-funds information and entity documents.",
+      "movement": "Buyer should check applicable statutory compliance and shipping/export requirements for the specific lot.",
+      "status": "Partially verified 27 Sep 2026",
+      "sources": [
+        {
+          "label": "Terms & conditions",
+          "url": "https://www.astaguru.com/terms-and-conditions?locale=uk"
+        }
+      ]
     },
     {
       "name": "Saffronart",
-      "buyersPremium": null,
-      "paymentDeadline": null,
-      "registration": null,
-      "status": "Research queued"
+      "scope": "Sale-specific conditions",
+      "buyersPremium": "Sale-specific. One currently indexed art-auction conditions page states 20% up to INR 300,000,000 and 15% above that; verify the actual sale conditions.",
+      "paymentDeadline": "Verify in the specific sale conditions before bidding.",
+      "registration": "Invoice details supplied at registration are used for the winning-bidder invoice.",
+      "kyc": "Sale/account-specific verification requirements should be checked directly with Saffronart.",
+      "movement": "For lots located in India, invoicing currency depends on buyer location; taxes, shipping, handling and duties may apply.",
+      "status": "Partially verified 27 Sep 2026",
+      "sources": [
+        {
+          "label": "Example current conditions page",
+          "url": "https://www.saffronart.com/sitepages/auctions/art-auctions/auctionconditionssale.aspx?eid=4556"
+        }
+      ]
     },
     {
       "name": "Pundole's",
-      "buyersPremium": null,
-      "paymentDeadline": null,
-      "registration": null,
-      "status": "Research queued"
+      "scope": "India auctions",
+      "buyersPremium": "Buyer’s premium applies; current buying page should be checked for the sale-specific rate.",
+      "paymentDeadline": "25% hammer-price deposit within 3 working days; balance payment within 14 days after sale or deposit may be forfeited.",
+      "registration": "All buyers must register in advance; telephone arrangements are requested at least 24 hours before the auction.",
+      "kyc": "Registration required; invoicing details are tied to the registration form.",
+      "movement": "Buyer is responsible for duties/taxes; imported lots marked # may attract import duty and GST treatment described on the buying page.",
+      "status": "Verified 27 Sep 2026",
+      "sources": [
+        {
+          "label": "Buying guide",
+          "url": "https://www.pundoles.com/buying/"
+        }
+      ]
+    },
+    {
+      "name": "Bonhams",
+      "scope": "Location- and sale-specific",
+      "buyersPremium": "Research queued — current rates vary by location/sale and should be taken from the live sale information.",
+      "paymentDeadline": "Research queued — verify the specific sale’s Buyer’s Agreement.",
+      "registration": "Research queued.",
+      "kyc": "Research queued.",
+      "movement": "Sale information can include VAT/import/CITES and storage requirements.",
+      "status": "Research queued",
+      "sources": []
     }
   ]
 }
