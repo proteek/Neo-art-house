@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json, hashlib
+import json, hashlib, urllib.request, xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -9,57 +9,80 @@ SRC=ROOT/"assets/data/auction-sources.json"
 OUT=ROOT/"assets/data/auction-alerts.json"
 
 def parse_date(s):
-    try:return datetime.strptime(s,"%Y-%m-%d").replace(tzinfo=timezone.utc)
-    except:return None
+    for fmt in ("%Y-%m-%d","%Y%m%d"):
+        try:return datetime.strptime(str(s)[:10 if "-" in str(s) else 8],fmt).replace(tzinfo=timezone.utc)
+        except:pass
+    return None
+
+def remote_text(url):
+    req=urllib.request.Request(url,headers={"User-Agent":"TheNeoArtHouse-AlertBuilder/1.0"})
+    with urllib.request.urlopen(req,timeout=20) as r:return r.read().decode("utf-8","replace")
+
+def read_ics(text,house):
+    out=[]
+    for block in text.split("BEGIN:VEVENT")[1:]:
+        body=block.split("END:VEVENT")[0]
+        vals={}
+        for line in body.splitlines():
+            if ":" not in line:continue
+            k,v=line.split(":",1); vals[k.split(";",1)[0]]=v.strip()
+        if vals.get("DTSTART") and vals.get("SUMMARY"):
+            dt=parse_date(vals["DTSTART"])
+            out.append({"date":dt.strftime("%Y-%m-%d") if dt else vals["DTSTART"],"dateLabel":dt.strftime("%-d %B") if dt else vals["DTSTART"],"sale":vals["SUMMARY"],"house":house,"city":vals.get("LOCATION",""),"url":vals.get("URL",""),"note":"Imported from a permitted official calendar feed.","flag":"","flagUrgent":False})
+    return out
+
+def read_rss(text,house):
+    out=[]
+    root=ET.fromstring(text)
+    for item in root.findall(".//item"):
+        title=(item.findtext("title") or "").strip()
+        link=(item.findtext("link") or "").strip()
+        date=(item.findtext("date") or item.findtext("pubDate") or "").strip()
+        dt=parse_date(date)
+        if title and dt: out.append({"date":dt.strftime("%Y-%m-%d"),"dateLabel":dt.strftime("%-d %B"),"sale":title,"house":house,"city":"","url":link,"note":"Imported from a permitted official feed.","flag":"","flagUrgent":False})
+    return out
+
+def permitted_feed_sales(sources):
+    sales=[]
+    for s in sources.get("houses",[]):
+        if not s.get("enabled") or s.get("mode") not in ("ics","rss","json") or not s.get("feedUrl"):continue
+        try:
+            text=remote_text(s["feedUrl"])
+            if s["mode"]=="ics": sales.extend(read_ics(text,s["house"]))
+            elif s["mode"]=="rss": sales.extend(read_rss(text,s["house"]))
+            elif s["mode"]=="json":
+                payload=json.loads(text)
+                fmap=s.get("fieldMap",{})
+                for item in payload.get(s.get("itemsKey","items"),[]):
+                    def get(k,default=""): return item.get(fmap.get(k,k),default)
+                    sales.append({"date":get("date"),"dateLabel":get("dateLabel",get("date")),"sale":get("sale"),"house":s["house"],"city":get("city"),"url":get("url"),"note":"Imported from a permitted official JSON feed.","flag":get("flag"),"flagUrgent":bool(get("flagUrgent",False))})
+        except Exception as e:
+            print(f"Feed skipped for {s.get('house')}: {e}")
+    return sales
 
 calendar=json.loads(CAL.read_text())
 sources=json.loads(SRC.read_text())
 house_meta={h["house"]:h for h in sources.get("houses",[])}
+all_sales=list(calendar.get("sales",[]))+permitted_feed_sales(sources)
 
 today=datetime.now(timezone.utc)
-alerts=[]
-seen=set()
-
-for sale in calendar.get("sales",[]):
+alerts=[]; seen=set()
+for sale in all_sales:
     key="|".join([sale.get("house",""),sale.get("sale",""),sale.get("date",""),sale.get("city","")])
     uid=hashlib.sha1(key.encode()).hexdigest()[:12]
-    if uid in seen: continue
+    if uid in seen:continue
     seen.add(uid)
     dt=parse_date(sale.get("date",""))
     days=None if not dt else (dt.date()-today.date()).days
-    if days is None: urgency="unknown"
-    elif days < 0: urgency="past"
-    elif days <= 2: urgency="critical"
-    elif days <= 7: urgency="soon"
-    else: urgency="upcoming"
-
+    urgency="unknown" if days is None else "past" if days<0 else "critical" if days<=2 else "soon" if days<=7 else "upcoming"
     meta=house_meta.get(sale.get("house"),{})
     alerts.append({
-      "id":uid,
-      "house":sale.get("house"),
-      "houseCode":meta.get("code") or "".join(x[0] for x in sale.get("house","").split()[:3]).upper(),
-      "logo":meta.get("logo"),
-      "logoStatus":meta.get("logoStatus","not_configured"),
-      "sale":sale.get("sale"),
-      "city":sale.get("city"),
-      "saleDate":sale.get("date"),
-      "dateLabel":sale.get("dateLabel") or sale.get("date"),
-      "url":sale.get("url"),
-      "note":sale.get("note"),
-      "buyerAlert":sale.get("flag"),
-      "urgent":bool(sale.get("flagUrgent")),
-      "urgency":urgency,
-      "daysToSale":days,
-      "lots":sale.get("lots",[]),
-      "sourceMode":"editorial",
-      "lastBuilt":today.isoformat().replace("+00:00","Z")
+      "id":uid,"house":sale.get("house"),"houseCode":meta.get("code") or "".join(x[0] for x in sale.get("house","").split()[:3]).upper(),
+      "logo":meta.get("logo"),"logoStatus":meta.get("logoStatus","not_configured"),"sale":sale.get("sale"),"city":sale.get("city"),
+      "saleDate":sale.get("date"),"dateLabel":sale.get("dateLabel") or sale.get("date"),"url":sale.get("url"),"note":sale.get("note"),
+      "buyerAlert":sale.get("flag"),"urgent":bool(sale.get("flagUrgent")),"urgency":urgency,"daysToSale":days,"lots":sale.get("lots",[]),
+      "sourceMode":"feed" if sale.get("note","").startswith("Imported from") else "editorial","lastBuilt":today.isoformat().replace("+00:00","Z")
     })
-
 alerts.sort(key=lambda x:(x["saleDate"] or "9999-99-99",x["house"] or ""))
-OUT.write_text(json.dumps({
-  "_readme":"Generated from calendar.json by scripts/build_auction_alerts.py. Do not edit manually.",
-  "updated":today.isoformat().replace("+00:00","Z"),
-  "count":len(alerts),
-  "alerts":alerts
-},indent=2,ensure_ascii=False)+"\n")
+OUT.write_text(json.dumps({"_readme":"Generated by scripts/build_auction_alerts.py. Editorial calendar plus explicitly permitted feeds only.","updated":today.isoformat().replace("+00:00","Z"),"count":len(alerts),"alerts":alerts},indent=2,ensure_ascii=False)+"\n")
 print(f"Built {len(alerts)} auction alerts")
