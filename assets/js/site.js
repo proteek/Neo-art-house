@@ -569,3 +569,15 @@ function initImageResilience(){
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initImageResilience);
 else initImageResilience();
+
+function initSiteFavicon(){
+  if(!document.querySelector('link[rel="icon"]')){
+    const icon=document.createElement('link');
+    icon.rel='icon';
+    icon.type='image/svg+xml';
+    icon.href=(document.body?.dataset?.base||'')+'favicon.svg';
+    document.head.appendChild(icon);
+  }
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initSiteFavicon);
+else initSiteFavicon();
