@@ -1,0 +1,272 @@
+{
+  "_readme": "Historical auction alerts archived automatically by the six-hour builder.",
+  "updated": "2026-09-27T05:50:53.766Z",
+  "count": 9,
+  "alerts": [
+    {
+      "id": "f5b78da02014",
+      "house": "AstaGuru",
+      "houseCode": "AST",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Imperial Treasures",
+      "city": "Mumbai",
+      "saleDate": "2026-09-10",
+      "dateLabel": "10 to 11 September",
+      "url": "https://www.astaguru.com/auctions/2026/imperial-treasures-222",
+      "note": "Decorative arts, silver, textiles and rare books. A large share is over a hundred years old, which makes it non-exportable from India whoever buys it.",
+      "buyerAlert": "Export limits likely",
+      "urgent": true,
+      "urgency": "past",
+      "daysToSale": -17,
+      "lots": [
+        {
+          "artist": "Nicholas Roerich",
+          "title": "Himalaya, numbered edition",
+          "year": "Lot 5",
+          "estimate": "Opening ₹9,00,000",
+          "url": "https://www.astaguru.com/auctions/2026/imperial-treasures-222",
+          "note": "Roerich is one of the nine artists declared an art treasure in 1979. Whether a numbered print edition falls inside that scope is not obvious, and the answer decides whether you can take it home."
+        },
+        {
+          "artist": "Early Indian topographical works",
+          "title": "Four first editions and view books",
+          "year": "Lots 16, 22, 25, 29",
+          "estimate": "Opening ₹5,50,000 to ₹28,00,000",
+          "url": "https://www.astaguru.com/auctions/2026/imperial-treasures-222",
+          "note": "Books and records of historical interest reach the antiquity threshold at seventy-five years rather than a hundred. All four are well past it."
+        }
+      ],
+      "sourceMode": "editorial",
+      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+    },
+    {
+      "id": "447d9e0a028c",
+      "house": "Christie's",
+      "houseCode": "CHR",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "The Auction: Inside The Devil Wears Prada 2",
+      "city": "Online, New York",
+      "saleDate": "2026-09-15",
+      "dateLabel": "Closes 15 September",
+      "url": "",
+      "note": "Online costume and jewellery sale, thirty-five lots. Low estimates and heavy bidding. Nothing here touches export restriction, but check materials on the exotic-skin handbag lots before shipping anywhere.",
+      "buyerAlert": "Closing",
+      "urgent": true,
+      "urgency": "past",
+      "daysToSale": -12,
+      "lots": [],
+      "sourceMode": "editorial",
+      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+    },
+    {
+      "id": "db993b81e1cf",
+      "house": "Christie's",
+      "houseCode": "CHR",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Hiroshige: Colors of the Four Seasons, The Alan Medaugh Collection",
+      "city": "New York",
+      "saleDate": "2026-09-15",
+      "dateLabel": "15 September",
+      "url": "",
+      "note": "181 Hiroshige woodblock prints, lots 1 to 181. Japanese prints move freely, but note Christie's own banner on EU cultural goods licensing if the work is heading to Europe.",
+      "buyerAlert": "Registration closes early",
+      "urgent": true,
+      "urgency": "past",
+      "daysToSale": -12,
+      "lots": [],
+      "sourceMode": "editorial",
+      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+    },
+    {
+      "id": "9c24cc58315b",
+      "house": "Christie's",
+      "houseCode": "CHR",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "South Asian Modern and Contemporary Art",
+      "city": "New York",
+      "saleDate": "2026-09-16",
+      "dateLabel": "16 September",
+      "url": "",
+      "note": "112 lots, the strongest South Asian sale of the month. Works already outside India are not caught by the 1972 Act, so this is the corridor to use if you want a modern Indian work you can actually ship.",
+      "buyerAlert": "Registration closes early",
+      "urgent": true,
+      "urgency": "past",
+      "daysToSale": -11,
+      "lots": [
+        {
+          "artist": "Francis Newton Souza",
+          "title": "Building in Trafalgar Square",
+          "year": "Lot 580",
+          "estimate": "USD 600,000 to 800,000",
+          "url": "",
+          "note": "Top lot of the sale. Sitting in New York, so exportable in a way the same artist would not be from a Mumbai saleroom."
+        },
+        {
+          "artist": "Jehangir Sabavala",
+          "title": "A Progression of Sails",
+          "year": "Lot 584",
+          "estimate": "USD 400,000 to 600,000",
+          "url": "",
+          "note": "Thin secondary market at this level. Check how often works of this scale have actually sold before setting a number."
+        }
+      ],
+      "sourceMode": "editorial",
+      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+    },
+    {
+      "id": "d36a11be74fc",
+      "house": "Sotheby's",
+      "houseCode": "SOT",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Prints and Multiples",
+      "city": "London",
+      "saleDate": "2026-09-16",
+      "dateLabel": "Opens 16 September",
+      "url": "",
+      "note": "Six lots only, Warhol, Banksy and Picasso. Sterling settlement, so an Indian resident should budget the remittance before the estimate.",
+      "buyerAlert": "Uses remittance allowance",
+      "urgent": false,
+      "urgency": "past",
+      "daysToSale": -11,
+      "lots": [],
+      "sourceMode": "editorial",
+      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+    },
+    {
+      "id": "6b728507ced0",
+      "house": "Christie's",
+      "houseCode": "CHR",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Ritual, Cosmos, and Imperial Splendor: Important Chinese Art",
+      "city": "New York",
+      "saleDate": "2026-09-17",
+      "dateLabel": "17 September",
+      "url": "",
+      "note": "62 lots of early Chinese bronzes, Buddhist sculpture and imperial ceramics. Archaeological material carries provenance and import-licensing questions in several jurisdictions. Read the conditions before you bid, not after.",
+      "buyerAlert": "Provenance checks needed",
+      "urgent": true,
+      "urgency": "past",
+      "daysToSale": -10,
+      "lots": [],
+      "sourceMode": "editorial",
+      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+    },
+    {
+      "id": "13b9d9d02fc0",
+      "house": "Saffronart",
+      "houseCode": "SAF",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Autumn Auction, Live",
+      "city": "New Delhi",
+      "saleDate": "2026-09-19",
+      "dateLabel": "19 September",
+      "url": "https://www.saffronart.com",
+      "note": "Modern Indian painting, 75 lots. Domestic sale, so no remittance and no import duty for Indian residents. For overseas buyers, check each lot's export status individually.",
+      "buyerAlert": "No corridor cost if resident",
+      "urgent": false,
+      "urgency": "past",
+      "daysToSale": -8,
+      "lots": [
+        {
+          "artist": "Francis Newton Souza",
+          "title": "Christ in a Village",
+          "year": "Lot 15, 1958",
+          "estimate": "₹12 to 18 crore",
+          "url": "https://www.saffronart.com",
+          "note": "The largest number in any Indian sale this month. At this level the buyer's premium and tax alone will run to a substantial sum, so settle those before the room opens."
+        },
+        {
+          "artist": "Manjit Bawa",
+          "title": "Untitled",
+          "year": "Lot 10",
+          "estimate": "₹1.5 to 2.5 crore",
+          "url": "https://www.saffronart.com",
+          "note": "Bawa's market has been strong and thin at once. Worth checking unsold rates rather than only achieved prices."
+        }
+      ],
+      "sourceMode": "editorial",
+      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+    },
+    {
+      "id": "8760b38d76d6",
+      "house": "Saffronart",
+      "houseCode": "SAF",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Autumn Auction, Online",
+      "city": "Online, Mumbai",
+      "saleDate": "2026-09-21",
+      "dateLabel": "21 to 22 September",
+      "url": "https://www.saffronart.com",
+      "note": "Around 200 lots including a long run of early bronzes. Saffronart marks many of these NON-EXPORTABLE REGISTERED ANTIQUITY in its own catalogue. If you are bidding from outside India, read that line on every lot.",
+      "buyerAlert": "Non-exportable lots flagged",
+      "urgent": true,
+      "urgency": "past",
+      "daysToSale": -6,
+      "lots": [
+        {
+          "artist": "Karkota Dynasty, Kashmir",
+          "title": "Vishnu flanked by Ayudhapurushas, early 9th century bronze",
+          "year": "Lot 76",
+          "estimate": "₹20,00,000 to 30,00,000",
+          "url": "https://www.saffronart.com",
+          "note": "Marked non-exportable registered antiquity. You may own it; you may not take it out of India. Price the restriction in."
+        },
+        {
+          "artist": "Vijayanagara Dynasty, South India",
+          "title": "Standing Sridevi, 16th century bronze",
+          "year": "Lot 89",
+          "estimate": "₹50,00,000 to 70,00,000",
+          "url": "https://www.saffronart.com",
+          "note": "Also non-exportable, despite having previously sold at Christie's New York in 2007. Once an antiquity is in India and registered, it stays."
+        }
+      ],
+      "sourceMode": "editorial",
+      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+    },
+    {
+      "id": "82824435ff6b",
+      "house": "Pundole's",
+      "houseCode": "PUN",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "The Fine Art Sale",
+      "city": "Mumbai",
+      "saleDate": "2026-09-24",
+      "dateLabel": "24 September",
+      "url": "https://www.pundoles.com",
+      "note": "81 lots. Two of the nine art treasure artists appear here, which makes this the clearest export test of the month for any overseas buyer.",
+      "buyerAlert": "Two Navratna lots",
+      "urgent": true,
+      "urgency": "past",
+      "daysToSale": -3,
+      "lots": [
+        {
+          "artist": "Amrita Sher-Gil",
+          "title": "Untitled, pencil and watercolour",
+          "year": "Lot 16, 1923",
+          "estimate": "₹25,00,000 to 35,00,000",
+          "url": "https://www.pundoles.com",
+          "note": "Sher-Gil was declared an art treasure in December 1976. This cannot leave India. A Gulf or diaspora buyer would own a work they could never bring home."
+        },
+        {
+          "artist": "Gaganendranath Tagore",
+          "title": "Untitled, mountainscape",
+          "year": "Lot 15",
+          "estimate": "₹6,00,000 to 8,00,000",
+          "url": "https://www.pundoles.com",
+          "note": "Declared an art treasure in August 1979. Same restriction, at a fifth of the price. If you want a Navratna work and intend to keep it in India, this is the accessible entry point."
+        }
+      ],
+      "sourceMode": "editorial",
+      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+    }
+  ]
+}
