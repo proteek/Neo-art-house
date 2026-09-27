@@ -2,6 +2,13 @@ name: Build auction alerts
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "assets/data/calendar.json"
+      - "assets/data/auction-sources.json"
+      - "scripts/build_auction_alerts.py"
+      - ".github/workflows/auction-alerts.yml"
   schedule:
     - cron: "17 */6 * * *"
 
