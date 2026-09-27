@@ -233,10 +233,113 @@ def read_html_christies(text,house,source_url):
     for x in out: uniq[(x["sale"],x["date"],x["city"])]=x
     return list(uniq.values())
 
+
+def _best_city(line):
+    m=re.search(r"\b(New York|London|Hong Kong|Paris|Geneva|Los Angeles|Zurich|Milan|Vienna|Cologne|Berlin|Brussels|Mumbai|New Delhi|Delhi|Singapore|Dubai|Doha|Seoul|Tokyo|Sydney|Melbourne|Basel|Hamburg)\b",line,re.I)
+    return m.group(1) if m else ""
+
+def read_html_phillips(text,house,source_url):
+    lines=visible_lines(text)
+    out=[]
+    for i,line in enumerate(lines):
+        if line not in ("Live Auction","Online Auction"): continue
+        title=lines[i+1].strip() if i+1<len(lines) else ""
+        if not title or len(title)>160: continue
+        date_line=""
+        for j in range(i+2,min(len(lines),i+7)):
+            if parse_human_date(lines[j]):
+                date_line=lines[j];break
+        dt=parse_human_date(date_line)
+        if not dt: continue
+        out.append(_sale_record(house,title,dt,date_line,_best_city(date_line),source_url,"Imported from Phillips’ official public auction page."))
+    uniq={}
+    for x in out: uniq[(x["sale"],x["date"],x["city"])]=x
+    return list(uniq.values())
+
+def read_html_artcurial(text,house,source_url):
+    lines=visible_lines(text)
+    out=[]
+    for line in lines:
+        # schedule lines commonly include month/day + sale number + title + venue
+        dt=parse_human_date(line)
+        if not dt: continue
+        if "Sales Calendar" in line or "Results" in line: continue
+        if len(line)<8 or len(line)>260: continue
+        title=re.sub(r"^(?:[A-Z][a-z]{2}\s+\d{1,2}(?:\s*-\s*[A-Z][a-z]{2}\s+\d{1,2})?\s+)?(?:IT|CH|MC)?\d*\s*","",line).strip()
+        title=re.split(r"\b\d{1,2}:\d{2}\s*(?:AM|PM)?\b|\|",title,1,flags=re.I)[0].strip()
+        if len(title)<4: continue
+        city="Paris" if "Paris" in line else ("Bâle" if "Bâle" in line or "Basel" in line else "")
+        out.append(_sale_record(house,title,dt,line,city,source_url,"Imported from Artcurial’s official sales calendar."))
+    uniq={}
+    for x in out: uniq[(x["sale"],x["date"])]=x
+    return list(uniq.values())
+
+def read_html_dorotheum(text,house,source_url):
+    lines=visible_lines(text)
+    out=[]
+    for i,line in enumerate(lines):
+        dt=parse_human_date(line)
+        if not dt: continue
+        title=""
+        for j in range(i-1,max(-1,i-4),-1):
+            cand=lines[j].strip()
+            if cand.lower() in ("online auction","online auction with live bidding","current auctions"): continue
+            if cand and not parse_human_date(cand) and len(cand)<180:
+                title=cand;break
+        if not title: continue
+        city=""
+        for j in range(i+1,min(len(lines),i+4)):
+            cand=lines[j]
+            if "|" in cand or cand in ("Vienna","Graz","Linz","Salzburg"):
+                city=cand.split("|",1)[0].strip()
+                break
+        out.append(_sale_record(house,title,dt,line,city,source_url,"Imported from Dorotheum’s official current-auctions page."))
+    uniq={}
+    for x in out: uniq[(x["sale"],x["date"],x["city"])]=x
+    return list(uniq.values())
+
+def read_html_ketterer(text,house,source_url):
+    lines=visible_lines(text)
+    out=[]
+    for i,line in enumerate(lines):
+        dt=parse_human_date(line)
+        if not dt: continue
+        title=""
+        for j in range(i-1,max(-1,i-5),-1):
+            cand=lines[j].strip()
+            if cand.lower() in ("upcoming auctions","image: hammer","bidding","consign now","catalog preview","contact experts"): continue
+            if cand and not parse_human_date(cand) and len(cand)<140:
+                title=cand;break
+        if not title: continue
+        city=_best_city(line+" "+title)
+        out.append(_sale_record(house,title,dt,line,city,source_url,"Imported from Ketterer Kunst’s official auction calendar."))
+    uniq={}
+    for x in out: uniq[(x["sale"],x["date"],x["city"])]=x
+    return list(uniq.values())
+
+def read_html_lempertz(text,house,source_url):
+    lines=visible_lines(text)
+    out=[]
+    for i,line in enumerate(lines):
+        if not line.lower().startswith("auction "): continue
+        title=line
+        dt=None; label=""; city=""
+        for j in range(i+1,min(len(lines),i+8)):
+            cand=lines[j]
+            if not dt and parse_human_date(cand):
+                dt=parse_human_date(cand);label=cand
+            if not city:
+                city=_best_city(cand)
+        if dt:
+            out.append(_sale_record(house,title,dt,label,city,source_url,"Imported from Lempertz’s official auctions page."))
+    uniq={}
+    for x in out: uniq[(x["sale"],x["date"],x["city"])]=x
+    return list(uniq.values())
+
 def permitted_feed_sales(sources):
     sales=[]
     for s in sources.get("houses",[]):
-        if not s.get("enabled") or s.get("mode") not in ("ics","rss","json","html_jsonld","html_christies","html_astaguru","html_saffronart") or not s.get("feedUrl"):continue
+        if not s.get("enabled") or s.get("mode") not in ("ics","rss","json","html_jsonld","html_christies","html_astaguru","html_saffronart","html_phillips","html_artcurial","html_dorotheum","html_ketterer","html_lempertz") or not s.get("feedUrl"):continue
         try:
             text=remote_text(s["feedUrl"])
             if s["mode"]=="ics": sales.extend(read_ics(text,s["house"]))
@@ -249,6 +352,16 @@ def permitted_feed_sales(sources):
                 sales.extend(read_html_astaguru(text,s["house"],s["feedUrl"]))
             elif s["mode"]=="html_saffronart":
                 sales.extend(read_html_saffronart(text,s["house"],s["feedUrl"]))
+            elif s["mode"]=="html_phillips":
+                sales.extend(read_html_phillips(text,s["house"],s["feedUrl"]))
+            elif s["mode"]=="html_artcurial":
+                sales.extend(read_html_artcurial(text,s["house"],s["feedUrl"]))
+            elif s["mode"]=="html_dorotheum":
+                sales.extend(read_html_dorotheum(text,s["house"],s["feedUrl"]))
+            elif s["mode"]=="html_ketterer":
+                sales.extend(read_html_ketterer(text,s["house"],s["feedUrl"]))
+            elif s["mode"]=="html_lempertz":
+                sales.extend(read_html_lempertz(text,s["house"],s["feedUrl"]))
             elif s["mode"]=="json":
                 payload=json.loads(text)
                 fmap=s.get("fieldMap",{})
@@ -279,6 +392,16 @@ def build_source_health(sources):
                     row["recordsFound"]=len(read_html_astaguru(text,s["house"],s["feedUrl"]))
                 elif s.get("mode")=="html_saffronart":
                     row["recordsFound"]=len(read_html_saffronart(text,s["house"],s["feedUrl"]))
+                elif s.get("mode")=="html_phillips":
+                    row["recordsFound"]=len(read_html_phillips(text,s["house"],s["feedUrl"]))
+                elif s.get("mode")=="html_artcurial":
+                    row["recordsFound"]=len(read_html_artcurial(text,s["house"],s["feedUrl"]))
+                elif s.get("mode")=="html_dorotheum":
+                    row["recordsFound"]=len(read_html_dorotheum(text,s["house"],s["feedUrl"]))
+                elif s.get("mode")=="html_ketterer":
+                    row["recordsFound"]=len(read_html_ketterer(text,s["house"],s["feedUrl"]))
+                elif s.get("mode")=="html_lempertz":
+                    row["recordsFound"]=len(read_html_lempertz(text,s["house"],s["feedUrl"]))
                 elif s.get("mode")=="ics":
                     row["recordsFound"]=len(read_ics(text,s["house"]))
                 elif s.get("mode")=="rss":
