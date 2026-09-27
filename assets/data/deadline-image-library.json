@@ -3,7 +3,7 @@
   "policy": {
     "defaultUse": "representative_editorial",
     "exactLotImages": "Only when explicit reuse permission or an approved reusable licence is recorded.",
-    "note": "Images in this registry are representative editorial visuals and are not presented as auction-lot photography unless explicitly stated."
+    "note": "Representative editorial images are not auction-lot photography unless explicitly stated."
   },
   "categories": [
     {
@@ -16,16 +16,36 @@
         "himalayan",
         "southeast asian",
         "tagore",
-        "husain"
+        "husain",
+        "mughal",
+        "rajput"
       ],
-      "imageUrl": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/74733/159093/main-image",
-      "imageType": "open_access_art",
-      "creditLine": "Krishna (dressed as a woman) Embracing Radha, 19th century · The Metropolitan Museum of Art",
-      "sourceName": "The Metropolitan Museum of Art",
-      "sourceUrl": "https://www.metmuseum.org/art/collection/search/74733",
-      "licenseType": "Public Domain / Open Access",
-      "licenseNotes": "Representative editorial image; not the auction lot.",
-      "altText": "Nineteenth-century Indian drawing of Krishna and Radha from The Met Open Access collection"
+      "items": [
+        {
+          "metObjectId": 74733,
+          "sourceUrl": "https://www.metmuseum.org/art/collection/search/74733"
+        },
+        {
+          "metObjectId": 64841,
+          "sourceUrl": "https://www.metmuseum.org/art/collection/search/64841"
+        },
+        {
+          "metObjectId": 64842,
+          "sourceUrl": "https://www.metmuseum.org/art/collection/search/64842"
+        },
+        {
+          "metObjectId": 457058,
+          "sourceUrl": "https://www.metmuseum.org/art/collection/search/457058"
+        },
+        {
+          "metObjectId": 64852,
+          "sourceUrl": "https://www.metmuseum.org/art/collection/search/64852"
+        },
+        {
+          "metObjectId": 38022,
+          "sourceUrl": "https://www.metmuseum.org/art/collection/search/38022"
+        }
+      ]
     },
     {
       "id": "jewellery",
@@ -36,16 +56,31 @@
         "jewelry",
         "necklace",
         "gem",
-        "diamond"
+        "diamond",
+        "gold"
       ],
-      "imageUrl": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/39436/133046/main-image",
-      "imageType": "open_access_art",
-      "creditLine": "Necklace, India, 19th century · The Metropolitan Museum of Art",
-      "sourceName": "The Metropolitan Museum of Art",
-      "sourceUrl": "https://www.metmuseum.org/art/collection/search/39436",
-      "licenseType": "Public Domain / Open Access",
-      "licenseNotes": "Representative editorial image; not the auction lot.",
-      "altText": "Nineteenth-century Indian gold necklace from The Met Open Access collection"
+      "items": [
+        {
+          "metObjectId": 454064,
+          "sourceUrl": "https://www.metmuseum.org/art/collection/search/454064"
+        },
+        {
+          "metObjectId": 454093,
+          "sourceUrl": "https://www.metmuseum.org/art/collection/search/454093"
+        },
+        {
+          "metObjectId": 446756,
+          "sourceUrl": "https://www.metmuseum.org/art/collection/search/446756"
+        },
+        {
+          "metObjectId": 446758,
+          "sourceUrl": "https://www.metmuseum.org/art/collection/search/446758"
+        },
+        {
+          "metObjectId": 446753,
+          "sourceUrl": "https://www.metmuseum.org/art/collection/search/446753"
+        }
+      ]
     },
     {
       "id": "asian-decorative",
@@ -57,16 +92,32 @@
         "porcelain",
         "ceramic",
         "decorative",
-        "design"
+        "design",
+        "jade",
+        "vase"
       ],
-      "imageUrl": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/6038/48229/main-image",
-      "imageType": "open_access_art",
-      "creditLine": "Plate, China, ca. 1795 · The Metropolitan Museum of Art",
-      "sourceName": "The Metropolitan Museum of Art",
-      "sourceUrl": "https://www.metmuseum.org/art/collection/search/6038",
-      "licenseType": "Public Domain / Open Access",
-      "licenseNotes": "Representative editorial image; not the auction lot.",
-      "altText": "Chinese porcelain plate from about 1795 in The Met Open Access collection"
+      "items": [
+        {
+          "metObjectId": 9286,
+          "sourceUrl": "https://www.metmuseum.org/art/collection/search/9286"
+        },
+        {
+          "metObjectId": 9306,
+          "sourceUrl": "https://www.metmuseum.org/art/collection/search/9306"
+        },
+        {
+          "metObjectId": 43339,
+          "sourceUrl": "https://www.metmuseum.org/art/collection/search/43339"
+        },
+        {
+          "metObjectId": 461224,
+          "sourceUrl": "https://www.metmuseum.org/art/collection/search/461224"
+        },
+        {
+          "metObjectId": 2556,
+          "sourceUrl": "https://www.metmuseum.org/art/collection/search/2556"
+        }
+      ]
     },
     {
       "id": "modern-contemporary",
@@ -79,14 +130,30 @@
         "evening sale",
         "day sale"
       ],
-      "imageUrl": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/436526/794544/main-image",
-      "imageType": "open_access_art",
-      "creditLine": "Vincent van Gogh, First Steps, after Millet, 1890 · The Metropolitan Museum of Art",
-      "sourceName": "The Metropolitan Museum of Art",
-      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436526",
-      "licenseType": "Public Domain / Open Access",
-      "licenseNotes": "Representative editorial image; not the auction lot.",
-      "altText": "Vincent van Gogh painting First Steps, after Millet from The Met Open Access collection"
+      "items": [
+        {
+          "metObjectId": 436526,
+          "sourceUrl": "https://www.metmuseum.org/art/collection/search/436526"
+        },
+        {
+          "metObjectId": 334350,
+          "sourceUrl": "https://www.metmuseum.org/art/collection/search/334350"
+        },
+        {
+          "metObjectId": 435878,
+          "sourceUrl": "https://www.metmuseum.org/art/collection/search/435878"
+        },
+        {
+          "metObjectId": 435885,
+          "sourceUrl": "https://www.metmuseum.org/art/collection/search/435885"
+        }
+      ]
     }
-  ]
+  ],
+  "sourceDefault": {
+    "sourceName": "The Metropolitan Museum of Art",
+    "licenseType": "Public Domain / Open Access",
+    "licenseNotes": "Representative editorial image; not the auction lot.",
+    "apiBase": "https://collectionapi.metmuseum.org/public/collection/v1/objects/"
+  }
 }
