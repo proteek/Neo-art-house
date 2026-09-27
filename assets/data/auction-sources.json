@@ -3,7 +3,7 @@
   "policy": "Priority houses are registered for monitoring. Automated ingestion is enabled only for an explicitly configured public structured source. Official pages that are not yet validated remain editorial/manual.",
   "coverage": {
     "priorityRegistered": 126,
-    "automationEnabled": 9,
+    "automationEnabled": 10,
     "targetMonitored": 250,
     "tier1Registered": 15
   },
@@ -1347,11 +1347,11 @@
       "country": "United States",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual_official",
-      "enabled": false,
-      "feedUrl": null,
-      "monitoringStatus": "Official site monitored editorially",
-      "calendarUrl": "https://www.ha.com/c/auction-home.zx",
+      "mode": "html_heritage",
+      "enabled": true,
+      "feedUrl": "https://www.ha.com/heritage-auctions-schedule.s",
+      "monitoringStatus": "Official current-auction calendar adapter enabled · art-market categories filtered",
+      "calendarUrl": "https://www.ha.com/heritage-auctions-schedule.s",
       "adapterTier": "Tier 1"
     },
     {
