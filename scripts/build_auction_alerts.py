@@ -164,6 +164,16 @@ def visible_lines(text):
     p.close()
     return p.lines
 
+
+def parse_any_date(text):
+    dt=parse_date(text)
+    if dt:return dt
+    m=re.search(r"\b(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})\b",str(text))
+    if m:
+        try:return datetime(int(m.group(1)),int(m.group(2)),int(m.group(3)),tzinfo=timezone.utc)
+        except:return None
+    return parse_human_date(text)
+
 def _sale_record(house,title,dt,label,city,url,note):
     return {"date":dt.strftime("%Y-%m-%d"),"dateLabel":label or dt.strftime("%-d %B"),"sale":title.strip(),"house":house,"city":city.strip(),"url":url,"note":note,"flag":"","flagUrgent":False}
 
@@ -399,10 +409,56 @@ def read_html_seoul(text,house,source_url):
     for x in out: uniq[(x["sale"],x["date"])]=x
     return list(uniq.values())
 
+
+def _nearby_title(lines,i,lookback=5):
+    bad=("upcoming auctions","auction schedule","read more","home","auctions","news","services","about us","购买","拍卖日程","拍卖结果")
+    for j in range(i-1,max(-1,i-lookback-1),-1):
+        cand=lines[j].strip()
+        low=cand.lower()
+        if not cand or low in bad: continue
+        if parse_any_date(cand): continue
+        if len(cand)>180: continue
+        return cand
+    return ""
+
+def read_html_poly(text,house,source_url):
+    lines=visible_lines(text)
+    out=[]
+    for i,line in enumerate(lines):
+        dt=parse_any_date(line)
+        if not dt: continue
+        title=_nearby_title(lines,i,7)
+        if not title:
+            # Some Poly pages append YYYY-MM-DD to the title.
+            title=re.sub(r"\s*20\d{2}[-/.]\d{1,2}[-/.]\d{1,2}\s*$","",line).strip()
+        if len(title)<4: continue
+        out.append(_sale_record(house,title,dt,dt.strftime("%-d %B"),"",source_url,"Imported from Poly Auction’s official public auction pages."))
+    uniq={}
+    for x in out: uniq[(x["sale"],x["date"])]=x
+    return list(uniq.values())
+
+def read_html_cguardian(text,house,source_url):
+    lines=visible_lines(text)
+    out=[]
+    for i,line in enumerate(lines):
+        dt=parse_any_date(line)
+        if not dt: continue
+        title=_nearby_title(lines,i,8)
+        # Also accept title lines with embedded dates.
+        if not title:
+            title=re.sub(r"\s*20\d{2}[-/.]\d{1,2}[-/.]\d{1,2}\s*$","",line).strip()
+        if len(title)<4: continue
+        low=title.lower()
+        if any(x in low for x in ("copyright","contact us","news","关于我们")): continue
+        out.append(_sale_record(house,title,dt,dt.strftime("%-d %B"),"Beijing",source_url,"Imported from China Guardian’s official public auction/schedule pages."))
+    uniq={}
+    for x in out: uniq[(x["sale"],x["date"])]=x
+    return list(uniq.values())
+
 def permitted_feed_sales(sources):
     sales=[]
     for s in sources.get("houses",[]):
-        if not s.get("enabled") or s.get("mode") not in ("ics","rss","json","html_jsonld","html_christies","html_astaguru","html_saffronart","html_phillips","html_artcurial","html_dorotheum","html_ketterer","html_lempertz","html_heritage","html_seoul") or not s.get("feedUrl"):continue
+        if not s.get("enabled") or s.get("mode") not in ("ics","rss","json","html_jsonld","html_christies","html_astaguru","html_saffronart","html_phillips","html_artcurial","html_dorotheum","html_ketterer","html_lempertz","html_heritage","html_seoul","html_poly","html_cguardian") or not s.get("feedUrl"):continue
         try:
             text=remote_text(s["feedUrl"])
             if s["mode"]=="ics": sales.extend(read_ics(text,s["house"]))
@@ -429,6 +485,10 @@ def permitted_feed_sales(sources):
                 sales.extend(read_html_heritage(text,s["house"],s["feedUrl"]))
             elif s["mode"]=="html_seoul":
                 sales.extend(read_html_seoul(text,s["house"],s["feedUrl"]))
+            elif s["mode"]=="html_poly":
+                sales.extend(read_html_poly(text,s["house"],s["feedUrl"]))
+            elif s["mode"]=="html_cguardian":
+                sales.extend(read_html_cguardian(text,s["house"],s["feedUrl"]))
             elif s["mode"]=="json":
                 payload=json.loads(text)
                 fmap=s.get("fieldMap",{})
@@ -473,6 +533,10 @@ def build_source_health(sources):
                     row["recordsFound"]=len(read_html_heritage(text,s["house"],s["feedUrl"]))
                 elif s.get("mode")=="html_seoul":
                     row["recordsFound"]=len(read_html_seoul(text,s["house"],s["feedUrl"]))
+                elif s.get("mode")=="html_poly":
+                    row["recordsFound"]=len(read_html_poly(text,s["house"],s["feedUrl"]))
+                elif s.get("mode")=="html_cguardian":
+                    row["recordsFound"]=len(read_html_cguardian(text,s["house"],s["feedUrl"]))
                 elif s.get("mode")=="ics":
                     row["recordsFound"]=len(read_ics(text,s["house"]))
                 elif s.get("mode")=="rss":
