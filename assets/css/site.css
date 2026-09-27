@@ -645,3 +645,46 @@ figure.image-missing img{display:none!important}
 .risk-score-card--red .risk-score-number,.risk-score-card--red .risk-score-band{color:var(--red)}
 .risk-score-card--grey .risk-score-number,.risk-score-card--grey .risk-score-band{color:#6c6962}
 @media(max-width:560px){.risk-score-card{align-items:flex-start}.risk-score-number{font-size:50px}}
+
+/* detailed methodology */
+.methodology-hero-note{border-left:1px solid var(--gold);padding:4px 0 4px 24px;font-family:var(--serif);font-size:24px;line-height:1.25;color:#4d4740}
+.methodology-intro{max-width:520px}
+.methodology-steps{grid-template-columns:repeat(3,1fr)}
+.methodology-steps .method-step{min-height:300px}
+.methodology-steps .method-step:nth-child(3){border-right:0}
+.methodology-steps .method-step:nth-child(-n+3){border-bottom:1px solid var(--line)}
+.methodology-steps .method-step h3{font-family:var(--serif);font-size:26px;font-weight:500;margin:12px 0 10px}
+.methodology-steps .method-step p{color:var(--ink-soft)}
+.methodology-steps .method-step ul{padding-left:17px;margin:16px 0 0;color:var(--ink-soft);font-size:12px}
+.methodology-steps .method-step li{margin:6px 0}
+.methodology-source-layout{align-items:start}
+.source-hierarchy{border-top:1px solid var(--line)}
+.source-tier{display:grid;grid-template-columns:90px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
+.source-tier>strong{font-family:var(--serif);font-size:23px;color:var(--gold);font-weight:500}
+.source-tier h3{font-family:var(--serif);font-size:24px;font-weight:500;margin:0 0 5px}
+.source-tier p{margin:0;color:var(--ink-soft)}
+.confidence-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line)}
+.confidence-card{padding:24px;border-right:1px solid var(--line);min-height:230px}
+.confidence-card:last-child{border-right:0}
+.confidence-card h3{font-family:var(--serif);font-size:24px;font-weight:500;margin:16px 0 8px}
+.confidence-card p{color:var(--ink-soft);font-size:13px}
+.methodology-rule-list{border-top:1px solid var(--line)}
+.methodology-rule-list>div{padding:16px 0;border-bottom:1px solid var(--line)}
+.methodology-rule-list strong{font-family:var(--serif);font-size:21px;font-weight:500}
+.methodology-rule-list p{margin:5px 0 0;color:var(--ink-soft)}
+.methodology-verification{grid-template-columns:1fr 1fr}
+.methodology-boundaries li:before{content:"—"}
+@media(max-width:1000px){
+  .methodology-steps{grid-template-columns:1fr 1fr}
+  .methodology-steps .method-step{min-height:0;border-right:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important}
+  .methodology-steps .method-step:nth-child(even){border-right:0!important}
+  .confidence-grid{grid-template-columns:1fr 1fr}
+  .confidence-card{border-bottom:1px solid var(--line)}
+  .confidence-card:nth-child(even){border-right:0}
+}
+@media(max-width:620px){
+  .methodology-steps,.confidence-grid,.methodology-verification{grid-template-columns:1fr}
+  .methodology-steps .method-step,.confidence-card{border-right:0!important}
+  .source-tier{grid-template-columns:1fr;gap:4px}
+  .methodology-hero-note{font-size:21px}
+}
