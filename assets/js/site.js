@@ -322,14 +322,41 @@ async function initAuctionAlertCards(){
   try{
     const [data,imageDb]=await Promise.all([
       fetch(base()+'assets/data/auction-alerts.json').then(r=>r.json()),
-      fetch(base()+'assets/data/deadline-image-library.json').then(r=>r.json()).catch(()=>({categories:[]}))
+      fetch(base()+'assets/data/deadline-image-library.json').then(r=>r.json()).catch(()=>({categories:[],sourceDefault:{}}))
     ]);
     const alerts=(data.alerts||[]);
-    const categories=imageDb.categories||[];
-    const imageFor=a=>{
+    const categories=imageDb.categories||[], sourceDefault=imageDb.sourceDefault||{};
+    const stableHash=str=>{let h=0;for(let i=0;i<str.length;i++)h=((h<<5)-h)+str.charCodeAt(i)|0;return Math.abs(h)};
+    const categoryFor=a=>{
       const hay=String([a.sale,a.note,a.city,...(a.lots||[]).flatMap(l=>[l.artist,l.title])].join(' ')).toLowerCase();
       return categories.find(c=>(c.keywords||[]).some(k=>hay.includes(String(k).toLowerCase())))||categories.find(c=>c.id==='modern-contemporary')||null;
     };
+    const resolveVisual=async a=>{
+      const cat=categoryFor(a);
+      if(!cat||!(cat.items||[]).length)return null;
+      const item=cat.items[stableHash(String(a.id||a.sale||''))%cat.items.length];
+      try{
+        const obj=await fetch((sourceDefault.apiBase||'https://collectionapi.metmuseum.org/public/collection/v1/objects/')+item.metObjectId).then(r=>r.json());
+        const image=obj.primaryImageSmall||obj.primaryImage||'';
+        if(!image)return null;
+        const artist=obj.artistDisplayName?obj.artistDisplayName+', ':'';
+        const title=obj.title||'Open Access artwork';
+        const date=obj.objectDate?', '+obj.objectDate:'';
+        return {
+          label:cat.label,
+          imageUrl:image,
+          altText:(obj.title||'Artwork')+' from The Metropolitan Museum of Art Open Access collection',
+          creditLine:artist+title+date+' · The Metropolitan Museum of Art',
+          sourceUrl:item.sourceUrl,
+          licenseType:sourceDefault.licenseType||'Public Domain / Open Access',
+          licenseNotes:sourceDefault.licenseNotes||'Representative editorial image; not the auction lot.'
+        };
+      }catch(e){return null}
+    };
+
+    const visuals=new Map();
+    await Promise.all(alerts.map(async a=>visuals.set(a.id,await resolveVisual(a))));
+
     const statusEl=document.querySelector('[data-alert-status]');
     if(statusEl){
       const sc=data.sourceCounts||{}, w=data.windows||{};
@@ -345,7 +372,7 @@ async function initAuctionAlertCards(){
         return true;
       });
       host.innerHTML=list.map(a=>{
-        const im=imageFor(a);
+        const im=visuals.get(a.id);
         const visual=im?'<figure class="auction-alert-visual"><img src="'+esc(im.imageUrl)+'" alt="'+esc(im.altText)+'" loading="lazy"><figcaption><span>'+esc(im.label)+'</span><span>'+esc(im.creditLine)+'</span><a href="'+esc(im.sourceUrl)+'" target="_blank" rel="noopener">'+esc(im.licenseType)+' ↗</a><small>'+esc(im.licenseNotes)+'</small></figcaption></figure>':'';
         return '<article class="auction-alert-card">'+visual+
         '<div class="auction-alert-body"><div class="auction-alert-top"><div class="house-lockup">'+alertHouseMark(a)+'<div><strong>'+esc(a.house)+'</strong><div class="muted" style="font-size:10px">'+(a.logo?'Official mark':'House identifier')+'</div></div></div><div class="auction-date"><span class="urgency-'+esc(a.urgency)+'">'+esc(a.dateLabel||a.saleDate)+'</span></div></div>'+
