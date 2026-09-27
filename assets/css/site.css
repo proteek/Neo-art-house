@@ -552,3 +552,84 @@ img,svg,video{max-width:100%}
 @media(max-width:900px){.service-choice-grid{grid-template-columns:1fr 1fr}.admin-grid{grid-template-columns:1fr}.admin-case-list{position:static;max-height:none}.admin-detail-grid{grid-template-columns:1fr}.admin-detail-head{flex-direction:column}.admin-detail-head select{width:100%}}
 @media(max-width:600px){.service-choice-grid{grid-template-columns:1fr}.form-section{padding:20px}.review-order-submit{align-items:stretch;flex-direction:column}.review-order-submit .btn{width:100%}.admin-toolbar{grid-template-columns:1fr}.report-document{width:calc(100% - 34px);margin-top:20px}.report-cover{min-height:360px}.report-cover h1{font-size:44px}}
 @media print{.report-page{background:white}.report-document{width:100%;margin:0}.report-cover{min-height:90vh;page-break-after:always}.report-section{break-inside:avoid;padding:24px 0}}
+
+
+/* =========================================================
+   FRONT-END STABILISATION AUDIT — 2026-09-27
+   Shared desktop / tablet / mobile rhythm and resilient media.
+   ========================================================= */
+:root{--bg:var(--paper)}
+main{display:block;min-width:0}
+section,article,aside,div{min-width:0}
+.section{min-height:0!important;padding:clamp(52px,5.2vw,76px) 0}
+.section--tight{padding:clamp(34px,3.7vw,48px) 0}
+.section--white,.section--deep{min-height:0!important}
+.page-hero{min-height:0!important;padding:clamp(54px,5.5vw,78px) 0 clamp(38px,4vw,52px)}
+.page-hero__grid{align-items:center}
+.page-hero__aside{width:100%}
+.lede{margin-top:18px;margin-bottom:0}
+.card{min-height:0}
+figure{max-width:100%}
+.house-visual,.deadline-visual,.professional-visual,.lot-visual-band,.about-image-grid{
+  min-height:0!important;
+  align-items:center
+}
+.house-visual>div,.deadline-visual>div,.professional-visual>div{align-self:center}
+.house-visual figure,.deadline-visual figure,.professional-visual figure,.about-image-grid figure,.lot-visual-band figure{
+  position:relative;
+  overflow:hidden;
+  background:#e8e1d5
+}
+.house-visual figure{aspect-ratio:4/3}
+.deadline-visual figure{aspect-ratio:3/4}
+.professional-visual figure{aspect-ratio:4/3}
+.house-visual figure img,.deadline-visual figure img,.professional-visual figure img,.about-image-grid figure img,.lot-visual-band figure img{
+  width:100%;
+  height:100%;
+  object-fit:cover
+}
+figure.image-missing{display:grid;place-items:center;min-height:220px}
+figure.image-missing:after{
+  content:"Image unavailable";
+  font-size:10px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:#8c8377
+}
+figure.image-missing img{display:none!important}
+.house-visual .lede,.deadline-visual .lede,.professional-visual .lede{max-width:760px}
+.coverage-strip{margin-top:0}
+.house-index-toolbar{margin-top:26px}
+.auction-index-grid{align-items:stretch}
+.empty-state{min-height:0}
+.admin-grid{min-height:0}
+.order-result:empty{display:none}
+.field-error{border-color:#b5472f!important;box-shadow:0 0 0 1px rgba(181,71,47,.12)}
+@media(min-width:901px) and (max-width:1200px){
+  .wrap,.masthead__inner,.platform-ribbon__inner{width:min(calc(100% - 48px),var(--max))}
+  .section{padding:58px 0}
+  .page-hero{padding:58px 0 42px}
+  .page-hero__grid{grid-template-columns:minmax(0,1fr) minmax(280px,.72fr);gap:42px}
+  .house-visual,.deadline-visual,.professional-visual,.lot-visual-band{gap:38px}
+  .house-index-toolbar{grid-template-columns:1.3fr 1fr 1fr}
+  .house-index-toolbar select:last-child{grid-column:2/4}
+  .auction-index-grid{grid-template-columns:1fr 1fr}
+  .price-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:900px){
+  .section{padding:46px 0}
+  .page-hero{padding:44px 0 34px}
+  .house-visual figure,.deadline-visual figure,.professional-visual figure,.about-image-grid figure,.lot-visual-band figure{
+    aspect-ratio:16/10;
+    min-height:0
+  }
+  .house-visual,.deadline-visual,.professional-visual,.lot-visual-band,.about-image-grid{gap:24px!important}
+  .house-visual .lede,.deadline-visual .lede,.professional-visual .lede{font-size:21px}
+  .footer{margin-top:32px;padding-top:36px}
+}
+@media(max-width:560px){
+  .section{padding:40px 0}
+  .page-hero{padding:38px 0 30px}
+  .card{padding:18px}
+  .house-visual figure,.deadline-visual figure,.professional-visual figure,.about-image-grid figure,.lot-visual-band figure{aspect-ratio:4/3}
+}
