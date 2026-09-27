@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json, hashlib, urllib.request, xml.etree.ElementTree as ET, re
+from urllib.parse import urljoin
 from html.parser import HTMLParser
 from datetime import datetime, timezone
 from pathlib import Path
@@ -455,10 +456,64 @@ def read_html_cguardian(text,house,source_url):
     for x in out: uniq[(x["sale"],x["date"])]=x
     return list(uniq.values())
 
+
+class LinkParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.links=[]
+    def handle_starttag(self,tag,attrs):
+        if tag.lower()=="a":
+            a=dict(attrs)
+            href=a.get("href")
+            if href:self.links.append(href)
+
+def read_html_bonhams_catalogues(text,house,source_url):
+    parser=LinkParser()
+    parser.feed(text)
+    links=[]
+    for href in parser.links:
+        if "/products/" not in href: continue
+        url=urljoin(source_url,href)
+        if url not in links: links.append(url)
+    out=[]
+    # Limit detail-page fetches per run to keep the scheduled job light.
+    for url in links[:40]:
+        try:
+            detail=remote_text(url)
+        except Exception:
+            continue
+        lines=visible_lines(detail)
+        title=""
+        for line in lines[:25]:
+            low=line.lower()
+            if line and low not in ("bonhams catalogues","sale sold out","sold out","pre-order") and "£" not in line and len(line)<180:
+                title=line
+                break
+        if not title: continue
+        # Product pages expose lines like:
+        # New Bond Street, London | 11 June 2026
+        # New York | June 17, 2026
+        # Online, New York | May 4, 2026 - June 9, 2026
+        for line in lines:
+            if "|" not in line: continue
+            dt=parse_any_date(line)
+            if not dt: continue
+            loc=line.split("|",1)[0].strip()
+            date_part=line.split("|",1)[1].strip()
+            # for a range, prefer the closing/end date if present
+            m=re.findall(r"\b(?:\d{1,2}\s+[A-Za-z]{3,9}\s+20\d{2}|[A-Za-z]{3,9}\s+\d{1,2},?\s+20\d{2})\b",date_part)
+            if len(m)>=2:
+                end=parse_human_date(m[-1])
+                if end:dt=end
+            out.append(_sale_record(house,title,dt,date_part,loc,url,"Imported from Bonhams’ official catalogue site."))
+    uniq={}
+    for x in out: uniq[(x["sale"],x["date"],x["city"])]=x
+    return list(uniq.values())
+
 def permitted_feed_sales(sources):
     sales=[]
     for s in sources.get("houses",[]):
-        if not s.get("enabled") or s.get("mode") not in ("ics","rss","json","html_jsonld","html_christies","html_astaguru","html_saffronart","html_phillips","html_artcurial","html_dorotheum","html_ketterer","html_lempertz","html_heritage","html_seoul","html_poly","html_cguardian") or not s.get("feedUrl"):continue
+        if not s.get("enabled") or s.get("mode") not in ("ics","rss","json","html_jsonld","html_christies","html_astaguru","html_saffronart","html_phillips","html_artcurial","html_dorotheum","html_ketterer","html_lempertz","html_heritage","html_seoul","html_poly","html_cguardian","html_bonhams_catalogues") or not s.get("feedUrl"):continue
         try:
             text=remote_text(s["feedUrl"])
             if s["mode"]=="ics": sales.extend(read_ics(text,s["house"]))
@@ -489,6 +544,8 @@ def permitted_feed_sales(sources):
                 sales.extend(read_html_poly(text,s["house"],s["feedUrl"]))
             elif s["mode"]=="html_cguardian":
                 sales.extend(read_html_cguardian(text,s["house"],s["feedUrl"]))
+            elif s["mode"]=="html_bonhams_catalogues":
+                sales.extend(read_html_bonhams_catalogues(text,s["house"],s["feedUrl"]))
             elif s["mode"]=="json":
                 payload=json.loads(text)
                 fmap=s.get("fieldMap",{})
@@ -537,6 +594,8 @@ def build_source_health(sources):
                     row["recordsFound"]=len(read_html_poly(text,s["house"],s["feedUrl"]))
                 elif s.get("mode")=="html_cguardian":
                     row["recordsFound"]=len(read_html_cguardian(text,s["house"],s["feedUrl"]))
+                elif s.get("mode")=="html_bonhams_catalogues":
+                    row["recordsFound"]=len(read_html_bonhams_catalogues(text,s["house"],s["feedUrl"]))
                 elif s.get("mode")=="ics":
                     row["recordsFound"]=len(read_ics(text,s["house"]))
                 elif s.get("mode")=="rss":
