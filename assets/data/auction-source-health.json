@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-27T07:15:00Z",
+  "updated": "2026-09-27T07:30:00Z",
   "note": "Configuration snapshot. Scheduled builder replaces reachability and record counts with live checks.",
-  "enabledCount": 14,
+  "enabledCount": 15,
   "tier1Count": 15,
   "sources": [
     {
@@ -87,10 +87,10 @@
     },
     {
       "house": "Pundole's",
-      "mode": "manual_official",
-      "enabled": false,
+      "mode": "html_pundoles_watch",
+      "enabled": true,
       "calendarUrl": "https://www.pundoles.com/",
-      "status": "Official site monitored editorially · no dependable upcoming-sales index exposed",
+      "status": "Official-site catalogue watchdog enabled · future-sale only · zero-result safe",
       "reachable": null,
       "recordsFound": null
     },
