@@ -3,7 +3,7 @@
   "policy": "Priority houses are registered for monitoring. Automated ingestion is enabled only for an explicitly configured public structured source. Official pages that are not yet validated remain editorial/manual.",
   "coverage": {
     "priorityRegistered": 126,
-    "automationEnabled": 13,
+    "automationEnabled": 14,
     "targetMonitored": 250,
     "tier1Registered": 15
   },
@@ -49,11 +49,11 @@
       "country": "United Kingdom",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual_official",
-      "enabled": false,
-      "feedUrl": null,
-      "monitoringStatus": "Official site registered · central calendar adapter validation queued",
-      "calendarUrl": "https://www.bonhams.com/",
+      "mode": "html_bonhams_catalogues",
+      "enabled": true,
+      "feedUrl": "https://catalogues.bonhams.com/collections/live-sales",
+      "monitoringStatus": "Official catalogue discovery + detail-page adapter enabled",
+      "calendarUrl": "https://catalogues.bonhams.com/collections/live-sales",
       "adapterTier": "Tier 1"
     },
     {
@@ -1060,7 +1060,7 @@
       "mode": "manual_official",
       "enabled": false,
       "feedUrl": null,
-      "monitoringStatus": "Official sale pages monitored editorially · no stable central calendar adapter yet",
+      "monitoringStatus": "Official site monitored editorially · no dependable upcoming-sales index exposed",
       "calendarUrl": "https://www.pundoles.com/",
       "adapterTier": "Tier 1"
     },
