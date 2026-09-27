@@ -688,3 +688,19 @@ figure.image-missing img{display:none!important}
   .source-tier{grid-template-columns:1fr;gap:4px}
   .methodology-hero-note{font-size:21px}
 }
+
+/* Deadline Radar editorial imagery */
+.auction-alert-card{overflow:hidden;padding:0!important}
+.auction-alert-body{padding:24px}
+.auction-alert-visual{margin:0;border-bottom:1px solid var(--line);background:#e8e1d5}
+.auction-alert-visual img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;filter:saturate(.86) contrast(.98)}
+.auction-alert-visual figcaption{display:grid;grid-template-columns:auto 1fr auto;gap:8px 14px;align-items:center;padding:9px 12px;font-size:9px;color:var(--ink-soft);border-top:1px solid var(--line);background:var(--panel)}
+.auction-alert-visual figcaption>span:first-child{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.auction-alert-visual figcaption a{font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold)}
+.auction-alert-visual figcaption small{grid-column:1/-1;font-size:9px;color:#867e73}
+.deadline-image-policy{margin-top:18px;padding:14px 16px;border:1px solid var(--line);background:#f4efe6;font-size:11px;color:var(--ink-soft);line-height:1.5}
+@media(max-width:650px){
+  .auction-alert-visual figcaption{grid-template-columns:1fr;gap:4px}
+  .auction-alert-visual figcaption small{grid-column:auto}
+  .auction-alert-body{padding:20px}
+}
