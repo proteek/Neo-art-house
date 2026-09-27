@@ -1,7 +1,18 @@
 {
-  "updated": "2026-09-27T00:00:00Z",
-  "note": "Seed file. The scheduled builder replaces this with live source checks.",
+  "updated": "2026-09-27T05:50:00Z",
+  "note": "Configuration snapshot. The scheduled six-hour builder replaces reachability and record counts with live checks.",
+  "enabledCount": 4,
+  "tier1Count": 15,
   "sources": [
+    {
+      "house": "Christie's",
+      "mode": "html_christies",
+      "enabled": true,
+      "calendarUrl": "https://www.christies.com/en/calendar",
+      "status": "Official calendar adapter enabled",
+      "reachable": null,
+      "recordsFound": null
+    },
     {
       "house": "Sotheby's",
       "mode": "html_jsonld",
@@ -12,46 +23,121 @@
       "recordsFound": null
     },
     {
-      "house": "Christie's",
+      "house": "Bonhams",
       "mode": "html_jsonld",
       "enabled": false,
-      "calendarUrl": "https://www.christies.com/en/calendar",
-      "status": "Official calendar registered · adapter validation queued"
+      "calendarUrl": "https://www.bonhams.com/auctions/",
+      "status": "Official calendar registered · adapter validation queued",
+      "reachable": null,
+      "recordsFound": null
     },
     {
       "house": "Phillips",
       "mode": "html_jsonld",
       "enabled": false,
       "calendarUrl": "https://www.phillips.com/auctions",
-      "status": "Official calendar registered · adapter validation queued"
+      "status": "Official calendar registered · adapter validation queued",
+      "reachable": null,
+      "recordsFound": null
     },
     {
-      "house": "Bonhams",
+      "house": "Artcurial",
       "mode": "html_jsonld",
       "enabled": false,
-      "calendarUrl": "https://www.bonhams.com/auctions/",
-      "status": "Official calendar registered · adapter validation queued"
+      "calendarUrl": "https://www.artcurial.com/en/sales-calendar",
+      "status": "Official calendar registered · adapter validation queued",
+      "reachable": null,
+      "recordsFound": null
+    },
+    {
+      "house": "Ketterer Kunst",
+      "mode": "html_jsonld",
+      "enabled": false,
+      "calendarUrl": "https://www.kettererkunst.com/auction/",
+      "status": "Official calendar registered · adapter validation queued",
+      "reachable": null,
+      "recordsFound": null
+    },
+    {
+      "house": "Lempertz",
+      "mode": "html_jsonld",
+      "enabled": false,
+      "calendarUrl": "https://www.lempertz.com/en/catalogues.html",
+      "status": "Official calendar registered · adapter validation queued",
+      "reachable": null,
+      "recordsFound": null
+    },
+    {
+      "house": "Dorotheum",
+      "mode": "html_jsonld",
+      "enabled": false,
+      "calendarUrl": "https://www.dorotheum.com/en/a/",
+      "status": "Official calendar registered · adapter validation queued",
+      "reachable": null,
+      "recordsFound": null
+    },
+    {
+      "house": "AstaGuru",
+      "mode": "html_astaguru",
+      "enabled": true,
+      "calendarUrl": "https://www.astaguru.com/auctions/upcoming",
+      "status": "Official upcoming-auctions adapter enabled",
+      "reachable": null,
+      "recordsFound": null
     },
     {
       "house": "Pundole's",
       "mode": "manual_official",
       "enabled": false,
       "calendarUrl": "https://www.pundoles.com/",
-      "status": "Official site monitored editorially"
+      "status": "Official site monitored editorially",
+      "reachable": null,
+      "recordsFound": null
     },
     {
       "house": "Saffronart",
-      "mode": "manual_official",
-      "enabled": false,
-      "calendarUrl": "https://www.saffronart.com/sitepages/auctions/auctions.aspx",
-      "status": "Official site monitored editorially"
+      "mode": "html_saffronart",
+      "enabled": true,
+      "calendarUrl": "https://www.saffronart.com/",
+      "status": "Official homepage upcoming-auctions adapter enabled",
+      "reachable": null,
+      "recordsFound": null
     },
     {
-      "house": "AstaGuru",
+      "house": "China Guardian",
       "mode": "manual_official",
       "enabled": false,
-      "calendarUrl": "https://www.astaguru.com/",
-      "status": "Official site monitored editorially"
+      "calendarUrl": "https://www.cguardian.com/",
+      "status": "Official site monitored editorially",
+      "reachable": null,
+      "recordsFound": null
+    },
+    {
+      "house": "Poly Auction",
+      "mode": "manual_official",
+      "enabled": false,
+      "calendarUrl": "https://www.polypm.com.cn/",
+      "status": "Official site monitored editorially",
+      "reachable": null,
+      "recordsFound": null
+    },
+    {
+      "house": "Seoul Auction",
+      "mode": "manual_official",
+      "enabled": false,
+      "calendarUrl": "https://www.seoulauction.com/",
+      "status": "Official site monitored editorially",
+      "reachable": null,
+      "recordsFound": null
+    },
+    {
+      "house": "Heritage Auctions",
+      "mode": "manual_official",
+      "enabled": false,
+      "calendarUrl": "https://www.ha.com/c/auction-home.zx",
+      "status": "Official site monitored editorially",
+      "reachable": null,
+      "recordsFound": null
     }
   ]
 }
