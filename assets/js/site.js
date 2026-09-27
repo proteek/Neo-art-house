@@ -320,8 +320,16 @@ async function initAuctionAlertCards(){
   const host=document.querySelector('[data-auction-alerts]');if(!host)return;
   const search=document.querySelector('[data-alert-search]'),houseSel=document.querySelector('[data-alert-house]'),windowSel=document.querySelector('[data-alert-window]');
   try{
-    const data=await fetch(base()+'assets/data/auction-alerts.json').then(r=>r.json());
+    const [data,imageDb]=await Promise.all([
+      fetch(base()+'assets/data/auction-alerts.json').then(r=>r.json()),
+      fetch(base()+'assets/data/deadline-image-library.json').then(r=>r.json()).catch(()=>({categories:[]}))
+    ]);
     const alerts=(data.alerts||[]);
+    const categories=imageDb.categories||[];
+    const imageFor=a=>{
+      const hay=String([a.sale,a.note,a.city,...(a.lots||[]).flatMap(l=>[l.artist,l.title])].join(' ')).toLowerCase();
+      return categories.find(c=>(c.keywords||[]).some(k=>hay.includes(String(k).toLowerCase())))||categories.find(c=>c.id==='modern-contemporary')||null;
+    };
     const statusEl=document.querySelector('[data-alert-status]');
     if(statusEl){
       const sc=data.sourceCounts||{}, w=data.windows||{};
@@ -336,20 +344,25 @@ async function initAuctionAlertCards(){
         if(win!=='all'&&a.daysToSale!=null&&(a.daysToSale<0||a.daysToSale>Number(win)))return false;
         return true;
       });
-      host.innerHTML=list.map((a,i)=>'<article class="auction-alert-card">'+
-        '<div class="auction-alert-top"><div class="house-lockup">'+alertHouseMark(a)+'<div><strong>'+esc(a.house)+'</strong><div class="muted" style="font-size:10px">'+(a.logo?'Official mark':'House identifier')+'</div></div></div><div class="auction-date"><span class="urgency-'+esc(a.urgency)+'">'+esc(a.dateLabel||a.saleDate)+'</span></div></div>'+
+      host.innerHTML=list.map(a=>{
+        const im=imageFor(a);
+        const visual=im?'<figure class="auction-alert-visual"><img src="'+esc(im.imageUrl)+'" alt="'+esc(im.altText)+'" loading="lazy"><figcaption><span>'+esc(im.label)+'</span><span>'+esc(im.creditLine)+'</span><a href="'+esc(im.sourceUrl)+'" target="_blank" rel="noopener">'+esc(im.licenseType)+' ↗</a><small>'+esc(im.licenseNotes)+'</small></figcaption></figure>':'';
+        return '<article class="auction-alert-card">'+visual+
+        '<div class="auction-alert-body"><div class="auction-alert-top"><div class="house-lockup">'+alertHouseMark(a)+'<div><strong>'+esc(a.house)+'</strong><div class="muted" style="font-size:10px">'+(a.logo?'Official mark':'House identifier')+'</div></div></div><div class="auction-date"><span class="urgency-'+esc(a.urgency)+'">'+esc(a.dateLabel||a.saleDate)+'</span></div></div>'+
         '<div class="auction-location">'+esc(a.city||'')+'</div><h3>'+esc(a.sale)+'</h3>'+
         '<p class="auction-alert-note">'+esc(a.note||'')+'</p>'+
         (a.buyerAlert?'<div class="auction-buyer-flag"><span class="status-dot"></span><strong>'+esc(a.buyerAlert)+'</strong></div>':'')+
         '<div class="auction-actions">'+
           (a.url?'<a class="btn btn--dark" href="'+esc(a.url)+'" target="_blank" rel="noopener">View sale ↗</a>':'')+
-          '<button class="btn" type="button" data-ics="'+esc(a.id)+'">Add to calendar</button>'+'<button class="btn save-action" type="button" data-account-action="alerts" data-account-id="'+esc(a.id)+'">Set alert</button>'+
+          '<button class="btn" type="button" data-ics="'+esc(a.id)+'">Add to calendar</button><button class="btn save-action" type="button" data-account-action="alerts" data-account-id="'+esc(a.id)+'">Set alert</button>'+
           '<a class="btn" href="lot-review.html">Transaction view →</a>'+
-        '</div></article>').join('')||'<div class="empty-state"><h3>No upcoming sales match these filters.</h3></div>';
+        '</div></div></article>';
+      }).join('')||'<div class="empty-state"><h3>No upcoming sales match these filters.</h3></div>';
       host.querySelectorAll('[data-ics]').forEach(b=>b.addEventListener('click',()=>{const a=list.find(x=>x.id===b.dataset.ics);if(a)downloadAuctionICS(a)}));
+      initImageResilience();
     };
     search?.addEventListener('input',draw);houseSel?.addEventListener('change',draw);windowSel?.addEventListener('change',draw);draw();
-  }catch(e){host.innerHTML='<div class="empty-state"><h3>Auction alerts could not be loaded.</h3></div>'}
+  }catch(e){console.error(e);host.innerHTML='<div class="empty-state"><h3>Auction alerts could not be loaded.</h3></div>'}
 }
 initAuctionAlertCards();
 
