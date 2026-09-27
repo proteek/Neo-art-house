@@ -3,7 +3,7 @@
   "policy": "Priority houses are registered for monitoring. Automated ingestion is enabled only for an explicitly configured public structured source. Official pages that are not yet validated remain editorial/manual.",
   "coverage": {
     "priorityRegistered": 126,
-    "automationEnabled": 14,
+    "automationEnabled": 15,
     "targetMonitored": 250,
     "tier1Registered": 15
   },
@@ -1057,10 +1057,10 @@
       "country": "India",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual_official",
-      "enabled": false,
-      "feedUrl": null,
-      "monitoringStatus": "Official site monitored editorially · no dependable upcoming-sales index exposed",
+      "mode": "html_pundoles_watch",
+      "enabled": true,
+      "feedUrl": "https://www.pundoles.com/",
+      "monitoringStatus": "Official-site catalogue watchdog enabled · future-sale only · zero-result safe",
       "calendarUrl": "https://www.pundoles.com/",
       "adapterTier": "Tier 1"
     },
