@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-27T06:40:00Z",
+  "updated": "2026-09-27T06:55:00Z",
   "note": "Configuration snapshot. Scheduled builder replaces reachability and record counts with live checks.",
-  "enabledCount": 11,
+  "enabledCount": 13,
   "tier1Count": 15,
   "sources": [
     {
@@ -105,19 +105,19 @@
     },
     {
       "house": "China Guardian",
-      "mode": "manual_official",
-      "enabled": false,
+      "mode": "html_cguardian",
+      "enabled": true,
       "calendarUrl": "https://www.cguardian.com/",
-      "status": "Official auction schedule registered · adapter validation queued",
+      "status": "Official auction schedule adapter enabled · zero-result safe",
       "reachable": null,
       "recordsFound": null
     },
     {
       "house": "Poly Auction",
-      "mode": "manual_official",
-      "enabled": false,
-      "calendarUrl": "https://www.polypm.com.cn/",
-      "status": "Official upcoming-auctions page registered · adapter validation queued",
+      "mode": "html_poly",
+      "enabled": true,
+      "calendarUrl": "https://en.polypm.com.cn/",
+      "status": "Official upcoming-auctions adapter enabled · zero-result safe",
       "reachable": null,
       "recordsFound": null
     },
