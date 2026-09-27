@@ -3,7 +3,7 @@
   "policy": "Priority houses are registered for monitoring. Automated ingestion is enabled only for an explicitly configured public structured source. Official pages that are not yet validated remain editorial/manual.",
   "coverage": {
     "priorityRegistered": 126,
-    "automationEnabled": 10,
+    "automationEnabled": 11,
     "targetMonitored": 250,
     "tier1Registered": 15
   },
@@ -1060,7 +1060,7 @@
       "mode": "manual_official",
       "enabled": false,
       "feedUrl": null,
-      "monitoringStatus": "Official site monitored editorially",
+      "monitoringStatus": "Official sale pages monitored editorially · no stable central calendar adapter yet",
       "calendarUrl": "https://www.pundoles.com/",
       "adapterTier": "Tier 1"
     },
@@ -1162,7 +1162,7 @@
       "mode": "manual_official",
       "enabled": false,
       "feedUrl": null,
-      "monitoringStatus": "Official site monitored editorially",
+      "monitoringStatus": "Official auction schedule registered · adapter validation queued",
       "calendarUrl": "https://www.cguardian.com/",
       "adapterTier": "Tier 1"
     },
@@ -1178,7 +1178,7 @@
       "mode": "manual_official",
       "enabled": false,
       "feedUrl": null,
-      "monitoringStatus": "Official site monitored editorially",
+      "monitoringStatus": "Official upcoming-auctions page registered · adapter validation queued",
       "calendarUrl": "https://www.polypm.com.cn/",
       "adapterTier": "Tier 1"
     },
@@ -1205,11 +1205,11 @@
       "country": "South Korea",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual_official",
-      "enabled": false,
-      "feedUrl": null,
-      "monitoringStatus": "Official site monitored editorially",
-      "calendarUrl": "https://www.seoulauction.com/",
+      "mode": "html_seoul",
+      "enabled": true,
+      "feedUrl": "https://app.seoulauction.com/footer/notice",
+      "monitoringStatus": "Official auction notice/calendar adapter enabled",
+      "calendarUrl": "https://www.seoulauction.com/auction/info?lang=en",
       "adapterTier": "Tier 1"
     },
     {
