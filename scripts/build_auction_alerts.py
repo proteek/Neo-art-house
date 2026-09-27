@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json, hashlib, urllib.request, xml.etree.ElementTree as ET
+import json, hashlib, urllib.request, xml.etree.ElementTree as ET, re
 from html.parser import HTMLParser
 from datetime import datetime, timezone
 from pathlib import Path
@@ -109,16 +109,146 @@ def read_html_jsonld(text,house,source_url):
             })
     return out
 
+
+class VisibleTextParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.skip=0
+        self.lines=[]
+        self.buf=[]
+    def handle_starttag(self,tag,attrs):
+        if tag.lower() in ("script","style","noscript","svg"):
+            self.skip+=1
+        elif not self.skip and tag.lower() in ("br","p","div","h1","h2","h3","h4","li","section","article"):
+            self._flush()
+    def handle_endtag(self,tag):
+        if tag.lower() in ("script","style","noscript","svg"):
+            self.skip=max(0,self.skip-1)
+        elif not self.skip and tag.lower() in ("p","div","h1","h2","h3","h4","li","section","article","a"):
+            self._flush()
+    def handle_data(self,data):
+        if not self.skip:
+            t=" ".join(data.split())
+            if t:self.buf.append(t)
+    def _flush(self):
+        if self.buf:
+            t=" ".join(self.buf).strip()
+            if t and (not self.lines or self.lines[-1]!=t): self.lines.append(t)
+            self.buf=[]
+    def close(self):
+        self._flush()
+        super().close()
+
+MONTHS={m.lower():i for i,m in enumerate(("January","February","March","April","May","June","July","August","September","October","November","December"),1)}
+MONTHS.update({m[:3].lower():i for m,i in list(MONTHS.items()) if len(m)>3})
+
+def parse_human_date(text):
+    t=re.sub(r"[,|]"," ",str(text))
+    # single date: 29 September 2026 / 29 SEP 2026
+    m=re.search(r"\b(\d{1,2})\s+([A-Za-z]{3,9})\s+(20\d{2})\b",t,re.I)
+    if m:
+        mon=MONTHS.get(m.group(2).lower()[:3])
+        if mon:
+            return datetime(int(m.group(3)),mon,int(m.group(1)),tzinfo=timezone.utc)
+    # range: 28 Sep - 30 Sep, 2026 / 21 - 22 October 2026 -> use closing/end date
+    m=re.search(r"\b\d{1,2}\s*(?:[A-Za-z]{3,9})?\s*[-–]\s*(\d{1,2})\s+([A-Za-z]{3,9})\s+(20\d{2})\b",t,re.I)
+    if m:
+        mon=MONTHS.get(m.group(2).lower()[:3])
+        if mon:
+            return datetime(int(m.group(3)),mon,int(m.group(1)),tzinfo=timezone.utc)
+    return None
+
+def visible_lines(text):
+    p=VisibleTextParser()
+    p.feed(text)
+    p.close()
+    return p.lines
+
+def _sale_record(house,title,dt,label,city,url,note):
+    return {"date":dt.strftime("%Y-%m-%d"),"dateLabel":label or dt.strftime("%-d %B"),"sale":title.strip(),"house":house,"city":city.strip(),"url":url,"note":note,"flag":"","flagUrgent":False}
+
+def read_html_astaguru(text,house,source_url):
+    lines=visible_lines(text)
+    out=[]
+    stop={"live & upcoming auctions","past auctions","view catalogue","show interest","explore","upcoming"}
+    for i,line in enumerate(lines):
+        dt=parse_human_date(line)
+        if not dt: continue
+        # nearest useful preceding line is the sale title
+        title=""
+        for j in range(i-1,max(-1,i-5),-1):
+            cand=lines[j].strip()
+            low=cand.lower()
+            if low and low not in stop and not parse_human_date(cand) and len(cand)<140:
+                title=cand;break
+        if title:
+            out.append(_sale_record(house,title,dt,line,"",source_url,"Imported from AstaGuru’s official upcoming-auctions page."))
+    # dedupe
+    uniq={}
+    for x in out: uniq[(x["sale"],x["date"])]=x
+    return list(uniq.values())
+
+def read_html_saffronart(text,house,source_url):
+    lines=visible_lines(text)
+    out=[]
+    for line in lines:
+        # Homepage entries typically carry title | date | status.
+        if "|" not in line: continue
+        dt=parse_human_date(line)
+        if not dt: continue
+        title=line.split("|",1)[0].strip()
+        if len(title)<4 or any(k in title.lower() for k in ("view results","press release")): continue
+        out.append(_sale_record(house,title,dt,line.split("|",1)[1].strip(),"",source_url,"Imported from Saffronart’s official public auction page."))
+    uniq={}
+    for x in out: uniq[(x["sale"],x["date"])]=x
+    return list(uniq.values())
+
+def read_html_christies(text,house,source_url):
+    lines=visible_lines(text)
+    out=[]
+    auction_types=("Live Auction","Online Auction")
+    # Christie’s calendar is structured as type/id, date, sale title, location.
+    for i,line in enumerate(lines):
+        if not any(line.startswith(t) for t in auction_types): continue
+        dt=None; date_label=""; title=""; city=""
+        for j in range(i+1,min(len(lines),i+8)):
+            if not dt:
+                dt=parse_human_date(lines[j])
+                if dt:
+                    date_label=lines[j]
+                    continue
+            elif not title:
+                cand=lines[j].strip()
+                if cand and not parse_human_date(cand) and not cand.lower().startswith(("viewing","browse","explore")):
+                    title=cand
+                    continue
+            elif not city:
+                cand=lines[j].strip()
+                if cand and len(cand)<80 and not cand.lower().startswith(("viewing","browse","explore")):
+                    city=cand
+                    break
+        if dt and title:
+            out.append(_sale_record(house,title,dt,date_label,city,source_url,"Imported from Christie’s official auction calendar."))
+    uniq={}
+    for x in out: uniq[(x["sale"],x["date"],x["city"])]=x
+    return list(uniq.values())
+
 def permitted_feed_sales(sources):
     sales=[]
     for s in sources.get("houses",[]):
-        if not s.get("enabled") or s.get("mode") not in ("ics","rss","json","html_jsonld") or not s.get("feedUrl"):continue
+        if not s.get("enabled") or s.get("mode") not in ("ics","rss","json","html_jsonld","html_christies","html_astaguru","html_saffronart") or not s.get("feedUrl"):continue
         try:
             text=remote_text(s["feedUrl"])
             if s["mode"]=="ics": sales.extend(read_ics(text,s["house"]))
             elif s["mode"]=="rss": sales.extend(read_rss(text,s["house"]))
             elif s["mode"]=="html_jsonld":
                 sales.extend(read_html_jsonld(text,s["house"],s["feedUrl"]))
+            elif s["mode"]=="html_christies":
+                sales.extend(read_html_christies(text,s["house"],s["feedUrl"]))
+            elif s["mode"]=="html_astaguru":
+                sales.extend(read_html_astaguru(text,s["house"],s["feedUrl"]))
+            elif s["mode"]=="html_saffronart":
+                sales.extend(read_html_saffronart(text,s["house"],s["feedUrl"]))
             elif s["mode"]=="json":
                 payload=json.loads(text)
                 fmap=s.get("fieldMap",{})
@@ -143,6 +273,12 @@ def build_source_health(sources):
                 row["reachable"]=True
                 if s.get("mode")=="html_jsonld":
                     row["recordsFound"]=len(read_html_jsonld(text,s["house"],s["feedUrl"]))
+                elif s.get("mode")=="html_christies":
+                    row["recordsFound"]=len(read_html_christies(text,s["house"],s["feedUrl"]))
+                elif s.get("mode")=="html_astaguru":
+                    row["recordsFound"]=len(read_html_astaguru(text,s["house"],s["feedUrl"]))
+                elif s.get("mode")=="html_saffronart":
+                    row["recordsFound"]=len(read_html_saffronart(text,s["house"],s["feedUrl"]))
                 elif s.get("mode")=="ics":
                     row["recordsFound"]=len(read_ics(text,s["house"]))
                 elif s.get("mode")=="rss":
