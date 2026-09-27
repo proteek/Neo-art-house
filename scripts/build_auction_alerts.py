@@ -378,10 +378,31 @@ def read_html_heritage(text,house,source_url):
     for x in out: uniq[(x["sale"],x["date"],x["city"])]=x
     return list(uniq.values())
 
+
+def read_html_seoul(text,house,source_url):
+    lines=visible_lines(text)
+    out=[]
+    # Notice feed entries often expose auction title followed by YYYY.MM.DD publication date.
+    # Extract explicit auction dates from titles such as 9/23, 9/16, 9/9 and use current year.
+    year=datetime.now(timezone.utc).year
+    for i,line in enumerate(lines):
+        low=line.lower()
+        if not any(k in low for k in ("auction","경매","online","온라인","sale")): continue
+        m=re.search(r"(?<!\d)(\d{1,2})[./](\d{1,2})(?!\d)",line)
+        if not m: continue
+        mon=int(m.group(1)); day=int(m.group(2))
+        try: dt=datetime(year,mon,day,tzinfo=timezone.utc)
+        except: continue
+        title=re.sub(r"\s+\d{4}\.\d{2}\.\d{2}\s*$","",line).strip()
+        out.append(_sale_record(house,title,dt,dt.strftime("%-d %B"),"Seoul",source_url,"Imported from Seoul Auction’s official auction notice feed."))
+    uniq={}
+    for x in out: uniq[(x["sale"],x["date"])]=x
+    return list(uniq.values())
+
 def permitted_feed_sales(sources):
     sales=[]
     for s in sources.get("houses",[]):
-        if not s.get("enabled") or s.get("mode") not in ("ics","rss","json","html_jsonld","html_christies","html_astaguru","html_saffronart","html_phillips","html_artcurial","html_dorotheum","html_ketterer","html_lempertz","html_heritage") or not s.get("feedUrl"):continue
+        if not s.get("enabled") or s.get("mode") not in ("ics","rss","json","html_jsonld","html_christies","html_astaguru","html_saffronart","html_phillips","html_artcurial","html_dorotheum","html_ketterer","html_lempertz","html_heritage","html_seoul") or not s.get("feedUrl"):continue
         try:
             text=remote_text(s["feedUrl"])
             if s["mode"]=="ics": sales.extend(read_ics(text,s["house"]))
@@ -406,6 +427,8 @@ def permitted_feed_sales(sources):
                 sales.extend(read_html_lempertz(text,s["house"],s["feedUrl"]))
             elif s["mode"]=="html_heritage":
                 sales.extend(read_html_heritage(text,s["house"],s["feedUrl"]))
+            elif s["mode"]=="html_seoul":
+                sales.extend(read_html_seoul(text,s["house"],s["feedUrl"]))
             elif s["mode"]=="json":
                 payload=json.loads(text)
                 fmap=s.get("fieldMap",{})
@@ -448,6 +471,8 @@ def build_source_health(sources):
                     row["recordsFound"]=len(read_html_lempertz(text,s["house"],s["feedUrl"]))
                 elif s.get("mode")=="html_heritage":
                     row["recordsFound"]=len(read_html_heritage(text,s["house"],s["feedUrl"]))
+                elif s.get("mode")=="html_seoul":
+                    row["recordsFound"]=len(read_html_seoul(text,s["house"],s["feedUrl"]))
                 elif s.get("mode")=="ics":
                     row["recordsFound"]=len(read_ics(text,s["house"]))
                 elif s.get("mode")=="rss":
