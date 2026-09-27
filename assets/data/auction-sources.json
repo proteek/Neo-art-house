@@ -3,7 +3,7 @@
   "policy": "Priority houses are registered for monitoring. Automated ingestion is enabled only for an explicitly configured public structured source. Official pages that are not yet validated remain editorial/manual.",
   "coverage": {
     "priorityRegistered": 126,
-    "automationEnabled": 11,
+    "automationEnabled": 13,
     "targetMonitored": 250,
     "tier1Registered": 15
   },
@@ -1159,10 +1159,10 @@
       "country": "China",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual_official",
-      "enabled": false,
-      "feedUrl": null,
-      "monitoringStatus": "Official auction schedule registered · adapter validation queued",
+      "mode": "html_cguardian",
+      "enabled": true,
+      "feedUrl": "https://www.cguardian.com/",
+      "monitoringStatus": "Official auction schedule adapter enabled · zero-result safe",
       "calendarUrl": "https://www.cguardian.com/",
       "adapterTier": "Tier 1"
     },
@@ -1175,11 +1175,11 @@
       "country": "China",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual_official",
-      "enabled": false,
-      "feedUrl": null,
-      "monitoringStatus": "Official upcoming-auctions page registered · adapter validation queued",
-      "calendarUrl": "https://www.polypm.com.cn/",
+      "mode": "html_poly",
+      "enabled": true,
+      "feedUrl": "https://en.polypm.com.cn/",
+      "monitoringStatus": "Official upcoming-auctions adapter enabled · zero-result safe",
+      "calendarUrl": "https://en.polypm.com.cn/",
       "adapterTier": "Tier 1"
     },
     {
