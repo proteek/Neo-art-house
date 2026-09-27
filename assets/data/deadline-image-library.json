@@ -1,0 +1,92 @@
+{
+  "updated": "2026-09-27",
+  "policy": {
+    "defaultUse": "representative_editorial",
+    "exactLotImages": "Only when explicit reuse permission or an approved reusable licence is recorded.",
+    "note": "Images in this registry are representative editorial visuals and are not presented as auction-lot photography unless explicitly stated."
+  },
+  "categories": [
+    {
+      "id": "south-asian",
+      "label": "South Asian Art",
+      "keywords": [
+        "south asian",
+        "india",
+        "indian",
+        "himalayan",
+        "southeast asian",
+        "tagore",
+        "husain"
+      ],
+      "imageUrl": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/74733/159093/main-image",
+      "imageType": "open_access_art",
+      "creditLine": "Krishna (dressed as a woman) Embracing Radha, 19th century · The Metropolitan Museum of Art",
+      "sourceName": "The Metropolitan Museum of Art",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/74733",
+      "licenseType": "Public Domain / Open Access",
+      "licenseNotes": "Representative editorial image; not the auction lot.",
+      "altText": "Nineteenth-century Indian drawing of Krishna and Radha from The Met Open Access collection"
+    },
+    {
+      "id": "jewellery",
+      "label": "Jewellery",
+      "keywords": [
+        "jewel",
+        "jewellery",
+        "jewelry",
+        "necklace",
+        "gem",
+        "diamond"
+      ],
+      "imageUrl": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/39436/133046/main-image",
+      "imageType": "open_access_art",
+      "creditLine": "Necklace, India, 19th century · The Metropolitan Museum of Art",
+      "sourceName": "The Metropolitan Museum of Art",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/39436",
+      "licenseType": "Public Domain / Open Access",
+      "licenseNotes": "Representative editorial image; not the auction lot.",
+      "altText": "Nineteenth-century Indian gold necklace from The Met Open Access collection"
+    },
+    {
+      "id": "asian-decorative",
+      "label": "Asian & Decorative Arts",
+      "keywords": [
+        "asian art",
+        "chinese",
+        "china",
+        "porcelain",
+        "ceramic",
+        "decorative",
+        "design"
+      ],
+      "imageUrl": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/6038/48229/main-image",
+      "imageType": "open_access_art",
+      "creditLine": "Plate, China, ca. 1795 · The Metropolitan Museum of Art",
+      "sourceName": "The Metropolitan Museum of Art",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/6038",
+      "licenseType": "Public Domain / Open Access",
+      "licenseNotes": "Representative editorial image; not the auction lot.",
+      "altText": "Chinese porcelain plate from about 1795 in The Met Open Access collection"
+    },
+    {
+      "id": "modern-contemporary",
+      "label": "Modern & Contemporary",
+      "keywords": [
+        "modern",
+        "contemporary",
+        "20th century",
+        "21st century",
+        "evening sale",
+        "day sale"
+      ],
+      "imageUrl": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/436526/794544/main-image",
+      "imageType": "open_access_art",
+      "creditLine": "Vincent van Gogh, First Steps, after Millet, 1890 · The Metropolitan Museum of Art",
+      "sourceName": "The Metropolitan Museum of Art",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436526",
+      "licenseType": "Public Domain / Open Access",
+      "licenseNotes": "Representative editorial image; not the auction lot.",
+      "altText": "Vincent van Gogh painting First Steps, after Millet from The Met Open Access collection"
+    }
+  ]
+}
