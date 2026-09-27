@@ -23,6 +23,38 @@ function initReviewOrder(){
   if(pre){const r=form.querySelector(`[name="serviceChoice"][value="${CSS.escape(pre)}"]`);if(r)r.checked=true}
   form.addEventListener("submit",async e=>{
     e.preventDefault();
+    const required=[
+      ["serviceChoice","Choose a service"],
+      ["clientName","Enter your full name"],
+      ["clientEmail","Enter your email"],
+      ["lotUrl","Enter a valid lot URL"],
+      ["auctionHouse","Enter the auction house"],
+      ["artist","Enter the artist / maker"],
+      ["buyerResidence","Enter buyer residence"],
+      ["saleLocation","Enter sale location"],
+      ["destination","Enter final destination"],
+      ["deadline","Enter sale / bidding deadline"],
+      ["acknowledge","Accept the acknowledgement"]
+    ];
+    const missing=[];
+    for(const [name,label] of required){
+      const els=[...form.querySelectorAll(`[name="${name}"]`)];
+      if(!els.length){ missing.push({el:form,label}); continue; }
+      let ok=false;
+      if(els[0].type==="radio") ok=els.some(x=>x.checked);
+      else if(els[0].type==="checkbox") ok=els[0].checked;
+      else if(els[0].type==="email") ok=els[0].value.trim() && els[0].checkValidity();
+      else if(els[0].type==="url") ok=els[0].value.trim() && els[0].checkValidity();
+      else ok=!!els[0].value.trim();
+      els.forEach(x=>x.classList.toggle("field-error",!ok));
+      if(!ok) missing.push({el:els[0],label});
+    }
+    if(missing.length){
+      result.innerHTML='<div class="order-success" style="border-color:#b75b55;background:#fff3f1"><strong>Please complete these required fields:</strong><p>'+missing.map(x=>"• "+esc(x.label)).join("<br>")+'</p></div>';
+      const target=missing[0].el.closest(".form-section")||missing[0].el;
+      target.scrollIntoView({behavior:"smooth",block:"center"});
+      return;
+    }
     const button=form.querySelector('button[type="submit"]'),old=button.textContent;
     button.disabled=true;button.textContent="Creating case…";
     try{
