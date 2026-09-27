@@ -3,7 +3,7 @@
   "policy": "Priority houses are registered for monitoring. Automated ingestion is enabled only for an explicitly configured public structured source. Official pages that are not yet validated remain editorial/manual.",
   "coverage": {
     "priorityRegistered": 126,
-    "automationEnabled": 4,
+    "automationEnabled": 9,
     "targetMonitored": 250,
     "tier1Registered": 15
   },
@@ -49,11 +49,11 @@
       "country": "United Kingdom",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "html_jsonld",
+      "mode": "manual_official",
       "enabled": false,
       "feedUrl": null,
-      "monitoringStatus": "Official calendar registered · adapter validation queued",
-      "calendarUrl": "https://www.bonhams.com/auctions/",
+      "monitoringStatus": "Official site registered · central calendar adapter validation queued",
+      "calendarUrl": "https://www.bonhams.com/",
       "adapterTier": "Tier 1"
     },
     {
@@ -65,11 +65,11 @@
       "country": "United Kingdom",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "html_jsonld",
-      "enabled": false,
-      "feedUrl": null,
-      "monitoringStatus": "Official calendar registered · adapter validation queued",
-      "calendarUrl": "https://www.phillips.com/auctions",
+      "mode": "html_phillips",
+      "enabled": true,
+      "feedUrl": "https://www.phillips.com/",
+      "monitoringStatus": "Official homepage auction adapter enabled",
+      "calendarUrl": "https://www.phillips.com/",
       "adapterTier": "Tier 1"
     },
     {
@@ -277,11 +277,11 @@
       "country": "France",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "html_jsonld",
-      "enabled": false,
-      "feedUrl": null,
-      "monitoringStatus": "Official calendar registered · adapter validation queued",
-      "calendarUrl": "https://www.artcurial.com/en/sales-calendar",
+      "mode": "html_artcurial",
+      "enabled": true,
+      "feedUrl": "https://www.artcurial.com/en/schedule-auctions-sales",
+      "monitoringStatus": "Official sales-calendar adapter enabled",
+      "calendarUrl": "https://www.artcurial.com/en/schedule-auctions-sales",
       "adapterTier": "Tier 1"
     },
     {
@@ -405,11 +405,11 @@
       "country": "Germany",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "html_jsonld",
-      "enabled": false,
-      "feedUrl": null,
-      "monitoringStatus": "Official calendar registered · adapter validation queued",
-      "calendarUrl": "https://www.kettererkunst.com/auction/",
+      "mode": "html_ketterer",
+      "enabled": true,
+      "feedUrl": "https://kettererkunst.com/calendar.php",
+      "monitoringStatus": "Official upcoming-auctions adapter enabled",
+      "calendarUrl": "https://kettererkunst.com/calendar.php",
       "adapterTier": "Tier 1"
     },
     {
@@ -421,11 +421,11 @@
       "country": "Germany",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "html_jsonld",
-      "enabled": false,
-      "feedUrl": null,
-      "monitoringStatus": "Official calendar registered · adapter validation queued",
-      "calendarUrl": "https://www.lempertz.com/en/catalogues.html",
+      "mode": "html_lempertz",
+      "enabled": true,
+      "feedUrl": "https://www.lempertz.com/en/auctions.html",
+      "monitoringStatus": "Official auctions adapter enabled",
+      "calendarUrl": "https://www.lempertz.com/en/auctions.html",
       "adapterTier": "Tier 1"
     },
     {
@@ -549,11 +549,11 @@
       "country": "Austria",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "html_jsonld",
-      "enabled": false,
-      "feedUrl": null,
-      "monitoringStatus": "Official calendar registered · adapter validation queued",
-      "calendarUrl": "https://www.dorotheum.com/en/a/",
+      "mode": "html_dorotheum",
+      "enabled": true,
+      "feedUrl": "https://www.dorotheum.com/en/current-auctions/?rfa=true",
+      "monitoringStatus": "Official current-auctions adapter enabled",
+      "calendarUrl": "https://www.dorotheum.com/en/current-auctions/?rfa=true",
       "adapterTier": "Tier 1"
     },
     {
