@@ -510,10 +510,50 @@ def read_html_bonhams_catalogues(text,house,source_url):
     for x in out: uniq[(x["sale"],x["date"],x["city"])]=x
     return list(uniq.values())
 
+
+def read_html_pundoles_watch(text,house,source_url):
+    parser=LinkParser()
+    parser.feed(text)
+    links=[]
+    for href in parser.links:
+        low=href.lower()
+        if not any(k in low for k in ("auction","sale","catalog","catalogue")): continue
+        url=urljoin(source_url,href)
+        if "pundoles.com" not in url: continue
+        if url not in links: links.append(url)
+    out=[]
+    today=datetime.now(timezone.utc).date()
+    # Guarded crawl: open only a small number of plausible official sale/catalogue links.
+    for url in links[:30]:
+        try:
+            detail=remote_text(url)
+        except Exception:
+            continue
+        lines=visible_lines(detail)
+        title=""
+        dt=None
+        date_label=""
+        for line in lines[:80]:
+            if not title:
+                low=line.lower()
+                if ("sale" in low or "auction" in low) and len(line)<180 and "terms" not in low and "buying" not in low:
+                    title=line.strip()
+            if not dt:
+                cand=parse_any_date(line)
+                if cand:
+                    dt=cand
+                    date_label=line.strip()
+            if title and dt: break
+        if not title or not dt or dt.date()<today: continue
+        out.append(_sale_record(house,title,dt,date_label,"Mumbai",url,"Imported from a future-dated sale/catalogue page on Pundole’s official website."))
+    uniq={}
+    for x in out: uniq[(x["sale"],x["date"],x["city"])]=x
+    return list(uniq.values())
+
 def permitted_feed_sales(sources):
     sales=[]
     for s in sources.get("houses",[]):
-        if not s.get("enabled") or s.get("mode") not in ("ics","rss","json","html_jsonld","html_christies","html_astaguru","html_saffronart","html_phillips","html_artcurial","html_dorotheum","html_ketterer","html_lempertz","html_heritage","html_seoul","html_poly","html_cguardian","html_bonhams_catalogues") or not s.get("feedUrl"):continue
+        if not s.get("enabled") or s.get("mode") not in ("ics","rss","json","html_jsonld","html_christies","html_astaguru","html_saffronart","html_phillips","html_artcurial","html_dorotheum","html_ketterer","html_lempertz","html_heritage","html_seoul","html_poly","html_cguardian","html_bonhams_catalogues","html_pundoles_watch") or not s.get("feedUrl"):continue
         try:
             text=remote_text(s["feedUrl"])
             if s["mode"]=="ics": sales.extend(read_ics(text,s["house"]))
@@ -546,6 +586,8 @@ def permitted_feed_sales(sources):
                 sales.extend(read_html_cguardian(text,s["house"],s["feedUrl"]))
             elif s["mode"]=="html_bonhams_catalogues":
                 sales.extend(read_html_bonhams_catalogues(text,s["house"],s["feedUrl"]))
+            elif s["mode"]=="html_pundoles_watch":
+                sales.extend(read_html_pundoles_watch(text,s["house"],s["feedUrl"]))
             elif s["mode"]=="json":
                 payload=json.loads(text)
                 fmap=s.get("fieldMap",{})
@@ -596,6 +638,8 @@ def build_source_health(sources):
                     row["recordsFound"]=len(read_html_cguardian(text,s["house"],s["feedUrl"]))
                 elif s.get("mode")=="html_bonhams_catalogues":
                     row["recordsFound"]=len(read_html_bonhams_catalogues(text,s["house"],s["feedUrl"]))
+                elif s.get("mode")=="html_pundoles_watch":
+                    row["recordsFound"]=len(read_html_pundoles_watch(text,s["house"],s["feedUrl"]))
                 elif s.get("mode")=="ics":
                     row["recordsFound"]=len(read_ics(text,s["house"]))
                 elif s.get("mode")=="rss":
