@@ -384,8 +384,9 @@ function nahActionLabel(kind,saved){
 function refreshAccountActionButtons(){
   document.querySelectorAll('[data-account-action]').forEach(b=>{
     const saved=nahSaved(b.dataset.accountAction,b.dataset.accountId);
-    b.textContent=nahActionLabel(b.dataset.accountAction,saved);
-    b.classList.toggle('is-saved',saved);
+    const label=nahActionLabel(b.dataset.accountAction,saved);
+    if(b.textContent!==label)b.textContent=label;
+    if(b.classList.contains('is-saved')!==saved)b.classList.toggle('is-saved',saved);
   });
 }
 function toggleAccountAction(kind,id){
@@ -418,7 +419,10 @@ function initAccountHooks(){
     }
     toggleAccountAction(kind,id);
   });
-  const mo=new MutationObserver(()=>refreshAccountActionButtons());
+  const mo=new MutationObserver(mutations=>{
+    const relevant=mutations.some(m=>[...m.addedNodes].some(n=>n.nodeType===1));
+    if(relevant)refreshAccountActionButtons();
+  });
   document.querySelectorAll('[data-corridor-library],[data-auction-index],[data-auction-alerts]').forEach(x=>mo.observe(x,{childList:true,subtree:true}));
 }
 initAccountHooks();
