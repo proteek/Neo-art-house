@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-27T06:55:00Z",
+  "updated": "2026-09-27T07:15:00Z",
   "note": "Configuration snapshot. Scheduled builder replaces reachability and record counts with live checks.",
-  "enabledCount": 13,
+  "enabledCount": 14,
   "tier1Count": 15,
   "sources": [
     {
@@ -24,10 +24,10 @@
     },
     {
       "house": "Bonhams",
-      "mode": "manual_official",
-      "enabled": false,
-      "calendarUrl": "https://www.bonhams.com/",
-      "status": "Official site registered · central calendar adapter validation queued",
+      "mode": "html_bonhams_catalogues",
+      "enabled": true,
+      "calendarUrl": "https://catalogues.bonhams.com/collections/live-sales",
+      "status": "Official catalogue discovery + detail-page adapter enabled",
       "reachable": null,
       "recordsFound": null
     },
@@ -90,7 +90,7 @@
       "mode": "manual_official",
       "enabled": false,
       "calendarUrl": "https://www.pundoles.com/",
-      "status": "Official sale pages monitored editorially · no stable central calendar adapter yet",
+      "status": "Official site monitored editorially · no dependable upcoming-sales index exposed",
       "reachable": null,
       "recordsFound": null
     },
