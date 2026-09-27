@@ -1,0 +1,57 @@
+{
+  "updated": "2026-09-27T00:00:00Z",
+  "note": "Seed file. The scheduled builder replaces this with live source checks.",
+  "sources": [
+    {
+      "house": "Sotheby's",
+      "mode": "html_jsonld",
+      "enabled": true,
+      "calendarUrl": "https://www.sothebys.com/en/calendar",
+      "status": "Official calendar adapter enabled",
+      "reachable": null,
+      "recordsFound": null
+    },
+    {
+      "house": "Christie's",
+      "mode": "html_jsonld",
+      "enabled": false,
+      "calendarUrl": "https://www.christies.com/en/calendar",
+      "status": "Official calendar registered · adapter validation queued"
+    },
+    {
+      "house": "Phillips",
+      "mode": "html_jsonld",
+      "enabled": false,
+      "calendarUrl": "https://www.phillips.com/auctions",
+      "status": "Official calendar registered · adapter validation queued"
+    },
+    {
+      "house": "Bonhams",
+      "mode": "html_jsonld",
+      "enabled": false,
+      "calendarUrl": "https://www.bonhams.com/auctions/",
+      "status": "Official calendar registered · adapter validation queued"
+    },
+    {
+      "house": "Pundole's",
+      "mode": "manual_official",
+      "enabled": false,
+      "calendarUrl": "https://www.pundoles.com/",
+      "status": "Official site monitored editorially"
+    },
+    {
+      "house": "Saffronart",
+      "mode": "manual_official",
+      "enabled": false,
+      "calendarUrl": "https://www.saffronart.com/sitepages/auctions/auctions.aspx",
+      "status": "Official site monitored editorially"
+    },
+    {
+      "house": "AstaGuru",
+      "mode": "manual_official",
+      "enabled": false,
+      "calendarUrl": "https://www.astaguru.com/",
+      "status": "Official site monitored editorially"
+    }
+  ]
+}
