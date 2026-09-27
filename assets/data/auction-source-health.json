@@ -1,8 +1,5 @@
 {
-  "updated": "2026-09-27T07:30:00Z",
-  "note": "Configuration snapshot. Scheduled builder replaces reachability and record counts with live checks.",
-  "enabledCount": 15,
-  "tier1Count": 15,
+  "updated": "2026-09-27T06:24:47.231108Z",
   "sources": [
     {
       "house": "Christie's",
@@ -10,8 +7,8 @@
       "enabled": true,
       "calendarUrl": "https://www.christies.com/en/calendar",
       "status": "Official calendar adapter enabled",
-      "reachable": null,
-      "recordsFound": null
+      "reachable": true,
+      "recordsFound": 6
     },
     {
       "house": "Sotheby's",
@@ -19,8 +16,8 @@
       "enabled": true,
       "calendarUrl": "https://www.sothebys.com/en/calendar",
       "status": "Official calendar adapter enabled",
-      "reachable": null,
-      "recordsFound": null
+      "reachable": true,
+      "recordsFound": 0
     },
     {
       "house": "Bonhams",
@@ -28,8 +25,8 @@
       "enabled": true,
       "calendarUrl": "https://catalogues.bonhams.com/collections/live-sales",
       "status": "Official catalogue discovery + detail-page adapter enabled",
-      "reachable": null,
-      "recordsFound": null
+      "reachable": true,
+      "recordsFound": 0
     },
     {
       "house": "Phillips",
@@ -37,8 +34,8 @@
       "enabled": true,
       "calendarUrl": "https://www.phillips.com/",
       "status": "Official homepage auction adapter enabled",
-      "reachable": null,
-      "recordsFound": null
+      "reachable": true,
+      "recordsFound": 5
     },
     {
       "house": "Artcurial",
@@ -46,8 +43,8 @@
       "enabled": true,
       "calendarUrl": "https://www.artcurial.com/en/schedule-auctions-sales",
       "status": "Official sales-calendar adapter enabled",
-      "reachable": null,
-      "recordsFound": null
+      "reachable": true,
+      "recordsFound": 0
     },
     {
       "house": "Ketterer Kunst",
@@ -55,8 +52,8 @@
       "enabled": true,
       "calendarUrl": "https://kettererkunst.com/calendar.php",
       "status": "Official upcoming-auctions adapter enabled",
-      "reachable": null,
-      "recordsFound": null
+      "reachable": true,
+      "recordsFound": 2
     },
     {
       "house": "Lempertz",
@@ -64,8 +61,8 @@
       "enabled": true,
       "calendarUrl": "https://www.lempertz.com/en/auctions.html",
       "status": "Official auctions adapter enabled",
-      "reachable": null,
-      "recordsFound": null
+      "reachable": true,
+      "recordsFound": 11
     },
     {
       "house": "Dorotheum",
@@ -73,8 +70,8 @@
       "enabled": true,
       "calendarUrl": "https://www.dorotheum.com/en/current-auctions/?rfa=true",
       "status": "Official current-auctions adapter enabled",
-      "reachable": null,
-      "recordsFound": null
+      "reachable": false,
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "house": "AstaGuru",
@@ -82,8 +79,8 @@
       "enabled": true,
       "calendarUrl": "https://www.astaguru.com/auctions/upcoming",
       "status": "Official upcoming-auctions adapter enabled",
-      "reachable": null,
-      "recordsFound": null
+      "reachable": true,
+      "recordsFound": 1
     },
     {
       "house": "Pundole's",
@@ -91,8 +88,8 @@
       "enabled": true,
       "calendarUrl": "https://www.pundoles.com/",
       "status": "Official-site catalogue watchdog enabled · future-sale only · zero-result safe",
-      "reachable": null,
-      "recordsFound": null
+      "reachable": true,
+      "recordsFound": 0
     },
     {
       "house": "Saffronart",
@@ -100,8 +97,8 @@
       "enabled": true,
       "calendarUrl": "https://www.saffronart.com/",
       "status": "Official homepage upcoming-auctions adapter enabled",
-      "reachable": null,
-      "recordsFound": null
+      "reachable": true,
+      "recordsFound": 0
     },
     {
       "house": "China Guardian",
@@ -109,8 +106,8 @@
       "enabled": true,
       "calendarUrl": "https://www.cguardian.com/",
       "status": "Official auction schedule adapter enabled · zero-result safe",
-      "reachable": null,
-      "recordsFound": null
+      "reachable": true,
+      "recordsFound": 0
     },
     {
       "house": "Poly Auction",
@@ -118,8 +115,8 @@
       "enabled": true,
       "calendarUrl": "https://en.polypm.com.cn/",
       "status": "Official upcoming-auctions adapter enabled · zero-result safe",
-      "reachable": null,
-      "recordsFound": null
+      "reachable": true,
+      "recordsFound": 0
     },
     {
       "house": "Seoul Auction",
@@ -127,8 +124,8 @@
       "enabled": true,
       "calendarUrl": "https://www.seoulauction.com/auction/info?lang=en",
       "status": "Official auction notice/calendar adapter enabled",
-      "reachable": null,
-      "recordsFound": null
+      "reachable": true,
+      "recordsFound": 0
     },
     {
       "house": "Heritage Auctions",
@@ -136,8 +133,8 @@
       "enabled": true,
       "calendarUrl": "https://www.ha.com/heritage-auctions-schedule.s",
       "status": "Official current-auction calendar adapter enabled · art-market categories filtered",
-      "reachable": null,
-      "recordsFound": null
+      "reachable": false,
+      "error": "HTTP Error 403: Forbidden"
     }
   ]
 }

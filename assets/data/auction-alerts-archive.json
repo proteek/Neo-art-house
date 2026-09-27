@@ -1,8 +1,228 @@
 {
   "_readme": "Historical auction alerts archived automatically by the six-hour builder.",
-  "updated": "2026-09-27T05:50:53.766Z",
-  "count": 9,
+  "updated": "2026-09-27T06:24:57.317326Z",
+  "count": 21,
   "alerts": [
+    {
+      "id": "53f15169d8f1",
+      "house": "Lempertz",
+      "houseCode": "L",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Auction 1284 - Art of Africa, the Pacific and the Americas",
+      "city": "BRUSSELS",
+      "saleDate": "2026-01-31",
+      "dateLabel": "Saturday, 31 January 2026",
+      "url": "https://www.lempertz.com/en/auctions.html",
+      "note": "Imported from Lempertz’s official auctions page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "past",
+      "daysToSale": -239,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "fcbbc97c44e6",
+      "house": "Lempertz",
+      "houseCode": "L",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Auction 1285",
+      "city": "BERLIN",
+      "saleDate": "2026-04-25",
+      "dateLabel": "Saturday 25 April 2026",
+      "url": "https://www.lempertz.com/en/auctions.html",
+      "note": "Imported from Lempertz’s official auctions page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "past",
+      "daysToSale": -155,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "05b6b0491275",
+      "house": "Lempertz",
+      "houseCode": "L",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Auction 1286",
+      "city": "Cologne",
+      "saleDate": "2026-05-19",
+      "dateLabel": "Tuesday 19 May 2026",
+      "url": "https://www.lempertz.com/en/auctions.html",
+      "note": "Imported from Lempertz’s official auctions page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "past",
+      "daysToSale": -131,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "8efd504a5557",
+      "house": "Lempertz",
+      "houseCode": "L",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Auction 1287",
+      "city": "Cologne",
+      "saleDate": "2026-05-20",
+      "dateLabel": "Wednesday, 20 May 2026",
+      "url": "https://www.lempertz.com/en/auctions.html",
+      "note": "Imported from Lempertz’s official auctions page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "past",
+      "daysToSale": -130,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "1f7d92472be4",
+      "house": "Lempertz",
+      "houseCode": "L",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Auction 1288",
+      "city": "Cologne",
+      "saleDate": "2026-05-21",
+      "dateLabel": "Thursday, 21 May 2026 | 11 am",
+      "url": "https://www.lempertz.com/en/auctions.html",
+      "note": "Imported from Lempertz’s official auctions page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "past",
+      "daysToSale": -129,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "f5ea33d22849",
+      "house": "Lempertz",
+      "houseCode": "L",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Auction 1290",
+      "city": "Cologne",
+      "saleDate": "2026-06-05",
+      "dateLabel": "Friday 5 June 2026",
+      "url": "https://www.lempertz.com/en/auctions.html",
+      "note": "Imported from Lempertz’s official auctions page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "past",
+      "daysToSale": -114,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "c56a2bcc9082",
+      "house": "Lempertz",
+      "houseCode": "L",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Auction 1293",
+      "city": "Cologne",
+      "saleDate": "2026-06-13",
+      "dateLabel": "Saturday 13 June 2026 | 11 am",
+      "url": "https://www.lempertz.com/en/auctions.html",
+      "note": "Imported from Lempertz’s official auctions page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "past",
+      "daysToSale": -106,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "5380e6549eb0",
+      "house": "Lempertz",
+      "houseCode": "L",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Auction 1293 – From the Inventory of Galerie Astamangala, Part 1",
+      "city": "Cologne",
+      "saleDate": "2026-06-13",
+      "dateLabel": "Saturday 13 June 2026 | 11 am",
+      "url": "https://www.lempertz.com/en/auctions.html",
+      "note": "Imported from Lempertz’s official auctions page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "past",
+      "daysToSale": -106,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "204eb2cdb846",
+      "house": "Lempertz",
+      "houseCode": "L",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Auction 1295",
+      "city": "",
+      "saleDate": "2026-06-18",
+      "dateLabel": "Thursday 4 June – Thursday 18 June 2026",
+      "url": "https://www.lempertz.com/en/auctions.html",
+      "note": "Imported from Lempertz’s official auctions page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "past",
+      "daysToSale": -101,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "baf4d2bdf0ea",
+      "house": "Lempertz",
+      "houseCode": "L",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Auction 1296",
+      "city": "Brussels",
+      "saleDate": "2026-07-01",
+      "dateLabel": "Wednesday 1 July 2026",
+      "url": "https://www.lempertz.com/en/auctions.html",
+      "note": "Imported from Lempertz’s official auctions page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "past",
+      "daysToSale": -88,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "e4d977b908dd",
+      "house": "Ketterer Kunst",
+      "houseCode": "KK",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": ">",
+      "city": "",
+      "saleDate": "2026-09-06",
+      "dateLabel": "DC Open Galleries 04-06 September 2026",
+      "url": "https://kettererkunst.com/calendar.php",
+      "note": "Imported from Ketterer Kunst’s official auction calendar.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "past",
+      "daysToSale": -21,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
     {
       "id": "f5b78da02014",
       "house": "AstaGuru",
@@ -38,7 +258,27 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "ed11f4f724ef",
+      "house": "Lempertz",
+      "houseCode": "L",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Auction 1309 – Dr. Reinhard Jansen Collection – Decorative Arts Online",
+      "city": "",
+      "saleDate": "2026-09-10",
+      "dateLabel": "Auction 1309 - will take place as an online auction from Thursday, 10 September 2026, 10:00 a.m. to Tuesday, 22 September 2026, 2:00 p.m.",
+      "url": "https://www.lempertz.com/en/auctions.html",
+      "note": "Imported from Lempertz’s official auctions page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "past",
+      "daysToSale": -17,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
     },
     {
       "id": "447d9e0a028c",
@@ -58,7 +298,7 @@
       "daysToSale": -12,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
     },
     {
       "id": "db993b81e1cf",
@@ -78,7 +318,7 @@
       "daysToSale": -12,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
     },
     {
       "id": "9c24cc58315b",
@@ -115,7 +355,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
     },
     {
       "id": "d36a11be74fc",
@@ -135,7 +375,7 @@
       "daysToSale": -11,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
     },
     {
       "id": "6b728507ced0",
@@ -155,7 +395,7 @@
       "daysToSale": -10,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
     },
     {
       "id": "13b9d9d02fc0",
@@ -192,7 +432,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
     },
     {
       "id": "8760b38d76d6",
@@ -229,7 +469,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
     },
     {
       "id": "82824435ff6b",
@@ -266,7 +506,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
     }
   ]
 }

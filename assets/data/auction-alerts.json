@@ -1,14 +1,15 @@
 {
   "_readme": "Generated every 6 hours. Public dataset contains upcoming sales only, from the editorial calendar plus explicitly permitted official feeds.",
-  "updated": "2026-09-27T05:50:50.199Z",
-  "count": 7,
+  "updated": "2026-09-27T06:24:57.317326Z",
+  "count": 19,
   "sourceCounts": {
-    "editorial": 7
+    "editorial": 7,
+    "feed": 12
   },
   "windows": {
-    "7": 2,
-    "30": 6,
-    "90": 7
+    "7": 13,
+    "30": 17,
+    "90": 19
   },
   "alerts": [
     {
@@ -29,7 +30,47 @@
       "daysToSale": 2,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "c0072fd616b5",
+      "house": "Christie's",
+      "houseCode": "CHR",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Spellbound: The Hegewisch Collection Part III",
+      "city": "London",
+      "saleDate": "2026-09-29",
+      "dateLabel": "15–29 SEP 2026",
+      "url": "https://www.christies.com/en/calendar",
+      "note": "Imported from Christie’s official auction calendar.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "critical",
+      "daysToSale": 2,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "b254f8efdb3d",
+      "house": "Phillips",
+      "houseCode": "PHI",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "The Hong Kong Jewels Auction",
+      "city": "Hong Kong",
+      "saleDate": "2026-09-29",
+      "dateLabel": "Hong Kong Auction 29 September 2026",
+      "url": "https://www.phillips.com/",
+      "note": "Imported from Phillips’ official public auction page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "critical",
+      "daysToSale": 2,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
     },
     {
       "id": "49959d6588b0",
@@ -66,7 +107,187 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "2ea38b0e6fb3",
+      "house": "AstaGuru",
+      "houseCode": "AST",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "ManiFest",
+      "city": "",
+      "saleDate": "2026-09-30",
+      "dateLabel": "28 Sep - 30 Sep, 2026",
+      "url": "https://www.astaguru.com/auctions/upcoming",
+      "note": "Imported from AstaGuru’s official upcoming-auctions page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "soon",
+      "daysToSale": 3,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "f621fc008eab",
+      "house": "Christie's",
+      "houseCode": "CHR",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "An Exceptional Continental Cellar",
+      "city": "London",
+      "saleDate": "2026-09-30",
+      "dateLabel": "17–30 SEP 2026",
+      "url": "https://www.christies.com/en/calendar",
+      "note": "Imported from Christie’s official auction calendar.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "soon",
+      "daysToSale": 3,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "681ceaa259da",
+      "house": "Christie's",
+      "houseCode": "CHR",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "20th Century Day Sale",
+      "city": "Hong Kong",
+      "saleDate": "2026-09-30",
+      "dateLabel": "30 SEP 2026",
+      "url": "https://www.christies.com/en/calendar",
+      "note": "Imported from Christie’s official auction calendar.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "soon",
+      "daysToSale": 3,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "8936d70deb5c",
+      "house": "Christie's",
+      "houseCode": "CHR",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "21st Century Day Sale",
+      "city": "Hong Kong",
+      "saleDate": "2026-09-30",
+      "dateLabel": "30 SEP 2026",
+      "url": "https://www.christies.com/en/calendar",
+      "note": "Imported from Christie’s official auction calendar.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "soon",
+      "daysToSale": 3,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "2f7b33c20375",
+      "house": "Christie's",
+      "houseCode": "CHR",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Collection Jeanne-Marie de Broglie",
+      "city": "Paris",
+      "saleDate": "2026-09-30",
+      "dateLabel": "30 SEP 2026",
+      "url": "https://www.christies.com/en/calendar",
+      "note": "Imported from Christie’s official auction calendar.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "soon",
+      "daysToSale": 3,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "5e04b79c6aba",
+      "house": "Phillips",
+      "houseCode": "PHI",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Hong Kong Jewels: Online Auction",
+      "city": "",
+      "saleDate": "2026-09-30",
+      "dateLabel": "22 – 30 September 2026",
+      "url": "https://www.phillips.com/",
+      "note": "Imported from Phillips’ official public auction page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "soon",
+      "daysToSale": 3,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "adddacada894",
+      "house": "Phillips",
+      "houseCode": "PHI",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Modern & Contemporary Art Evening Sale",
+      "city": "Hong Kong",
+      "saleDate": "2026-09-30",
+      "dateLabel": "Hong Kong Auction 30 September 2026",
+      "url": "https://www.phillips.com/",
+      "note": "Imported from Phillips’ official public auction page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "soon",
+      "daysToSale": 3,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "31a1026d1a49",
+      "house": "Phillips",
+      "houseCode": "PHI",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Modern & Contemporary Art: Online Auction, New York",
+      "city": "",
+      "saleDate": "2026-09-30",
+      "dateLabel": "21 – 30 September 2026",
+      "url": "https://www.phillips.com/",
+      "note": "Imported from Phillips’ official public auction page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "soon",
+      "daysToSale": 3,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "73fc3a18e8c0",
+      "house": "Phillips",
+      "houseCode": "PHI",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Modern & Contemporary Art: Online Auction, Hong Kong",
+      "city": "",
+      "saleDate": "2026-10-02",
+      "dateLabel": "23 September – 2 October 2026",
+      "url": "https://www.phillips.com/",
+      "note": "Imported from Phillips’ official public auction page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "soon",
+      "daysToSale": 5,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
     },
     {
       "id": "02cec4bad9db",
@@ -86,7 +307,7 @@
       "daysToSale": 17,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
     },
     {
       "id": "e26dc2846154",
@@ -106,7 +327,7 @@
       "daysToSale": 18,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
     },
     {
       "id": "369dedf97574",
@@ -126,7 +347,7 @@
       "daysToSale": 24,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
     },
     {
       "id": "d471ebde683b",
@@ -146,7 +367,7 @@
       "daysToSale": 25,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
     },
     {
       "id": "569945a3c4e3",
@@ -166,7 +387,27 @@
       "daysToSale": 33,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-27T05:25:22.280272Z"
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
+    },
+    {
+      "id": "6422fe40394c",
+      "house": "Ketterer Kunst",
+      "houseCode": "KK",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Exhibition in Berlin: Aubertin Bonalumi Dadamaino Mack Megert Piene Simeti Uecker Zangs – Works from the Kohlrusch Collection",
+      "city": "Berlin",
+      "saleDate": "2026-11-07",
+      "dateLabel": "9 Sept to 7 Nov 2026",
+      "url": "https://kettererkunst.com/calendar.php",
+      "note": "Imported from Ketterer Kunst’s official auction calendar.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "upcoming",
+      "daysToSale": 41,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-27T06:24:57.317326Z"
     }
   ]
 }
