@@ -3,7 +3,7 @@
   "policy": "Priority houses are registered for monitoring. Automated ingestion is enabled only for an explicitly configured public structured source. Official pages that are not yet validated remain editorial/manual.",
   "coverage": {
     "priorityRegistered": 126,
-    "automationEnabled": 1,
+    "automationEnabled": 4,
     "targetMonitored": 250,
     "tier1Registered": 15
   },
@@ -17,10 +17,10 @@
       "country": "United Kingdom",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "html_jsonld",
-      "enabled": false,
-      "feedUrl": null,
-      "monitoringStatus": "Official calendar registered · adapter validation queued",
+      "mode": "html_christies",
+      "enabled": true,
+      "feedUrl": "https://www.christies.com/en/calendar",
+      "monitoringStatus": "Official calendar adapter enabled",
       "calendarUrl": "https://www.christies.com/en/calendar",
       "adapterTier": "Tier 1"
     },
@@ -1041,11 +1041,11 @@
       "country": "India",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual_official",
-      "enabled": false,
-      "feedUrl": null,
-      "monitoringStatus": "Official site monitored editorially",
-      "calendarUrl": "https://www.astaguru.com/",
+      "mode": "html_astaguru",
+      "enabled": true,
+      "feedUrl": "https://www.astaguru.com/auctions/upcoming",
+      "monitoringStatus": "Official upcoming-auctions adapter enabled",
+      "calendarUrl": "https://www.astaguru.com/auctions/upcoming",
       "adapterTier": "Tier 1"
     },
     {
@@ -1073,11 +1073,11 @@
       "country": "India",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual_official",
-      "enabled": false,
-      "feedUrl": null,
-      "monitoringStatus": "Official site monitored editorially",
-      "calendarUrl": "https://www.saffronart.com/sitepages/auctions/auctions.aspx",
+      "mode": "html_saffronart",
+      "enabled": true,
+      "feedUrl": "https://www.saffronart.com/",
+      "monitoringStatus": "Official homepage upcoming-auctions adapter enabled",
+      "calendarUrl": "https://www.saffronart.com/",
       "adapterTier": "Tier 1"
     },
     {
