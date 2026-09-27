@@ -633,3 +633,15 @@ figure.image-missing img{display:none!important}
   .card{padding:18px}
   .house-visual figure,.deadline-visual figure,.professional-visual figure,.about-image-grid figure,.lot-visual-band figure{aspect-ratio:4/3}
 }
+
+/* overall transaction risk score */
+.risk-score-card{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px 0 20px;margin-top:8px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.risk-score-label{display:block;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:4px}
+.risk-score-number{display:block;font-family:var(--serif);font-size:58px;line-height:.9;font-weight:500}
+.risk-score-number small{font-family:var(--sans);font-size:14px;font-weight:500;margin-left:4px;color:var(--ink-soft)}
+.risk-score-band{font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:8px 11px;border:1px solid var(--line-strong)}
+.risk-score-card--green .risk-score-number,.risk-score-card--green .risk-score-band{color:var(--green)}
+.risk-score-card--amber .risk-score-number,.risk-score-card--amber .risk-score-band{color:#8b6410}
+.risk-score-card--red .risk-score-number,.risk-score-card--red .risk-score-band{color:var(--red)}
+.risk-score-card--grey .risk-score-number,.risk-score-card--grey .risk-score-band{color:#6c6962}
+@media(max-width:560px){.risk-score-card{align-items:flex-start}.risk-score-number{font-size:50px}}
