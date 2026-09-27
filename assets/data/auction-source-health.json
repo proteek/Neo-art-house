@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-27T06:25:00Z",
+  "updated": "2026-09-27T06:40:00Z",
   "note": "Configuration snapshot. Scheduled builder replaces reachability and record counts with live checks.",
-  "enabledCount": 10,
+  "enabledCount": 11,
   "tier1Count": 15,
   "sources": [
     {
@@ -90,7 +90,7 @@
       "mode": "manual_official",
       "enabled": false,
       "calendarUrl": "https://www.pundoles.com/",
-      "status": "Official site monitored editorially",
+      "status": "Official sale pages monitored editorially · no stable central calendar adapter yet",
       "reachable": null,
       "recordsFound": null
     },
@@ -108,7 +108,7 @@
       "mode": "manual_official",
       "enabled": false,
       "calendarUrl": "https://www.cguardian.com/",
-      "status": "Official site monitored editorially",
+      "status": "Official auction schedule registered · adapter validation queued",
       "reachable": null,
       "recordsFound": null
     },
@@ -117,16 +117,16 @@
       "mode": "manual_official",
       "enabled": false,
       "calendarUrl": "https://www.polypm.com.cn/",
-      "status": "Official site monitored editorially",
+      "status": "Official upcoming-auctions page registered · adapter validation queued",
       "reachable": null,
       "recordsFound": null
     },
     {
       "house": "Seoul Auction",
-      "mode": "manual_official",
-      "enabled": false,
-      "calendarUrl": "https://www.seoulauction.com/",
-      "status": "Official site monitored editorially",
+      "mode": "html_seoul",
+      "enabled": true,
+      "calendarUrl": "https://www.seoulauction.com/auction/info?lang=en",
+      "status": "Official auction notice/calendar adapter enabled",
       "reachable": null,
       "recordsFound": null
     },
