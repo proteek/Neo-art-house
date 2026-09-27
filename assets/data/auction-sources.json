@@ -1,10 +1,11 @@
 {
   "updated": "2026-09-27",
-  "policy": "Priority houses are registered for monitoring. External automated ingestion is enabled only where a permitted public feed/API exists or permission is granted. Otherwise the house remains editorial/manual.",
+  "policy": "Priority houses are registered for monitoring. Automated ingestion is enabled only for an explicitly configured public structured source. Official pages that are not yet validated remain editorial/manual.",
   "coverage": {
     "priorityRegistered": 126,
-    "automationEnabled": 0,
-    "targetMonitored": 250
+    "automationEnabled": 1,
+    "targetMonitored": 250,
+    "tier1Registered": 15
   },
   "houses": [
     {
@@ -16,10 +17,12 @@
       "country": "United Kingdom",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual",
+      "mode": "html_jsonld",
       "enabled": false,
       "feedUrl": null,
-      "monitoringStatus": "Editorial/manual"
+      "monitoringStatus": "Official calendar registered · adapter validation queued",
+      "calendarUrl": "https://www.christies.com/en/calendar",
+      "adapterTier": "Tier 1"
     },
     {
       "house": "Sotheby's",
@@ -30,10 +33,12 @@
       "country": "United Kingdom",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual",
-      "enabled": false,
-      "feedUrl": null,
-      "monitoringStatus": "Editorial/manual"
+      "mode": "html_jsonld",
+      "enabled": true,
+      "feedUrl": "https://www.sothebys.com/en/calendar",
+      "monitoringStatus": "Official calendar adapter enabled",
+      "calendarUrl": "https://www.sothebys.com/en/calendar",
+      "adapterTier": "Tier 1"
     },
     {
       "house": "Bonhams",
@@ -44,10 +49,12 @@
       "country": "United Kingdom",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual",
+      "mode": "html_jsonld",
       "enabled": false,
       "feedUrl": null,
-      "monitoringStatus": "Editorial/manual"
+      "monitoringStatus": "Official calendar registered · adapter validation queued",
+      "calendarUrl": "https://www.bonhams.com/auctions/",
+      "adapterTier": "Tier 1"
     },
     {
       "house": "Phillips",
@@ -58,10 +65,12 @@
       "country": "United Kingdom",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual",
+      "mode": "html_jsonld",
       "enabled": false,
       "feedUrl": null,
-      "monitoringStatus": "Editorial/manual"
+      "monitoringStatus": "Official calendar registered · adapter validation queued",
+      "calendarUrl": "https://www.phillips.com/auctions",
+      "adapterTier": "Tier 1"
     },
     {
       "house": "Lyon & Turnbull",
@@ -268,10 +277,12 @@
       "country": "France",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual",
+      "mode": "html_jsonld",
       "enabled": false,
       "feedUrl": null,
-      "monitoringStatus": "Editorial/manual"
+      "monitoringStatus": "Official calendar registered · adapter validation queued",
+      "calendarUrl": "https://www.artcurial.com/en/sales-calendar",
+      "adapterTier": "Tier 1"
     },
     {
       "house": "Tajan",
@@ -394,10 +405,12 @@
       "country": "Germany",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual",
+      "mode": "html_jsonld",
       "enabled": false,
       "feedUrl": null,
-      "monitoringStatus": "Editorial/manual"
+      "monitoringStatus": "Official calendar registered · adapter validation queued",
+      "calendarUrl": "https://www.kettererkunst.com/auction/",
+      "adapterTier": "Tier 1"
     },
     {
       "house": "Lempertz",
@@ -408,10 +421,12 @@
       "country": "Germany",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual",
+      "mode": "html_jsonld",
       "enabled": false,
       "feedUrl": null,
-      "monitoringStatus": "Editorial/manual"
+      "monitoringStatus": "Official calendar registered · adapter validation queued",
+      "calendarUrl": "https://www.lempertz.com/en/catalogues.html",
+      "adapterTier": "Tier 1"
     },
     {
       "house": "Grisebach",
@@ -534,10 +549,12 @@
       "country": "Austria",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual",
+      "mode": "html_jsonld",
       "enabled": false,
       "feedUrl": null,
-      "monitoringStatus": "Editorial/manual"
+      "monitoringStatus": "Official calendar registered · adapter validation queued",
+      "calendarUrl": "https://www.dorotheum.com/en/a/",
+      "adapterTier": "Tier 1"
     },
     {
       "house": "im Kinsky",
@@ -1024,10 +1041,12 @@
       "country": "India",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual",
+      "mode": "manual_official",
       "enabled": false,
       "feedUrl": null,
-      "monitoringStatus": "Editorial/manual"
+      "monitoringStatus": "Official site monitored editorially",
+      "calendarUrl": "https://www.astaguru.com/",
+      "adapterTier": "Tier 1"
     },
     {
       "house": "Pundole's",
@@ -1038,10 +1057,12 @@
       "country": "India",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual",
+      "mode": "manual_official",
       "enabled": false,
       "feedUrl": null,
-      "monitoringStatus": "Editorial/manual"
+      "monitoringStatus": "Official site monitored editorially",
+      "calendarUrl": "https://www.pundoles.com/",
+      "adapterTier": "Tier 1"
     },
     {
       "house": "Saffronart",
@@ -1052,10 +1073,12 @@
       "country": "India",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual",
+      "mode": "manual_official",
       "enabled": false,
       "feedUrl": null,
-      "monitoringStatus": "Editorial/manual"
+      "monitoringStatus": "Official site monitored editorially",
+      "calendarUrl": "https://www.saffronart.com/sitepages/auctions/auctions.aspx",
+      "adapterTier": "Tier 1"
     },
     {
       "house": "Prinseps",
@@ -1136,10 +1159,12 @@
       "country": "China",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual",
+      "mode": "manual_official",
       "enabled": false,
       "feedUrl": null,
-      "monitoringStatus": "Editorial/manual"
+      "monitoringStatus": "Official site monitored editorially",
+      "calendarUrl": "https://www.cguardian.com/",
+      "adapterTier": "Tier 1"
     },
     {
       "house": "Poly Auction",
@@ -1150,10 +1175,12 @@
       "country": "China",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual",
+      "mode": "manual_official",
       "enabled": false,
       "feedUrl": null,
-      "monitoringStatus": "Editorial/manual"
+      "monitoringStatus": "Official site monitored editorially",
+      "calendarUrl": "https://www.polypm.com.cn/",
+      "adapterTier": "Tier 1"
     },
     {
       "house": "Ravenel",
@@ -1178,10 +1205,12 @@
       "country": "South Korea",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual",
+      "mode": "manual_official",
       "enabled": false,
       "feedUrl": null,
-      "monitoringStatus": "Editorial/manual"
+      "monitoringStatus": "Official site monitored editorially",
+      "calendarUrl": "https://www.seoulauction.com/",
+      "adapterTier": "Tier 1"
     },
     {
       "house": "K Auction",
@@ -1318,10 +1347,12 @@
       "country": "United States",
       "logo": null,
       "logoStatus": "permission_required",
-      "mode": "manual",
+      "mode": "manual_official",
       "enabled": false,
       "feedUrl": null,
-      "monitoringStatus": "Editorial/manual"
+      "monitoringStatus": "Official site monitored editorially",
+      "calendarUrl": "https://www.ha.com/c/auction-home.zx",
+      "adapterTier": "Tier 1"
     },
     {
       "house": "Doyle",
