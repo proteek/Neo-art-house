@@ -1,5 +1,5 @@
 const reviewId=()=>`NAH-${new Date().toISOString().slice(0,10).replaceAll("-","")}-${Math.random().toString(36).slice(2,7).toUpperCase()}`;
-const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[m]));
+const reviewEsc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[m]));
 function formObject(form){return Object.fromEntries(new FormData(form).entries())}
 
 function buildReviewRecord(d,id){
@@ -50,7 +50,7 @@ function initReviewOrder(){
       if(!ok) missing.push({el:els[0],label});
     }
     if(missing.length){
-      result.innerHTML='<div class="order-success" style="border-color:#b75b55;background:#fff3f1"><strong>Please complete these required fields:</strong><p>'+missing.map(x=>"• "+esc(x.label)).join("<br>")+'</p></div>';
+      result.innerHTML='<div class="order-success" style="border-color:#b75b55;background:#fff3f1"><strong>Please complete these required fields:</strong><p>'+missing.map(x=>"• "+reviewEsc(x.label)).join("<br>")+'</p></div>';
       const target=missing[0].el.closest(".form-section")||missing[0].el;
       target.scrollIntoView({behavior:"smooth",block:"center"});
       return;
@@ -60,20 +60,20 @@ function initReviewOrder(){
     try{
       const d=formObject(form),id=reviewId(),record=buildReviewRecord(d,id);
       await window.NAH_FIREBASE.db.collection("reviewCases").doc(id).set(record);
-      result.innerHTML=`<div class="order-success"><div class="eyebrow">Case created</div><h3>${esc(id)}</h3><p>Your requirement is now in the Neo Art House Review Desk. Keep this reference for correspondence.</p><a class="btn" href="lot-review.html">Back to Lot Review →</a></div>`;
+      result.innerHTML=`<div class="order-success"><div class="eyebrow">Case created</div><h3>${reviewEsc(id)}</h3><p>Your requirement is now in the Neo Art House Review Desk. Keep this reference for correspondence.</p><a class="btn" href="lot-review.html">Back to Lot Review →</a></div>`;
       form.reset();
       window.scrollTo({top:document.body.scrollHeight,behavior:"smooth"});
     }catch(err){
       console.error("Review submission failed",err);
       const code=err && err.code ? String(err.code) : "unknown";
       const message=err && err.message ? String(err.message) : "Unknown Firebase error";
-      result.innerHTML='<div class="order-success" style="border-color:#b75b55;background:#fff3f1"><strong>Submission failed.</strong><p><b>Error:</b> '+esc(code)+'</p><p>'+esc(message)+'</p><p>Please send us a screenshot of this message.</p></div>';
+      result.innerHTML='<div class="order-success" style="border-color:#b75b55;background:#fff3f1"><strong>Submission failed.</strong><p><b>Error:</b> '+reviewEsc(code)+'</p><p>'+reviewEsc(message)+'</p><p>Please send us a screenshot of this message.</p></div>';
     }finally{button.disabled=false;button.textContent=old}
   });
 }
 
 function caseSummary(c){
- return `<button class="admin-case-card" data-case-id="${esc(c.id)}"><span class="data-badge">${esc(c.status)}</span><strong>${esc(c.lot?.artist||"Unknown artist")}</strong><span>${esc(c.lot?.title||c.lot?.sale||"Untitled case")}</span><small>${esc(c.client?.name||"")} · ${esc(c.service||"")}</small><small>${c.deadline?esc(new Date(c.deadline).toLocaleString()):"No deadline"}</small></button>`;
+ return `<button class="admin-case-card" data-case-id="${reviewEsc(c.id)}"><span class="data-badge">${reviewEsc(c.status)}</span><strong>${reviewEsc(c.lot?.artist||"Unknown artist")}</strong><span>${reviewEsc(c.lot?.title||c.lot?.sale||"Untitled case")}</span><small>${reviewEsc(c.client?.name||"")} · ${reviewEsc(c.service||"")}</small><small>${c.deadline?reviewEsc(new Date(c.deadline).toLocaleString()):"No deadline"}</small></button>`;
 }
 
 function draftReport(c){
@@ -109,10 +109,10 @@ async function saveCase(id,patch){
 
 function renderAdminDetail(c){
  const host=document.querySelector("[data-admin-detail]"); if(!host||!c)return;
- host.innerHTML=`<div class="admin-detail-head"><div><div class="eyebrow">${esc(c.id)}</div><h2>${esc(c.lot.artist)} — ${esc(c.lot.title||"Untitled")}</h2><p>${esc(c.client.name)} · <a href="mailto:${esc(c.client.email)}">${esc(c.client.email)}</a></p></div><select data-case-status class="search-input">${["Submitted","Scoped","Researching","Draft ready","QA","Delivered"].map(x=>`<option ${x===c.status?"selected":""}>${x}</option>`).join("")}</select></div>
- <div class="admin-detail-grid"><div class="card"><div class="eyebrow">Lot</div><p><strong>${esc(c.lot.house)}</strong><br>${esc(c.lot.sale||"")}<br>Lot ${esc(c.lot.lotNumber||"—")}<br>${esc(c.lot.estimate||"")}</p><a class="text-link" href="${esc(c.lot.url)}" target="_blank" rel="noopener">Official lot ↗</a></div><div class="card"><div class="eyebrow">Route</div><p>${esc(c.route.buyerResidence)} → ${esc(c.route.saleLocation)} → ${esc(c.route.destination)}</p><p><strong>Deadline:</strong><br>${c.deadline?esc(new Date(c.deadline).toLocaleString()):"—"}</p></div></div>
- <div class="card"><div class="eyebrow">Research inputs</div><label class="admin-field">MutualArt / comparable-market data<textarea data-market-data rows="8" placeholder="Paste licensed/exported market data here until file upload is enabled…">${esc(c.research?.marketData||"")}</textarea></label><label class="admin-field">Research notes<textarea data-research-notes rows="6">${esc(c.research?.notes||"")}</textarea></label><div class="admin-actions"><button class="btn" data-save-research>Save research</button><button class="btn btn--gold" data-generate-draft>Generate report draft</button></div></div>
- <div class="card"><div class="eyebrow">Client report</div><div class="report-status">${esc(c.report?.status||"Not generated")}</div><textarea class="report-editor" data-report-draft rows="28">${esc(c.report?.draft||"")}</textarea><div class="admin-actions"><button class="btn" data-save-draft>Save draft</button><button class="btn" data-print-report>Open PDF view</button></div><p class="disclaimer">Draft generation never invents provenance. Unsourced gaps remain unresolved until evidence is added.</p></div>`;
+ host.innerHTML=`<div class="admin-detail-head"><div><div class="eyebrow">${reviewEsc(c.id)}</div><h2>${reviewEsc(c.lot.artist)} — ${reviewEsc(c.lot.title||"Untitled")}</h2><p>${reviewEsc(c.client.name)} · <a href="mailto:${reviewEsc(c.client.email)}">${reviewEsc(c.client.email)}</a></p></div><select data-case-status class="search-input">${["Submitted","Scoped","Researching","Draft ready","QA","Delivered"].map(x=>`<option ${x===c.status?"selected":""}>${x}</option>`).join("")}</select></div>
+ <div class="admin-detail-grid"><div class="card"><div class="eyebrow">Lot</div><p><strong>${reviewEsc(c.lot.house)}</strong><br>${reviewEsc(c.lot.sale||"")}<br>Lot ${reviewEsc(c.lot.lotNumber||"—")}<br>${reviewEsc(c.lot.estimate||"")}</p><a class="text-link" href="${reviewEsc(c.lot.url)}" target="_blank" rel="noopener">Official lot ↗</a></div><div class="card"><div class="eyebrow">Route</div><p>${reviewEsc(c.route.buyerResidence)} → ${reviewEsc(c.route.saleLocation)} → ${reviewEsc(c.route.destination)}</p><p><strong>Deadline:</strong><br>${c.deadline?reviewEsc(new Date(c.deadline).toLocaleString()):"—"}</p></div></div>
+ <div class="card"><div class="eyebrow">Research inputs</div><label class="admin-field">MutualArt / comparable-market data<textarea data-market-data rows="8" placeholder="Paste licensed/exported market data here until file upload is enabled…">${reviewEsc(c.research?.marketData||"")}</textarea></label><label class="admin-field">Research notes<textarea data-research-notes rows="6">${reviewEsc(c.research?.notes||"")}</textarea></label><div class="admin-actions"><button class="btn" data-save-research>Save research</button><button class="btn btn--gold" data-generate-draft>Generate report draft</button></div></div>
+ <div class="card"><div class="eyebrow">Client report</div><div class="report-status">${reviewEsc(c.report?.status||"Not generated")}</div><textarea class="report-editor" data-report-draft rows="28">${reviewEsc(c.report?.draft||"")}</textarea><div class="admin-actions"><button class="btn" data-save-draft>Save draft</button><button class="btn" data-print-report>Open PDF view</button></div><p class="disclaimer">Draft generation never invents provenance. Unsourced gaps remain unresolved until evidence is added.</p></div>`;
  host.querySelector("[data-case-status]").addEventListener("change",async e=>{await saveCase(c.id,{status:e.target.value});c.status=e.target.value;});
  host.querySelector("[data-save-research]").addEventListener("click",async ()=>{
    const research={...(c.research||{}),marketData:host.querySelector("[data-market-data]").value,notes:host.querySelector("[data-research-notes]").value};
@@ -156,7 +156,7 @@ async function initReviewReport(){
  const snap=await window.NAH_FIREBASE.db.collection("reviewCases").doc(id).get();
  if(!snap.exists){host.innerHTML="<p>Case not found.</p>";return}
  const c={id:snap.id,...snap.data()},text=c.report?.draft||draftReport(c);
- host.innerHTML='<div class="report-cover"><div class="eyebrow">THE NEO ART HOUSE · PRE-BID PASSPORT™</div><h1>'+esc(c.lot.artist)+'<br><span>'+esc(c.lot.title||"")+'</span></h1><p>'+esc(c.id)+' · '+esc(c.client.name)+'</p></div>'+text.split("\n\n").map(block=>{if(block.startsWith("## "))return'<section class="report-section"><h2>'+esc(block.slice(3))+'</h2>';return'<div class="report-copy">'+esc(block).replaceAll("\n","<br>")+'</div></section>'}).join("");
+ host.innerHTML='<div class="report-cover"><div class="eyebrow">THE NEO ART HOUSE · PRE-BID PASSPORT™</div><h1>'+reviewEsc(c.lot.artist)+'<br><span>'+reviewEsc(c.lot.title||"")+'</span></h1><p>'+reviewEsc(c.id)+' · '+reviewEsc(c.client.name)+'</p></div>'+text.split("\n\n").map(block=>{if(block.startsWith("## "))return'<section class="report-section"><h2>'+reviewEsc(block.slice(3))+'</h2>';return'<div class="report-copy">'+reviewEsc(block).replaceAll("\n","<br>")+'</div></section>'}).join("");
 }
 
 document.addEventListener("DOMContentLoaded",()=>{initReviewOrder();initAdminReviews();initReviewReport()});
