@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-27T06:10:00Z",
+  "updated": "2026-09-27T06:25:00Z",
   "note": "Configuration snapshot. Scheduled builder replaces reachability and record counts with live checks.",
-  "enabledCount": 9,
+  "enabledCount": 10,
   "tier1Count": 15,
   "sources": [
     {
@@ -132,10 +132,10 @@
     },
     {
       "house": "Heritage Auctions",
-      "mode": "manual_official",
-      "enabled": false,
-      "calendarUrl": "https://www.ha.com/c/auction-home.zx",
-      "status": "Official site monitored editorially",
+      "mode": "html_heritage",
+      "enabled": true,
+      "calendarUrl": "https://www.ha.com/heritage-auctions-schedule.s",
+      "status": "Official current-auction calendar adapter enabled · art-market categories filtered",
       "reachable": null,
       "recordsFound": null
     }
