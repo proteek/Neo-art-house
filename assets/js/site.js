@@ -302,7 +302,12 @@ async function initAuctionAlertCards(){
   const search=document.querySelector('[data-alert-search]'),houseSel=document.querySelector('[data-alert-house]'),windowSel=document.querySelector('[data-alert-window]');
   try{
     const data=await fetch(base()+'assets/data/auction-alerts.json').then(r=>r.json());
-    const alerts=(data.alerts||[]).filter(a=>a.urgency!=='past');
+    const alerts=(data.alerts||[]);
+    const statusEl=document.querySelector('[data-alert-status]');
+    if(statusEl){
+      const sc=data.sourceCounts||{}, w=data.windows||{};
+      statusEl.textContent=(data.count||alerts.length)+' upcoming sales · '+(w['7']||0)+' in 7 days · '+(w['30']||0)+' in 30 days · '+(w['90']||0)+' in 90 days · '+(sc.feed||0)+' automated feed records';
+    }
     [...new Set(alerts.map(a=>a.house).filter(Boolean))].sort().forEach(h=>houseSel?.insertAdjacentHTML('beforeend','<option value="'+esc(h)+'">'+esc(h)+'</option>'));
     const draw=()=>{
       const q=(search?.value||'').trim().toLowerCase(),hs=houseSel?.value||'',win=windowSel?.value||'all';
