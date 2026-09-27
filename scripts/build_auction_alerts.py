@@ -336,10 +336,52 @@ def read_html_lempertz(text,house,source_url):
     for x in out: uniq[(x["sale"],x["date"],x["city"])]=x
     return list(uniq.values())
 
+
+HERITAGE_RELEVANT = (
+  "art","design","decorative","photograph","photography","print","painting","sculpture",
+  "illustration","rare books","books","manuscript","jewelry","jewellery","watch","watches",
+  "luxury accessories","asian art","american art","european art","modern","contemporary",
+  "historical manuscripts","ethnographic","silver","glass","ceramic","ceramics"
+)
+HERITAGE_EXCLUDE = ("coin","coins","comic","comics","sports","trading card","pokemon","wine","currency","token","medal","video game")
+
+def read_html_heritage(text,house,source_url):
+    lines=visible_lines(text)
+    out=[]
+    for i,line in enumerate(lines):
+        if line!="Auction Dates": continue
+        date_line=lines[i+1] if i+1<len(lines) else ""
+        dt=parse_human_date(date_line)
+        if not dt: continue
+        category=""; city=""; title=""
+        # Official schedule presents department/city before catalog image and sale title.
+        for j in range(i+1,min(len(lines),i+28)):
+            cand=lines[j].strip()
+            low=cand.lower()
+            if not category and j>i+5 and len(cand)<80 and not any(x in low for x in ("auction info","preview info","heritage live","browse auction","add to calendar","save catalog","current bids","estimated settlement","open for internet","printed catalog","view dates")) and not parse_human_date(cand) and not cand.startswith("#"):
+                category=cand
+                continue
+            if category and not city and "," in cand and len(cand)<70:
+                city=cand
+                continue
+            if category and j>i+8 and cand and cand!=category and len(cand)<170 and not any(x in low for x in ("image: catalog cover","current bids","full preview","highlights only","reception preview","heritage auctions -")) and not parse_human_date(cand) and not cand.startswith("#"):
+                title=cand
+                # prefer a title that differs from the simple department label
+                if title.lower()!=category.lower():
+                    break
+        combined=(category+" "+title).lower()
+        if any(x in combined for x in HERITAGE_EXCLUDE): continue
+        if not any(x in combined for x in HERITAGE_RELEVANT): continue
+        sale=title or category
+        out.append(_sale_record(house,sale,dt,date_line,city,source_url,"Imported from Heritage Auctions’ official current-auction calendar."))
+    uniq={}
+    for x in out: uniq[(x["sale"],x["date"],x["city"])]=x
+    return list(uniq.values())
+
 def permitted_feed_sales(sources):
     sales=[]
     for s in sources.get("houses",[]):
-        if not s.get("enabled") or s.get("mode") not in ("ics","rss","json","html_jsonld","html_christies","html_astaguru","html_saffronart","html_phillips","html_artcurial","html_dorotheum","html_ketterer","html_lempertz") or not s.get("feedUrl"):continue
+        if not s.get("enabled") or s.get("mode") not in ("ics","rss","json","html_jsonld","html_christies","html_astaguru","html_saffronart","html_phillips","html_artcurial","html_dorotheum","html_ketterer","html_lempertz","html_heritage") or not s.get("feedUrl"):continue
         try:
             text=remote_text(s["feedUrl"])
             if s["mode"]=="ics": sales.extend(read_ics(text,s["house"]))
@@ -362,6 +404,8 @@ def permitted_feed_sales(sources):
                 sales.extend(read_html_ketterer(text,s["house"],s["feedUrl"]))
             elif s["mode"]=="html_lempertz":
                 sales.extend(read_html_lempertz(text,s["house"],s["feedUrl"]))
+            elif s["mode"]=="html_heritage":
+                sales.extend(read_html_heritage(text,s["house"],s["feedUrl"]))
             elif s["mode"]=="json":
                 payload=json.loads(text)
                 fmap=s.get("fieldMap",{})
@@ -402,6 +446,8 @@ def build_source_health(sources):
                     row["recordsFound"]=len(read_html_ketterer(text,s["house"],s["feedUrl"]))
                 elif s.get("mode")=="html_lempertz":
                     row["recordsFound"]=len(read_html_lempertz(text,s["house"],s["feedUrl"]))
+                elif s.get("mode")=="html_heritage":
+                    row["recordsFound"]=len(read_html_heritage(text,s["house"],s["feedUrl"]))
                 elif s.get("mode")=="ics":
                     row["recordsFound"]=len(read_ics(text,s["house"]))
                 elif s.get("mode")=="rss":
