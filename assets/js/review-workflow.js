@@ -32,8 +32,10 @@ function initReviewOrder(){
       form.reset();
       window.scrollTo({top:document.body.scrollHeight,behavior:"smooth"});
     }catch(err){
-      console.error(err);
-      result.innerHTML='<div class="order-success" style="border-color:#b75b55;background:#fff3f1"><strong>We could not submit the case.</strong><p>Please check the form and try again. If the problem continues, contact connect@theneoarthouse.com.</p></div>';
+      console.error("Review submission failed",err);
+      const code=err && err.code ? String(err.code) : "unknown";
+      const message=err && err.message ? String(err.message) : "Unknown Firebase error";
+      result.innerHTML='<div class="order-success" style="border-color:#b75b55;background:#fff3f1"><strong>Submission failed.</strong><p><b>Error:</b> '+esc(code)+'</p><p>'+esc(message)+'</p><p>Please send us a screenshot of this message.</p></div>';
     }finally{button.disabled=false;button.textContent=old}
   });
 }
