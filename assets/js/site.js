@@ -489,3 +489,20 @@ async function initJurisdictionRegulatoryIndex(){
   }catch(e){host.innerHTML='<div class="empty-state"><h3>Jurisdiction index unavailable.</h3></div>'}
 }
 initJurisdictionRegulatoryIndex();
+
+function initImageResilience(){
+  document.querySelectorAll('figure img').forEach(img=>{
+    const mark=()=>{
+      const figure=img.closest('figure');
+      if(figure) figure.classList.add('image-missing');
+    };
+    if(img.complete && img.naturalWidth===0) mark();
+    img.addEventListener('error',mark,{once:true});
+    img.addEventListener('load',()=>{
+      const figure=img.closest('figure');
+      if(figure && img.naturalWidth>0) figure.classList.remove('image-missing');
+    },{once:true});
+  });
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initImageResilience);
+else initImageResilience();
