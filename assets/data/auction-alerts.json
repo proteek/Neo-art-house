@@ -1,15 +1,15 @@
 {
   "_readme": "Generated every 6 hours. Public dataset contains upcoming sales only, from the editorial calendar plus explicitly permitted official feeds.",
-  "updated": "2026-09-28T23:21:50.751688Z",
-  "count": 20,
+  "updated": "2026-09-29T05:51:20.963945Z",
+  "count": 21,
   "sourceCounts": {
     "editorial": 7,
-    "feed": 13
+    "feed": 14
   },
   "windows": {
-    "7": 13,
-    "30": 18,
-    "90": 20
+    "7": 14,
+    "30": 19,
+    "90": 21
   },
   "alerts": [
     {
@@ -27,10 +27,10 @@
       "buyerAlert": "Sale this week",
       "urgent": true,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-28T23:21:50.751688Z"
+      "lastBuilt": "2026-09-29T05:51:20.963945Z"
     },
     {
       "id": "c0072fd616b5",
@@ -47,10 +47,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-28T23:21:50.751688Z"
+      "lastBuilt": "2026-09-29T05:51:20.963945Z"
     },
     {
       "id": "b254f8efdb3d",
@@ -67,10 +67,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-28T23:21:50.751688Z"
+      "lastBuilt": "2026-09-29T05:51:20.963945Z"
     },
     {
       "id": "49959d6588b0",
@@ -87,7 +87,7 @@
       "buyerAlert": "Uses remittance allowance",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [
         {
           "artist": "Maqbool Fida Husain",
@@ -107,7 +107,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-28T23:21:50.751688Z"
+      "lastBuilt": "2026-09-29T05:51:20.963945Z"
     },
     {
       "id": "2ea38b0e6fb3",
@@ -124,10 +124,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 2,
+      "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-28T23:21:50.751688Z"
+      "lastBuilt": "2026-09-29T05:51:20.963945Z"
     },
     {
       "id": "f621fc008eab",
@@ -144,10 +144,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 2,
+      "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-28T23:21:50.751688Z"
+      "lastBuilt": "2026-09-29T05:51:20.963945Z"
     },
     {
       "id": "681ceaa259da",
@@ -164,10 +164,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 2,
+      "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-28T23:21:50.751688Z"
+      "lastBuilt": "2026-09-29T05:51:20.963945Z"
     },
     {
       "id": "8936d70deb5c",
@@ -184,10 +184,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 2,
+      "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-28T23:21:50.751688Z"
+      "lastBuilt": "2026-09-29T05:51:20.963945Z"
     },
     {
       "id": "2f7b33c20375",
@@ -204,10 +204,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 2,
+      "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-28T23:21:50.751688Z"
+      "lastBuilt": "2026-09-29T05:51:20.963945Z"
     },
     {
       "id": "5e04b79c6aba",
@@ -224,10 +224,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 2,
+      "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-28T23:21:50.751688Z"
+      "lastBuilt": "2026-09-29T05:51:20.963945Z"
     },
     {
       "id": "adddacada894",
@@ -244,10 +244,30 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 2,
+      "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-28T23:21:50.751688Z"
+      "lastBuilt": "2026-09-29T05:51:20.963945Z"
+    },
+    {
+      "id": "9aea0f9c94be",
+      "house": "Phillips",
+      "houseCode": "PHI",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Modern & Contemporary Art",
+      "city": "Hong Kong",
+      "saleDate": "2026-09-30",
+      "dateLabel": "Hong Kong Auction 30 September 2026",
+      "url": "https://www.phillips.com/",
+      "note": "Imported from Phillips’ official public auction page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "critical",
+      "daysToSale": 1,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-29T05:51:20.963945Z"
     },
     {
       "id": "31a1026d1a49",
@@ -264,10 +284,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 2,
+      "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-28T23:21:50.751688Z"
+      "lastBuilt": "2026-09-29T05:51:20.963945Z"
     },
     {
       "id": "73fc3a18e8c0",
@@ -284,10 +304,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 4,
+      "daysToSale": 3,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-28T23:21:50.751688Z"
+      "lastBuilt": "2026-09-29T05:51:20.963945Z"
     },
     {
       "id": "c9fa68bf0ed7",
@@ -304,10 +324,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 10,
+      "daysToSale": 9,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-28T23:21:50.751688Z"
+      "lastBuilt": "2026-09-29T05:51:20.963945Z"
     },
     {
       "id": "02cec4bad9db",
@@ -324,10 +344,10 @@
       "buyerAlert": "Cross-border movement check",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 16,
+      "daysToSale": 15,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-28T23:21:50.751688Z"
+      "lastBuilt": "2026-09-29T05:51:20.963945Z"
     },
     {
       "id": "e26dc2846154",
@@ -344,10 +364,10 @@
       "buyerAlert": "Priority bidding: 13 Oct, 5pm BST",
       "urgent": true,
       "urgency": "upcoming",
-      "daysToSale": 17,
+      "daysToSale": 16,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-28T23:21:50.751688Z"
+      "lastBuilt": "2026-09-29T05:51:20.963945Z"
     },
     {
       "id": "369dedf97574",
@@ -364,10 +384,10 @@
       "buyerAlert": "Priority bidding: 19 Oct, 4pm CEST",
       "urgent": true,
       "urgency": "upcoming",
-      "daysToSale": 23,
+      "daysToSale": 22,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-28T23:21:50.751688Z"
+      "lastBuilt": "2026-09-29T05:51:20.963945Z"
     },
     {
       "id": "d471ebde683b",
@@ -384,10 +404,10 @@
       "buyerAlert": "French export check",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 24,
+      "daysToSale": 23,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-28T23:21:50.751688Z"
+      "lastBuilt": "2026-09-29T05:51:20.963945Z"
     },
     {
       "id": "569945a3c4e3",
@@ -404,10 +424,10 @@
       "buyerAlert": "Provenance / movement review",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 32,
+      "daysToSale": 31,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-28T23:21:50.751688Z"
+      "lastBuilt": "2026-09-29T05:51:20.963945Z"
     },
     {
       "id": "6422fe40394c",
@@ -424,10 +444,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 40,
+      "daysToSale": 39,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-28T23:21:50.751688Z"
+      "lastBuilt": "2026-09-29T05:51:20.963945Z"
     }
   ]
 }
