@@ -1,15 +1,15 @@
 {
   "_readme": "Generated every 6 hours. Public dataset contains upcoming sales only, from the editorial calendar plus explicitly permitted official feeds.",
-  "updated": "2026-09-29T05:51:20.963945Z",
-  "count": 21,
+  "updated": "2026-09-29T13:03:23.177369Z",
+  "count": 20,
   "sourceCounts": {
     "editorial": 7,
-    "feed": 14
+    "feed": 13
   },
   "windows": {
-    "7": 14,
-    "30": 19,
-    "90": 21
+    "7": 13,
+    "30": 18,
+    "90": 20
   },
   "alerts": [
     {
@@ -30,7 +30,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-29T05:51:20.963945Z"
+      "lastBuilt": "2026-09-29T13:03:23.177369Z"
     },
     {
       "id": "c0072fd616b5",
@@ -50,27 +50,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T05:51:20.963945Z"
-    },
-    {
-      "id": "b254f8efdb3d",
-      "house": "Phillips",
-      "houseCode": "PHI",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "The Hong Kong Jewels Auction",
-      "city": "Hong Kong",
-      "saleDate": "2026-09-29",
-      "dateLabel": "Hong Kong Auction 29 September 2026",
-      "url": "https://www.phillips.com/",
-      "note": "Imported from Phillips’ official public auction page.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T05:51:20.963945Z"
+      "lastBuilt": "2026-09-29T13:03:23.177369Z"
     },
     {
       "id": "49959d6588b0",
@@ -107,7 +87,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-29T05:51:20.963945Z"
+      "lastBuilt": "2026-09-29T13:03:23.177369Z"
     },
     {
       "id": "2ea38b0e6fb3",
@@ -127,7 +107,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T05:51:20.963945Z"
+      "lastBuilt": "2026-09-29T13:03:23.177369Z"
     },
     {
       "id": "f621fc008eab",
@@ -147,7 +127,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T05:51:20.963945Z"
+      "lastBuilt": "2026-09-29T13:03:23.177369Z"
     },
     {
       "id": "681ceaa259da",
@@ -167,7 +147,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T05:51:20.963945Z"
+      "lastBuilt": "2026-09-29T13:03:23.177369Z"
     },
     {
       "id": "8936d70deb5c",
@@ -187,7 +167,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T05:51:20.963945Z"
+      "lastBuilt": "2026-09-29T13:03:23.177369Z"
     },
     {
       "id": "2f7b33c20375",
@@ -207,7 +187,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T05:51:20.963945Z"
+      "lastBuilt": "2026-09-29T13:03:23.177369Z"
     },
     {
       "id": "5e04b79c6aba",
@@ -227,7 +207,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T05:51:20.963945Z"
+      "lastBuilt": "2026-09-29T13:03:23.177369Z"
     },
     {
       "id": "adddacada894",
@@ -247,7 +227,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T05:51:20.963945Z"
+      "lastBuilt": "2026-09-29T13:03:23.177369Z"
     },
     {
       "id": "9aea0f9c94be",
@@ -267,7 +247,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T05:51:20.963945Z"
+      "lastBuilt": "2026-09-29T13:03:23.177369Z"
     },
     {
       "id": "31a1026d1a49",
@@ -287,7 +267,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T05:51:20.963945Z"
+      "lastBuilt": "2026-09-29T13:03:23.177369Z"
     },
     {
       "id": "73fc3a18e8c0",
@@ -307,7 +287,7 @@
       "daysToSale": 3,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T05:51:20.963945Z"
+      "lastBuilt": "2026-09-29T13:03:23.177369Z"
     },
     {
       "id": "c9fa68bf0ed7",
@@ -327,7 +307,7 @@
       "daysToSale": 9,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T05:51:20.963945Z"
+      "lastBuilt": "2026-09-29T13:03:23.177369Z"
     },
     {
       "id": "02cec4bad9db",
@@ -347,7 +327,7 @@
       "daysToSale": 15,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-29T05:51:20.963945Z"
+      "lastBuilt": "2026-09-29T13:03:23.177369Z"
     },
     {
       "id": "e26dc2846154",
@@ -367,7 +347,7 @@
       "daysToSale": 16,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-29T05:51:20.963945Z"
+      "lastBuilt": "2026-09-29T13:03:23.177369Z"
     },
     {
       "id": "369dedf97574",
@@ -387,7 +367,7 @@
       "daysToSale": 22,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-29T05:51:20.963945Z"
+      "lastBuilt": "2026-09-29T13:03:23.177369Z"
     },
     {
       "id": "d471ebde683b",
@@ -407,7 +387,7 @@
       "daysToSale": 23,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-29T05:51:20.963945Z"
+      "lastBuilt": "2026-09-29T13:03:23.177369Z"
     },
     {
       "id": "569945a3c4e3",
@@ -427,7 +407,7 @@
       "daysToSale": 31,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-29T05:51:20.963945Z"
+      "lastBuilt": "2026-09-29T13:03:23.177369Z"
     },
     {
       "id": "6422fe40394c",
@@ -447,7 +427,7 @@
       "daysToSale": 39,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T05:51:20.963945Z"
+      "lastBuilt": "2026-09-29T13:03:23.177369Z"
     }
   ]
 }
