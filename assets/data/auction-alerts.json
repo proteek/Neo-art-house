@@ -1,37 +1,17 @@
 {
   "_readme": "Generated every 6 hours. Public dataset contains upcoming sales only, from the editorial calendar plus explicitly permitted official feeds.",
-  "updated": "2026-09-30T12:45:15.707570Z",
-  "count": 15,
+  "updated": "2026-09-30T22:22:32.602734Z",
+  "count": 14,
   "sourceCounts": {
-    "feed": 10,
+    "feed": 9,
     "editorial": 5
   },
   "windows": {
-    "7": 8,
-    "30": 14,
-    "90": 15
+    "7": 5,
+    "30": 13,
+    "90": 14
   },
   "alerts": [
-    {
-      "id": "2ea38b0e6fb3",
-      "house": "AstaGuru",
-      "houseCode": "AST",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "ManiFest",
-      "city": "",
-      "saleDate": "2026-09-30",
-      "dateLabel": "28 Sep - 30 Sep, 2026",
-      "url": "https://www.astaguru.com/auctions/upcoming",
-      "note": "Imported from AstaGuru’s official upcoming-auctions page.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-09-30T12:45:15.707570Z"
-    },
     {
       "id": "f621fc008eab",
       "house": "Christie's",
@@ -50,7 +30,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-30T12:45:15.707570Z"
+      "lastBuilt": "2026-09-30T22:22:32.602734Z"
     },
     {
       "id": "681ceaa259da",
@@ -70,7 +50,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-30T12:45:15.707570Z"
+      "lastBuilt": "2026-09-30T22:22:32.602734Z"
     },
     {
       "id": "8936d70deb5c",
@@ -90,7 +70,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-30T12:45:15.707570Z"
+      "lastBuilt": "2026-09-30T22:22:32.602734Z"
     },
     {
       "id": "2f7b33c20375",
@@ -110,47 +90,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-30T12:45:15.707570Z"
-    },
-    {
-      "id": "9aea0f9c94be",
-      "house": "Phillips",
-      "houseCode": "PHI",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Modern & Contemporary Art",
-      "city": "Hong Kong",
-      "saleDate": "2026-09-30",
-      "dateLabel": "Hong Kong Auction 30 September 2026",
-      "url": "https://www.phillips.com/",
-      "note": "Imported from Phillips’ official public auction page.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-09-30T12:45:15.707570Z"
-    },
-    {
-      "id": "31a1026d1a49",
-      "house": "Phillips",
-      "houseCode": "PHI",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Modern & Contemporary Art: Online Auction, New York",
-      "city": "",
-      "saleDate": "2026-09-30",
-      "dateLabel": "21 – 30 September 2026",
-      "url": "https://www.phillips.com/",
-      "note": "Imported from Phillips’ official public auction page.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-09-30T12:45:15.707570Z"
+      "lastBuilt": "2026-09-30T22:22:32.602734Z"
     },
     {
       "id": "73fc3a18e8c0",
@@ -170,7 +110,7 @@
       "daysToSale": 2,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-30T12:45:15.707570Z"
+      "lastBuilt": "2026-09-30T22:22:32.602734Z"
     },
     {
       "id": "c9fa68bf0ed7",
@@ -190,7 +130,47 @@
       "daysToSale": 8,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-30T12:45:15.707570Z"
+      "lastBuilt": "2026-09-30T22:22:32.602734Z"
+    },
+    {
+      "id": "7a0528f81f77",
+      "house": "Phillips",
+      "houseCode": "PHI",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Phillips Watches Online: The New York Sessions Fall 2026",
+      "city": "",
+      "saleDate": "2026-10-09",
+      "dateLabel": "1 – 9 October 2026",
+      "url": "https://www.phillips.com/",
+      "note": "Imported from Phillips’ official public auction page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "upcoming",
+      "daysToSale": 9,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-30T22:22:32.602734Z"
+    },
+    {
+      "id": "bc64732df862",
+      "house": "Phillips",
+      "houseCode": "PHI",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Exposure: Photographs Online Auction",
+      "city": "",
+      "saleDate": "2026-10-13",
+      "dateLabel": "2 – 13 October 2026",
+      "url": "https://www.phillips.com/",
+      "note": "Imported from Phillips’ official public auction page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "upcoming",
+      "daysToSale": 13,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-09-30T22:22:32.602734Z"
     },
     {
       "id": "02cec4bad9db",
@@ -210,7 +190,7 @@
       "daysToSale": 14,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-30T12:45:15.707570Z"
+      "lastBuilt": "2026-09-30T22:22:32.602734Z"
     },
     {
       "id": "e26dc2846154",
@@ -230,7 +210,7 @@
       "daysToSale": 15,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-30T12:45:15.707570Z"
+      "lastBuilt": "2026-09-30T22:22:32.602734Z"
     },
     {
       "id": "369dedf97574",
@@ -250,7 +230,7 @@
       "daysToSale": 21,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-30T12:45:15.707570Z"
+      "lastBuilt": "2026-09-30T22:22:32.602734Z"
     },
     {
       "id": "d471ebde683b",
@@ -270,7 +250,7 @@
       "daysToSale": 22,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-30T12:45:15.707570Z"
+      "lastBuilt": "2026-09-30T22:22:32.602734Z"
     },
     {
       "id": "569945a3c4e3",
@@ -290,7 +270,7 @@
       "daysToSale": 30,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-30T12:45:15.707570Z"
+      "lastBuilt": "2026-09-30T22:22:32.602734Z"
     },
     {
       "id": "6422fe40394c",
@@ -310,7 +290,7 @@
       "daysToSale": 38,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-30T12:45:15.707570Z"
+      "lastBuilt": "2026-09-30T22:22:32.602734Z"
     }
   ]
 }

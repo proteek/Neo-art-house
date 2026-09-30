@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30T12:45:06.176228Z",
+  "updated": "2026-09-30T22:22:15.458867Z",
   "sources": [
     {
       "house": "Christie's",
@@ -35,7 +35,7 @@
       "calendarUrl": "https://www.phillips.com/",
       "status": "Official homepage auction adapter enabled",
       "reachable": true,
-      "recordsFound": 4
+      "recordsFound": 5
     },
     {
       "house": "Artcurial",
@@ -80,7 +80,7 @@
       "calendarUrl": "https://www.astaguru.com/auctions/upcoming",
       "status": "Official upcoming-auctions adapter enabled",
       "reachable": true,
-      "recordsFound": 1
+      "recordsFound": 0
     },
     {
       "house": "Pundole's",
