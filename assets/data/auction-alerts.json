@@ -1,94 +1,17 @@
 {
   "_readme": "Generated every 6 hours. Public dataset contains upcoming sales only, from the editorial calendar plus explicitly permitted official feeds.",
-  "updated": "2026-09-29T22:22:57.287064Z",
-  "count": 20,
+  "updated": "2026-09-30T05:41:24.165671Z",
+  "count": 17,
   "sourceCounts": {
-    "editorial": 7,
-    "feed": 13
+    "feed": 12,
+    "editorial": 5
   },
   "windows": {
-    "7": 13,
-    "30": 18,
-    "90": 20
+    "7": 10,
+    "30": 16,
+    "90": 17
   },
   "alerts": [
-    {
-      "id": "b55b93af4a96",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "20th/21st Century Evening Sale",
-      "city": "Hong Kong",
-      "saleDate": "2026-09-29",
-      "dateLabel": "29 September",
-      "url": "https://www.christies.com/en/calendar/2026/10",
-      "note": "Major Hong Kong evening sale. Cross-border buyers should confirm premium, settlement currency, shipping route and destination tax before bidding.",
-      "buyerAlert": "Sale this week",
-      "urgent": true,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "editorial",
-      "lastBuilt": "2026-09-29T22:22:57.287064Z"
-    },
-    {
-      "id": "c0072fd616b5",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Spellbound: The Hegewisch Collection Part III",
-      "city": "London",
-      "saleDate": "2026-09-29",
-      "dateLabel": "15–29 SEP 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T22:22:57.287064Z"
-    },
-    {
-      "id": "49959d6588b0",
-      "house": "Sotheby's",
-      "houseCode": "SOT",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Modern and Contemporary South Asian Art",
-      "city": "London",
-      "saleDate": "2026-09-29",
-      "dateLabel": "29 September",
-      "url": "",
-      "note": "Sale L26500. Includes works by Rabindranath Tagore, one of the nine, but held outside India and therefore not caught by the 1972 Act. This is the distinction most buyers get wrong.",
-      "buyerAlert": "Uses remittance allowance",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [
-        {
-          "artist": "Maqbool Fida Husain",
-          "title": "Mithuna Crimson",
-          "year": "Star lot",
-          "estimate": "On request",
-          "url": "",
-          "note": "Previously in the Chester and Davida Herwitz collection and shown at the Worcester Art Museum in 1974. Exhibited provenance of that quality is rare and worth paying for."
-        },
-        {
-          "artist": "Rabindranath Tagore",
-          "title": "Works on paper",
-          "year": "Various lots",
-          "estimate": "On request",
-          "url": "",
-          "note": "A Tagore in London is exportable; the same artist in a Mumbai saleroom is not. The 1972 Act does not reach works already abroad before the notification."
-        }
-      ],
-      "sourceMode": "editorial",
-      "lastBuilt": "2026-09-29T22:22:57.287064Z"
-    },
     {
       "id": "2ea38b0e6fb3",
       "house": "AstaGuru",
@@ -104,10 +27,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T22:22:57.287064Z"
+      "lastBuilt": "2026-09-30T05:41:24.165671Z"
     },
     {
       "id": "f621fc008eab",
@@ -124,10 +47,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T22:22:57.287064Z"
+      "lastBuilt": "2026-09-30T05:41:24.165671Z"
     },
     {
       "id": "681ceaa259da",
@@ -144,10 +67,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T22:22:57.287064Z"
+      "lastBuilt": "2026-09-30T05:41:24.165671Z"
     },
     {
       "id": "8936d70deb5c",
@@ -164,10 +87,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T22:22:57.287064Z"
+      "lastBuilt": "2026-09-30T05:41:24.165671Z"
     },
     {
       "id": "2f7b33c20375",
@@ -184,10 +107,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T22:22:57.287064Z"
+      "lastBuilt": "2026-09-30T05:41:24.165671Z"
     },
     {
       "id": "5e04b79c6aba",
@@ -204,10 +127,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T22:22:57.287064Z"
+      "lastBuilt": "2026-09-30T05:41:24.165671Z"
     },
     {
       "id": "adddacada894",
@@ -224,10 +147,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T22:22:57.287064Z"
+      "lastBuilt": "2026-09-30T05:41:24.165671Z"
     },
     {
       "id": "9aea0f9c94be",
@@ -244,10 +167,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T22:22:57.287064Z"
+      "lastBuilt": "2026-09-30T05:41:24.165671Z"
     },
     {
       "id": "31a1026d1a49",
@@ -264,10 +187,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T22:22:57.287064Z"
+      "lastBuilt": "2026-09-30T05:41:24.165671Z"
     },
     {
       "id": "73fc3a18e8c0",
@@ -283,11 +206,11 @@
       "note": "Imported from Phillips’ official public auction page.",
       "buyerAlert": "",
       "urgent": false,
-      "urgency": "soon",
-      "daysToSale": 3,
+      "urgency": "critical",
+      "daysToSale": 2,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T22:22:57.287064Z"
+      "lastBuilt": "2026-09-30T05:41:24.165671Z"
     },
     {
       "id": "c9fa68bf0ed7",
@@ -304,10 +227,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 9,
+      "daysToSale": 8,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T22:22:57.287064Z"
+      "lastBuilt": "2026-09-30T05:41:24.165671Z"
     },
     {
       "id": "02cec4bad9db",
@@ -324,10 +247,10 @@
       "buyerAlert": "Cross-border movement check",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 15,
+      "daysToSale": 14,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-29T22:22:57.287064Z"
+      "lastBuilt": "2026-09-30T05:41:24.165671Z"
     },
     {
       "id": "e26dc2846154",
@@ -344,10 +267,10 @@
       "buyerAlert": "Priority bidding: 13 Oct, 5pm BST",
       "urgent": true,
       "urgency": "upcoming",
-      "daysToSale": 16,
+      "daysToSale": 15,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-29T22:22:57.287064Z"
+      "lastBuilt": "2026-09-30T05:41:24.165671Z"
     },
     {
       "id": "369dedf97574",
@@ -364,10 +287,10 @@
       "buyerAlert": "Priority bidding: 19 Oct, 4pm CEST",
       "urgent": true,
       "urgency": "upcoming",
-      "daysToSale": 22,
+      "daysToSale": 21,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-29T22:22:57.287064Z"
+      "lastBuilt": "2026-09-30T05:41:24.165671Z"
     },
     {
       "id": "d471ebde683b",
@@ -384,10 +307,10 @@
       "buyerAlert": "French export check",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 23,
+      "daysToSale": 22,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-29T22:22:57.287064Z"
+      "lastBuilt": "2026-09-30T05:41:24.165671Z"
     },
     {
       "id": "569945a3c4e3",
@@ -404,10 +327,10 @@
       "buyerAlert": "Provenance / movement review",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 31,
+      "daysToSale": 30,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-09-29T22:22:57.287064Z"
+      "lastBuilt": "2026-09-30T05:41:24.165671Z"
     },
     {
       "id": "6422fe40394c",
@@ -424,10 +347,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 39,
+      "daysToSale": 38,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-09-29T22:22:57.287064Z"
+      "lastBuilt": "2026-09-30T05:41:24.165671Z"
     }
   ]
 }
