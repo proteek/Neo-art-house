@@ -1,6 +1,6 @@
 {
   "_readme": "Generated every 6 hours. Public dataset contains upcoming sales only, from the editorial calendar plus explicitly permitted official feeds.",
-  "updated": "2026-10-01T13:29:36.412012Z",
+  "updated": "2026-10-01T22:46:14.938500Z",
   "count": 48,
   "sourceCounts": {
     "feed": 43,
@@ -30,7 +30,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "1ac29e97765f",
@@ -50,7 +50,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "50976d649758",
@@ -70,7 +70,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "4426ac95ec24",
@@ -90,7 +90,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "73fc3a18e8c0",
@@ -110,7 +110,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "1c229f3fb621",
@@ -130,7 +130,7 @@
       "daysToSale": 5,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "0cd226ef1cb9",
@@ -150,7 +150,7 @@
       "daysToSale": 6,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "c9fa68bf0ed7",
@@ -170,7 +170,7 @@
       "daysToSale": 7,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "c66aea54b638",
@@ -190,7 +190,7 @@
       "daysToSale": 8,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "7a0528f81f77",
@@ -210,7 +210,7 @@
       "daysToSale": 8,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "9620d7527a0d",
@@ -230,7 +230,7 @@
       "daysToSale": 9,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "8a32ad231e90",
@@ -250,7 +250,7 @@
       "daysToSale": 12,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "0fffb1e49798",
@@ -270,7 +270,7 @@
       "daysToSale": 12,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "bc64732df862",
@@ -290,7 +290,7 @@
       "daysToSale": 12,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "02cec4bad9db",
@@ -310,7 +310,7 @@
       "daysToSale": 13,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "a04d99d0f441",
@@ -330,7 +330,7 @@
       "daysToSale": 13,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "07efc5fe25c2",
@@ -350,7 +350,7 @@
       "daysToSale": 14,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "ffa77a699a3b",
@@ -370,7 +370,7 @@
       "daysToSale": 14,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "22fecc922ca0",
@@ -390,7 +390,7 @@
       "daysToSale": 14,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "e26dc2846154",
@@ -410,7 +410,7 @@
       "daysToSale": 14,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "9838377430f0",
@@ -430,7 +430,7 @@
       "daysToSale": 15,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "3cbc9185db00",
@@ -450,7 +450,7 @@
       "daysToSale": 19,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "e02a7d46d0a0",
@@ -470,7 +470,7 @@
       "daysToSale": 19,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "5c23a2498001",
@@ -490,7 +490,7 @@
       "daysToSale": 20,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "1e8e70d3ba86",
@@ -510,7 +510,7 @@
       "daysToSale": 20,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "ae104630d766",
@@ -530,7 +530,7 @@
       "daysToSale": 20,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "369dedf97574",
@@ -550,7 +550,7 @@
       "daysToSale": 20,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "d471ebde683b",
@@ -570,7 +570,7 @@
       "daysToSale": 21,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "75bec281bd54",
@@ -590,7 +590,7 @@
       "daysToSale": 21,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "1948fcd8e53b",
@@ -610,7 +610,7 @@
       "daysToSale": 21,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "b0844bffdd0f",
@@ -630,7 +630,7 @@
       "daysToSale": 21,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "bfa0f1349d3d",
@@ -650,7 +650,7 @@
       "daysToSale": 21,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "122c6d05a2b7",
@@ -670,7 +670,7 @@
       "daysToSale": 21,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "d0cc5089d4e3",
@@ -690,7 +690,7 @@
       "daysToSale": 21,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "cd314f029754",
@@ -710,7 +710,7 @@
       "daysToSale": 21,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "216803df9e68",
@@ -730,7 +730,7 @@
       "daysToSale": 22,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "f74cc40924af",
@@ -750,7 +750,7 @@
       "daysToSale": 22,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "ee3213a599e5",
@@ -770,7 +770,7 @@
       "daysToSale": 22,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "93a550eedb86",
@@ -790,7 +790,7 @@
       "daysToSale": 26,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "2473838c4b5a",
@@ -810,7 +810,7 @@
       "daysToSale": 27,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "93690c8da126",
@@ -830,7 +830,7 @@
       "daysToSale": 27,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "a6430df1952c",
@@ -850,7 +850,7 @@
       "daysToSale": 28,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "e1b63af43050",
@@ -870,7 +870,7 @@
       "daysToSale": 28,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "8b57be0c8860",
@@ -890,7 +890,7 @@
       "daysToSale": 28,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "16efc5dadc25",
@@ -910,7 +910,7 @@
       "daysToSale": 28,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "569945a3c4e3",
@@ -930,7 +930,7 @@
       "daysToSale": 29,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "6c87cde82993",
@@ -950,7 +950,7 @@
       "daysToSale": 29,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     },
     {
       "id": "6422fe40394c",
@@ -970,7 +970,7 @@
       "daysToSale": 37,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-01T13:29:36.412012Z"
+      "lastBuilt": "2026-10-01T22:46:14.938500Z"
     }
   ]
 }
