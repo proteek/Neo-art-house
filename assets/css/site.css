@@ -704,3 +704,76 @@ figure.image-missing img{display:none!important}
   .auction-alert-visual figcaption small{grid-column:auto}
   .auction-alert-body{padding:20px}
 }
+
+/* Know Your Art Price */
+.artist-price-hero{padding:clamp(70px,7vw,110px) 0;background:linear-gradient(118deg,#f5f0e6 0%,#f5f0e6 63%,#e8dfcf 63%,#eee7dc 100%);border-bottom:1px solid var(--line)}
+.artist-price-hero__grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(340px,.7fr);gap:70px;align-items:center}
+.artist-price-sub{font-family:var(--serif);font-size:21px;color:#504a42}
+.artist-price-example{background:#173f35;color:#f7f1e8;padding:30px;border-radius:2px}
+.artist-price-example .eyebrow{color:#d5b273}
+.artist-price-range{padding:18px 0;border-top:1px solid rgba(255,255,255,.18);border-bottom:1px solid rgba(255,255,255,.18)}
+.artist-price-range span,.artist-price-recommend span{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;opacity:.7}
+.artist-price-range strong{display:block;font-family:var(--serif);font-size:44px;font-weight:500;color:#e2bc78;margin-top:4px}
+.artist-price-recommend{padding:18px 0}
+.artist-price-recommend strong{font-family:var(--serif);font-size:27px;font-weight:500}
+.artist-price-mini{display:flex;justify-content:space-between;gap:20px;padding:10px 0;border-top:1px solid rgba(255,255,255,.12);font-size:12px}
+.artist-price-example .disclaimer{color:rgba(255,255,255,.6);margin-top:18px}
+.artist-price-intro{max-width:540px}
+.artist-price-pillars{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line)}
+.artist-price-pillars article{padding:24px;border-right:1px solid var(--line)}
+.artist-price-pillars article:last-child{border-right:0}
+.artist-price-pillars article>span{font-family:var(--serif);font-size:26px;color:var(--gold)}
+.artist-price-pillars h3{font-family:var(--serif);font-size:25px;font-weight:500;margin:18px 0 8px}
+.artist-price-pillars p{color:var(--ink-soft)}
+.artist-price-factor-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line)}
+.artist-price-factor-grid>div{padding:22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.artist-price-factor-grid>div:nth-child(3n){border-right:0}
+.artist-price-factor-grid>div:nth-last-child(-n+3){border-bottom:0}
+.artist-price-factor-grid strong{font-family:var(--serif);font-size:21px;font-weight:500}
+.artist-price-factor-grid p{color:var(--ink-soft);font-size:12px}
+.artist-price-boundary{margin-top:18px;padding:16px 18px;background:#f1ebe0;border-left:3px solid var(--gold);font-size:12px;color:var(--ink-soft)}
+.artist-price-matrix{border:1px solid var(--line);background:var(--panel)}
+.artist-price-matrix>div{display:grid;grid-template-columns:1.4fr repeat(3,.7fr);gap:10px;padding:14px 16px;border-bottom:1px solid var(--line)}
+.artist-price-matrix>div:last-child{border-bottom:0}
+.artist-price-matrix__head{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+.artist-price-matrix strong{font-family:var(--serif);font-weight:500}
+.artist-price-architecture-list{display:grid;grid-template-columns:repeat(3,1fr);margin-top:28px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.artist-price-architecture-list>div{padding:18px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.artist-price-architecture-list strong{display:block;font-family:var(--serif);font-size:20px;font-weight:500}
+.artist-price-architecture-list span{display:block;margin-top:6px;color:var(--ink-soft);font-size:12px}
+.artist-price-products{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.artist-price-products article{border:1px solid var(--line);background:var(--panel);padding:24px;display:flex;flex-direction:column}
+.artist-price-products__featured{background:#173f35!important;color:#f7f1e8}
+.artist-price-products__featured p,.artist-price-products__featured li{color:rgba(255,255,255,.72)}
+.artist-price-products article h3{font-family:var(--serif);font-size:29px;font-weight:500;margin:14px 0 10px}
+.artist-price-products article p{color:var(--ink-soft)}
+.artist-price-products ul{padding-left:18px;color:var(--ink-soft);font-size:12px;min-height:150px}
+.artist-price-products li{margin:7px 0}
+.artist-price-products .btn{margin-top:auto;align-self:flex-start}
+.artist-price-cta{display:grid;grid-template-columns:1.4fr .6fr;gap:50px;align-items:end;border-top:1px solid var(--line);padding-top:28px}
+.artist-price-home{padding:clamp(56px,5.8vw,82px) 0;background:#173f35;color:#f7f1e8}
+.artist-price-home__grid{display:grid;grid-template-columns:1.15fr .65fr;gap:70px;align-items:center}
+.artist-price-home .eyebrow{color:#d5b273}
+.artist-price-home p{color:rgba(255,255,255,.72)}
+.artist-price-home .text-link{color:#f7f1e8}
+.artist-price-home__promise{margin-top:20px;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:#d5b273}
+.artist-price-home__card{background:#f6f1e8;color:#1d1a16;padding:25px}
+.artist-price-home__card>span{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+.artist-price-home__card>strong{display:block;font-family:var(--serif);font-size:42px;font-weight:500;margin:9px 0 18px}
+.artist-price-home__card>div{display:flex;justify-content:space-between;gap:20px;padding:9px 0;border-top:1px solid var(--line);font-size:11px}
+.artist-price-home__card small{display:block;margin-top:12px;color:var(--ink-soft)}
+@media(max-width:900px){
+ .artist-price-hero__grid,.artist-price-home__grid,.artist-price-cta{grid-template-columns:1fr;gap:28px}
+ .artist-price-pillars,.artist-price-products{grid-template-columns:1fr 1fr}
+ .artist-price-factor-grid,.artist-price-architecture-list{grid-template-columns:1fr 1fr}
+ .artist-price-factor-grid>div,.artist-price-factor-grid>div:nth-child(3n),.artist-price-factor-grid>div:nth-last-child(-n+3){border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+}
+@media(max-width:600px){
+ .artist-price-hero{padding:48px 0}
+ .artist-price-pillars,.artist-price-products,.artist-price-factor-grid,.artist-price-architecture-list{grid-template-columns:1fr}
+ .artist-price-pillars article{border-right:0;border-bottom:1px solid var(--line)}
+ .artist-price-products ul{min-height:0}
+ .artist-price-range strong{font-size:36px}
+ .artist-price-matrix{overflow-x:auto}
+ .artist-price-matrix>div{min-width:560px}
+}
