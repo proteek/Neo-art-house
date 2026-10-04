@@ -47,3 +47,7 @@ function initAdminLogin(){
   if(p.get("error")==="not-admin")setNote("That account is not authorised for the Review Desk.",true);
 }
 document.addEventListener("DOMContentLoaded",initAdminLogin);
+document.addEventListener("click",async e=>{
+  const b=e.target.closest("[data-admin-signout]");if(!b)return;
+  try{await window.NAH_FIREBASE.auth.signOut();}finally{location.replace("admin-login.html");}
+});
