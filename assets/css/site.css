@@ -851,3 +851,10 @@ figure.image-missing img{display:none!important}
  .pricing-architecture-table{overflow-x:auto}
  .pricing-architecture-table>div{min-width:560px}
 }
+
+.pricing-model-status{margin-bottom:18px;padding:11px 13px;border:1px solid var(--line);font-size:10px;letter-spacing:.06em;text-transform:uppercase}
+.pricing-model-status--ok{background:#edf3ed;color:#2f6547;border-color:#b9cfbf}
+.pricing-model-status--wait{background:#f4efe6;color:#83651e}
+.pricing-model-status--error{background:#f8ece8;color:#9a3f30;border-color:#dfb9b1}
+.pricing-error-box{padding:20px;border:1px solid #dfb9b1;background:#f8ece8;color:#7d3025}
+.pricing-error-box p{margin:8px 0 0}
