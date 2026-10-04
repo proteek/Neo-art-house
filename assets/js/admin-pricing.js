@@ -28,6 +28,13 @@ document.addEventListener('DOMContentLoaded',()=>{
 
       const r=window.AESTUM_PRICING_MODEL.analyse(d);
       const a=window.AESTUM_PRICING_MODEL.architecture(d,r);
+      localStorage.setItem('aestum_pricing_report_payload',JSON.stringify({
+        data:d,
+        result:r,
+        architecture:a,
+        generatedAt:new Date().toISOString(),
+        modelVersion:window.AESTUM_PRICING_MODEL.version||'0.1.0'
+      }));
 
       out.innerHTML=
       '<article class="pricing-report-card">'+
@@ -57,7 +64,8 @@ document.addEventListener('DOMContentLoaded',()=>{
           '<div><span>Commission-work anchor</span><strong>'+money(a.commissionPremium)+'</strong></div>'+
         '</div>'+
         '<h3>Review policy</h3><p>'+safe(a.annualReviewTrigger)+'</p><p>'+safe(a.discountCeiling)+'</p>'+
-      '</article>';
+      '</article>'+
+      '<div class="hero__buttons" style="margin-top:20px"><a class="btn btn--dark" href="artist-pricing-report.html" target="_blank" rel="noopener">Open multi-page report →</a><a class="btn" href="artist-pricing-report.html" target="_blank" rel="noopener">Print / save PDF →</a></div>';
 
       setStatus('Model ready · both outputs generated','ok');
       out.scrollIntoView({behavior:'smooth',block:'start'});
