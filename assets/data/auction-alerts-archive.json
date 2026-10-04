@@ -1,6 +1,6 @@
 {
   "_readme": "Historical auction alerts archived automatically by the six-hour builder.",
-  "updated": "2026-10-03T21:25:30.048392Z",
+  "updated": "2026-10-04T06:01:36.394700Z",
   "count": 23,
   "alerts": [
     {
@@ -18,10 +18,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -245,
+      "daysToSale": -246,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "fcbbc97c44e6",
@@ -38,10 +38,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -161,
+      "daysToSale": -162,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "05b6b0491275",
@@ -58,10 +58,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -137,
+      "daysToSale": -138,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "8efd504a5557",
@@ -78,10 +78,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -136,
+      "daysToSale": -137,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "1f7d92472be4",
@@ -98,10 +98,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -135,
+      "daysToSale": -136,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "f5ea33d22849",
@@ -118,10 +118,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -120,
+      "daysToSale": -121,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "c56a2bcc9082",
@@ -138,10 +138,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -112,
+      "daysToSale": -113,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "5380e6549eb0",
@@ -158,10 +158,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -112,
+      "daysToSale": -113,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "204eb2cdb846",
@@ -178,10 +178,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -107,
+      "daysToSale": -108,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "baf4d2bdf0ea",
@@ -198,10 +198,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -94,
+      "daysToSale": -95,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "e4d977b908dd",
@@ -218,10 +218,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -27,
+      "daysToSale": -28,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "f5b78da02014",
@@ -238,7 +238,7 @@
       "buyerAlert": "Export limits likely",
       "urgent": true,
       "urgency": "past",
-      "daysToSale": -23,
+      "daysToSale": -24,
       "lots": [
         {
           "artist": "Nicholas Roerich",
@@ -258,7 +258,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "ed11f4f724ef",
@@ -275,10 +275,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -23,
+      "daysToSale": -24,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "447d9e0a028c",
@@ -295,10 +295,10 @@
       "buyerAlert": "Closing",
       "urgent": true,
       "urgency": "past",
-      "daysToSale": -18,
+      "daysToSale": -19,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "db993b81e1cf",
@@ -315,10 +315,10 @@
       "buyerAlert": "Registration closes early",
       "urgent": true,
       "urgency": "past",
-      "daysToSale": -18,
+      "daysToSale": -19,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "9c24cc58315b",
@@ -335,7 +335,7 @@
       "buyerAlert": "Registration closes early",
       "urgent": true,
       "urgency": "past",
-      "daysToSale": -17,
+      "daysToSale": -18,
       "lots": [
         {
           "artist": "Francis Newton Souza",
@@ -355,7 +355,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "d36a11be74fc",
@@ -372,10 +372,10 @@
       "buyerAlert": "Uses remittance allowance",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -17,
+      "daysToSale": -18,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "6b728507ced0",
@@ -392,10 +392,10 @@
       "buyerAlert": "Provenance checks needed",
       "urgent": true,
       "urgency": "past",
-      "daysToSale": -16,
+      "daysToSale": -17,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "13b9d9d02fc0",
@@ -412,7 +412,7 @@
       "buyerAlert": "No corridor cost if resident",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -14,
+      "daysToSale": -15,
       "lots": [
         {
           "artist": "Francis Newton Souza",
@@ -432,7 +432,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "8760b38d76d6",
@@ -449,7 +449,7 @@
       "buyerAlert": "Non-exportable lots flagged",
       "urgent": true,
       "urgency": "past",
-      "daysToSale": -12,
+      "daysToSale": -13,
       "lots": [
         {
           "artist": "Karkota Dynasty, Kashmir",
@@ -469,7 +469,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "82824435ff6b",
@@ -486,7 +486,7 @@
       "buyerAlert": "Two Navratna lots",
       "urgent": true,
       "urgency": "past",
-      "daysToSale": -9,
+      "daysToSale": -10,
       "lots": [
         {
           "artist": "Amrita Sher-Gil",
@@ -506,7 +506,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "b55b93af4a96",
@@ -523,10 +523,10 @@
       "buyerAlert": "Sale this week",
       "urgent": true,
       "urgency": "past",
-      "daysToSale": -4,
+      "daysToSale": -5,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     },
     {
       "id": "49959d6588b0",
@@ -543,7 +543,7 @@
       "buyerAlert": "Uses remittance allowance",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -4,
+      "daysToSale": -5,
       "lots": [
         {
           "artist": "Maqbool Fida Husain",
@@ -563,7 +563,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-03T21:25:30.048392Z"
+      "lastBuilt": "2026-10-04T06:01:36.394700Z"
     }
   ]
 }
