@@ -1,15 +1,15 @@
 {
   "_readme": "Generated every 6 hours. Public dataset contains upcoming sales only, from the editorial calendar plus explicitly permitted official feeds.",
-  "updated": "2026-10-06T06:30:33.917588Z",
-  "count": 45,
+  "updated": "2026-10-06T18:28:04.463153Z",
+  "count": 44,
   "sourceCounts": {
-    "feed": 40,
+    "feed": 39,
     "editorial": 5
   },
   "windows": {
-    "7": 9,
-    "30": 44,
-    "90": 45
+    "7": 10,
+    "30": 43,
+    "90": 44
   },
   "alerts": [
     {
@@ -30,7 +30,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "0cd226ef1cb9",
@@ -50,7 +50,27 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
+    },
+    {
+      "id": "9d501c795904",
+      "house": "Christie's",
+      "houseCode": "CHR",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Post-War and Contemporary Art Day Sale",
+      "city": "London",
+      "saleDate": "2026-10-08",
+      "dateLabel": "8 OCT 2026",
+      "url": "https://www.christies.com/en/calendar",
+      "note": "Imported from Christie’s official auction calendar.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "critical",
+      "daysToSale": 2,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "c9fa68bf0ed7",
@@ -70,7 +90,7 @@
       "daysToSale": 2,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "c66aea54b638",
@@ -90,7 +110,7 @@
       "daysToSale": 3,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "7a0528f81f77",
@@ -110,7 +130,7 @@
       "daysToSale": 3,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "9620d7527a0d",
@@ -130,7 +150,7 @@
       "daysToSale": 4,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "8a32ad231e90",
@@ -150,7 +170,7 @@
       "daysToSale": 7,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "0fffb1e49798",
@@ -170,7 +190,7 @@
       "daysToSale": 7,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "bc64732df862",
@@ -190,7 +210,7 @@
       "daysToSale": 7,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "02cec4bad9db",
@@ -210,7 +230,7 @@
       "daysToSale": 8,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "a04d99d0f441",
@@ -230,7 +250,7 @@
       "daysToSale": 8,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "07efc5fe25c2",
@@ -250,47 +270,7 @@
       "daysToSale": 9,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
-    },
-    {
-      "id": "ffa77a699a3b",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Post-War and Contemporary Art Day Sale",
-      "city": "London",
-      "saleDate": "2026-10-15",
-      "dateLabel": "15 OCT 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "upcoming",
-      "daysToSale": 9,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
-    },
-    {
-      "id": "22fecc922ca0",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Monsoon: The Peter Simon Collection Day Sale",
-      "city": "London",
-      "saleDate": "2026-10-15",
-      "dateLabel": "15 OCT 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "upcoming",
-      "daysToSale": 9,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "e26dc2846154",
@@ -310,7 +290,7 @@
       "daysToSale": 9,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "9838377430f0",
@@ -330,7 +310,7 @@
       "daysToSale": 10,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "bc03a7b25632",
@@ -350,7 +330,47 @@
       "daysToSale": 11,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
+    },
+    {
+      "id": "87c4dd4227fe",
+      "house": "Christie's",
+      "houseCode": "CHR",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Modern British and Irish Art Evening Sale",
+      "city": "London",
+      "saleDate": "2026-10-19",
+      "dateLabel": "19 OCT 2026",
+      "url": "https://www.christies.com/en/calendar",
+      "note": "Imported from Christie’s official auction calendar.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "upcoming",
+      "daysToSale": 13,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
+    },
+    {
+      "id": "ebd0803c6364",
+      "house": "Christie's",
+      "houseCode": "CHR",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Modern British and Irish Art Day Sale",
+      "city": "London",
+      "saleDate": "2026-10-19",
+      "dateLabel": "19 OCT 2026",
+      "url": "https://www.christies.com/en/calendar",
+      "note": "Imported from Christie’s official auction calendar.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "upcoming",
+      "daysToSale": 13,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "3cbc9185db00",
@@ -370,7 +390,7 @@
       "daysToSale": 14,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "e02a7d46d0a0",
@@ -390,7 +410,7 @@
       "daysToSale": 14,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "5c23a2498001",
@@ -410,7 +430,7 @@
       "daysToSale": 15,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "1e8e70d3ba86",
@@ -430,27 +450,7 @@
       "daysToSale": 15,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
-    },
-    {
-      "id": "ae104630d766",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Modern British and Irish Art Evening Sale",
-      "city": "London",
-      "saleDate": "2026-10-21",
-      "dateLabel": "21 OCT 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "upcoming",
-      "daysToSale": 15,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "369dedf97574",
@@ -470,7 +470,7 @@
       "daysToSale": 15,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "d471ebde683b",
@@ -490,67 +490,7 @@
       "daysToSale": 16,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
-    },
-    {
-      "id": "75bec281bd54",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Graphic Alchemist: Works from The Estate of Frank Stella",
-      "city": "New York",
-      "saleDate": "2026-10-22",
-      "dateLabel": "24 SEP – 22 OCT 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "upcoming",
-      "daysToSale": 16,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
-    },
-    {
-      "id": "1948fcd8e53b",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Anime Starts Here: Japanese Subculture Reimagines Tradition",
-      "city": "New York",
-      "saleDate": "2026-10-22",
-      "dateLabel": "8–22 OCT 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "upcoming",
-      "daysToSale": 16,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
-    },
-    {
-      "id": "b0844bffdd0f",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "The Vicente Wolf Photography Collection Online",
-      "city": "New York",
-      "saleDate": "2026-10-22",
-      "dateLabel": "8–22 OCT 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "upcoming",
-      "daysToSale": 16,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "bfa0f1349d3d",
@@ -570,27 +510,7 @@
       "daysToSale": 16,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
-    },
-    {
-      "id": "122c6d05a2b7",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Modern British and Irish Art Day Sale",
-      "city": "London",
-      "saleDate": "2026-10-22",
-      "dateLabel": "22 OCT 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "upcoming",
-      "daysToSale": 16,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "d0cc5089d4e3",
@@ -610,7 +530,47 @@
       "daysToSale": 16,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
+    },
+    {
+      "id": "75bec281bd54",
+      "house": "Christie's",
+      "houseCode": "CHR",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Graphic Alchemist: Works from The Estate of Frank Stella",
+      "city": "New York",
+      "saleDate": "2026-10-22",
+      "dateLabel": "24 SEP – 22 OCT 2026",
+      "url": "https://www.christies.com/en/calendar",
+      "note": "Imported from Christie’s official auction calendar.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "upcoming",
+      "daysToSale": 16,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
+    },
+    {
+      "id": "1948fcd8e53b",
+      "house": "Christie's",
+      "houseCode": "CHR",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Anime Starts Here: Japanese Subculture Reimagines Tradition",
+      "city": "New York",
+      "saleDate": "2026-10-22",
+      "dateLabel": "8–22 OCT 2026",
+      "url": "https://www.christies.com/en/calendar",
+      "note": "Imported from Christie’s official auction calendar.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "upcoming",
+      "daysToSale": 16,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "cd314f029754",
@@ -630,27 +590,27 @@
       "daysToSale": 16,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
-      "id": "216803df9e68",
+      "id": "b0844bffdd0f",
       "house": "Christie's",
       "houseCode": "CHR",
       "logo": null,
       "logoStatus": "permission_required",
-      "sale": "Photographs",
+      "sale": "The Vicente Wolf Photography Collection Online",
       "city": "New York",
-      "saleDate": "2026-10-23",
-      "dateLabel": "8–23 OCT 2026",
+      "saleDate": "2026-10-22",
+      "dateLabel": "8–22 OCT 2026",
       "url": "https://www.christies.com/en/calendar",
       "note": "Imported from Christie’s official auction calendar.",
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 17,
+      "daysToSale": 16,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "f8694b0752fd",
@@ -670,7 +630,7 @@
       "daysToSale": 17,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "5069f0389de9",
@@ -690,7 +650,27 @@
       "daysToSale": 17,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
+    },
+    {
+      "id": "216803df9e68",
+      "house": "Christie's",
+      "houseCode": "CHR",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Photographs",
+      "city": "New York",
+      "saleDate": "2026-10-23",
+      "dateLabel": "8–23 OCT 2026",
+      "url": "https://www.christies.com/en/calendar",
+      "note": "Imported from Christie’s official auction calendar.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "upcoming",
+      "daysToSale": 17,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "ee3213a599e5",
@@ -710,7 +690,7 @@
       "daysToSale": 17,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "93a550eedb86",
@@ -730,27 +710,7 @@
       "daysToSale": 21,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
-    },
-    {
-      "id": "2473838c4b5a",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Collections: Including Pietra Dura from the Baron Family",
-      "city": "London",
-      "saleDate": "2026-10-28",
-      "dateLabel": "14–28 OCT 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "upcoming",
-      "daysToSale": 22,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "93690c8da126",
@@ -770,47 +730,27 @@
       "daysToSale": 22,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
-      "id": "a6430df1952c",
+      "id": "2473838c4b5a",
       "house": "Christie's",
       "houseCode": "CHR",
       "logo": null,
       "logoStatus": "permission_required",
-      "sale": "Important Chinese Ceramics and Works of Art",
-      "city": "Hong Kong",
-      "saleDate": "2026-10-29",
-      "dateLabel": "29 OCT 2026",
+      "sale": "Collections: Including Pietra Dura from the Baron Family",
+      "city": "London",
+      "saleDate": "2026-10-28",
+      "dateLabel": "14–28 OCT 2026",
       "url": "https://www.christies.com/en/calendar",
       "note": "Imported from Christie’s official auction calendar.",
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 23,
+      "daysToSale": 22,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
-    },
-    {
-      "id": "e1b63af43050",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "The Ai Lian Tang Collection - Gems of the Imperial Capital",
-      "city": "Hong Kong",
-      "saleDate": "2026-10-29",
-      "dateLabel": "29 OCT 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "upcoming",
-      "daysToSale": 23,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "8b57be0c8860",
@@ -830,7 +770,27 @@
       "daysToSale": 23,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
+    },
+    {
+      "id": "e1b63af43050",
+      "house": "Christie's",
+      "houseCode": "CHR",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "The Ai Lian Tang Collection - Gems of the Imperial Capital",
+      "city": "Hong Kong",
+      "saleDate": "2026-10-29",
+      "dateLabel": "29 OCT 2026",
+      "url": "https://www.christies.com/en/calendar",
+      "note": "Imported from Christie’s official auction calendar.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "upcoming",
+      "daysToSale": 23,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "5d9acea0b02e",
@@ -850,7 +810,27 @@
       "daysToSale": 23,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
+    },
+    {
+      "id": "a6430df1952c",
+      "house": "Christie's",
+      "houseCode": "CHR",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Important Chinese Ceramics and Works of Art",
+      "city": "Hong Kong",
+      "saleDate": "2026-10-29",
+      "dateLabel": "29 OCT 2026",
+      "url": "https://www.christies.com/en/calendar",
+      "note": "Imported from Christie’s official auction calendar.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "upcoming",
+      "daysToSale": 23,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "569945a3c4e3",
@@ -870,7 +850,7 @@
       "daysToSale": 24,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "6c87cde82993",
@@ -890,7 +870,7 @@
       "daysToSale": 24,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     },
     {
       "id": "6422fe40394c",
@@ -910,7 +890,7 @@
       "daysToSale": 32,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-06T06:30:33.917588Z"
+      "lastBuilt": "2026-10-06T18:28:04.463153Z"
     }
   ]
 }
