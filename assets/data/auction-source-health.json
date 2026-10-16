@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15T21:30:12.679592Z",
+  "updated": "2026-10-16T04:40:50.106891Z",
   "sources": [
     {
       "house": "Christie's",
@@ -8,7 +8,7 @@
       "calendarUrl": "https://www.christies.com/en/calendar",
       "status": "Official calendar adapter enabled",
       "reachable": true,
-      "recordsFound": 30
+      "recordsFound": 27
     },
     {
       "house": "Sotheby's",
