@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19T13:33:03.230555Z",
+  "updated": "2026-10-19T22:27:15.604310Z",
   "sources": [
     {
       "house": "Christie's",
@@ -35,7 +35,7 @@
       "calendarUrl": "https://www.phillips.com/",
       "status": "Official homepage auction adapter enabled",
       "reachable": true,
-      "recordsFound": 4
+      "recordsFound": 5
     },
     {
       "house": "Artcurial",
@@ -62,7 +62,7 @@
       "calendarUrl": "https://www.lempertz.com/en/auctions.html",
       "status": "Official auctions adapter enabled",
       "reachable": true,
-      "recordsFound": 14
+      "recordsFound": 17
     },
     {
       "house": "Dorotheum",
