@@ -1,15 +1,15 @@
 {
   "_readme": "Generated every 6 hours. Public dataset contains upcoming sales only, from the editorial calendar plus explicitly permitted official feeds.",
-  "updated": "2026-10-21T12:00:25.740963Z",
-  "count": 39,
+  "updated": "2026-10-21T17:20:47.171018Z",
+  "count": 38,
   "sourceCounts": {
-    "feed": 36,
+    "feed": 35,
     "editorial": 3
   },
   "windows": {
-    "7": 26,
-    "30": 37,
-    "90": 39
+    "7": 25,
+    "30": 36,
+    "90": 38
   },
   "alerts": [
     {
@@ -30,7 +30,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "1e8e70d3ba86",
@@ -50,7 +50,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "ae104630d766",
@@ -70,7 +70,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "369dedf97574",
@@ -90,27 +90,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
-    },
-    {
-      "id": "1ac8e260cceb",
-      "house": "Phillips",
-      "houseCode": "PHI",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Vente Art Moderne & Contemporain et Design",
-      "city": "Paris",
-      "saleDate": "2026-10-21",
-      "dateLabel": "Paris Auction 21 October 2026",
-      "url": "https://www.phillips.com/",
-      "note": "Imported from Phillips’ official public auction page.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "d471ebde683b",
@@ -130,7 +110,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "bfa0f1349d3d",
@@ -150,7 +130,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "d0cc5089d4e3",
@@ -170,7 +150,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "122c6d05a2b7",
@@ -190,7 +170,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "75bec281bd54",
@@ -210,7 +190,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "1948fcd8e53b",
@@ -230,7 +210,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "cd314f029754",
@@ -250,7 +230,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "b0844bffdd0f",
@@ -270,7 +250,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "1f6a5917f884",
@@ -290,7 +270,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "f8694b0752fd",
@@ -310,7 +290,7 @@
       "daysToSale": 2,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "5069f0389de9",
@@ -330,7 +310,7 @@
       "daysToSale": 2,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "216803df9e68",
@@ -350,7 +330,7 @@
       "daysToSale": 2,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "ee3213a599e5",
@@ -370,7 +350,7 @@
       "daysToSale": 2,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "f6d8de209b0b",
@@ -390,7 +370,7 @@
       "daysToSale": 2,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "337a914dd357",
@@ -410,7 +390,7 @@
       "daysToSale": 3,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "93a550eedb86",
@@ -430,7 +410,7 @@
       "daysToSale": 6,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "6bf0c4e5aaaa",
@@ -450,7 +430,7 @@
       "daysToSale": 7,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "93690c8da126",
@@ -470,7 +450,7 @@
       "daysToSale": 7,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "2473838c4b5a",
@@ -490,7 +470,7 @@
       "daysToSale": 7,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "731e45bacbd5",
@@ -510,7 +490,7 @@
       "daysToSale": 7,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "88e32d69d09e",
@@ -530,7 +510,7 @@
       "daysToSale": 7,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "8b57be0c8860",
@@ -550,7 +530,7 @@
       "daysToSale": 8,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "e1b63af43050",
@@ -570,7 +550,7 @@
       "daysToSale": 8,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "5d9acea0b02e",
@@ -590,7 +570,7 @@
       "daysToSale": 8,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "a6430df1952c",
@@ -610,7 +590,7 @@
       "daysToSale": 8,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "569945a3c4e3",
@@ -630,7 +610,7 @@
       "daysToSale": 9,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "6c87cde82993",
@@ -650,7 +630,7 @@
       "daysToSale": 9,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "6422fe40394c",
@@ -670,15 +650,15 @@
       "daysToSale": 17,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
-      "id": "ce701baee26a",
+      "id": "e7a6815d43b5",
       "house": "Lempertz",
       "houseCode": "L",
       "logo": null,
       "logoStatus": "permission_required",
-      "sale": "Auction 1298 – Jewellery and Watches",
+      "sale": "Auction 1298",
       "city": "COLOGNE",
       "saleDate": "2026-11-19",
       "dateLabel": "Thursday, 19 Nov 2026",
@@ -690,7 +670,7 @@
       "daysToSale": 29,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "b21ebfff3037",
@@ -710,7 +690,7 @@
       "daysToSale": 30,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "7b9f1455b483",
@@ -730,7 +710,7 @@
       "daysToSale": 30,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "4dd61a3909a1",
@@ -750,7 +730,7 @@
       "daysToSale": 30,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "2b1e37d1cb2e",
@@ -770,7 +750,7 @@
       "daysToSale": 31,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     },
     {
       "id": "0416bbd078e9",
@@ -790,7 +770,7 @@
       "daysToSale": 31,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-21T12:00:25.740963Z"
+      "lastBuilt": "2026-10-21T17:20:47.171018Z"
     }
   ]
 }
