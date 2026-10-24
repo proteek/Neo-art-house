@@ -149,7 +149,7 @@ function initRiskEngine(){
 function initRouteExplorer(){const f=document.querySelector('[data-route-explorer]'),o=document.querySelector('[data-route-result]');if(!f||!o||!f.elements.origin)return;const p={'AE>IN':'briefs/uae-to-india.html','IN>IN':'briefs/india-domestic.html'};const d=()=>{const from=f.elements.origin.value,to=f.elements.destination.value,fn=f.elements.origin.selectedOptions[0].textContent,tn=f.elements.destination.selectedOptions[0].textContent,hit=p[from+'>'+to];o.innerHTML='<div class="route-board__content"><div class="eyebrow">Art Transaction Map</div><div class="route-title">'+esc(fn)+' ↔ '+esc(tn)+'</div><div class="route-meta"><span class="route-chip">'+(hit?'Published corridor':'Research on request')+'</span><span class="route-chip">Buyer-side intelligence</span></div><div class="layer-grid">'+['Money|Remittance & currency','Tax|Transaction specific','Movement|Export / import','Cultural property|Object specific','Documentation|Verify before bid','Deadlines|Sale specific'].map(s=>{const q=s.split('|');return '<div class="layer"><div class="layer__name">'+q[0]+'</div><div class="layer__value">'+q[1]+'</div></div>'}).join('')+'</div><p style="margin-top:22px">'+(hit?'A published corridor brief is available.':'This route is not yet in the published library. Commissioned research can convert it into a verified corridor brief.')+'</p><a class="btn btn--gold" href="'+(hit?hit:'commission.html?from='+encodeURIComponent(fn)+'&to='+encodeURIComponent(tn))+'">'+(hit?'Open published brief →':'Commission corridor →')+'</a></div>'};f.addEventListener('input',d);d()}
 async function initRegulatoryAlerts(){const h=document.querySelector('[data-reg-alerts]');if(!h)return;try{const d=await fetch(base()+'assets/data/alerts.json').then(r=>r.json()),list=d.alerts||[];const c=document.querySelector('[data-alert-count]');if(c)c.textContent=list.length+' alert'+(list.length===1?'':'s');h.innerHTML=list.length?list.map(a=>'<article class="reg-alert-card"><div class="reg-alert-meta"><span class="data-badge">'+esc(a.jurisdiction)+'</span><span>'+esc(a.type||'Regulatory update')+'</span><span>Effective '+esc(a.effective||'—')+'</span><span>Verified '+esc(a.verified||'—')+'</span></div><h3>'+esc(a.title)+'</h3><p>'+esc(a.summary)+'</p><a class="text-link" href="'+esc(a.source)+'" target="_blank" rel="noopener">Primary source ↗</a></article>').join(''):'<div class="empty-state"><div class="eyebrow">Current status</div><h3>No verified regulatory alert is currently published.</h3><p class="muted">Only material changes checked against a current primary source should appear here.</p><a class="text-link" href="methodology.html">See verification methodology →</a></div>'}catch(e){h.innerHTML='<div class="empty-state"><h3>Alerts unavailable.</h3></div>'}}
 async function initHouseIntelligence(){const h=document.querySelector('[data-house-intelligence]');if(!h)return;try{const d=await fetch(base()+'assets/data/house-intelligence.json').then(r=>r.json());h.innerHTML='<div class="house-intel-row"><span>Auction house</span><span>Buyer premium</span><span>Payment</span><span>Registration</span><span>Verification</span></div>'+d.houses.map(x=>'<div class="house-intel-row"><strong style="font-family:var(--serif);font-size:18px">'+esc(x.name)+'</strong><span>'+(x.buyersPremium||'Not yet verified')+'</span><span>'+(x.paymentDeadline||'Not yet verified')+'</span><span>'+(x.registration||'Not yet verified')+'</span><span class="data-badge">'+esc(x.status)+'</span></div>').join('')}catch(e){h.innerHTML='<p class="muted">Buyer-terms research is being structured.</p>'}}
-initPlatformRibbon();initTravelChecker();initRiskEngine();initRouteExplorer();initRegulatoryAlerts();initHouseIntelligence();
+initTravelChecker();initRiskEngine();initRouteExplorer();initRegulatoryAlerts();initHouseIntelligence();
 
 function initPassportBuilder(){const f=document.querySelector('[data-passport-builder]'),p=document.querySelector('[data-passport-preview]');if(!f||!p)return;const g=n=>f.elements[n]?.value?.trim()||'—';const draw=()=>{const sections=[['MARKET',g('market')],['OBJECT',g('object')],['TRANSACTION',g('transaction')],['MOVEMENT',g('movement')],['DECISION SUPPORT',g('decision')]];p.innerHTML='<div class="eyebrow">THE NEO ART HOUSE · PRE-BID PASSPORT™</div><h1>'+esc(g('artist'))+'<br><span style="color:var(--ink-soft)">'+esc(g('work'))+'</span></h1><div class="passport-meta"><div><span class="verify-key">Auction house</span><span class="verify-value">'+esc(g('house'))+'</span></div><div><span class="verify-key">Lot</span><span class="verify-value">'+esc(g('lot'))+'</span></div><div><span class="verify-key">Estimate</span><span class="verify-value">'+esc(g('estimate'))+'</span></div><div><span class="verify-key">Route</span><span class="verify-value">'+esc(g('route'))+'</span></div></div>'+sections.map(s=>'<section class="passport-section"><div class="eyebrow">'+s[0]+'</div><div class="passport-lines">'+esc(s[1])+'</div></section>').join('')+'<section class="passport-section"><span class="data-badge">Working research document</span><p class="disclaimer">This generated document organises transaction research. It is not authentication, legal, tax, customs or investment advice.</p></section>'};f.addEventListener('input',draw);draw();const b=document.querySelector('[data-print-passport]');b?.addEventListener('click',()=>window.print())}
 initPassportBuilder();
@@ -619,26 +619,4 @@ else initSiteFavicon();
   else mount();
 })();
 
-/* Consistent visual language across research pages and product pages. */
-(function loadNeoArtDesign(){
- if(document.querySelector('link[data-design-refresh]'))return;
- const l=document.createElement('link');
- l.rel='stylesheet';
- l.setAttribute('data-design-refresh','true');
- l.href=(document.body?.dataset?.base||'')+'assets/css/design-refresh.css?v=20261024-1';
- document.head.appendChild(l);
-})();
-
-/* 2026 global brand identity: retain functional navigation on every page */
-(function neo2026Brand(){
- const apply=()=>{
-  const brand=document.querySelector('.masthead .brand');
-  if(brand&&!brand.querySelector('.house-logo')){
-   const img=document.createElement('img');img.className='house-logo';img.src=(document.body.dataset.base||'')+'assets/img/neo-house-mark.svg';img.alt='';
-   brand.prepend(img);
-   const title=brand.querySelector('.brand__name');if(title){title.textContent='';title.append('THE NEO');title.appendChild(document.createElement('br'));title.append('ART HOUSE');}
-  }
- };
- if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',apply);else apply();
- const link=document.createElement('link');link.rel='stylesheet';link.href=(document.body?.dataset?.base||'')+'assets/css/visual-identity-2026.css?v=20261024c';document.head.appendChild(link);
-})();
+/* Shared mobile navigation and theme switch are retained; page styling is loaded in HTML. */
