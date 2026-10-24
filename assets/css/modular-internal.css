@@ -39,3 +39,48 @@ html[data-theme=dark] .page-hero .lede,html[data-theme=dark] .account-hero .lede
 html[data-theme=dark] .card,html[data-theme=dark] .calc-panel,html[data-theme=dark] .auth-card{background:#292e42;color:#f4f4fd}
 @media(max-width:1100px){.masthead .nav.nav--open{background:#172137!important;color:#fff!important;border-radius:0 0 16px 16px}.masthead .nav.nav--open a{color:#fff!important}.masthead .mobile-menu{color:#fff!important}}
 @media(max-width:650px){.masthead{width:calc(100% - 12px);margin-top:6px;border-radius:12px!important}.masthead__inner{min-height:66px!important}.masthead .house-logo{width:33px;height:33px}.masthead .brand__name{font-size:12px!important;max-width:100px}.page-hero,.account-hero{padding-top:32px;padding-bottom:34px}.page-hero h1,.account-hero h1{font-size:38px!important}.section{padding-top:35px;padding-bottom:35px}}
+
+/* v2: Full internal-page bento treatment and contrast repair */
+html:not([data-theme="dark"]) body{background:#f7f8fb!important;color:#131827!important}
+html:not([data-theme="dark"]) .section:not(.section--deep):not(.section--white){background:#f7f8fb!important;color:#131827!important}
+html:not([data-theme="dark"]) .section--white{background:#fff!important;color:#131827!important}
+html:not([data-theme="dark"]) .section--deep{background:#e8ebfa!important;color:#121827!important}
+html:not([data-theme="dark"]) main h1,html:not([data-theme="dark"]) main h2,html:not([data-theme="dark"]) main h3,html:not([data-theme="dark"]) main h4,html:not([data-theme="dark"]) .display{color:#111827!important;opacity:1!important}
+html:not([data-theme="dark"]) main p,html:not([data-theme="dark"]) main li,html:not([data-theme="dark"]) main label,html:not([data-theme="dark"]) main .muted{color:#465169!important;opacity:1!important}
+html:not([data-theme="dark"]) .page-hero h1,html:not([data-theme="dark"]) .page-hero p{color:#152033!important}
+html:not([data-theme="dark"]) .methodology-hero-note{color:#162138!important}
+html:not([data-theme="dark"]) .methodology-hero-note p{color:#303d54!important}
+html:not([data-theme="dark"]) .methodology-steps .method-step{background:#fff!important;color:#131827!important;border:1px solid #dbe0ec!important;border-radius:22px!important;box-shadow:0 8px 22px #1218270b;min-height:300px}
+html:not([data-theme="dark"]) .methodology-steps .method-step h3{color:#10182a!important;font-weight:750!important}
+html:not([data-theme="dark"]) .methodology-steps .method-step__num{color:#6578d5!important;font-weight:800}
+html:not([data-theme="dark"]) .methodology-steps .method-step p,html:not([data-theme="dark"]) .methodology-steps .method-step li{color:#4b5670!important}
+.method-grid.methodology-steps{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important;border:0!important;background:transparent!important;overflow:visible!important}
+.method-grid.methodology-steps>.method-step{padding:26px!important}
+html:not([data-theme="dark"]) .reg-section-head .display{color:#121827!important}
+html:not([data-theme="dark"]) .reg-section-head p{color:#4b5670!important}
+.page-hero{margin:14px auto 0;width:calc(100% - 28px);border-radius:24px!important;overflow:hidden}
+.page-hero__grid{gap:25px}
+.page-hero__aside{background:#ddeafb!important;border-radius:20px;padding:26px!important}
+.methodology-hero-note{font-family:Arial,Helvetica,sans-serif!important;font-size:clamp(18px,1.9vw,25px)!important;border-left:4px solid #6578d5!important}
+/* All visible panels become modular rounded components */
+.tool-card,.tool-panel,.card,.quote,.method-step,.method-note,.method-card,.pro-card,.price-card,.pricing-card,.reg-card,.report-card,.risk-card,.alert-card,.house-card,.network-card,.principle-card,.principle,.layer-card,.layer,.stat,.tile,.panel,.feature,.info-card,.article-card,.source-card,.auth-panel,.auth-card,.calc-panel,.calc-results,.result-card,.account-panel,.account-identity,.passport-card,.document-card,.verification-card,.review-card,.resource-card,.auction-card,.timeline-card,.metric-card,.summary-card,.note-card,.callout,.steps-card,.content-card,.tool-grid>div,.pro-grid>div,.layer-grid>div,.network-grid>div,.principles>div,.content-grid>article,.content-grid>div,.feature-grid>article,.feature-grid>div{border-radius:22px!important;overflow:hidden}
+.method-grid,.tool-grid,.pro-grid,.layer-grid,.network-grid,.principles,.content-grid,.feature-grid,.card-grid,.pricing-grid,.result-grid{gap:16px!important;border:0!important}
+.method-grid>*,.tool-grid>*,.pro-grid>*,.layer-grid>*,.network-grid>*,.principles>*,.card-grid>*,.pricing-grid>*{border-radius:20px!important}
+html:not([data-theme="dark"]) .method-grid>*,html:not([data-theme="dark"]) .tool-grid>*,html:not([data-theme="dark"]) .pro-grid>*,html:not([data-theme="dark"]) .network-grid>*,html:not([data-theme="dark"]) .principles>*{color:#151d30}
+html:not([data-theme="dark"]) .tool-grid>*,html:not([data-theme="dark"]) .pro-grid>*{background:#e5f4f7}
+html:not([data-theme="dark"]) .network-grid>*,html:not([data-theme="dark"]) .principles>*{background:#e7e4fc}
+html:not([data-theme="dark"]) .content-grid>article:nth-child(3n+1),html:not([data-theme="dark"]) .feature-grid>article:nth-child(3n+1){background:#d0eff3}
+html:not([data-theme="dark"]) .content-grid>article:nth-child(3n+2),html:not([data-theme="dark"]) .feature-grid>article:nth-child(3n+2){background:#e1dcfb}
+html:not([data-theme="dark"]) .content-grid>article:nth-child(3n),html:not([data-theme="dark"]) .feature-grid>article:nth-child(3n){background:#f7e4d3}
+.section .wrap{max-width:1320px}
+html:not([data-theme="dark"]) .section .eyebrow,html:not([data-theme="dark"]) .section .breadcrumb{color:#4f6191!important}
+html:not([data-theme="dark"]) .section .btn,html:not([data-theme="dark"]) .section .button{color:#111827}
+html:not([data-theme="dark"]) input,html:not([data-theme="dark"]) select,html:not([data-theme="dark"]) textarea{color:#131827!important;background:#fff!important;border:1px solid #aebacf!important}
+html:not([data-theme="dark"]) .section table{background:#fff;color:#192438}
+html:not([data-theme="dark"]) .section th{background:#d9e9f4;color:#121827}
+html:not([data-theme="dark"]) .section td{color:#39465d}
+html[data-theme="dark"] .method-grid.methodology-steps>.method-step{background:#282c43!important;color:#f8f8ff!important;border:1px solid #555d79!important}
+html[data-theme="dark"] .methodology-steps h3,html[data-theme="dark"] .methodology-steps p,html[data-theme="dark"] .methodology-steps li{color:#f2f2f8!important}
+html[data-theme="dark"] .methodology-hero-note{color:#f6f6ff!important}
+@media(max-width:1000px){.method-grid.methodology-steps{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:650px){.method-grid.methodology-steps{grid-template-columns:1fr!important}.page-hero{margin:7px auto 0;width:calc(100% - 12px);border-radius:16px!important}.page-hero__aside{padding:18px!important}.method-grid.methodology-steps>.method-step{min-height:0!important}.section{padding-top:32px!important;padding-bottom:32px!important}}
