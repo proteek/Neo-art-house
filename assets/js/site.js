@@ -618,3 +618,13 @@ else initSiteFavicon();
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount);
   else mount();
 })();
+
+/* Consistent visual language across research pages and product pages. */
+(function loadNeoArtDesign(){
+ if(document.querySelector('link[data-design-refresh]'))return;
+ const l=document.createElement('link');
+ l.rel='stylesheet';
+ l.setAttribute('data-design-refresh','true');
+ l.href=(document.body?.dataset?.base||'')+'assets/css/design-refresh.css?v=20261024-1';
+ document.head.appendChild(l);
+})();
