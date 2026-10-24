@@ -237,3 +237,32 @@ html body .masthead .brand img.house-logo{display:block!important;visibility:vis
 html body .masthead .brand__name{display:block!important;color:#fff!important;visibility:visible!important;opacity:1!important}
 html body .masthead .brand img:not(.house-logo){display:none!important}
 html body .footer .footer__brand:before{content:"";display:inline-block;width:28px;height:28px;margin-right:9px;vertical-align:middle;background:url("../img/neo-house-mark.svg") center/contain no-repeat}
+
+/* 2026-10-24 auction index visual repair */
+html body main .auction-index-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:18px!important}
+html body main .auction-index-grid .auction-index-card{background:#cceff2!important;border:0!important;border-radius:24px!important;padding:26px!important;box-shadow:none!important;min-width:0!important;color:#152033!important}
+html body main .auction-index-card:nth-child(4n+2){background:#dcd8fa!important}
+html body main .auction-index-card:nth-child(4n+3){background:#f3dfce!important}
+html body main .auction-index-card:nth-child(4n){background:#d7e7f8!important}
+html body main .auction-index-card h3{font:750 clamp(24px,2.4vw,34px)/1.12 Arial,sans-serif!important;letter-spacing:-.035em!important;color:#121a2b!important}
+html body main .auction-index-card .eyebrow{color:#415884!important}
+html body main .auction-index-card .auction-index-location,html body main .auction-index-card .auction-index-status strong{color:#39475e!important}
+html body main .auction-index-card .data-badge{background:rgba(255,255,255,.55)!important;color:#24314a!important;border:1px solid rgba(36,49,74,.2)!important;border-radius:99px!important;padding:8px 12px!important;white-space:normal!important}
+html body main .auction-index-card .auction-index-status{border-top:1px solid rgba(45,60,89,.2)!important;align-items:center!important;flex-wrap:wrap!important}
+html body main .auction-index-card .text-link{color:#273e7c!important;font-weight:750!important}
+html body main .auction-index-card .auction-index-meta{gap:7px!important}
+html body main .auction-index-card .auction-index-top>.data-badge{min-width:0!important;align-self:flex-start!important;justify-content:center!important}
+html body main .house-index-toolbar{background:#242d45!important;border-radius:22px!important;padding:18px!important;gap:12px!important}
+html body main .index-summary{background:#242d45!important;color:#f7f8ff!important;border-radius:18px!important;padding:20px!important}
+html body main .index-summary .eyebrow,html body main .index-summary span{color:#d3daf5!important}
+html body main .coverage-strip{border-radius:23px!important;overflow:hidden!important}
+html body main .coverage-cell{background:#d9ebf8!important;color:#172036!important}
+html body main .coverage-cell:nth-child(2){background:#e1daf9!important}
+html body main .coverage-cell:nth-child(3){background:#f1ddcc!important}
+html body .masthead{position:relative!important}
+html body .masthead__inner>.brand{display:flex!important;position:relative!important;z-index:5!important;min-width:185px!important;visibility:visible!important;opacity:1!important}
+html body .masthead__inner>.brand .house-logo{display:block!important;visibility:visible!important;opacity:1!important;flex:0 0 43px!important;filter:none!important}
+html body .masthead__inner>.brand .brand__name{display:block!important;visibility:visible!important;opacity:1!important;color:#fff!important;white-space:nowrap!important}
+html body .masthead .nav{flex:1 1 auto!important}
+@media(max-width:1100px){html body .masthead__inner>.brand{min-width:0!important;margin-right:auto!important}html body .masthead .mobile-menu{margin-left:0!important}}
+@media(max-width:740px){html body main .auction-index-grid{grid-template-columns:1fr!important}html body main .auction-index-grid .auction-index-card{padding:20px!important}html body .masthead__inner>.brand .house-logo{flex-basis:34px!important}}
