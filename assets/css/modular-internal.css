@@ -1,0 +1,41 @@
+/* Modular visual system shared by every original internal page. Keeps all native forms, data and tools intact. */
+:root{--ink:#111827;--ink-soft:#4b566c;--paper:#f7f8fb;--paper-deep:#e7ebfa;--panel:#fff;--white:#fff;--line:#c8cfdd;--line-strong:#9ba7bb;--gold:#6576d6;--gold-soft:#c6f0f2;--sans:Arial,Helvetica,sans-serif;--serif:Arial,Helvetica,sans-serif}
+body{background:#f7f8fb;color:#111827;font-family:Arial,Helvetica,sans-serif;line-height:1.58}
+.masthead{background:#111827!important;color:#fff!important;width:calc(100% - 28px);margin:13px auto 0;border-radius:18px!important;border:0!important}
+.masthead__inner{min-height:78px!important}
+.masthead .brand{display:flex;flex-direction:row;gap:11px;align-items:center;min-width:0}
+.masthead .brand__name{font:800 16px/1.1 Arial,Helvetica,sans-serif!important;letter-spacing:-.025em!important;color:#fff!important;max-width:155px}
+.masthead .brand__sub{display:none!important}
+.masthead .house-logo{width:42px;height:42px;flex-shrink:0}
+.masthead .nav a{color:#f7f7ff!important;font-size:12px}
+.masthead .btn{border:0!important;border-radius:100px!important;background:#cac8fc!important;color:#101827!important;font-weight:750}
+.masthead .theme-toggle{background:#343b54;color:#fff;border-radius:100px;border-color:#56607d}
+.page-hero,.account-hero,.hero,.professional-hero{background:#f1efe9!important;color:#131827!important;padding-top:52px;padding-bottom:52px}
+.page-hero .wrap,.account-hero .wrap{max-width:1320px}
+.page-hero .display,.account-hero .display,.display{font-family:Arial,Helvetica,sans-serif!important;font-weight:800;letter-spacing:-.055em;line-height:1.09;color:inherit}
+.page-hero h1,.account-hero h1{font-size:clamp(38px,4.7vw,65px)!important}
+.page-hero .lede,.account-hero .lede,.lede{color:#4b5363!important;line-height:1.55}
+.breadcrumb,.eyebrow{font:750 12px/1.4 Arial,Helvetica,sans-serif!important;letter-spacing:.12em;color:#52617f!important}
+.page-hero__aside,.quote,.card,.auth-card,.calc-panel,.calc-results,.price-card,.intel-card,.account-identity,.report-card,.risk-card,.feature,.stat,.home-path,.section .panel,.section .tile{border-radius:22px!important;overflow:hidden}
+.card,.auth-card,.calc-panel,.calc-results,.account-identity,.report-card{background:#fff;border-color:#d5d9e5;box-shadow:0 10px 30px #131d3010}
+.section{padding-top:56px;padding-bottom:56px}
+.section--white{background:#fff!important}
+.section--deep{background:#e9ebfa!important}
+.section .feature-grid,.section .content-grid,.section .price-grid{gap:16px}
+.btn,.auth-button,.filter-button,.button{border-radius:100px!important}
+input,select,textarea,.field input,.field select{border-radius:10px!important;min-height:43px}
+input:focus-visible,button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #6878d4!important;outline-offset:3px}
+table{border-collapse:separate;border-spacing:0}
+th{background:#e7edfa;color:#111827}
+tr:nth-child(even){background:#f6f8fc}
+.footer{background:#121827!important;color:#f5f6ff!important;margin-top:0}
+.footer a{color:#d7ddeb!important}
+.footer__brand{font-family:Arial,Helvetica,sans-serif;font-weight:800;letter-spacing:-.025em;color:#fff}
+.footer .muted{color:#bfc5d5!important}
+html[data-theme=dark]{--ink:#f4f4fd;--ink-soft:#c7cbda;--paper:#171a29;--paper-deep:#292d43;--panel:#252a3e;--white:#252a3e;--line:#565c71;--line-strong:#798099}
+html[data-theme=dark] body{background:#171a29;color:#f4f4fd}
+html[data-theme=dark] .page-hero,html[data-theme=dark] .account-hero{background:#22273b!important;color:#f4f4fd!important}
+html[data-theme=dark] .page-hero .lede,html[data-theme=dark] .account-hero .lede{color:#d0d5e2!important}
+html[data-theme=dark] .card,html[data-theme=dark] .calc-panel,html[data-theme=dark] .auth-card{background:#292e42;color:#f4f4fd}
+@media(max-width:1100px){.masthead .nav.nav--open{background:#172137!important;color:#fff!important;border-radius:0 0 16px 16px}.masthead .nav.nav--open a{color:#fff!important}.masthead .mobile-menu{color:#fff!important}}
+@media(max-width:650px){.masthead{width:calc(100% - 12px);margin-top:6px;border-radius:12px!important}.masthead__inner{min-height:66px!important}.masthead .house-logo{width:33px;height:33px}.masthead .brand__name{font-size:12px!important;max-width:100px}.page-hero,.account-hero{padding-top:32px;padding-bottom:34px}.page-hero h1,.account-hero h1{font-size:38px!important}.section{padding-top:35px;padding-bottom:35px}}
