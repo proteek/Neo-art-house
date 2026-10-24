@@ -1,0 +1,39 @@
+/* 2026 visual identity implementation: editorial bento with accessible contrast */
+body{background:#f8f8f7!important}
+.masthead{background:#111927!important;color:#fff!important;margin:12px auto 0;width:calc(100% - 28px);border-radius:19px;position:sticky;top:8px}
+.masthead__inner{min-height:77px!important;width:calc(100% - 44px)!important;gap:18px}
+.masthead .brand{display:flex!important;align-items:center;gap:12px;flex-direction:row}
+.masthead .brand__name{font:800 17px/1.13 Inter,Arial,sans-serif!important;letter-spacing:-.04em!important;color:#fff!important;max-width:140px}
+.masthead .brand__sub{display:none!important}
+.house-logo{width:43px;height:43px;flex:none;display:block}
+.masthead .nav{gap:clamp(10px,2vw,29px);font:500 12px Inter,Arial,sans-serif;letter-spacing:.055em}
+.masthead .nav a{color:#f2f3f8!important}.masthead .nav a:hover{color:#a9e6f0!important}
+.masthead .theme-toggle{background:#283349!important;border-color:#485270!important;color:#fff!important}
+.masthead__inner>.btn{border:0!important;background:#c8c6fa!important;color:#13182a!important;font-weight:700!important;border-radius:40px!important}
+.neo-2026{background:#fff!important;max-width:none;padding:16px 20px 50px!important}
+.neo-hero--main{background:#f4f0eb!important;border-radius:23px!important;min-height:475px!important;grid-template-columns:40% 60%!important}
+.neo-hero-copy{padding:clamp(26px,3.2vw,60px)!important}
+.neo-hero h1{font-size:clamp(40px,4.45vw,76px)!important;line-height:1.03!important;letter-spacing:-.065em!important}
+.neo-hero p{color:#535b67!important;font-size:clamp(16px,1.35vw,19px)!important}
+.neo-hero-photo{background:#d2e9ee!important;min-height:475px!important;overflow:hidden;position:relative}
+.neo-hero-photo img{height:100%;width:100%;object-fit:cover!important}
+.neo-photo-caption{bottom:26px;left:26px;right:auto;background:rgba(18,27,42,.91);border-radius:6px}
+.neo-services{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:14px!important;margin:16px 0 65px!important}
+.neo-service{min-height:255px!important;border-radius:20px!important;position:relative;isolation:isolate;overflow:hidden;padding:25px!important}
+.neo-service:after{content:"";width:150px;height:150px;border:32px solid rgba(255,255,255,.31);border-radius:60% 60% 5% 5%;position:absolute;right:-68px;top:-45px;z-index:-1}
+.neo-service h2{font-size:clamp(25px,2.2vw,37px)!important;margin:21px 0 13px!important}
+.neo-service p{max-width:225px;color:#465164!important}
+.neo-service b{font-size:13px!important}
+.neo-section-head h2{font-size:clamp(30px,3.2vw,46px)!important}
+.neo-app-grid{gap:15px!important}
+.neo-app-card{min-height:245px!important;border-radius:20px!important}
+.neo-app-info h3{font-size:29px!important}
+.neo-mini-phones{height:230px!important}
+.neo-app-card .neo-app-info strong{display:inline-block;border-radius:30px;padding:11px 15px;background:#f0763d;color:#171824}
+.neo-product-hero{background:#f6f3ee!important;border-radius:22px!important;min-height:575px}
+.neo-product-art{background:linear-gradient(125deg,#bceaf0,#d9d5ff 58%,#f2d6c2)!important}
+.neo-product-text h1{font-size:clamp(43px,4.5vw,70px)!important}
+.neo-feature,.neo-product-end{border-radius:20px!important}
+@media(max-width:1050px){.masthead .nav{font-size:11px}.neo-hero--main{grid-template-columns:1fr!important}.neo-hero-photo{height:330px!important;min-height:330px!important}.neo-services{grid-template-columns:1fr 1fr!important}}
+@media(max-width:760px){.masthead{margin:6px auto 0;width:calc(100% - 12px);border-radius:12px;top:2px}.masthead__inner{width:calc(100% - 24px)!important;grid-template-columns:minmax(0,1fr) auto auto!important;gap:7px}.house-logo{width:33px;height:33px}.masthead .brand__name{font-size:12px!important;max-width:102px!important}.masthead .brand{gap:6px}.masthead .nav.nav--open{background:#111927!important;left:-12px;right:-12px;border-radius:0 0 12px 12px}.masthead .nav.nav--open a{color:#fff!important}.masthead .theme-toggle{font-size:10px!important;min-height:35px!important;padding:6px!important}.neo-2026{padding:8px!important}.neo-hero--main{border-radius:17px}.neo-hero-copy{padding:29px 23px!important}.neo-hero h1{font-size:43px!important}.neo-hero-photo{min-height:235px!important;height:235px!important}.neo-services{gap:9px!important;margin:9px 0 45px!important}.neo-service{padding:19px!important;min-height:246px!important}.neo-service h2{font-size:24px!important}.neo-product-hero{grid-template-columns:1fr!important}.neo-product-art{min-height:300px}.neo-app-grid{grid-template-columns:1fr!important}}
+@media(max-width:390px){.masthead .brand__name{font-size:11px!important}.masthead .theme-toggle{font-size:9px!important}.neo-services{grid-template-columns:1fr!important}.neo-service{min-height:195px!important}}
