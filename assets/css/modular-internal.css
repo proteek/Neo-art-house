@@ -184,3 +184,17 @@ body[data-hero="gallery"] main .page-hero,body[data-hero="gallery"] main .accoun
 @media(max-width:760px){body[data-hero] main .page-hero,body[data-hero] main .account-hero{background-position:65% center!important}body[data-hero] main .page-hero{background-image:linear-gradient(90deg,rgba(35,44,66,.96),rgba(35,44,66,.82))!important}}
 html body .masthead .brand>svg,html body .masthead .brand picture{display:none!important}
 html body .masthead .brand .house-logo~.house-logo{display:none!important}
+
+/* Completion pass: pages without a traditional page-hero */
+.internal-visual-intro{max-width:1320px;margin:18px auto 12px;min-height:240px;border-radius:26px;padding:clamp(24px,4vw,54px);background:#26324a;display:grid;grid-template-columns:minmax(0,1fr) minmax(200px,42%);align-items:center;gap:30px;overflow:hidden;color:#fff}
+.internal-visual-intro h1{font:800 clamp(32px,4vw,55px)/1.08 Arial,sans-serif;color:#fff!important;letter-spacing:-.045em;max-width:750px;margin:12px 0}
+.internal-visual-intro p{color:#d6e3f6!important;max-width:660px}
+.internal-visual-intro img{width:100%;height:230px;object-fit:cover;border-radius:22px}
+.internal-visual-intro .eyebrow{color:#adbef8!important}
+html body main .auth-shell,html body main .report-shell,html body main .document-shell{background:#151b2b!important;color:#f5f7ff}
+html body main .auth-panel,html body main .report-panel,html body main .document-panel{border-radius:24px!important}
+html body main .auth-panel--intro{background:#d5ebf0!important;color:#162137!important}
+html body main .auth-panel--intro h1,html body main .auth-panel--intro p{color:#162137!important}
+html body main .auth-panel--form{background:#e1dafa!important;color:#162137!important}
+html body main article,html body main .jurisdiction-card,html body main .glossary-item,html body main .alert-card,html body main .house-card{border-radius:22px}
+@media(max-width:700px){.internal-visual-intro{margin:9px 7px;grid-template-columns:1fr;min-height:0}.internal-visual-intro img{height:175px}}
