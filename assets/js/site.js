@@ -581,3 +581,40 @@ function initSiteFavicon(){
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initSiteFavicon);
 else initSiteFavicon();
+
+/* Appearance preferences — common across all pages using site.js */
+(function initAppearancePreference(){
+  const key='neo-art-house-theme';
+  let saved='light';
+  try{saved=localStorage.getItem(key)==='dark'?'dark':'light'}catch(e){}
+  const root=document.documentElement;
+  root.dataset.theme=saved;
+  const style=document.createElement('link');
+  style.rel='stylesheet';
+  style.href=(document.body?.dataset?.base||'')+'assets/css/theme-toggle.css?v=20261024';
+  document.head.appendChild(style);
+  const mount=()=>{
+    const header=document.querySelector('.masthead__inner');
+    if(!header||header.querySelector('.theme-toggle'))return;
+    const button=document.createElement('button');
+    button.type='button';
+    button.className='theme-toggle';
+    button.setAttribute('aria-label','Switch to dark mode');
+    const render=()=>{
+      const dark=root.dataset.theme==='dark';
+      button.textContent=dark?'☀ Light mode':'☾ Dark mode';
+      button.setAttribute('aria-label',dark?'Switch to light mode':'Switch to dark mode');
+      button.setAttribute('aria-pressed',String(dark));
+    };
+    button.addEventListener('click',()=>{
+      root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';
+      try{localStorage.setItem(key,root.dataset.theme)}catch(e){}
+      render();
+    });
+    const menu=header.querySelector('[data-mobile-menu]');
+    if(menu)menu.before(button);else header.appendChild(button);
+    render();
+  };
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount);
+  else mount();
+})();
