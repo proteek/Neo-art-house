@@ -236,4 +236,4 @@ html body main .section>.wrap{max-width:1320px}
 html body .masthead .brand img.house-logo{display:block!important;visibility:visible!important;opacity:1!important;filter:none!important}
 html body .masthead .brand__name{display:block!important;color:#fff!important;visibility:visible!important;opacity:1!important}
 html body .masthead .brand img:not(.house-logo){display:none!important}
-html body .footer .footer__brand:before{content:"";display:inline-block;width:28px;height:28px;margin-right:9px;vertical-align:middle;background:url("assets/img/neo-house-mark.svg") center/contain no-repeat}
+html body .footer .footer__brand:before{content:"";display:inline-block;width:28px;height:28px;margin-right:9px;vertical-align:middle;background:url("../img/neo-house-mark.svg") center/contain no-repeat}
