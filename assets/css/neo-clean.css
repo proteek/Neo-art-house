@@ -58,3 +58,11 @@ html body .ipad-gallery-grid figure{overflow:hidden!important;min-width:0!import
 html body .ipad-gallery-grid figure img{width:100%!important;max-width:100%!important;height:auto!important;max-height:380px!important;object-fit:contain!important}
 @media(max-width:900px){html body .apps{grid-template-columns:1fr!important}html body .apps>a.app{max-height:300px!important}}
 @media(max-width:600px){html body .apps>a.app{min-height:215px!important;max-height:240px!important;padding:14px!important;grid-template-columns:minmax(0,48%) minmax(0,52%)!important}html body .apps>a.app .app-device-showcase{height:205px!important;max-height:205px!important;padding:2px!important}html body .apps>a.app .app-device-showcase img.device-tablet{max-height:145px!important;border-width:2px!important}html body .apps>a.app .app-device-showcase img.device-phone{height:100px!important;max-height:100px!important;border-width:2px!important}html body .hero{max-height:none!important}html body .hero .hero-art{height:220px!important;max-height:220px!important}}
+
+/* Full-height iPad screenshots — do not scale portrait captures to a tiny landscape viewport */
+html body .ipad-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:18px!important;align-items:stretch!important}
+html body .ipad-gallery-grid figure{padding:16px!important;display:flex!important;flex-direction:column!important;gap:10px!important;min-width:0!important}
+html body .ipad-gallery-grid figure a{display:block!important;width:100%!important;min-width:0!important;overflow:hidden!important;border-radius:14px!important}
+html body .ipad-gallery-grid figure img{display:block!important;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;aspect-ratio:auto!important;border-radius:13px!important}
+html body .ipad-gallery-grid figcaption{margin-top:auto!important;padding:3px 4px!important}
+@media(max-width:680px){html body .ipad-gallery-grid{grid-template-columns:1fr!important}html body .ipad-gallery-grid figure{padding:12px!important}}
