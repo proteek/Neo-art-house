@@ -628,3 +628,17 @@ else initSiteFavicon();
  l.href=(document.body?.dataset?.base||'')+'assets/css/design-refresh.css?v=20261024-1';
  document.head.appendChild(l);
 })();
+
+/* 2026 global brand identity: retain functional navigation on every page */
+(function neo2026Brand(){
+ const apply=()=>{
+  const brand=document.querySelector('.masthead .brand');
+  if(brand&&!brand.querySelector('.house-logo')){
+   const img=document.createElement('img');img.className='house-logo';img.src=(document.body.dataset.base||'')+'assets/img/neo-house-mark.svg';img.alt='';
+   brand.prepend(img);
+   const title=brand.querySelector('.brand__name');if(title){title.textContent='';title.append('THE NEO');title.appendChild(document.createElement('br'));title.append('ART HOUSE');}
+  }
+ };
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',apply);else apply();
+ const link=document.createElement('link');link.rel='stylesheet';link.href=(document.body?.dataset?.base||'')+'assets/css/visual-identity-2026.css?v=20261024c';document.head.appendChild(link);
+})();
