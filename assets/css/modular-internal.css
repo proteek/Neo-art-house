@@ -266,3 +266,11 @@ html body .masthead__inner>.brand .brand__name{display:block!important;visibilit
 html body .masthead .nav{flex:1 1 auto!important}
 @media(max-width:1100px){html body .masthead__inner>.brand{min-width:0!important;margin-right:auto!important}html body .masthead .mobile-menu{margin-left:0!important}}
 @media(max-width:740px){html body main .auction-index-grid{grid-template-columns:1fr!important}html body main .auction-index-grid .auction-index-card{padding:20px!important}html body .masthead__inner>.brand .house-logo{flex-basis:34px!important}}
+
+/* Ensure the wordmark cannot disappear behind mobile menus */
+html body .masthead .masthead__inner{position:relative!important;padding-left:clamp(160px,17vw,240px)!important;box-sizing:border-box!important}
+html body .masthead .masthead__inner>a.brand{position:absolute!important;left:8px!important;top:50%!important;transform:translateY(-50%)!important;width:auto!important;min-width:150px!important;max-width:230px!important;display:flex!important;z-index:20!important}
+html body .masthead .masthead__inner>a.brand img.house-logo{width:42px!important;height:42px!important;flex:0 0 42px!important;display:block!important}
+html body .masthead .masthead__inner>a.brand .brand__name{font-size:14px!important;color:#fff!important}
+@media(max-width:1100px){html body .masthead .masthead__inner{padding-left:155px!important}}
+@media(max-width:650px){html body .masthead .masthead__inner{padding-left:112px!important}html body .masthead .masthead__inner>a.brand{left:2px!important;min-width:0!important;max-width:115px!important}html body .masthead .masthead__inner>a.brand img.house-logo{width:32px!important;height:32px!important;flex-basis:32px!important}html body .masthead .masthead__inner>a.brand .brand__name{font-size:10px!important}}
