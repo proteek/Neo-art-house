@@ -23,3 +23,41 @@ html body header.masthead .masthead__inner>a.brand>.brand__name{font-size:11px!i
 }
 /* Homepage has a different, simpler header. Preserve its logo. */
 html body header.site-header>a.brand>img{display:block!important;visibility:visible!important;opacity:1!important}
+
+/* 2026-10-24: Unambiguous layout, overriding old navigation and account alignment */
+html body header.masthead{min-height:0!important;padding:0!important}
+html body header.masthead>div.masthead__inner{
+ display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;align-items:center!important;
+ justify-content:space-between!important;gap:18px!important;
+ width:calc(100% - 40px)!important;max-width:1360px!important;
+ margin:0 auto!important;padding:0!important;min-height:76px!important;height:auto!important;
+ position:relative!important;overflow:visible!important;
+}
+html body header.masthead>div.masthead__inner>a.brand{
+ all:unset!important;box-sizing:border-box!important;cursor:pointer!important;
+ display:inline-flex!important;flex:0 0 210px!important;order:0!important;
+ gap:11px!important;align-items:center!important;justify-content:flex-start!important;
+ color:#fff!important;visibility:visible!important;opacity:1!important;
+ min-width:210px!important;max-width:210px!important;height:54px!important;
+}
+html body header.masthead>div.masthead__inner>a.brand img.house-logo{display:block!important;visibility:visible!important;width:46px!important;height:46px!important;min-width:46px!important;flex:0 0 46px!important;object-fit:contain!important}
+html body header.masthead>div.masthead__inner>a.brand .brand__name{display:inline-block!important;color:#fff!important;font:800 15px/1.1 Arial,sans-serif!important;white-space:nowrap!important}
+html body header.masthead>div.masthead__inner>nav.nav{order:1!important;flex:1 1 auto!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:clamp(10px,1.1vw,20px)!important;position:static!important}
+html body header.masthead>div.masthead__inner>nav.nav a{font:600 12px/1.2 Arial,sans-serif!important;white-space:nowrap!important}
+html body header.masthead>div.masthead__inner>a.btn{order:2!important;position:static!important;flex:0 0 auto!important;max-width:190px!important;margin:0!important;align-self:center!important}
+html body header.masthead>div.masthead__inner>button.mobile-menu{order:3!important;display:none!important}
+@media(max-width:1130px){
+html body header.masthead>div.masthead__inner{gap:9px!important;min-height:66px!important}
+html body header.masthead>div.masthead__inner>a.brand{flex:0 1 auto!important;min-width:0!important;max-width:220px!important}
+html body header.masthead>div.masthead__inner>nav.nav{display:none!important}
+html body header.masthead>div.masthead__inner>nav.nav.nav--open{display:flex!important;position:absolute!important;top:100%!important;left:0!important;right:0!important;z-index:100!important;flex-direction:column!important;background:#111827!important;padding:15px!important}
+html body header.masthead>div.masthead__inner>a.btn{margin-left:auto!important}
+html body header.masthead>div.masthead__inner>button.mobile-menu{display:inline-flex!important;align-items:center!important;justify-content:center!important;flex:0 0 42px!important}
+}
+@media(max-width:560px){
+html body header.masthead>div.masthead__inner{width:calc(100% - 20px)!important}
+html body header.masthead>div.masthead__inner>a.brand{gap:5px!important}
+html body header.masthead>div.masthead__inner>a.brand img.house-logo{width:34px!important;height:34px!important;min-width:34px!important;flex-basis:34px!important}
+html body header.masthead>div.masthead__inner>a.brand .brand__name{font-size:10px!important}
+html body header.masthead>div.masthead__inner>a.btn{font-size:10px!important;padding:6px 9px!important;min-height:38px!important}
+}
