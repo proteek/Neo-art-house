@@ -66,3 +66,19 @@ html body .ipad-gallery-grid figure a{display:block!important;width:100%!importa
 html body .ipad-gallery-grid figure img{display:block!important;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;aspect-ratio:auto!important;border-radius:13px!important}
 html body .ipad-gallery-grid figcaption{margin-top:auto!important;padding:3px 4px!important}
 @media(max-width:680px){html body .ipad-gallery-grid{grid-template-columns:1fr!important}html body .ipad-gallery-grid figure{padding:12px!important}}
+
+/* Final header + architectural hero composition */
+.site-header{display:flex!important;align-items:center!important;flex-wrap:nowrap!important;min-height:76px!important;overflow:visible!important;gap:22px!important;padding:13px 26px!important}
+.site-header .brand{display:inline-flex!important;flex:0 0 auto!important;align-items:center!important;gap:10px!important;min-width:185px}
+.site-header .brand img{display:block!important;width:45px!important;height:45px!important;object-fit:contain!important}
+.site-header .brand span{display:block!important;color:#fff!important;line-height:1.05!important;font-size:17px!important}
+.site-header .site-nav{display:flex!important;justify-content:center!important;align-items:center!important;gap:clamp(12px,1.5vw,28px)!important}
+.site-header .site-nav a{color:#f4f7ff!important;white-space:nowrap!important}
+.site-header .site-nav a:first-child{background:#bdebf0!important;color:#101827!important;border-radius:22px;padding:9px 13px}
+.site-header .nav-cta{flex:0 0 auto!important;margin-left:auto}
+.hero .hero-art{position:relative!important;background:#c9dfe5!important;isolation:isolate}
+.hero .hero-art img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 48%!important;filter:saturate(.85) contrast(1.05)}
+.hero .hero-art:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(242,238,231,.05),transparent 38%);pointer-events:none}
+.hero .hero-art small{z-index:2;border-radius:8px;font-size:11px!important}
+@media(max-width:1050px){.site-header .site-nav{display:none!important}.site-header .menu{display:block!important;margin-left:auto!important}.site-header .nav-cta{margin-left:0!important}}
+@media(max-width:600px){.site-header{gap:8px!important;padding:10px 12px!important}.site-header .brand{min-width:0}.site-header .brand img{width:35px!important;height:35px!important}.site-header .brand span{font-size:12px!important}.site-header .nav-cta{font-size:10px!important;padding:9px!important}}
