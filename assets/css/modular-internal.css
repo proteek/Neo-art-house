@@ -120,3 +120,48 @@ html .tool-grid>* h2,html .pro-grid>* h2,html .network-grid>* h2,html .principle
 html .tool-grid>* p,html .pro-grid>* p,html .network-grid>* p,html .principles>* p,html .layer-grid>* p{color:#445169!important}
 html .page-hero__aside,html[data-theme="dark"] .page-hero__aside{background:#dfeafa!important;color:#152035!important}
 html .page-hero__aside p{color:#35445d!important}
+
+/* SINGLE DARK EDITORIAL SYSTEM — internal pages */
+html body{background:#121827!important;color:#f3f5fa!important}
+html body main{background:#151b2b!important;color:#f3f5fa!important}
+html body main .section,html body main .section--white,html body main .section--deep{background:#151b2b!important;color:#f3f5fa!important}
+html body main .page-hero{background:#232c42!important;color:#fff!important;border-radius:26px!important;border:1px solid #37435c!important;margin:16px auto!important;min-height:340px}
+html body main .page-hero h1,html body main .page-hero .display{color:#fff!important}
+html body main .page-hero .lede,html body main .page-hero p{color:#d4dcef!important}
+html body main .breadcrumb,html body main .eyebrow{color:#a9bcf8!important}
+html body main .reg-section-head h2,html body main .reg-section-head .display,html body main .section> .wrap > h2{color:#fff!important}
+html body main .reg-section-head p,html body main .section> .wrap > p{color:#c5cfe1!important}
+html body main .page-hero__aside{background:#cbdcf5!important;color:#172139!important}
+html body main .page-hero__aside p,html body main .page-hero__aside h2{color:#172139!important}
+html body main .method-grid.methodology-steps>.method-step{border:0!important;border-radius:24px!important;box-shadow:none!important}
+html body main .method-grid.methodology-steps>.method-step h3,html body main .method-grid.methodology-steps>.method-step p,html body main .method-grid.methodology-steps>.method-step li{color:#172139!important}
+html body main .method-grid.methodology-steps>.method-step:nth-child(6n+1){background:#c8eff0!important}
+html body main .method-grid.methodology-steps>.method-step:nth-child(6n+2){background:#dcd6fb!important}
+html body main .method-grid.methodology-steps>.method-step:nth-child(6n+3){background:#f3dcc8!important}
+html body main .method-grid.methodology-steps>.method-step:nth-child(6n+4){background:#d2e4fa!important}
+html body main .method-grid.methodology-steps>.method-step:nth-child(6n+5){background:#e7ddf8!important}
+html body main .method-grid.methodology-steps>.method-step:nth-child(6n){background:#d1eddf!important}
+html body main .content-grid>*,html body main .tool-grid>*,html body main .pro-grid>*,html body main .network-grid>*,html body main .principles>*,html body main .layer-grid>*{border-radius:24px!important}
+html body main .content-grid> :nth-child(4n+1),html body main .tool-grid> :nth-child(4n+1),html body main .pro-grid> :nth-child(4n+1){background:#cbebf0!important;color:#142039!important}
+html body main .content-grid> :nth-child(4n+2),html body main .tool-grid> :nth-child(4n+2),html body main .pro-grid> :nth-child(4n+2){background:#ded9fa!important;color:#142039!important}
+html body main .content-grid> :nth-child(4n+3),html body main .tool-grid> :nth-child(4n+3),html body main .pro-grid> :nth-child(4n+3){background:#f2dfd0!important;color:#142039!important}
+html body main .content-grid> :nth-child(4n),html body main .tool-grid> :nth-child(4n),html body main .pro-grid> :nth-child(4n){background:#d2e6f7!important;color:#142039!important}
+html body main .content-grid>* h2,html body main .content-grid>* h3,html body main .tool-grid>* h2,html body main .tool-grid>* h3,html body main .pro-grid>* h2,html body main .pro-grid>* h3{color:#142039!important}
+html body main .content-grid>* p,html body main .tool-grid>* p,html body main .pro-grid>* p{color:#344158!important}
+html body main .card,html body main .calc-panel,html body main .calc-results,html body main .auth-card,html body main .account-identity,html body main .report-card{background:#f4f5fb!important;color:#1c263a!important;border:0!important;border-radius:24px!important}
+html body main .card h2,html body main .card h3,html body main .calc-panel h2,html body main .auth-card h2{color:#1c263a!important}
+html body main .card p,html body main .calc-panel p,html body main .auth-card p{color:#34415b!important}
+html body main table,html body main tbody{background:#f6f7fb!important;color:#233047!important}
+html body main td,html body main th{color:#233047!important}
+html body main input,html body main select,html body main textarea{background:#fff!important;color:#152039!important}
+html body main a.text-link{color:#314da6!important}
+html body .theme-toggle,html body .platform-ribbon{display:none!important}
+html body .masthead .brand{background-image:none!important}
+html body .masthead .brand:before,html body .masthead .brand:after{content:none!important;display:none!important}
+html body .masthead .brand .house-logo{width:42px!important;height:42px!important;display:block!important}
+html body .masthead .brand>img:not(.house-logo){display:none!important}
+html body .masthead .brand__name{color:#fff!important;opacity:1!important}
+html body .masthead{background:#111827!important}
+html body main .page-hero{position:relative;overflow:hidden}
+html body main .page-hero:after{content:"";position:absolute;right:-45px;bottom:-75px;width:min(27vw,360px);height:min(27vw,360px);background:radial-gradient(circle at 38% 35%,#c5eaf0 0 37%,#dad7fa 38% 63%,#eacdb8 64% 79%,transparent 80%);opacity:.19;border-radius:45%;pointer-events:none}
+@media(max-width:650px){html body main .page-hero{min-height:0!important}html body main .page-hero:after{opacity:.1}}
