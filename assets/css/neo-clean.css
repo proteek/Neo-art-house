@@ -26,3 +26,19 @@
 .apps .app-visual.single img{height:min(290px,100%)!important;width:auto!important;max-width:90%!important;aspect-ratio:auto!important;object-fit:contain!important;object-position:center bottom!important}
 .apps .appicon{object-fit:contain!important;aspect-ratio:1!important}
 @media(max-width:600px){.apps .app-visual:not(.single) img{height:220px!important;max-width:46%!important}.apps .app-visual.single img{height:215px!important}}
+
+/* Authentic tablet-and-phone responsive product mockups */
+.apps .app{grid-template-columns:minmax(0,40%) minmax(0,60%)!important;overflow:hidden}
+.apps .app-device-showcase{position:relative;height:300px;min-width:0;align-self:end;overflow:hidden;padding:8px 12px 0 0;display:flex;align-items:center;justify-content:center}
+.apps .device-tablet{display:block;width:95%;height:auto;max-height:230px;aspect-ratio:auto;object-fit:contain;object-position:center;border:5px solid #171a26;border-radius:15px;box-shadow:0 12px 24px #1018272e}
+.apps .device-phone{position:absolute;bottom:-18px;right:4%;width:auto;height:180px;max-width:30%;object-fit:contain;object-position:center;aspect-ratio:auto;border:4px solid #141a27;border-radius:15px;box-shadow:0 14px 24px #10182745;background:#161a25}
+.ipad-gallery{padding:55px 0 24px}
+.ipad-gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.ipad-gallery-grid figure{margin:0;background:#dbe6f3;padding:18px;border-radius:22px;min-width:0}
+.ipad-gallery-grid figure:nth-child(2){background:#e3def9}
+.ipad-gallery-grid figure:nth-child(3){background:#d8eef0}
+.ipad-gallery-grid figure:nth-child(4){background:#f3dfcf}
+.ipad-gallery-grid img{display:block;width:100%;height:auto;max-height:500px;object-fit:contain;object-position:center;border-radius:13px;box-shadow:0 6px 22px #1d253a18}
+.ipad-gallery-grid figcaption{font-size:13px;color:#283246;font-weight:700;padding-top:12px}
+@media(max-width:850px){.apps .app-device-showcase{height:270px}.apps .device-tablet{max-height:200px}.apps .device-phone{height:160px}}
+@media(max-width:600px){.apps .app{grid-template-columns:42% 58%!important}.apps .app-device-showcase{height:230px;padding:0 4px}.apps .device-tablet{max-height:175px;border-width:3px;border-radius:10px}.apps .device-phone{height:125px;border-width:3px;border-radius:10px;right:2%;bottom:0}.ipad-gallery{padding:36px 0 18px}.ipad-gallery-grid{grid-template-columns:1fr;gap:11px}.ipad-gallery-grid figure{padding:12px;border-radius:17px}}
