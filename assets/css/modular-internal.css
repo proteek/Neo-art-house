@@ -198,3 +198,36 @@ html body main .auth-panel--intro h1,html body main .auth-panel--intro p{color:#
 html body main .auth-panel--form{background:#e1dafa!important;color:#162137!important}
 html body main article,html body main .jurisdiction-card,html body main .glossary-item,html body main .alert-card,html body main .house-card{border-radius:22px}
 @media(max-width:700px){.internal-visual-intro{margin:9px 7px;grid-template-columns:1fr;min-height:0}.internal-visual-intro img{height:175px}}
+
+/* Stable header: single line, single mark, visible Home, no overflow */
+html body .masthead{box-sizing:border-box!important;overflow:visible!important}
+html body .masthead__inner{display:flex!important;align-items:center!important;justify-content:space-between!important;flex-wrap:nowrap!important;gap:clamp(9px,1.5vw,24px)!important;width:min(1360px,calc(100% - 30px))!important;margin:auto!important;min-height:76px!important}
+html body .masthead .brand{display:inline-flex!important;flex-direction:row!important;flex:0 0 auto!important;align-items:center!important;gap:10px!important;min-width:190px!important}
+html body .masthead .brand img.house-logo{display:block!important;width:44px!important;height:44px!important;min-width:44px!important;object-fit:contain!important;opacity:1!important}
+html body .masthead .brand .brand__name{color:#fff!important;font-size:15px!important;line-height:1.1!important;white-space:nowrap!important;display:block!important}
+html body .masthead .brand__sub{display:none!important}
+html body .masthead .nav{display:flex!important;align-items:center!important;justify-content:center!important;flex:1 1 auto!important;gap:clamp(10px,1.5vw,22px)!important;min-width:0!important}
+html body .masthead .nav a{color:#f2f5ff!important;white-space:nowrap!important;font:600 12px/1.35 Arial,sans-serif!important}
+html body .masthead .nav a[href="index.html"]{background:#c9eaf0!important;color:#111827!important;border-radius:99px!important;padding:9px 15px!important}
+html body .masthead .btn{flex:0 0 auto!important;margin:0!important;white-space:nowrap!important}
+html body .masthead .mobile-menu{flex:0 0 auto!important}
+html body .masthead .nav a[href="index.html"]:after{display:none!important}
+html body .masthead .brand:focus-visible,html body .masthead .nav a:focus-visible{outline:3px solid #c6c8ff!important}
+html body main{background:#151b2b!important}
+html body main .section{background:#151b2b!important}
+html body main .section>.wrap{max-width:1320px}
+@media(max-width:1100px){
+ html body .masthead__inner{min-height:70px!important}
+ html body .masthead .nav{display:none!important}
+ html body .masthead .nav.nav--open{display:flex!important;flex-direction:column!important;position:absolute!important;top:100%!important;left:0!important;right:0!important;background:#111827!important;z-index:99!important;padding:16px!important;border-radius:0 0 18px 18px!important;align-items:stretch!important}
+ html body .masthead .nav.nav--open a{padding:11px!important;color:#fff!important}
+ html body .masthead .mobile-menu{display:inline-flex!important;align-items:center!important;justify-content:center!important;margin-left:auto!important;background:#c8c6fa!important;color:#101729!important;border:0!important;border-radius:12px!important;min-height:40px!important;min-width:42px!important}
+ html body .masthead .btn{font-size:11px!important;padding:10px!important}
+}
+@media(max-width:650px){
+ html body .masthead__inner{width:calc(100% - 22px)!important;gap:8px!important}
+ html body .masthead .brand{min-width:0!important;gap:6px!important}
+ html body .masthead .brand img.house-logo{width:35px!important;height:35px!important;min-width:35px!important}
+ html body .masthead .brand .brand__name{font-size:11px!important}
+ html body .masthead .btn{padding:8px!important;max-width:105px!important;overflow:hidden!important;text-overflow:ellipsis!important}
+}
