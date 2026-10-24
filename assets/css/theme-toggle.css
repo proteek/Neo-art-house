@@ -25,3 +25,7 @@ html[data-theme="dark"] .home-path p,html[data-theme="dark"] .artist-price-examp
 @media(max-width:1050px){.theme-toggle{font-size:12px;padding:7px 9px}.masthead__inner>.theme-toggle{justify-self:end}}
 /* Improve legibility of small navigation and secondary text in both modes. */
 .brand__sub{font-size:10px;letter-spacing:.13em}.eyebrow{font-size:12px;letter-spacing:.12em}
+
+@media(min-width:1101px){.masthead__inner{grid-template-columns:auto minmax(0,1fr) auto auto;gap:18px}.masthead__inner>.mobile-menu{display:none}}
+@media(max-width:1100px){.masthead__inner{grid-template-columns:minmax(0,1fr) auto auto;gap:12px}.masthead__inner>.btn{display:none}}
+@media(max-width:500px){.theme-toggle{font-size:11px;padding:7px 6px}.brand__name{font-size:19px}.brand__sub{font-size:8px;letter-spacing:.06em}}
