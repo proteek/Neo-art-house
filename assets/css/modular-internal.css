@@ -274,3 +274,9 @@ html body .masthead .masthead__inner>a.brand img.house-logo{width:42px!important
 html body .masthead .masthead__inner>a.brand .brand__name{font-size:14px!important;color:#fff!important}
 @media(max-width:1100px){html body .masthead .masthead__inner{padding-left:155px!important}}
 @media(max-width:650px){html body .masthead .masthead__inner{padding-left:112px!important}html body .masthead .masthead__inner>a.brand{left:2px!important;min-width:0!important;max-width:115px!important}html body .masthead .masthead__inner>a.brand img.house-logo{width:32px!important;height:32px!important;flex-basis:32px!important}html body .masthead .masthead__inner>a.brand .brand__name{font-size:10px!important}}
+
+/* Guaranteed Home navigation, independent of legacy header rules */
+html body a.nah-home-return{position:fixed!important;left:18px!important;bottom:18px!important;top:auto!important;right:auto!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;visibility:visible!important;opacity:1!important;z-index:99999!important;background:#c9eff2!important;color:#111827!important;border:1px solid #a7d6df!important;border-radius:999px!important;padding:12px 17px!important;text-decoration:none!important;font:750 13px/1.1 Arial,Helvetica,sans-serif!important;box-shadow:0 5px 20px #0005!important;min-height:43px!important;min-width:90px!important;transform:none!important}
+html body a.nah-home-return:hover{background:#dcd8fb!important}
+html body a.nah-home-return:focus-visible{outline:3px solid #f7aa62!important;outline-offset:3px!important}
+@media(max-width:600px){html body a.nah-home-return{left:10px!important;bottom:10px!important;font-size:12px!important;padding:10px 14px!important}}
