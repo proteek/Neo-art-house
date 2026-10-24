@@ -1,0 +1,17 @@
+/* Independent site header v3 — no legacy masthead or brand selectors */
+.nah3-head{background:#111827;color:#fff;border-radius:18px;margin:12px 14px;position:relative;z-index:80;font-family:Arial,Helvetica,sans-serif}
+.nah3-row{width:min(1320px,calc(100% - 34px));margin:auto;min-height:78px;display:flex;gap:22px;align-items:center;justify-content:space-between}
+.nah3-logo{display:flex;align-items:center;gap:11px;flex:0 0 auto;color:#fff!important;text-decoration:none!important;font:800 15px/1.06 Arial,sans-serif;letter-spacing:-.015em}
+.nah3-logo img{display:block;width:47px;height:47px;min-width:47px;object-fit:contain;filter:none;visibility:visible;opacity:1}
+.nah3-links{display:flex;align-items:center;gap:clamp(10px,1.15vw,22px);margin-left:auto}
+.nah3-links a{color:#edf1fc!important;text-decoration:none!important;white-space:nowrap;font:600 12px Arial,sans-serif}
+.nah3-links a:first-child{background:#c8edf0;color:#111827!important;border-radius:99px;padding:10px 14px}
+.nah3-action{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;text-decoration:none!important;padding:14px 17px;border-radius:99px;background:#cecbff;color:#111827!important;font:800 11px Arial,sans-serif;letter-spacing:.07em;text-transform:uppercase}
+.nah3-menu{display:none;position:relative}
+.nah3-menu>summary{cursor:pointer;list-style:none;background:#cecbff;color:#111827;border-radius:12px;padding:11px 14px;font-weight:bold}
+.nah3-menu>summary::-webkit-details-marker{display:none}
+.nah3-drop{position:absolute;right:0;top:calc(100% + 14px);width:min(280px,85vw);background:#111827;border:1px solid #38445d;border-radius:15px;padding:14px;box-shadow:0 18px 30px #0005;display:flex;flex-direction:column;gap:5px}
+.nah3-drop a{display:block;padding:11px 12px;text-decoration:none!important;color:#fff!important;border-radius:9px;font:600 13px Arial,sans-serif}
+.nah3-drop a:hover{background:#303d5c}
+@media(max-width:1100px){.nah3-links{display:none}.nah3-menu{display:block}.nah3-row{gap:12px}.nah3-action{margin-left:auto}}
+@media(max-width:550px){.nah3-head{margin:7px;border-radius:12px}.nah3-row{min-height:65px;width:calc(100% - 20px);gap:7px}.nah3-logo{font-size:11px;gap:5px}.nah3-logo img{width:34px;height:34px;min-width:34px}.nah3-action{font-size:9px;padding:11px 8px}.nah3-menu>summary{padding:9px}}
