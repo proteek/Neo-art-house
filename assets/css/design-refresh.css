@@ -1,0 +1,72 @@
+/* Neo Art House — contemporary bento design system, 2026-10-24 */
+:root{--paper:#e9e9f4;--paper-deep:#dedff0;--panel:#f7f7fc;--white:#fff;--ink:#111425;--ink-soft:#4e536a;--line:#c6c9dc;--line-strong:#a8acc3;--gold:#465add;--gold-soft:#b2e4eb;--serif:"Inter",Arial,sans-serif;--sans:"Inter",Arial,sans-serif;--shadow:0 16px 50px rgba(20,26,57,.09)}
+html,body{background:var(--paper);color:var(--ink)}
+body{font-size:16px;line-height:1.62}
+.masthead{background:rgba(17,20,37,.98);border:0;color:#fff}
+.masthead__inner{min-height:78px}
+.brand__name{font-family:var(--sans);font-size:19px;font-weight:800;letter-spacing:-.045em;color:#fff}
+.brand__sub{font-size:10px;color:#cdd2eb;letter-spacing:.065em}
+.nav{font-family:var(--sans);font-size:12px;gap:23px}
+.nav a{color:#e8ebf5}
+.masthead .btn{color:#fff;border:1px solid #535977;border-radius:100px}
+.masthead .btn:hover{background:#fff;color:#131627}
+.masthead .theme-toggle{background:#30354d;color:#fff;border-color:#4d5670;border-radius:100px}
+.mobile-menu{color:#fff}
+.display{font-family:var(--sans);letter-spacing:-.055em;line-height:1.06;font-weight:750}
+.display--xl{font-size:clamp(43px,5.6vw,81px)}
+.display--md{font-size:clamp(32px,3vw,49px)}
+.display--lg{font-size:clamp(38px,4vw,62px)}
+.eyebrow{font-size:12px;letter-spacing:.08em;color:#4956b1}
+.lede{font-family:var(--sans);font-size:clamp(18px,1.6vw,23px);line-height:1.5;color:var(--ink-soft)}
+.btn{border-radius:100px;font-size:12px;letter-spacing:.03em;font-weight:700}
+.btn--dark{background:#15192d;color:#fff}
+.btn--gold{background:#b8e9ee;color:#15192d;border-color:#b8e9ee}
+.btn--gold:hover{background:#9fdde5;border-color:#9fdde5;color:#15192d}
+.section--white{background:#f7f8fd}
+.section--deep{background:#e2e5f5}
+footer.footer,.footer{background:#151829;color:#fff}
+.footer .muted{color:#bdc4d8}
+.footer a{color:#e8ecff}
+.feature,.stat,.home-path,.ecosystem-card,.auction-alert-card,.intel-card,.artist-price-example{border-radius:22px;overflow:hidden}
+.field input,.field select,.search-input{border-radius:11px}
+.text-link{color:#4351bc}
+.bento-home{padding:16px 0 78px;background:#555f91}
+.bento-shell{max-width:1340px;width:calc(100% - 34px);margin:auto;padding:16px;background:#111524;border-radius:30px;display:grid;gap:12px}
+.bento-hero{border-radius:23px;overflow:hidden;background:#b5e7ed;min-height:475px;position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:15px;padding:clamp(26px,4vw,54px);color:#111425}
+.bento-hero__copy{position:relative;z-index:2;align-self:center}
+.bento-kicker{text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:700;color:#435368}
+.bento-hero h1{font-size:clamp(46px,5.9vw,84px);font-weight:850;line-height:.99;letter-spacing:-.06em;margin:22px 0;max-width:780px}
+.bento-hero p{font-size:clamp(17px,1.5vw,21px);max-width:590px;line-height:1.5}
+.bento-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.bento-action{border:2px solid #141a2c;border-radius:100px;background:#141a2c;color:#fff;padding:14px 21px;font-size:13px;font-weight:750}
+.bento-action--outline{background:transparent;color:#141a2c}
+.bento-hero__visual{position:relative;min-height:320px;display:flex;align-items:center;justify-content:center}
+.bento-orbit{width:min(90%,420px);aspect-ratio:1;border:2px solid rgba(18,25,44,.48);border-radius:50%;position:absolute;transform:translate(4%,2%)}
+.bento-hero__visual img{width:85%;height:390px;object-fit:cover;object-position:center;border-radius:44% 44% 15% 15%;filter:grayscale(1);mix-blend-mode:multiply}
+.bento-orbit:after{content:"✦";position:absolute;right:-10px;top:43%;font-size:34px}
+.bento-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:12px}
+.bento-tile{min-height:265px;border-radius:22px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;color:#131628}
+.bento-tile--dark{background:#24283d;color:#fff}
+.bento-tile--peach{background:#efd4c3}
+.bento-tile--lilac{background:#bfc6ff}
+.bento-tile--mint{background:#caeadd}
+.bento-tile--cream{background:#ede8dc}
+.bento-tile__tag{font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:750}
+.bento-tile h2{font-size:clamp(25px,2.8vw,40px);letter-spacing:-.05em;line-height:1.1;margin:15px 0 10px}
+.bento-tile p{font-size:15px;line-height:1.5;max-width:420px}
+.bento-tile__link{font-size:14px;font-weight:750;align-self:flex-start;border-bottom:1px solid currentColor;padding-bottom:3px}
+.bento-tile--wide{grid-column:span 2}
+.bento-app-icon{width:68px;height:68px;border-radius:17px;object-fit:cover}
+.bento-section-title{margin:38px 10px 17px;color:#fff;font-size:clamp(27px,3vw,40px);letter-spacing:-.04em}
+.bento-shortcuts{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:7px}
+.bento-shortcuts a{color:#e6edff;border:1px solid #626981;border-radius:99px;padding:11px 17px;font-size:13px}
+.bento-shortcuts a:hover{background:#343b58}
+html[data-theme="dark"]{--paper:#171a2a;--paper-deep:#232640;--panel:#252940;--white:#292d46;--ink:#f6f6ff;--ink-soft:#c1c6dd;--line:#5a6078;--line-strong:#797f9d;--gold:#a6b5ff;color-scheme:dark}
+html[data-theme="dark"] body{background:var(--paper);color:var(--ink)}
+html[data-theme="dark"] .bento-home{background:#333b62}
+html[data-theme="dark"] .bento-hero,html[data-theme="dark"] .bento-tile{color:#101425}
+html[data-theme="dark"] .bento-tile--dark{color:#fff}
+html[data-theme="dark"] .nav a{color:#fff}
+html[data-theme="dark"] .btn--dark{background:#dde4ff;color:#141629}
+@media(max-width:940px){.bento-grid{grid-template-columns:1fr 1fr}.bento-tile--wide{grid-column:span 2}.bento-hero{grid-template-columns:1fr;gap:0}.bento-hero__visual{display:none}}
+@media(max-width:600px){.bento-home{padding:8px 0 36px}.bento-shell{width:calc(100% - 14px);padding:9px;border-radius:19px}.bento-hero{min-height:420px;padding:27px 24px;border-radius:16px}.bento-hero h1{font-size:clamp(40px,10.2vw,57px)}.bento-grid{grid-template-columns:1fr}.bento-tile,.bento-tile--wide{grid-column:span 1;min-height:220px;padding:24px;border-radius:16px}.bento-actions{flex-direction:column}.bento-action{text-align:center}.bento-shortcuts{padding:0 4px}.bento-shortcuts a{font-size:12px}}
