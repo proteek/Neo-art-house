@@ -19,3 +19,10 @@
 .footer{margin-top:12px}
 @media(max-width:1050px){.apps .app{min-height:315px}.apps .app-visual{height:315px}}
 @media(max-width:600px){.apps{gap:11px}.apps .app{min-height:250px;grid-template-columns:52% 48%;padding:17px 0 0 17px;border-radius:17px}.apps .app>div:first-child{padding-bottom:18px}.apps .app .appicon{height:43px;width:43px;margin-bottom:3px}.apps .app h3{font-size:23px}.apps .app p{font-size:12px;line-height:1.45}.apps .app b{font-size:12px}.apps .app-visual{height:250px;padding:7px 7px 0 0}.apps .app-visual:not(.single) img{height:232px;width:49%;border-width:3px;border-radius:16px 16px 0 0}.apps .app-visual.single img{height:224px}.section:has(> .section-title):has(> .apps){padding-bottom:14px}.footer{margin-top:8px}}
+
+/* Product images preserve original screenshot aspect ratio */
+.apps .app-visual{overflow:hidden!important;align-items:flex-end!important}
+.apps .app-visual:not(.single) img{width:auto!important;max-width:46%!important;height: min(320px,100%)!important;aspect-ratio:9/19.5!important;object-fit:contain!important;object-position:center bottom!important;border-radius:20px 20px 0 0!important}
+.apps .app-visual.single img{height:min(290px,100%)!important;width:auto!important;max-width:90%!important;aspect-ratio:auto!important;object-fit:contain!important;object-position:center bottom!important}
+.apps .appicon{object-fit:contain!important;aspect-ratio:1!important}
+@media(max-width:600px){.apps .app-visual:not(.single) img{height:220px!important;max-width:46%!important}.apps .app-visual.single img{height:215px!important}}
