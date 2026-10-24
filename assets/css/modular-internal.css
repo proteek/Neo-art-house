@@ -165,3 +165,22 @@ html body .masthead{background:#111827!important}
 html body main .page-hero{position:relative;overflow:hidden}
 html body main .page-hero:after{content:"";position:absolute;right:-45px;bottom:-75px;width:min(27vw,360px);height:min(27vw,360px);background:radial-gradient(circle at 38% 35%,#c5eaf0 0 37%,#dad7fa 38% 63%,#eacdb8 64% 79%,transparent 80%);opacity:.19;border-radius:45%;pointer-events:none}
 @media(max-width:650px){html body main .page-hero{min-height:0!important}html body main .page-hero:after{opacity:.1}}
+
+/* Site-wide picture banners: the subject is selected by each HTML page. */
+body[data-hero] main .page-hero,body[data-hero] main .account-hero{
+background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important;
+border:1px solid #41506a!important;
+}
+body[data-hero] main .page-hero .wrap,body[data-hero] main .account-hero .wrap{position:relative;z-index:2}
+body[data-hero] main .page-hero .page-hero__grid>div:first-child{max-width:730px}
+body[data-hero] main .page-hero .page-hero__aside{box-shadow:0 14px 30px #0b152955}
+body[data-hero] main .page-hero:after{display:none!important}
+body[data-hero="methodology"] main .page-hero,body[data-hero="methodology"] main .account-hero{background-image:linear-gradient(90deg,#232c42 0%,rgba(35,44,66,.97) 40%,rgba(35,44,66,.18) 100%),url("https://proteekmandal22-wksam.wordpress.com/wp-content/uploads/2026/10/neo-methodology-hero.png")!important}
+body[data-hero="market"] main .page-hero,body[data-hero="market"] main .account-hero{background-image:linear-gradient(90deg,#232c42 0%,rgba(35,44,66,.97) 40%,rgba(35,44,66,.18) 100%),url("https://proteekmandal22-wksam.wordpress.com/wp-content/uploads/2026/10/neo-market-hero.png")!important}
+body[data-hero="knowledge"] main .page-hero,body[data-hero="knowledge"] main .account-hero{background-image:linear-gradient(90deg,#232c42 0%,rgba(35,44,66,.97) 40%,rgba(35,44,66,.18) 100%),url("https://proteekmandal22-wksam.wordpress.com/wp-content/uploads/2026/10/neo-knowledge-hero.png")!important}
+body[data-hero="auction"] main .page-hero,body[data-hero="auction"] main .account-hero{background-image:linear-gradient(90deg,#232c42 0%,rgba(35,44,66,.97) 40%,rgba(35,44,66,.18) 100%),url("https://proteekmandal22-wksam.wordpress.com/wp-content/uploads/2026/10/neo-auction-hero.png")!important}
+body[data-hero="logistics"] main .page-hero,body[data-hero="logistics"] main .account-hero{background-image:linear-gradient(90deg,#232c42 0%,rgba(35,44,66,.97) 40%,rgba(35,44,66,.18) 100%),url("https://proteekmandal22-wksam.wordpress.com/wp-content/uploads/2026/10/neo-logistics-hero.png")!important}
+body[data-hero="gallery"] main .page-hero,body[data-hero="gallery"] main .account-hero{background-image:linear-gradient(90deg,#232c42 0%,rgba(35,44,66,.97) 40%,rgba(35,44,66,.18) 100%),url("https://proteekmandal22-wksam.wordpress.com/wp-content/uploads/2026/10/neo-gallery-hero.png")!important}
+@media(max-width:760px){body[data-hero] main .page-hero,body[data-hero] main .account-hero{background-position:65% center!important}body[data-hero] main .page-hero{background-image:linear-gradient(90deg,rgba(35,44,66,.96),rgba(35,44,66,.82))!important}}
+html body .masthead .brand>svg,html body .masthead .brand picture{display:none!important}
+html body .masthead .brand .house-logo~.house-logo{display:none!important}
