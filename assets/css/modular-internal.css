@@ -109,3 +109,14 @@ html .methodology-steps>.method-step h3,html .methodology-steps>.method-step p,h
 html .methodology-steps>.method-step .method-step__num{color:#5a67c5!important}
 html .masthead .brand .house-logo~.house-logo{display:none!important}
 html .masthead .brand>img:not(.house-logo){display:none!important}
+
+/* Stable coloured bento surfaces on every internal tool family */
+html .tool-grid>*:nth-child(4n+1),html .pro-grid>*:nth-child(4n+1),html .network-grid>*:nth-child(4n+1),html .principles>*:nth-child(4n+1),html .layer-grid>*:nth-child(4n+1),html .content-grid>article:nth-child(4n+1),html .feature-grid>article:nth-child(4n+1){background:#d9f2f5!important}
+html .tool-grid>*:nth-child(4n+2),html .pro-grid>*:nth-child(4n+2),html .network-grid>*:nth-child(4n+2),html .principles>*:nth-child(4n+2),html .layer-grid>*:nth-child(4n+2),html .content-grid>article:nth-child(4n+2),html .feature-grid>article:nth-child(4n+2){background:#dfddfb!important}
+html .tool-grid>*:nth-child(4n+3),html .pro-grid>*:nth-child(4n+3),html .network-grid>*:nth-child(4n+3),html .principles>*:nth-child(4n+3),html .layer-grid>*:nth-child(4n+3),html .content-grid>article:nth-child(4n+3),html .feature-grid>article:nth-child(4n+3){background:#f4e1d2!important}
+html .tool-grid>*:nth-child(4n),html .pro-grid>*:nth-child(4n),html .network-grid>*:nth-child(4n),html .principles>*:nth-child(4n),html .layer-grid>*:nth-child(4n),html .content-grid>article:nth-child(4n),html .feature-grid>article:nth-child(4n){background:#dce9fa!important}
+html .tool-grid>*,html .pro-grid>*,html .network-grid>*,html .principles>*,html .layer-grid>*,html .content-grid>article,html .feature-grid>article{border:0!important;border-radius:22px!important;padding:clamp(18px,2.3vw,30px)}
+html .tool-grid>* h2,html .pro-grid>* h2,html .network-grid>* h2,html .principles>* h2,html .layer-grid>* h2,html .tool-grid>* h3,html .pro-grid>* h3,html .network-grid>* h3,html .principles>* h3,html .layer-grid>* h3{color:#121a2c!important}
+html .tool-grid>* p,html .pro-grid>* p,html .network-grid>* p,html .principles>* p,html .layer-grid>* p{color:#445169!important}
+html .page-hero__aside,html[data-theme="dark"] .page-hero__aside{background:#dfeafa!important;color:#152035!important}
+html .page-hero__aside p{color:#35445d!important}
