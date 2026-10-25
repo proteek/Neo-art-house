@@ -1,6 +1,6 @@
 {
   "_readme": "Generated every 6 hours. Public dataset contains upcoming sales only, from the editorial calendar plus explicitly permitted official feeds.",
-  "updated": "2026-10-24T20:57:38.291553Z",
+  "updated": "2026-10-25T04:53:37.882619Z",
   "count": 17,
   "sourceCounts": {
     "feed": 16,
@@ -26,11 +26,11 @@
       "note": "Imported from Christie’s official auction calendar.",
       "buyerAlert": "",
       "urgent": false,
-      "urgency": "soon",
-      "daysToSale": 3,
+      "urgency": "critical",
+      "daysToSale": 2,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-24T20:57:38.291553Z"
+      "lastBuilt": "2026-10-25T04:53:37.882619Z"
     },
     {
       "id": "6bf0c4e5aaaa",
@@ -47,10 +47,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 4,
+      "daysToSale": 3,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-24T20:57:38.291553Z"
+      "lastBuilt": "2026-10-25T04:53:37.882619Z"
     },
     {
       "id": "93690c8da126",
@@ -67,10 +67,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 4,
+      "daysToSale": 3,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-24T20:57:38.291553Z"
+      "lastBuilt": "2026-10-25T04:53:37.882619Z"
     },
     {
       "id": "2473838c4b5a",
@@ -87,10 +87,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 4,
+      "daysToSale": 3,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-24T20:57:38.291553Z"
+      "lastBuilt": "2026-10-25T04:53:37.882619Z"
     },
     {
       "id": "731e45bacbd5",
@@ -107,10 +107,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 4,
+      "daysToSale": 3,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-24T20:57:38.291553Z"
+      "lastBuilt": "2026-10-25T04:53:37.882619Z"
     },
     {
       "id": "88e32d69d09e",
@@ -127,10 +127,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 4,
+      "daysToSale": 3,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-24T20:57:38.291553Z"
+      "lastBuilt": "2026-10-25T04:53:37.882619Z"
     },
     {
       "id": "8b57be0c8860",
@@ -147,10 +147,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 5,
+      "daysToSale": 4,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-24T20:57:38.291553Z"
+      "lastBuilt": "2026-10-25T04:53:37.882619Z"
     },
     {
       "id": "e1b63af43050",
@@ -167,10 +167,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 5,
+      "daysToSale": 4,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-24T20:57:38.291553Z"
+      "lastBuilt": "2026-10-25T04:53:37.882619Z"
     },
     {
       "id": "5d9acea0b02e",
@@ -187,10 +187,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 5,
+      "daysToSale": 4,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-24T20:57:38.291553Z"
+      "lastBuilt": "2026-10-25T04:53:37.882619Z"
     },
     {
       "id": "a6430df1952c",
@@ -207,10 +207,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 5,
+      "daysToSale": 4,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-24T20:57:38.291553Z"
+      "lastBuilt": "2026-10-25T04:53:37.882619Z"
     },
     {
       "id": "569945a3c4e3",
@@ -227,10 +227,10 @@
       "buyerAlert": "Provenance / movement review",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 6,
+      "daysToSale": 5,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-24T20:57:38.291553Z"
+      "lastBuilt": "2026-10-25T04:53:37.882619Z"
     },
     {
       "id": "6c87cde82993",
@@ -247,10 +247,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 6,
+      "daysToSale": 5,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-24T20:57:38.291553Z"
+      "lastBuilt": "2026-10-25T04:53:37.882619Z"
     },
     {
       "id": "9bb710a1fa79",
@@ -267,10 +267,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 11,
+      "daysToSale": 10,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-24T20:57:38.291553Z"
+      "lastBuilt": "2026-10-25T04:53:37.882619Z"
     },
     {
       "id": "6422fe40394c",
@@ -287,10 +287,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 14,
+      "daysToSale": 13,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-24T20:57:38.291553Z"
+      "lastBuilt": "2026-10-25T04:53:37.882619Z"
     },
     {
       "id": "e7a6815d43b5",
@@ -307,10 +307,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 26,
+      "daysToSale": 25,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-24T20:57:38.291553Z"
+      "lastBuilt": "2026-10-25T04:53:37.882619Z"
     },
     {
       "id": "5b885e7f7deb",
@@ -327,10 +327,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 27,
+      "daysToSale": 26,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-24T20:57:38.291553Z"
+      "lastBuilt": "2026-10-25T04:53:37.882619Z"
     },
     {
       "id": "071bcff25c74",
@@ -347,10 +347,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 28,
+      "daysToSale": 27,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-24T20:57:38.291553Z"
+      "lastBuilt": "2026-10-25T04:53:37.882619Z"
     }
   ]
 }
