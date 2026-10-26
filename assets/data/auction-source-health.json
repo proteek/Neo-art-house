@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26T04:57:12.844256Z",
+  "updated": "2026-10-26T13:15:51.247471Z",
   "sources": [
     {
       "house": "Christie's",
@@ -35,7 +35,7 @@
       "calendarUrl": "https://www.phillips.com/",
       "status": "Official homepage auction adapter enabled",
       "reachable": true,
-      "recordsFound": 3
+      "recordsFound": 5
     },
     {
       "house": "Artcurial",
