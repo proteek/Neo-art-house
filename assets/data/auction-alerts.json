@@ -1,37 +1,17 @@
 {
   "_readme": "Generated every 6 hours. Public dataset contains upcoming sales only, from the editorial calendar plus explicitly permitted official feeds.",
-  "updated": "2026-10-27T22:22:48.007305Z",
-  "count": 19,
+  "updated": "2026-10-28T05:54:04.451084Z",
+  "count": 18,
   "sourceCounts": {
-    "feed": 18,
+    "feed": 17,
     "editorial": 1
   },
   "windows": {
     "7": 12,
-    "30": 19,
-    "90": 19
+    "30": 18,
+    "90": 18
   },
   "alerts": [
-    {
-      "id": "93a550eedb86",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Fine Chinese Classical Paintings and Calligraphy",
-      "city": "Hong Kong",
-      "saleDate": "2026-10-27",
-      "dateLabel": "27 OCT 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-10-27T22:22:48.007305Z"
-    },
     {
       "id": "6bf0c4e5aaaa",
       "house": "AstaGuru",
@@ -47,10 +27,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-27T22:22:48.007305Z"
+      "lastBuilt": "2026-10-28T05:54:04.451084Z"
     },
     {
       "id": "93690c8da126",
@@ -67,10 +47,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-27T22:22:48.007305Z"
+      "lastBuilt": "2026-10-28T05:54:04.451084Z"
     },
     {
       "id": "2473838c4b5a",
@@ -87,10 +67,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-27T22:22:48.007305Z"
+      "lastBuilt": "2026-10-28T05:54:04.451084Z"
     },
     {
       "id": "731e45bacbd5",
@@ -107,10 +87,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-27T22:22:48.007305Z"
+      "lastBuilt": "2026-10-28T05:54:04.451084Z"
     },
     {
       "id": "88e32d69d09e",
@@ -127,10 +107,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-27T22:22:48.007305Z"
+      "lastBuilt": "2026-10-28T05:54:04.451084Z"
     },
     {
       "id": "8b57be0c8860",
@@ -147,10 +127,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 2,
+      "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-27T22:22:48.007305Z"
+      "lastBuilt": "2026-10-28T05:54:04.451084Z"
     },
     {
       "id": "e1b63af43050",
@@ -167,10 +147,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 2,
+      "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-27T22:22:48.007305Z"
+      "lastBuilt": "2026-10-28T05:54:04.451084Z"
     },
     {
       "id": "5d9acea0b02e",
@@ -187,10 +167,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 2,
+      "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-27T22:22:48.007305Z"
+      "lastBuilt": "2026-10-28T05:54:04.451084Z"
     },
     {
       "id": "a6430df1952c",
@@ -207,10 +187,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 2,
+      "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-27T22:22:48.007305Z"
+      "lastBuilt": "2026-10-28T05:54:04.451084Z"
     },
     {
       "id": "569945a3c4e3",
@@ -226,11 +206,11 @@
       "note": "Cross-category Asian art sale where age, origin, cultural-property status and restricted materials can materially affect movement.",
       "buyerAlert": "Provenance / movement review",
       "urgent": false,
-      "urgency": "soon",
-      "daysToSale": 3,
+      "urgency": "critical",
+      "daysToSale": 2,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-27T22:22:48.007305Z"
+      "lastBuilt": "2026-10-28T05:54:04.451084Z"
     },
     {
       "id": "6c87cde82993",
@@ -246,11 +226,11 @@
       "note": "Imported from Christie’s official auction calendar.",
       "buyerAlert": "",
       "urgent": false,
-      "urgency": "soon",
-      "daysToSale": 3,
+      "urgency": "critical",
+      "daysToSale": 2,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-27T22:22:48.007305Z"
+      "lastBuilt": "2026-10-28T05:54:04.451084Z"
     },
     {
       "id": "9bb710a1fa79",
@@ -266,11 +246,11 @@
       "note": "Imported from Phillips’ official public auction page.",
       "buyerAlert": "",
       "urgent": false,
-      "urgency": "upcoming",
-      "daysToSale": 8,
+      "urgency": "soon",
+      "daysToSale": 7,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-27T22:22:48.007305Z"
+      "lastBuilt": "2026-10-28T05:54:04.451084Z"
     },
     {
       "id": "6422fe40394c",
@@ -287,10 +267,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 11,
+      "daysToSale": 10,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-27T22:22:48.007305Z"
+      "lastBuilt": "2026-10-28T05:54:04.451084Z"
     },
     {
       "id": "d28a83689ea2",
@@ -307,10 +287,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 12,
+      "daysToSale": 11,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-27T22:22:48.007305Z"
+      "lastBuilt": "2026-10-28T05:54:04.451084Z"
     },
     {
       "id": "07292a1eec63",
@@ -327,10 +307,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 13,
+      "daysToSale": 12,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-27T22:22:48.007305Z"
+      "lastBuilt": "2026-10-28T05:54:04.451084Z"
     },
     {
       "id": "e7a6815d43b5",
@@ -347,10 +327,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 23,
+      "daysToSale": 22,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-27T22:22:48.007305Z"
+      "lastBuilt": "2026-10-28T05:54:04.451084Z"
     },
     {
       "id": "5b885e7f7deb",
@@ -367,10 +347,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 24,
+      "daysToSale": 23,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-27T22:22:48.007305Z"
+      "lastBuilt": "2026-10-28T05:54:04.451084Z"
     },
     {
       "id": "071bcff25c74",
@@ -387,10 +367,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 25,
+      "daysToSale": 24,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-27T22:22:48.007305Z"
+      "lastBuilt": "2026-10-28T05:54:04.451084Z"
     }
   ]
 }
