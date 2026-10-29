@@ -1,77 +1,17 @@
 {
   "_readme": "Generated every 6 hours. Public dataset contains upcoming sales only, from the editorial calendar plus explicitly permitted official feeds.",
-  "updated": "2026-10-28T22:41:42.335480Z",
-  "count": 16,
+  "updated": "2026-10-29T05:57:38.106122Z",
+  "count": 14,
   "sourceCounts": {
-    "feed": 15,
+    "feed": 13,
     "editorial": 1
   },
   "windows": {
-    "7": 10,
-    "30": 16,
-    "90": 16
+    "7": 7,
+    "30": 14,
+    "90": 14
   },
   "alerts": [
-    {
-      "id": "93690c8da126",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Fine Chinese Modern and Contemporary Ink Paintings",
-      "city": "Hong Kong",
-      "saleDate": "2026-10-28",
-      "dateLabel": "28 OCT 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-10-28T22:41:42.335480Z"
-    },
-    {
-      "id": "2473838c4b5a",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Collections: Including Pietra Dura from the Baron Family",
-      "city": "London",
-      "saleDate": "2026-10-28",
-      "dateLabel": "14–28 OCT 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-10-28T22:41:42.335480Z"
-    },
-    {
-      "id": "88e32d69d09e",
-      "house": "Phillips",
-      "houseCode": "PHI",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Rema Hort Mann Fund 30th Anniversary Auction: Launching Artists Living With Cancer Grant",
-      "city": "",
-      "saleDate": "2026-10-28",
-      "dateLabel": "19 – 28 October 2026",
-      "url": "https://www.phillips.com/",
-      "note": "Imported from Phillips’ official public auction page.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-10-28T22:41:42.335480Z"
-    },
     {
       "id": "8b57be0c8860",
       "house": "Christie's",
@@ -87,10 +27,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-28T22:41:42.335480Z"
+      "lastBuilt": "2026-10-29T05:57:38.106122Z"
     },
     {
       "id": "e1b63af43050",
@@ -107,10 +47,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-28T22:41:42.335480Z"
+      "lastBuilt": "2026-10-29T05:57:38.106122Z"
     },
     {
       "id": "5d9acea0b02e",
@@ -127,10 +67,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-28T22:41:42.335480Z"
+      "lastBuilt": "2026-10-29T05:57:38.106122Z"
     },
     {
       "id": "a6430df1952c",
@@ -147,10 +87,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-28T22:41:42.335480Z"
+      "lastBuilt": "2026-10-29T05:57:38.106122Z"
     },
     {
       "id": "569945a3c4e3",
@@ -167,10 +107,10 @@
       "buyerAlert": "Provenance / movement review",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 2,
+      "daysToSale": 1,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-28T22:41:42.335480Z"
+      "lastBuilt": "2026-10-29T05:57:38.106122Z"
     },
     {
       "id": "6c87cde82993",
@@ -187,10 +127,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 2,
+      "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-28T22:41:42.335480Z"
+      "lastBuilt": "2026-10-29T05:57:38.106122Z"
     },
     {
       "id": "9bb710a1fa79",
@@ -207,10 +147,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 7,
+      "daysToSale": 6,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-28T22:41:42.335480Z"
+      "lastBuilt": "2026-10-29T05:57:38.106122Z"
     },
     {
       "id": "6422fe40394c",
@@ -227,10 +167,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 10,
+      "daysToSale": 9,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-28T22:41:42.335480Z"
+      "lastBuilt": "2026-10-29T05:57:38.106122Z"
     },
     {
       "id": "d28a83689ea2",
@@ -247,10 +187,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 11,
+      "daysToSale": 10,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-28T22:41:42.335480Z"
+      "lastBuilt": "2026-10-29T05:57:38.106122Z"
     },
     {
       "id": "07292a1eec63",
@@ -267,10 +207,30 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 12,
+      "daysToSale": 11,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-28T22:41:42.335480Z"
+      "lastBuilt": "2026-10-29T05:57:38.106122Z"
+    },
+    {
+      "id": "bdd2e0a5db60",
+      "house": "Phillips",
+      "houseCode": "PHI",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Geneva Jewels: Online Auction",
+      "city": "",
+      "saleDate": "2026-11-12",
+      "dateLabel": "4 – 12 November 2026",
+      "url": "https://www.phillips.com/",
+      "note": "Imported from Phillips’ official public auction page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "upcoming",
+      "daysToSale": 14,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-10-29T05:57:38.106122Z"
     },
     {
       "id": "e7a6815d43b5",
@@ -287,10 +247,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 22,
+      "daysToSale": 21,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-28T22:41:42.335480Z"
+      "lastBuilt": "2026-10-29T05:57:38.106122Z"
     },
     {
       "id": "5b885e7f7deb",
@@ -307,10 +267,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 23,
+      "daysToSale": 22,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-28T22:41:42.335480Z"
+      "lastBuilt": "2026-10-29T05:57:38.106122Z"
     },
     {
       "id": "071bcff25c74",
@@ -327,10 +287,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 24,
+      "daysToSale": 23,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-28T22:41:42.335480Z"
+      "lastBuilt": "2026-10-29T05:57:38.106122Z"
     }
   ]
 }
