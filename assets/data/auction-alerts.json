@@ -1,97 +1,17 @@
 {
   "_readme": "Generated every 6 hours. Public dataset contains upcoming sales only, from the editorial calendar plus explicitly permitted official feeds.",
-  "updated": "2026-10-29T22:50:48.535237Z",
-  "count": 14,
+  "updated": "2026-10-30T05:59:09.527722Z",
+  "count": 10,
   "sourceCounts": {
-    "feed": 13,
-    "editorial": 1
+    "editorial": 1,
+    "feed": 9
   },
   "windows": {
-    "7": 7,
-    "30": 14,
-    "90": 14
+    "7": 3,
+    "30": 10,
+    "90": 10
   },
   "alerts": [
-    {
-      "id": "8b57be0c8860",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "The Au Bak Ling Collection Volume III",
-      "city": "Hong Kong",
-      "saleDate": "2026-10-29",
-      "dateLabel": "29 OCT 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-10-29T22:50:48.535237Z"
-    },
-    {
-      "id": "e1b63af43050",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "The Ai Lian Tang Collection - Gems of the Imperial Capital",
-      "city": "Hong Kong",
-      "saleDate": "2026-10-29",
-      "dateLabel": "29 OCT 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-10-29T22:50:48.535237Z"
-    },
-    {
-      "id": "5d9acea0b02e",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "For the Son of Heaven: The Imperial Qianlong Gold Ewer",
-      "city": "Hong Kong",
-      "saleDate": "2026-10-29",
-      "dateLabel": "29 OCT 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-10-29T22:50:48.535237Z"
-    },
-    {
-      "id": "a6430df1952c",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Important Chinese Ceramics and Works of Art",
-      "city": "Hong Kong",
-      "saleDate": "2026-10-29",
-      "dateLabel": "29 OCT 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-10-29T22:50:48.535237Z"
-    },
     {
       "id": "569945a3c4e3",
       "house": "Christie's",
@@ -107,10 +27,10 @@
       "buyerAlert": "Provenance / movement review",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-29T22:50:48.535237Z"
+      "lastBuilt": "2026-10-30T05:59:09.527722Z"
     },
     {
       "id": "6c87cde82993",
@@ -127,10 +47,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-29T22:50:48.535237Z"
+      "lastBuilt": "2026-10-30T05:59:09.527722Z"
     },
     {
       "id": "9bb710a1fa79",
@@ -147,10 +67,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 6,
+      "daysToSale": 5,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-29T22:50:48.535237Z"
+      "lastBuilt": "2026-10-30T05:59:09.527722Z"
     },
     {
       "id": "6422fe40394c",
@@ -167,10 +87,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 9,
+      "daysToSale": 8,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-29T22:50:48.535237Z"
+      "lastBuilt": "2026-10-30T05:59:09.527722Z"
     },
     {
       "id": "d28a83689ea2",
@@ -187,10 +107,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 10,
+      "daysToSale": 9,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-29T22:50:48.535237Z"
+      "lastBuilt": "2026-10-30T05:59:09.527722Z"
     },
     {
       "id": "07292a1eec63",
@@ -207,10 +127,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 11,
+      "daysToSale": 10,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-29T22:50:48.535237Z"
+      "lastBuilt": "2026-10-30T05:59:09.527722Z"
     },
     {
       "id": "bdd2e0a5db60",
@@ -227,10 +147,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 14,
+      "daysToSale": 13,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-29T22:50:48.535237Z"
+      "lastBuilt": "2026-10-30T05:59:09.527722Z"
     },
     {
       "id": "e7a6815d43b5",
@@ -247,10 +167,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 21,
+      "daysToSale": 20,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-29T22:50:48.535237Z"
+      "lastBuilt": "2026-10-30T05:59:09.527722Z"
     },
     {
       "id": "5b885e7f7deb",
@@ -267,10 +187,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 22,
+      "daysToSale": 21,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-29T22:50:48.535237Z"
+      "lastBuilt": "2026-10-30T05:59:09.527722Z"
     },
     {
       "id": "071bcff25c74",
@@ -287,10 +207,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 23,
+      "daysToSale": 22,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-29T22:50:48.535237Z"
+      "lastBuilt": "2026-10-30T05:59:09.527722Z"
     }
   ]
 }
