@@ -1,15 +1,15 @@
 {
   "_readme": "Generated every 6 hours. Public dataset contains upcoming sales only, from the editorial calendar plus explicitly permitted official feeds.",
-  "updated": "2026-10-30T13:08:15.245233Z",
-  "count": 10,
+  "updated": "2026-10-30T22:27:57.155529Z",
+  "count": 13,
   "sourceCounts": {
     "editorial": 1,
-    "feed": 9
+    "feed": 12
   },
   "windows": {
     "7": 3,
-    "30": 10,
-    "90": 10
+    "30": 13,
+    "90": 13
   },
   "alerts": [
     {
@@ -30,7 +30,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-10-30T13:08:15.245233Z"
+      "lastBuilt": "2026-10-30T22:27:57.155529Z"
     },
     {
       "id": "6c87cde82993",
@@ -50,7 +50,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-30T13:08:15.245233Z"
+      "lastBuilt": "2026-10-30T22:27:57.155529Z"
     },
     {
       "id": "9bb710a1fa79",
@@ -70,7 +70,7 @@
       "daysToSale": 5,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-30T13:08:15.245233Z"
+      "lastBuilt": "2026-10-30T22:27:57.155529Z"
     },
     {
       "id": "6422fe40394c",
@@ -90,7 +90,7 @@
       "daysToSale": 8,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-30T13:08:15.245233Z"
+      "lastBuilt": "2026-10-30T22:27:57.155529Z"
     },
     {
       "id": "d28a83689ea2",
@@ -110,7 +110,7 @@
       "daysToSale": 9,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-30T13:08:15.245233Z"
+      "lastBuilt": "2026-10-30T22:27:57.155529Z"
     },
     {
       "id": "07292a1eec63",
@@ -130,7 +130,7 @@
       "daysToSale": 10,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-30T13:08:15.245233Z"
+      "lastBuilt": "2026-10-30T22:27:57.155529Z"
     },
     {
       "id": "bdd2e0a5db60",
@@ -150,7 +150,27 @@
       "daysToSale": 13,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-30T13:08:15.245233Z"
+      "lastBuilt": "2026-10-30T22:27:57.155529Z"
+    },
+    {
+      "id": "78fab016e5f7",
+      "house": "Phillips",
+      "houseCode": "PHI",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Modern & Contemporary Art Evening Sale",
+      "city": "New York",
+      "saleDate": "2026-11-17",
+      "dateLabel": "New York Auction 17 November 2026",
+      "url": "https://www.phillips.com/",
+      "note": "Imported from Phillips’ official public auction page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "upcoming",
+      "daysToSale": 18,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-10-30T22:27:57.155529Z"
     },
     {
       "id": "e7a6815d43b5",
@@ -170,7 +190,47 @@
       "daysToSale": 20,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-30T13:08:15.245233Z"
+      "lastBuilt": "2026-10-30T22:27:57.155529Z"
+    },
+    {
+      "id": "9435c3496f2d",
+      "house": "Phillips",
+      "houseCode": "PHI",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Modern & Contemporary Art: Morning Session",
+      "city": "New York",
+      "saleDate": "2026-11-19",
+      "dateLabel": "New York Auction 19 November 2026",
+      "url": "https://www.phillips.com/",
+      "note": "Imported from Phillips’ official public auction page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "upcoming",
+      "daysToSale": 20,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-10-30T22:27:57.155529Z"
+    },
+    {
+      "id": "4b799e0d3eb1",
+      "house": "Phillips",
+      "houseCode": "PHI",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Modern & Contemporary Art: Afternoon Session",
+      "city": "New York",
+      "saleDate": "2026-11-19",
+      "dateLabel": "New York Auction 19 November 2026",
+      "url": "https://www.phillips.com/",
+      "note": "Imported from Phillips’ official public auction page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "upcoming",
+      "daysToSale": 20,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-10-30T22:27:57.155529Z"
     },
     {
       "id": "5b885e7f7deb",
@@ -190,7 +250,7 @@
       "daysToSale": 21,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-30T13:08:15.245233Z"
+      "lastBuilt": "2026-10-30T22:27:57.155529Z"
     },
     {
       "id": "071bcff25c74",
@@ -210,7 +270,7 @@
       "daysToSale": 22,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-10-30T13:08:15.245233Z"
+      "lastBuilt": "2026-10-30T22:27:57.155529Z"
     }
   ]
 }
