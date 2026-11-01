@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T17:58:12.792076Z",
+  "updated": "2026-11-01T22:09:52.441228Z",
   "sources": [
     {
       "house": "Christie's",
@@ -34,8 +34,8 @@
       "enabled": true,
       "calendarUrl": "https://www.phillips.com/",
       "status": "Official homepage auction adapter enabled",
-      "reachable": false,
-      "error": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+      "reachable": true,
+      "recordsFound": 7
     },
     {
       "house": "Artcurial",
