@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T19:35:17.291784Z",
+  "updated": "2026-11-04T06:38:49.136707Z",
   "sources": [
     {
       "house": "Christie's",
@@ -8,7 +8,7 @@
       "calendarUrl": "https://www.christies.com/en/calendar",
       "status": "Official calendar adapter enabled",
       "reachable": true,
-      "recordsFound": 41
+      "recordsFound": 40
     },
     {
       "house": "Sotheby's",
@@ -115,8 +115,8 @@
       "enabled": true,
       "calendarUrl": "https://en.polypm.com.cn/",
       "status": "Official upcoming-auctions adapter enabled · zero-result safe",
-      "reachable": false,
-      "error": "The read operation timed out"
+      "reachable": true,
+      "recordsFound": 0
     },
     {
       "house": "Seoul Auction",
