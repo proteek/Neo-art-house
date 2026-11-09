@@ -1,7 +1,7 @@
 {
   "_readme": "Historical auction alerts archived automatically by the six-hour builder.",
-  "updated": "2026-11-09T06:49:12.125165Z",
-  "count": 29,
+  "updated": "2026-11-09T22:29:35.389627Z",
+  "count": 27,
   "alerts": [
     {
       "id": "53f15169d8f1",
@@ -21,7 +21,7 @@
       "daysToSale": -282,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "fcbbc97c44e6",
@@ -41,7 +41,7 @@
       "daysToSale": -198,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "05b6b0491275",
@@ -61,7 +61,7 @@
       "daysToSale": -174,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "8efd504a5557",
@@ -81,7 +81,7 @@
       "daysToSale": -173,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "1f7d92472be4",
@@ -101,7 +101,7 @@
       "daysToSale": -172,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "f5ea33d22849",
@@ -121,7 +121,7 @@
       "daysToSale": -157,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "c56a2bcc9082",
@@ -141,7 +141,7 @@
       "daysToSale": -149,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "5380e6549eb0",
@@ -161,7 +161,7 @@
       "daysToSale": -149,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "204eb2cdb846",
@@ -181,7 +181,7 @@
       "daysToSale": -144,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "baf4d2bdf0ea",
@@ -201,27 +201,7 @@
       "daysToSale": -131,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
-    },
-    {
-      "id": "e4d977b908dd",
-      "house": "Ketterer Kunst",
-      "houseCode": "KK",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": ">",
-      "city": "",
-      "saleDate": "2026-09-06",
-      "dateLabel": "DC Open Galleries 04-06 September 2026",
-      "url": "https://kettererkunst.com/calendar.php",
-      "note": "Imported from Ketterer Kunst’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "past",
-      "daysToSale": -64,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "f5b78da02014",
@@ -258,7 +238,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "ed11f4f724ef",
@@ -278,7 +258,7 @@
       "daysToSale": -60,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "447d9e0a028c",
@@ -298,7 +278,7 @@
       "daysToSale": -55,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "db993b81e1cf",
@@ -318,7 +298,7 @@
       "daysToSale": -55,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "9c24cc58315b",
@@ -355,7 +335,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "d36a11be74fc",
@@ -375,7 +355,7 @@
       "daysToSale": -54,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "6b728507ced0",
@@ -395,7 +375,7 @@
       "daysToSale": -53,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "13b9d9d02fc0",
@@ -432,7 +412,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "8760b38d76d6",
@@ -469,7 +449,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "82824435ff6b",
@@ -506,7 +486,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "b55b93af4a96",
@@ -526,7 +506,7 @@
       "daysToSale": -41,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "49959d6588b0",
@@ -563,7 +543,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "02cec4bad9db",
@@ -583,7 +563,7 @@
       "daysToSale": -26,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "e26dc2846154",
@@ -603,7 +583,7 @@
       "daysToSale": -25,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "369dedf97574",
@@ -623,7 +603,7 @@
       "daysToSale": -19,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "d471ebde683b",
@@ -643,7 +623,7 @@
       "daysToSale": -18,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     },
     {
       "id": "569945a3c4e3",
@@ -663,27 +643,7 @@
       "daysToSale": -10,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
-    },
-    {
-      "id": "6422fe40394c",
-      "house": "Ketterer Kunst",
-      "houseCode": "KK",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Exhibition in Berlin: Aubertin Bonalumi Dadamaino Mack Megert Piene Simeti Uecker Zangs – Works from the Kohlrusch Collection",
-      "city": "Berlin",
-      "saleDate": "2026-11-07",
-      "dateLabel": "9 Sept to 7 Nov 2026",
-      "url": "https://kettererkunst.com/calendar.php",
-      "note": "Imported from Ketterer Kunst’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "past",
-      "daysToSale": -2,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-11-09T06:49:12.125165Z"
+      "lastBuilt": "2026-11-09T22:29:35.389627Z"
     }
   ]
 }

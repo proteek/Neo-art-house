@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T06:49:01.789940Z",
+  "updated": "2026-11-09T22:29:17.744028Z",
   "sources": [
     {
       "house": "Christie's",
@@ -35,7 +35,7 @@
       "calendarUrl": "https://www.phillips.com/",
       "status": "Official homepage auction adapter enabled",
       "reachable": true,
-      "recordsFound": 6
+      "recordsFound": 5
     },
     {
       "house": "Artcurial",
@@ -53,7 +53,7 @@
       "calendarUrl": "https://kettererkunst.com/calendar.php",
       "status": "Official upcoming-auctions adapter enabled",
       "reachable": true,
-      "recordsFound": 2
+      "recordsFound": 0
     },
     {
       "house": "Lempertz",
