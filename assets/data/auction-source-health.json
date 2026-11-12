@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T19:42:39.847298Z",
+  "updated": "2026-11-12T07:22:42.822112Z",
   "sources": [
     {
       "house": "Christie's",
@@ -115,8 +115,8 @@
       "enabled": true,
       "calendarUrl": "https://en.polypm.com.cn/",
       "status": "Official upcoming-auctions adapter enabled · zero-result safe",
-      "reachable": true,
-      "recordsFound": 0
+      "reachable": false,
+      "error": "The read operation timed out"
     },
     {
       "house": "Seoul Auction",
