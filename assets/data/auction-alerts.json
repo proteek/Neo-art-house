@@ -1,56 +1,16 @@
 {
   "_readme": "Generated every 6 hours. Public dataset contains upcoming sales only, from the editorial calendar plus explicitly permitted official feeds.",
-  "updated": "2026-11-22T07:03:06.236160Z",
-  "count": 20,
+  "updated": "2026-11-22T19:49:44.074606Z",
+  "count": 19,
   "sourceCounts": {
-    "feed": 20
+    "feed": 19
   },
   "windows": {
-    "7": 11,
-    "30": 20,
-    "90": 20
+    "7": 9,
+    "30": 19,
+    "90": 19
   },
   "alerts": [
-    {
-      "id": "e3bc62e0702c",
-      "house": "AstaGuru",
-      "houseCode": "AST",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Iconic Masters",
-      "city": "",
-      "saleDate": "2026-11-22",
-      "dateLabel": "21 Nov - 22 Nov, 2026",
-      "url": "https://www.astaguru.com/auctions/upcoming",
-      "note": "Imported from AstaGuru’s official upcoming-auctions page.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-11-22T07:03:06.236160Z"
-    },
-    {
-      "id": "6ceebffbff24",
-      "house": "Phillips",
-      "houseCode": "PHI",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "The Hong Kong Watch Auction: XXIII",
-      "city": "Hong Kong",
-      "saleDate": "2026-11-22",
-      "dateLabel": "Hong Kong Auction 21 – 22 November 2026",
-      "url": "https://www.phillips.com/",
-      "note": "Imported from Phillips’ official public auction page.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-11-22T07:03:06.236160Z"
-    },
     {
       "id": "4de93bd5b9b0",
       "house": "Christie's",
@@ -69,7 +29,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-22T07:03:06.236160Z"
+      "lastBuilt": "2026-11-22T19:49:44.074606Z"
     },
     {
       "id": "00bdccc03567",
@@ -89,7 +49,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-22T07:03:06.236160Z"
+      "lastBuilt": "2026-11-22T19:49:44.074606Z"
     },
     {
       "id": "ba02c61e1736",
@@ -109,7 +69,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-22T07:03:06.236160Z"
+      "lastBuilt": "2026-11-22T19:49:44.074606Z"
     },
     {
       "id": "634421bb56ad",
@@ -129,7 +89,7 @@
       "daysToSale": 2,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-22T07:03:06.236160Z"
+      "lastBuilt": "2026-11-22T19:49:44.074606Z"
     },
     {
       "id": "200e6f3bdff0",
@@ -149,7 +109,7 @@
       "daysToSale": 2,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-22T07:03:06.236160Z"
+      "lastBuilt": "2026-11-22T19:49:44.074606Z"
     },
     {
       "id": "2e6de145125b",
@@ -169,7 +129,7 @@
       "daysToSale": 3,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-22T07:03:06.236160Z"
+      "lastBuilt": "2026-11-22T19:49:44.074606Z"
     },
     {
       "id": "bd8e4909f58d",
@@ -189,7 +149,7 @@
       "daysToSale": 4,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-22T07:03:06.236160Z"
+      "lastBuilt": "2026-11-22T19:49:44.074606Z"
     },
     {
       "id": "1ae321c2abba",
@@ -209,7 +169,7 @@
       "daysToSale": 5,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-22T07:03:06.236160Z"
+      "lastBuilt": "2026-11-22T19:49:44.074606Z"
     },
     {
       "id": "6b1cad7fe454",
@@ -229,7 +189,27 @@
       "daysToSale": 5,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-22T07:03:06.236160Z"
+      "lastBuilt": "2026-11-22T19:49:44.074606Z"
+    },
+    {
+      "id": "159c696427c7",
+      "house": "Phillips",
+      "houseCode": "PHI",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Modern & Contemporary Art: Editions, Photographs, & Design Online Auction, Hong Kong",
+      "city": "",
+      "saleDate": "2026-12-01",
+      "dateLabel": "23 November – 1 December 2026",
+      "url": "https://www.phillips.com/",
+      "note": "Imported from Phillips’ official public auction page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "upcoming",
+      "daysToSale": 9,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-11-22T19:49:44.074606Z"
     },
     {
       "id": "2425787d9e5a",
@@ -249,7 +229,7 @@
       "daysToSale": 11,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-22T07:03:06.236160Z"
+      "lastBuilt": "2026-11-22T19:49:44.074606Z"
     },
     {
       "id": "fadf77dde94f",
@@ -269,7 +249,7 @@
       "daysToSale": 12,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-22T07:03:06.236160Z"
+      "lastBuilt": "2026-11-22T19:49:44.074606Z"
     },
     {
       "id": "a4126ce56445",
@@ -289,7 +269,7 @@
       "daysToSale": 12,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-22T07:03:06.236160Z"
+      "lastBuilt": "2026-11-22T19:49:44.074606Z"
     },
     {
       "id": "89953bf56ccc",
@@ -309,7 +289,7 @@
       "daysToSale": 12,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-22T07:03:06.236160Z"
+      "lastBuilt": "2026-11-22T19:49:44.074606Z"
     },
     {
       "id": "5904321a0123",
@@ -329,7 +309,7 @@
       "daysToSale": 13,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-22T07:03:06.236160Z"
+      "lastBuilt": "2026-11-22T19:49:44.074606Z"
     },
     {
       "id": "9d20908151d4",
@@ -349,7 +329,7 @@
       "daysToSale": 18,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-22T07:03:06.236160Z"
+      "lastBuilt": "2026-11-22T19:49:44.074606Z"
     },
     {
       "id": "47358eec6485",
@@ -369,7 +349,7 @@
       "daysToSale": 18,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-22T07:03:06.236160Z"
+      "lastBuilt": "2026-11-22T19:49:44.074606Z"
     },
     {
       "id": "14870b760e91",
@@ -389,7 +369,7 @@
       "daysToSale": 19,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-22T07:03:06.236160Z"
+      "lastBuilt": "2026-11-22T19:49:44.074606Z"
     },
     {
       "id": "bd2902fe1508",
@@ -409,7 +389,7 @@
       "daysToSale": 19,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-22T07:03:06.236160Z"
+      "lastBuilt": "2026-11-22T19:49:44.074606Z"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T07:02:54.743748Z",
+  "updated": "2026-11-22T19:49:32.590750Z",
   "sources": [
     {
       "house": "Christie's",
@@ -80,7 +80,7 @@
       "calendarUrl": "https://www.astaguru.com/auctions/upcoming",
       "status": "Official upcoming-auctions adapter enabled",
       "reachable": true,
-      "recordsFound": 1
+      "recordsFound": 0
     },
     {
       "house": "Pundole's",
