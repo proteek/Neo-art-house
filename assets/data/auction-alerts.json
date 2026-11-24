@@ -1,76 +1,16 @@
 {
   "_readme": "Generated every 6 hours. Public dataset contains upcoming sales only, from the editorial calendar plus explicitly permitted official feeds.",
-  "updated": "2026-11-23T07:52:11.673058Z",
-  "count": 20,
+  "updated": "2026-11-24T00:01:14.504778Z",
+  "count": 17,
   "sourceCounts": {
-    "feed": 20
+    "feed": 17
   },
   "windows": {
-    "7": 9,
-    "30": 20,
-    "90": 20
+    "7": 7,
+    "30": 17,
+    "90": 17
   },
   "alerts": [
-    {
-      "id": "4de93bd5b9b0",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Handbags & Accessories",
-      "city": "Hong Kong",
-      "saleDate": "2026-11-23",
-      "dateLabel": "23 NOV 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-11-23T07:52:11.673058Z"
-    },
-    {
-      "id": "00bdccc03567",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "The Collection of Agnes Gund: Online Part I",
-      "city": "New York",
-      "saleDate": "2026-11-23",
-      "dateLabel": "9–23 NOV 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-11-23T07:52:11.673058Z"
-    },
-    {
-      "id": "ba02c61e1736",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Picasso Ceramics",
-      "city": "New York",
-      "saleDate": "2026-11-23",
-      "dateLabel": "2–23 NOV 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-11-23T07:52:11.673058Z"
-    },
     {
       "id": "634421bb56ad",
       "house": "Christie's",
@@ -86,10 +26,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-23T07:52:11.673058Z"
+      "lastBuilt": "2026-11-24T00:01:14.504778Z"
     },
     {
       "id": "200e6f3bdff0",
@@ -106,10 +46,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 1,
+      "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-23T07:52:11.673058Z"
+      "lastBuilt": "2026-11-24T00:01:14.504778Z"
     },
     {
       "id": "2e6de145125b",
@@ -126,10 +66,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "critical",
-      "daysToSale": 2,
+      "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-23T07:52:11.673058Z"
+      "lastBuilt": "2026-11-24T00:01:14.504778Z"
     },
     {
       "id": "bd8e4909f58d",
@@ -145,11 +85,11 @@
       "note": "Imported from Christie’s official auction calendar.",
       "buyerAlert": "",
       "urgent": false,
-      "urgency": "soon",
-      "daysToSale": 3,
+      "urgency": "critical",
+      "daysToSale": 2,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-23T07:52:11.673058Z"
+      "lastBuilt": "2026-11-24T00:01:14.504778Z"
     },
     {
       "id": "1ae321c2abba",
@@ -166,10 +106,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 4,
+      "daysToSale": 3,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-23T07:52:11.673058Z"
+      "lastBuilt": "2026-11-24T00:01:14.504778Z"
     },
     {
       "id": "6b1cad7fe454",
@@ -186,10 +126,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 4,
+      "daysToSale": 3,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-23T07:52:11.673058Z"
+      "lastBuilt": "2026-11-24T00:01:14.504778Z"
     },
     {
       "id": "159c696427c7",
@@ -205,11 +145,11 @@
       "note": "Imported from Phillips’ official public auction page.",
       "buyerAlert": "",
       "urgent": false,
-      "urgency": "upcoming",
-      "daysToSale": 8,
+      "urgency": "soon",
+      "daysToSale": 7,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-23T07:52:11.673058Z"
+      "lastBuilt": "2026-11-24T00:01:14.504778Z"
     },
     {
       "id": "2425787d9e5a",
@@ -226,10 +166,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 10,
+      "daysToSale": 9,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-23T07:52:11.673058Z"
+      "lastBuilt": "2026-11-24T00:01:14.504778Z"
     },
     {
       "id": "fadf77dde94f",
@@ -246,10 +186,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 11,
+      "daysToSale": 10,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-23T07:52:11.673058Z"
+      "lastBuilt": "2026-11-24T00:01:14.504778Z"
     },
     {
       "id": "a4126ce56445",
@@ -266,10 +206,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 11,
+      "daysToSale": 10,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-23T07:52:11.673058Z"
+      "lastBuilt": "2026-11-24T00:01:14.504778Z"
     },
     {
       "id": "89953bf56ccc",
@@ -286,10 +226,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 11,
+      "daysToSale": 10,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-23T07:52:11.673058Z"
+      "lastBuilt": "2026-11-24T00:01:14.504778Z"
     },
     {
       "id": "5904321a0123",
@@ -306,10 +246,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 12,
+      "daysToSale": 11,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-23T07:52:11.673058Z"
+      "lastBuilt": "2026-11-24T00:01:14.504778Z"
     },
     {
       "id": "58574537c8b4",
@@ -326,10 +266,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 13,
+      "daysToSale": 12,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-23T07:52:11.673058Z"
+      "lastBuilt": "2026-11-24T00:01:14.504778Z"
     },
     {
       "id": "9d20908151d4",
@@ -346,10 +286,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 17,
+      "daysToSale": 16,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-23T07:52:11.673058Z"
+      "lastBuilt": "2026-11-24T00:01:14.504778Z"
     },
     {
       "id": "47358eec6485",
@@ -366,10 +306,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 17,
+      "daysToSale": 16,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-23T07:52:11.673058Z"
+      "lastBuilt": "2026-11-24T00:01:14.504778Z"
     },
     {
       "id": "14870b760e91",
@@ -386,10 +326,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 18,
+      "daysToSale": 17,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-23T07:52:11.673058Z"
+      "lastBuilt": "2026-11-24T00:01:14.504778Z"
     },
     {
       "id": "bd2902fe1508",
@@ -406,10 +346,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 18,
+      "daysToSale": 17,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-23T07:52:11.673058Z"
+      "lastBuilt": "2026-11-24T00:01:14.504778Z"
     }
   ]
 }
