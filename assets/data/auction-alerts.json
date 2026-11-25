@@ -1,14 +1,14 @@
 {
   "_readme": "Generated every 6 hours. Public dataset contains upcoming sales only, from the editorial calendar plus explicitly permitted official feeds.",
-  "updated": "2026-11-25T08:48:49.664772Z",
-  "count": 17,
+  "updated": "2026-11-25T21:48:41.681239Z",
+  "count": 21,
   "sourceCounts": {
-    "feed": 17
+    "feed": 21
   },
   "windows": {
-    "7": 5,
-    "30": 17,
-    "90": 17
+    "7": 9,
+    "30": 21,
+    "90": 21
   },
   "alerts": [
     {
@@ -29,7 +29,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-25T08:48:49.664772Z"
+      "lastBuilt": "2026-11-25T21:48:41.681239Z"
     },
     {
       "id": "bd8e4909f58d",
@@ -49,7 +49,47 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-25T08:48:49.664772Z"
+      "lastBuilt": "2026-11-25T21:48:41.681239Z"
+    },
+    {
+      "id": "f90db53730fc",
+      "house": "Lempertz",
+      "houseCode": "L",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Auction 1312 – Contemporary Art Online",
+      "city": "",
+      "saleDate": "2026-11-26",
+      "dateLabel": "Online bidding opens on 26 November 2026 at 10:00 a.m. On 8 December 2026, lots will close consecutively from 2:00 p.m., at 30-second intervals. If a valid bid is accepted with less than two minutes remaining, two minutes are added to that lot’s current closing time. Further bids may trigger additional extensions. All lots will close no later than 5:00 p.m. All times are CET.",
+      "url": "https://www.lempertz.com/en/auctions.html",
+      "note": "Imported from Lempertz’s official auctions page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "critical",
+      "daysToSale": 1,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-11-25T21:48:41.681239Z"
+    },
+    {
+      "id": "392422ae0c96",
+      "house": "Lempertz",
+      "houseCode": "L",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Auction 1312",
+      "city": "",
+      "saleDate": "2026-11-26",
+      "dateLabel": "Online bidding opens on 26 November 2026 at 10:00 a.m. On 8 December 2026, lots will close consecutively from 2:00 p.m., at 30-second intervals. If a valid bid is accepted with less than two minutes remaining, two minutes are added to that lot’s current closing time. Further bids may trigger additional extensions. All lots will close no later than 5:00 p.m. All times are CET.",
+      "url": "https://www.lempertz.com/en/auctions.html",
+      "note": "Imported from Lempertz’s official auctions page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "critical",
+      "daysToSale": 1,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-11-25T21:48:41.681239Z"
     },
     {
       "id": "1ae321c2abba",
@@ -69,7 +109,7 @@
       "daysToSale": 2,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-25T08:48:49.664772Z"
+      "lastBuilt": "2026-11-25T21:48:41.681239Z"
     },
     {
       "id": "6b1cad7fe454",
@@ -89,7 +129,47 @@
       "daysToSale": 2,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-25T08:48:49.664772Z"
+      "lastBuilt": "2026-11-25T21:48:41.681239Z"
+    },
+    {
+      "id": "2697bb63d10c",
+      "house": "Lempertz",
+      "houseCode": "L",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Auction 1310 – Collection of the Kulturkreis der deutschen Wirtschaft",
+      "city": "",
+      "saleDate": "2026-11-27",
+      "dateLabel": "Online bidding opens on 27 November 2026 at 11:00 a.m. On 11 December 2026, lots will close consecutively from 2:00 p.m., at 30-second intervals. If a valid bid is accepted with less than two minutes remaining, two minutes are added to that lot’s current closing time. Further bids may trigger additional extensions. All lots will close no later than 5:00 p.m. All times are CET.",
+      "url": "https://www.lempertz.com/en/auctions.html",
+      "note": "Imported from Lempertz’s official auctions page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "critical",
+      "daysToSale": 2,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-11-25T21:48:41.681239Z"
+    },
+    {
+      "id": "87971faec230",
+      "house": "Lempertz",
+      "houseCode": "L",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Auction 1308 – Asian Arts Online",
+      "city": "",
+      "saleDate": "2026-12-01",
+      "dateLabel": "Online bidding opens on 1 December 2026 at 10:00 a.m. On 14 December 2026, lots will close consecutively from 1:00 p.m., at 30-second intervals. If a valid bid is accepted with less than two minutes remaining, two minutes are added to that lot’s current closing time. Further bids may trigger additional extensions. All lots will close no later than 5:00 p.m. All times are CET.",
+      "url": "https://www.lempertz.com/en/auctions.html",
+      "note": "Imported from Lempertz’s official auctions page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "soon",
+      "daysToSale": 6,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-11-25T21:48:41.681239Z"
     },
     {
       "id": "159c696427c7",
@@ -109,7 +189,7 @@
       "daysToSale": 6,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-25T08:48:49.664772Z"
+      "lastBuilt": "2026-11-25T21:48:41.681239Z"
     },
     {
       "id": "2425787d9e5a",
@@ -129,7 +209,7 @@
       "daysToSale": 8,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-25T08:48:49.664772Z"
+      "lastBuilt": "2026-11-25T21:48:41.681239Z"
     },
     {
       "id": "fadf77dde94f",
@@ -149,7 +229,7 @@
       "daysToSale": 9,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-25T08:48:49.664772Z"
+      "lastBuilt": "2026-11-25T21:48:41.681239Z"
     },
     {
       "id": "a4126ce56445",
@@ -169,7 +249,7 @@
       "daysToSale": 9,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-25T08:48:49.664772Z"
+      "lastBuilt": "2026-11-25T21:48:41.681239Z"
     },
     {
       "id": "89953bf56ccc",
@@ -189,7 +269,7 @@
       "daysToSale": 9,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-25T08:48:49.664772Z"
+      "lastBuilt": "2026-11-25T21:48:41.681239Z"
     },
     {
       "id": "5904321a0123",
@@ -209,7 +289,7 @@
       "daysToSale": 10,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-25T08:48:49.664772Z"
+      "lastBuilt": "2026-11-25T21:48:41.681239Z"
     },
     {
       "id": "58574537c8b4",
@@ -229,7 +309,7 @@
       "daysToSale": 11,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-25T08:48:49.664772Z"
+      "lastBuilt": "2026-11-25T21:48:41.681239Z"
     },
     {
       "id": "9d20908151d4",
@@ -249,7 +329,7 @@
       "daysToSale": 15,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-25T08:48:49.664772Z"
+      "lastBuilt": "2026-11-25T21:48:41.681239Z"
     },
     {
       "id": "47358eec6485",
@@ -269,7 +349,7 @@
       "daysToSale": 15,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-25T08:48:49.664772Z"
+      "lastBuilt": "2026-11-25T21:48:41.681239Z"
     },
     {
       "id": "14870b760e91",
@@ -289,7 +369,7 @@
       "daysToSale": 16,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-25T08:48:49.664772Z"
+      "lastBuilt": "2026-11-25T21:48:41.681239Z"
     },
     {
       "id": "bd2902fe1508",
@@ -309,7 +389,7 @@
       "daysToSale": 16,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-25T08:48:49.664772Z"
+      "lastBuilt": "2026-11-25T21:48:41.681239Z"
     },
     {
       "id": "d5874f0d9aba",
@@ -329,7 +409,7 @@
       "daysToSale": 16,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-25T08:48:49.664772Z"
+      "lastBuilt": "2026-11-25T21:48:41.681239Z"
     },
     {
       "id": "6c48fbfb784b",
@@ -349,7 +429,7 @@
       "daysToSale": 17,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-25T08:48:49.664772Z"
+      "lastBuilt": "2026-11-25T21:48:41.681239Z"
     }
   ]
 }
