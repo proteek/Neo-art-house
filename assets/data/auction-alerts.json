@@ -1,14 +1,14 @@
 {
   "_readme": "Generated every 6 hours. Public dataset contains upcoming sales only, from the editorial calendar plus explicitly permitted official feeds.",
-  "updated": "2026-11-26T08:34:19.445641Z",
-  "count": 20,
+  "updated": "2026-11-26T21:41:51.822494Z",
+  "count": 21,
   "sourceCounts": {
-    "feed": 20
+    "feed": 21
   },
   "windows": {
-    "7": 9,
-    "30": 20,
-    "90": 20
+    "7": 10,
+    "30": 21,
+    "90": 21
   },
   "alerts": [
     {
@@ -29,7 +29,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T08:34:19.445641Z"
+      "lastBuilt": "2026-11-26T21:41:51.822494Z"
     },
     {
       "id": "f90db53730fc",
@@ -49,7 +49,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T08:34:19.445641Z"
+      "lastBuilt": "2026-11-26T21:41:51.822494Z"
     },
     {
       "id": "392422ae0c96",
@@ -69,7 +69,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T08:34:19.445641Z"
+      "lastBuilt": "2026-11-26T21:41:51.822494Z"
     },
     {
       "id": "1ae321c2abba",
@@ -89,7 +89,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T08:34:19.445641Z"
+      "lastBuilt": "2026-11-26T21:41:51.822494Z"
     },
     {
       "id": "6b1cad7fe454",
@@ -109,7 +109,7 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T08:34:19.445641Z"
+      "lastBuilt": "2026-11-26T21:41:51.822494Z"
     },
     {
       "id": "2697bb63d10c",
@@ -129,7 +129,27 @@
       "daysToSale": 1,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T08:34:19.445641Z"
+      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+    },
+    {
+      "id": "9e9691d8978f",
+      "house": "Lempertz",
+      "houseCode": "L",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Auction 1310",
+      "city": "",
+      "saleDate": "2026-11-27",
+      "dateLabel": "Online bidding opens on 27 November 2026 at 11:00 a.m. On 11 December 2026, lots will close consecutively from 2:00 p.m., at 30-second intervals. If a valid bid is accepted with less than two minutes remaining, two minutes are added to that lot’s current closing time. Further bids may trigger additional extensions. All lots will close no later than 5:00 p.m. All times are CET.",
+      "url": "https://www.lempertz.com/en/auctions.html",
+      "note": "Imported from Lempertz’s official auctions page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "critical",
+      "daysToSale": 1,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-11-26T21:41:51.822494Z"
     },
     {
       "id": "87971faec230",
@@ -149,7 +169,7 @@
       "daysToSale": 5,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T08:34:19.445641Z"
+      "lastBuilt": "2026-11-26T21:41:51.822494Z"
     },
     {
       "id": "159c696427c7",
@@ -169,7 +189,7 @@
       "daysToSale": 5,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T08:34:19.445641Z"
+      "lastBuilt": "2026-11-26T21:41:51.822494Z"
     },
     {
       "id": "2425787d9e5a",
@@ -189,7 +209,7 @@
       "daysToSale": 7,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T08:34:19.445641Z"
+      "lastBuilt": "2026-11-26T21:41:51.822494Z"
     },
     {
       "id": "fadf77dde94f",
@@ -209,7 +229,7 @@
       "daysToSale": 8,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T08:34:19.445641Z"
+      "lastBuilt": "2026-11-26T21:41:51.822494Z"
     },
     {
       "id": "a4126ce56445",
@@ -229,7 +249,7 @@
       "daysToSale": 8,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T08:34:19.445641Z"
+      "lastBuilt": "2026-11-26T21:41:51.822494Z"
     },
     {
       "id": "89953bf56ccc",
@@ -249,7 +269,7 @@
       "daysToSale": 8,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T08:34:19.445641Z"
+      "lastBuilt": "2026-11-26T21:41:51.822494Z"
     },
     {
       "id": "5904321a0123",
@@ -269,7 +289,7 @@
       "daysToSale": 9,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T08:34:19.445641Z"
+      "lastBuilt": "2026-11-26T21:41:51.822494Z"
     },
     {
       "id": "58574537c8b4",
@@ -289,7 +309,7 @@
       "daysToSale": 10,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T08:34:19.445641Z"
+      "lastBuilt": "2026-11-26T21:41:51.822494Z"
     },
     {
       "id": "9d20908151d4",
@@ -309,7 +329,7 @@
       "daysToSale": 14,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T08:34:19.445641Z"
+      "lastBuilt": "2026-11-26T21:41:51.822494Z"
     },
     {
       "id": "47358eec6485",
@@ -329,7 +349,7 @@
       "daysToSale": 14,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T08:34:19.445641Z"
+      "lastBuilt": "2026-11-26T21:41:51.822494Z"
     },
     {
       "id": "14870b760e91",
@@ -349,7 +369,7 @@
       "daysToSale": 15,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T08:34:19.445641Z"
+      "lastBuilt": "2026-11-26T21:41:51.822494Z"
     },
     {
       "id": "bd2902fe1508",
@@ -369,7 +389,7 @@
       "daysToSale": 15,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T08:34:19.445641Z"
+      "lastBuilt": "2026-11-26T21:41:51.822494Z"
     },
     {
       "id": "d5874f0d9aba",
@@ -389,7 +409,7 @@
       "daysToSale": 15,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T08:34:19.445641Z"
+      "lastBuilt": "2026-11-26T21:41:51.822494Z"
     },
     {
       "id": "6c48fbfb784b",
@@ -409,7 +429,7 @@
       "daysToSale": 16,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T08:34:19.445641Z"
+      "lastBuilt": "2026-11-26T21:41:51.822494Z"
     }
   ]
 }

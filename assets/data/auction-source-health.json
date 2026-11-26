@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T08:34:08.679781Z",
+  "updated": "2026-11-26T21:41:36.064563Z",
   "sources": [
     {
       "house": "Christie's",
@@ -62,7 +62,7 @@
       "calendarUrl": "https://www.lempertz.com/en/auctions.html",
       "status": "Official auctions adapter enabled",
       "reachable": true,
-      "recordsFound": 24
+      "recordsFound": 20
     },
     {
       "house": "Dorotheum",
