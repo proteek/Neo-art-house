@@ -1,6 +1,6 @@
 {
   "_readme": "Generated every 6 hours. Public dataset contains upcoming sales only, from the editorial calendar plus explicitly permitted official feeds.",
-  "updated": "2026-11-27T08:46:29.125146Z",
+  "updated": "2026-11-27T21:27:07.614963Z",
   "count": 18,
   "sourceCounts": {
     "feed": 18
@@ -29,7 +29,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T08:46:29.125146Z"
+      "lastBuilt": "2026-11-27T21:27:07.614963Z"
     },
     {
       "id": "6b1cad7fe454",
@@ -49,7 +49,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T08:46:29.125146Z"
+      "lastBuilt": "2026-11-27T21:27:07.614963Z"
     },
     {
       "id": "2697bb63d10c",
@@ -69,7 +69,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T08:46:29.125146Z"
+      "lastBuilt": "2026-11-27T21:27:07.614963Z"
     },
     {
       "id": "9e9691d8978f",
@@ -89,7 +89,7 @@
       "daysToSale": 0,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T08:46:29.125146Z"
+      "lastBuilt": "2026-11-27T21:27:07.614963Z"
     },
     {
       "id": "87971faec230",
@@ -109,7 +109,7 @@
       "daysToSale": 4,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T08:46:29.125146Z"
+      "lastBuilt": "2026-11-27T21:27:07.614963Z"
     },
     {
       "id": "159c696427c7",
@@ -129,7 +129,7 @@
       "daysToSale": 4,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T08:46:29.125146Z"
+      "lastBuilt": "2026-11-27T21:27:07.614963Z"
     },
     {
       "id": "2425787d9e5a",
@@ -149,7 +149,7 @@
       "daysToSale": 6,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T08:46:29.125146Z"
+      "lastBuilt": "2026-11-27T21:27:07.614963Z"
     },
     {
       "id": "fadf77dde94f",
@@ -169,7 +169,7 @@
       "daysToSale": 7,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T08:46:29.125146Z"
+      "lastBuilt": "2026-11-27T21:27:07.614963Z"
     },
     {
       "id": "a4126ce56445",
@@ -189,7 +189,7 @@
       "daysToSale": 7,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T08:46:29.125146Z"
+      "lastBuilt": "2026-11-27T21:27:07.614963Z"
     },
     {
       "id": "89953bf56ccc",
@@ -209,7 +209,7 @@
       "daysToSale": 7,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T08:46:29.125146Z"
+      "lastBuilt": "2026-11-27T21:27:07.614963Z"
     },
     {
       "id": "5904321a0123",
@@ -229,7 +229,7 @@
       "daysToSale": 8,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T08:46:29.125146Z"
+      "lastBuilt": "2026-11-27T21:27:07.614963Z"
     },
     {
       "id": "58574537c8b4",
@@ -249,7 +249,7 @@
       "daysToSale": 9,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T08:46:29.125146Z"
+      "lastBuilt": "2026-11-27T21:27:07.614963Z"
     },
     {
       "id": "9d20908151d4",
@@ -269,7 +269,7 @@
       "daysToSale": 13,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T08:46:29.125146Z"
+      "lastBuilt": "2026-11-27T21:27:07.614963Z"
     },
     {
       "id": "47358eec6485",
@@ -289,7 +289,7 @@
       "daysToSale": 13,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T08:46:29.125146Z"
+      "lastBuilt": "2026-11-27T21:27:07.614963Z"
     },
     {
       "id": "14870b760e91",
@@ -309,7 +309,7 @@
       "daysToSale": 14,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T08:46:29.125146Z"
+      "lastBuilt": "2026-11-27T21:27:07.614963Z"
     },
     {
       "id": "bd2902fe1508",
@@ -329,7 +329,7 @@
       "daysToSale": 14,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T08:46:29.125146Z"
+      "lastBuilt": "2026-11-27T21:27:07.614963Z"
     },
     {
       "id": "d5874f0d9aba",
@@ -349,7 +349,7 @@
       "daysToSale": 14,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T08:46:29.125146Z"
+      "lastBuilt": "2026-11-27T21:27:07.614963Z"
     },
     {
       "id": "6c48fbfb784b",
@@ -369,7 +369,7 @@
       "daysToSale": 15,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T08:46:29.125146Z"
+      "lastBuilt": "2026-11-27T21:27:07.614963Z"
     }
   ]
 }
