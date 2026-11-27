@@ -1,7 +1,7 @@
 {
   "_readme": "Historical auction alerts archived automatically by the six-hour builder.",
-  "updated": "2026-11-26T21:41:51.822494Z",
-  "count": 25,
+  "updated": "2026-11-27T08:46:29.125146Z",
+  "count": 27,
   "alerts": [
     {
       "id": "f5ea33d22849",
@@ -18,10 +18,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -174,
+      "daysToSale": -175,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "c56a2bcc9082",
@@ -38,10 +38,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -166,
+      "daysToSale": -167,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "5380e6549eb0",
@@ -58,10 +58,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -166,
+      "daysToSale": -167,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "204eb2cdb846",
@@ -78,10 +78,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -161,
+      "daysToSale": -162,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "baf4d2bdf0ea",
@@ -98,10 +98,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -148,
+      "daysToSale": -149,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "f5b78da02014",
@@ -118,7 +118,7 @@
       "buyerAlert": "Export limits likely",
       "urgent": true,
       "urgency": "past",
-      "daysToSale": -77,
+      "daysToSale": -78,
       "lots": [
         {
           "artist": "Nicholas Roerich",
@@ -138,7 +138,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "ed11f4f724ef",
@@ -155,10 +155,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -77,
+      "daysToSale": -78,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "447d9e0a028c",
@@ -175,10 +175,10 @@
       "buyerAlert": "Closing",
       "urgent": true,
       "urgency": "past",
-      "daysToSale": -72,
+      "daysToSale": -73,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "db993b81e1cf",
@@ -195,10 +195,10 @@
       "buyerAlert": "Registration closes early",
       "urgent": true,
       "urgency": "past",
-      "daysToSale": -72,
+      "daysToSale": -73,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "9c24cc58315b",
@@ -215,7 +215,7 @@
       "buyerAlert": "Registration closes early",
       "urgent": true,
       "urgency": "past",
-      "daysToSale": -71,
+      "daysToSale": -72,
       "lots": [
         {
           "artist": "Francis Newton Souza",
@@ -235,7 +235,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "d36a11be74fc",
@@ -252,10 +252,10 @@
       "buyerAlert": "Uses remittance allowance",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -71,
+      "daysToSale": -72,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "6b728507ced0",
@@ -272,10 +272,10 @@
       "buyerAlert": "Provenance checks needed",
       "urgent": true,
       "urgency": "past",
-      "daysToSale": -70,
+      "daysToSale": -71,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "13b9d9d02fc0",
@@ -292,7 +292,7 @@
       "buyerAlert": "No corridor cost if resident",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -68,
+      "daysToSale": -69,
       "lots": [
         {
           "artist": "Francis Newton Souza",
@@ -312,7 +312,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "8760b38d76d6",
@@ -329,7 +329,7 @@
       "buyerAlert": "Non-exportable lots flagged",
       "urgent": true,
       "urgency": "past",
-      "daysToSale": -66,
+      "daysToSale": -67,
       "lots": [
         {
           "artist": "Karkota Dynasty, Kashmir",
@@ -349,7 +349,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "82824435ff6b",
@@ -366,7 +366,7 @@
       "buyerAlert": "Two Navratna lots",
       "urgent": true,
       "urgency": "past",
-      "daysToSale": -63,
+      "daysToSale": -64,
       "lots": [
         {
           "artist": "Amrita Sher-Gil",
@@ -386,7 +386,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "b55b93af4a96",
@@ -403,10 +403,10 @@
       "buyerAlert": "Sale this week",
       "urgent": true,
       "urgency": "past",
-      "daysToSale": -58,
+      "daysToSale": -59,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "49959d6588b0",
@@ -423,7 +423,7 @@
       "buyerAlert": "Uses remittance allowance",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -58,
+      "daysToSale": -59,
       "lots": [
         {
           "artist": "Maqbool Fida Husain",
@@ -443,7 +443,7 @@
         }
       ],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "02cec4bad9db",
@@ -460,10 +460,10 @@
       "buyerAlert": "Cross-border movement check",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -43,
+      "daysToSale": -44,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "e26dc2846154",
@@ -480,10 +480,10 @@
       "buyerAlert": "Priority bidding: 13 Oct, 5pm BST",
       "urgent": true,
       "urgency": "past",
-      "daysToSale": -42,
+      "daysToSale": -43,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "369dedf97574",
@@ -500,10 +500,10 @@
       "buyerAlert": "Priority bidding: 19 Oct, 4pm CEST",
       "urgent": true,
       "urgency": "past",
-      "daysToSale": -36,
+      "daysToSale": -37,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "d471ebde683b",
@@ -520,10 +520,10 @@
       "buyerAlert": "French export check",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -35,
+      "daysToSale": -36,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "569945a3c4e3",
@@ -540,10 +540,10 @@
       "buyerAlert": "Provenance / movement review",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -27,
+      "daysToSale": -28,
       "lots": [],
       "sourceMode": "editorial",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "e7a6815d43b5",
@@ -560,10 +560,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -7,
+      "daysToSale": -8,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "5b885e7f7deb",
@@ -580,10 +580,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -6,
+      "daysToSale": -7,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     },
     {
       "id": "071bcff25c74",
@@ -600,10 +600,50 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "past",
-      "daysToSale": -5,
+      "daysToSale": -6,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-26T21:41:51.822494Z"
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
+    },
+    {
+      "id": "f90db53730fc",
+      "house": "Lempertz",
+      "houseCode": "L",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Auction 1312 – Contemporary Art Online",
+      "city": "",
+      "saleDate": "2026-11-26",
+      "dateLabel": "Online bidding opens on 26 November 2026 at 10:00 a.m. On 8 December 2026, lots will close consecutively from 2:00 p.m., at 30-second intervals. If a valid bid is accepted with less than two minutes remaining, two minutes are added to that lot’s current closing time. Further bids may trigger additional extensions. All lots will close no later than 5:00 p.m. All times are CET.",
+      "url": "https://www.lempertz.com/en/auctions.html",
+      "note": "Imported from Lempertz’s official auctions page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "past",
+      "daysToSale": -1,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
+    },
+    {
+      "id": "392422ae0c96",
+      "house": "Lempertz",
+      "houseCode": "L",
+      "logo": null,
+      "logoStatus": "permission_required",
+      "sale": "Auction 1312",
+      "city": "",
+      "saleDate": "2026-11-26",
+      "dateLabel": "Online bidding opens on 26 November 2026 at 10:00 a.m. On 8 December 2026, lots will close consecutively from 2:00 p.m., at 30-second intervals. If a valid bid is accepted with less than two minutes remaining, two minutes are added to that lot’s current closing time. Further bids may trigger additional extensions. All lots will close no later than 5:00 p.m. All times are CET.",
+      "url": "https://www.lempertz.com/en/auctions.html",
+      "note": "Imported from Lempertz’s official auctions page.",
+      "buyerAlert": "",
+      "urgent": false,
+      "urgency": "past",
+      "daysToSale": -1,
+      "lots": [],
+      "sourceMode": "feed",
+      "lastBuilt": "2026-11-27T08:46:29.125146Z"
     }
   ]
 }
