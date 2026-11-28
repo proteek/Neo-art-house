@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T21:26:45.021396Z",
+  "updated": "2026-11-28T08:00:32.625709Z",
   "sources": [
     {
       "house": "Christie's",
@@ -8,7 +8,7 @@
       "calendarUrl": "https://www.christies.com/en/calendar",
       "status": "Official calendar adapter enabled",
       "reachable": true,
-      "recordsFound": 2
+      "recordsFound": 0
     },
     {
       "house": "Sotheby's",
@@ -97,8 +97,8 @@
       "enabled": true,
       "calendarUrl": "https://www.saffronart.com/",
       "status": "Official homepage upcoming-auctions adapter enabled",
-      "reachable": true,
-      "recordsFound": 0
+      "reachable": false,
+      "error": "The read operation timed out"
     },
     {
       "house": "China Guardian",

@@ -1,96 +1,16 @@
 {
   "_readme": "Generated every 6 hours. Public dataset contains upcoming sales only, from the editorial calendar plus explicitly permitted official feeds.",
-  "updated": "2026-11-27T21:27:07.614963Z",
-  "count": 18,
+  "updated": "2026-11-28T08:01:03.936563Z",
+  "count": 14,
   "sourceCounts": {
-    "feed": 18
+    "feed": 14
   },
   "windows": {
-    "7": 10,
-    "30": 18,
-    "90": 18
+    "7": 7,
+    "30": 14,
+    "90": 14
   },
   "alerts": [
-    {
-      "id": "1ae321c2abba",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Magnificent Jewels: Online",
-      "city": "Hong Kong",
-      "saleDate": "2026-11-27",
-      "dateLabel": "18–27 NOV 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T21:27:07.614963Z"
-    },
-    {
-      "id": "6b1cad7fe454",
-      "house": "Christie's",
-      "houseCode": "CHR",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "20th/21st Century Online",
-      "city": "Hong Kong",
-      "saleDate": "2026-11-27",
-      "dateLabel": "17–27 NOV 2026",
-      "url": "https://www.christies.com/en/calendar",
-      "note": "Imported from Christie’s official auction calendar.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T21:27:07.614963Z"
-    },
-    {
-      "id": "2697bb63d10c",
-      "house": "Lempertz",
-      "houseCode": "L",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Auction 1310 – Collection of the Kulturkreis der deutschen Wirtschaft",
-      "city": "",
-      "saleDate": "2026-11-27",
-      "dateLabel": "Online bidding opens on 27 November 2026 at 11:00 a.m. On 11 December 2026, lots will close consecutively from 2:00 p.m., at 30-second intervals. If a valid bid is accepted with less than two minutes remaining, two minutes are added to that lot’s current closing time. Further bids may trigger additional extensions. All lots will close no later than 5:00 p.m. All times are CET.",
-      "url": "https://www.lempertz.com/en/auctions.html",
-      "note": "Imported from Lempertz’s official auctions page.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T21:27:07.614963Z"
-    },
-    {
-      "id": "9e9691d8978f",
-      "house": "Lempertz",
-      "houseCode": "L",
-      "logo": null,
-      "logoStatus": "permission_required",
-      "sale": "Auction 1310",
-      "city": "",
-      "saleDate": "2026-11-27",
-      "dateLabel": "Online bidding opens on 27 November 2026 at 11:00 a.m. On 11 December 2026, lots will close consecutively from 2:00 p.m., at 30-second intervals. If a valid bid is accepted with less than two minutes remaining, two minutes are added to that lot’s current closing time. Further bids may trigger additional extensions. All lots will close no later than 5:00 p.m. All times are CET.",
-      "url": "https://www.lempertz.com/en/auctions.html",
-      "note": "Imported from Lempertz’s official auctions page.",
-      "buyerAlert": "",
-      "urgent": false,
-      "urgency": "critical",
-      "daysToSale": 0,
-      "lots": [],
-      "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T21:27:07.614963Z"
-    },
     {
       "id": "87971faec230",
       "house": "Lempertz",
@@ -106,10 +26,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 4,
+      "daysToSale": 3,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T21:27:07.614963Z"
+      "lastBuilt": "2026-11-28T08:01:03.936563Z"
     },
     {
       "id": "159c696427c7",
@@ -126,10 +46,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 4,
+      "daysToSale": 3,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T21:27:07.614963Z"
+      "lastBuilt": "2026-11-28T08:01:03.936563Z"
     },
     {
       "id": "2425787d9e5a",
@@ -146,10 +66,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 6,
+      "daysToSale": 5,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T21:27:07.614963Z"
+      "lastBuilt": "2026-11-28T08:01:03.936563Z"
     },
     {
       "id": "fadf77dde94f",
@@ -166,10 +86,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 7,
+      "daysToSale": 6,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T21:27:07.614963Z"
+      "lastBuilt": "2026-11-28T08:01:03.936563Z"
     },
     {
       "id": "a4126ce56445",
@@ -186,10 +106,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 7,
+      "daysToSale": 6,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T21:27:07.614963Z"
+      "lastBuilt": "2026-11-28T08:01:03.936563Z"
     },
     {
       "id": "89953bf56ccc",
@@ -206,10 +126,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "soon",
-      "daysToSale": 7,
+      "daysToSale": 6,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T21:27:07.614963Z"
+      "lastBuilt": "2026-11-28T08:01:03.936563Z"
     },
     {
       "id": "5904321a0123",
@@ -225,11 +145,11 @@
       "note": "Imported from Lempertz’s official auctions page.",
       "buyerAlert": "",
       "urgent": false,
-      "urgency": "upcoming",
-      "daysToSale": 8,
+      "urgency": "soon",
+      "daysToSale": 7,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T21:27:07.614963Z"
+      "lastBuilt": "2026-11-28T08:01:03.936563Z"
     },
     {
       "id": "58574537c8b4",
@@ -246,10 +166,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 9,
+      "daysToSale": 8,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T21:27:07.614963Z"
+      "lastBuilt": "2026-11-28T08:01:03.936563Z"
     },
     {
       "id": "9d20908151d4",
@@ -266,10 +186,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 13,
+      "daysToSale": 12,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T21:27:07.614963Z"
+      "lastBuilt": "2026-11-28T08:01:03.936563Z"
     },
     {
       "id": "47358eec6485",
@@ -286,10 +206,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 13,
+      "daysToSale": 12,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T21:27:07.614963Z"
+      "lastBuilt": "2026-11-28T08:01:03.936563Z"
     },
     {
       "id": "14870b760e91",
@@ -306,10 +226,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 14,
+      "daysToSale": 13,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T21:27:07.614963Z"
+      "lastBuilt": "2026-11-28T08:01:03.936563Z"
     },
     {
       "id": "bd2902fe1508",
@@ -326,10 +246,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 14,
+      "daysToSale": 13,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T21:27:07.614963Z"
+      "lastBuilt": "2026-11-28T08:01:03.936563Z"
     },
     {
       "id": "d5874f0d9aba",
@@ -346,10 +266,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 14,
+      "daysToSale": 13,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T21:27:07.614963Z"
+      "lastBuilt": "2026-11-28T08:01:03.936563Z"
     },
     {
       "id": "6c48fbfb784b",
@@ -366,10 +286,10 @@
       "buyerAlert": "",
       "urgent": false,
       "urgency": "upcoming",
-      "daysToSale": 15,
+      "daysToSale": 14,
       "lots": [],
       "sourceMode": "feed",
-      "lastBuilt": "2026-11-27T21:27:07.614963Z"
+      "lastBuilt": "2026-11-28T08:01:03.936563Z"
     }
   ]
 }
